@@ -1,0 +1,57 @@
+# IZA Maturity Score — gewichten en formule
+#
+# STATUS: LEEG. Dit bestand is opzettelijk gereserveerd voor de
+# Strategische Architect (Gemini) om de scoring-logica te definiëren op
+# basis van de geanalyseerde regioplannen en sector-bronnen.
+#
+# De structuur van de score is vastgelegd in /schema/relations.md onder
+# "IZA Maturity Score — de structuur". Dit bestand vult alleen de
+# numerieke gewichten in.
+#
+# Zodra dit bestand is gevuld, geldt ook hier bronverplichting: elke
+# weging moet onderbouwd zijn met een publieke bron in /sources/sources.yaml
+# zodat de score onvervalsbaar en controleerbaar blijft.
+
+version: 0.0.0-draft
+status: placeholder
+owner: gemini-strategische-architect
+
+# TODO: vul onderstaande secties, of vervang de hele structuur door een
+# betere als de analyse van de regioplannen daartoe aanleiding geeft.
+
+network_type_weights:
+  # Voorbeeld: landelijk_hub: 1.0
+  # Voorbeeld: xds: 0.8
+  # Voorbeeld: secure_messaging: 0.5
+  # Voorbeeld: legacy_messaging: 0.3
+  TODO: true
+
+data_type_weights:
+  # Voorbeeld: care_transfer: 1.0
+  # Voorbeeld: medication: 0.9
+  # Voorbeeld: basic_dataset: 0.7
+  # Voorbeeld: referral: 0.5
+  # Voorbeeld: appointment: 0.3
+  TODO: true
+
+status_multiplier:
+  # active: 1.0
+  # planned: 0.25
+  # deprecated: 0.0
+  # inactive: 0.0
+  TODO: true
+
+recency_decay:
+  # Hoeveel de score afschaalt per maand zonder validated_at.
+  # Bijvoorbeeld: linear_decay_per_month: 0.02
+  TODO: true
+
+standard_conformance_bonus:
+  # Bonus wanneer connection.standard wordt ondersteund door beide
+  # system(s) die de organisaties gebruiken.
+  # Bijvoorbeeld: multiplier_when_both_implement: 1.15
+  TODO: true
+
+sources:
+  # Bronnen die de gekozen gewichten onderbouwen.
+  - TODO

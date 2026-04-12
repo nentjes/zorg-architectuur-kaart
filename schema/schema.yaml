@@ -1,0 +1,350 @@
+# Zorg Architectuur Kaart — machine-leesbaar schema v0.1
+#
+# Dit bestand is de bron van waarheid voor CI-validatie. Elke YAML onder
+# /data/<type>/ moet tegen de overeenkomstige entry in `entity_types`
+# valideren. Zie /schema/entities.md en /schema/relations.md voor de
+# menselijke uitleg en ontwerpkeuzes.
+
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: "Zorg Architectuur Kaart — schema v0.1"
+version: "0.1.0"
+
+# Hergebruikbare primitieven — verwezen met $ref vanuit entity_types.
+definitions:
+
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
+    minLength: 2
+    maxLength: 80
+    description: "Kebab-case identifier, alleen [a-z0-9-], 2-80 tekens."
+
+  id_list:
+    type: array
+    items:
+      $ref: "#/definitions/id"
+    uniqueItems: true
+
+  sources_list:
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items:
+      $ref: "#/definitions/id"
+    description: "Minimaal één source_id die bestaat in /sources/sources.yaml."
+
+  iso_date:
+    type: string
+    pattern: "^\\d{4}-\\d{2}-\\d{2}$"
+
+  confidence:
+    type: string
+    enum: [high, medium, low]
+
+  country:
+    type: string
+    enum: [NL, DE, BE, LU]
+
+  lat_lon:
+    type: object
+    additionalProperties: false
+    required: [lat, lon]
+    properties:
+      lat:
+        type: number
+        minimum: 49.0
+        maximum: 54.0
+      lon:
+        type: number
+        minimum: 2.5
+        maximum: 7.5
+
+  location:
+    type: object
+    additionalProperties: false
+    required: [city]
+    properties:
+      address: {type: string}
+      city: {type: string}
+      postcode: {type: string}
+      province: {type: string}
+      country: {$ref: "#/definitions/country"}
+      coordinates: {$ref: "#/definitions/lat_lon"}
+
+# Per entity type een volledig JSON-Schema object. De validator dispatcht
+# op folder-naam: /data/organizations/* → organization, enz.
+entity_types:
+
+  organization:
+    type: object
+    additionalProperties: false
+    required: [id, type, name, sector, sources]
+    properties:
+      id: {$ref: "#/definitions/id"}
+      type:
+        const: organization
+      name:
+        type: string
+        minLength: 2
+      aliases:
+        type: array
+        items: {type: string}
+      sector:
+        type: string
+        enum:
+          - ziekenhuis
+          - huisarts
+          - apotheek
+          - vvt
+          - ggz
+          - zbc
+          - gemeente
+          - jeugdzorg
+          - ambulance
+          - geboortezorg
+          - paramedisch
+          - grensregio
+      subtype:
+        type: string
+      parent_organization:
+        $ref: "#/definitions/id"
+      country:
+        $ref: "#/definitions/country"
+      locations:
+        type: array
+        items: {$ref: "#/definitions/location"}
+      region_iza: {$ref: "#/definitions/id"}
+      region_roaz: {$ref: "#/definitions/id"}
+      region_ggd: {$ref: "#/definitions/id"}
+      systems: {$ref: "#/definitions/id_list"}
+      networks: {$ref: "#/definitions/id_list"}
+      sources: {$ref: "#/definitions/sources_list"}
+      confidence: {$ref: "#/definitions/confidence"}
+      needs_verification: {type: boolean}
+
+  system:
+    type: object
+    additionalProperties: false
+    required: [id, type, name, category, vendor, sources]
+    properties:
+      id: {$ref: "#/definitions/id"}
+      type:
+        const: system
+      name:
+        type: string
+        minLength: 2
+      aliases:
+        type: array
+        items: {type: string}
+      category:
+        type: string
+        enum:
+          - epd_ziekenhuis
+          - his_huisarts
+          - ais_apotheek
+          - ecd_vvt
+          - epd_ggz
+          - dossier_paramedisch
+          - ritregistratie_ambulance
+          - portal_pgo
+          - hub_integratie
+          - bureau_registratie
+      vendor: {$ref: "#/definitions/id"}
+      country_origin: {$ref: "#/definitions/country"}
+      standards_supported: {$ref: "#/definitions/id_list"}
+      sources: {$ref: "#/definitions/sources_list"}
+      confidence: {$ref: "#/definitions/confidence"}
+
+  vendor:
+    type: object
+    additionalProperties: false
+    required: [id, type, name, sources]
+    properties:
+      id: {$ref: "#/definitions/id"}
+      type:
+        const: vendor
+      name:
+        type: string
+      aliases:
+        type: array
+        items: {type: string}
+      country: {$ref: "#/definitions/country"}
+      parent_company: {type: string}
+      website:
+        type: string
+        format: uri
+      sources: {$ref: "#/definitions/sources_list"}
+
+  region:
+    type: object
+    additionalProperties: false
+    required: [id, type, name, region_type, sources]
+    properties:
+      id: {$ref: "#/definitions/id"}
+      type:
+        const: region
+      name:
+        type: string
+      region_type:
+        type: string
+        enum:
+          - iza
+          - roaz
+          - ggd
+          - veiligheid
+          - jeugdhulp
+          - wmo
+          - rso
+          - xds_affinity_domain
+      parent_region: {$ref: "#/definitions/id"}
+      covers_gemeentes:
+        type: array
+        items: {type: string}
+      lead_organization: {$ref: "#/definitions/id"}
+      participating_organizations: {$ref: "#/definitions/id_list"}
+      sources: {$ref: "#/definitions/sources_list"}
+
+  network:
+    type: object
+    additionalProperties: false
+    required: [id, type, name, network_type, sources]
+    properties:
+      id: {$ref: "#/definitions/id"}
+      type:
+        const: network
+      name:
+        type: string
+      aliases:
+        type: array
+        items: {type: string}
+      network_type:
+        type: string
+        enum:
+          - landelijk_hub
+          - secure_messaging
+          - referral
+          - xds
+          - afsprakenstelsel
+          - legacy_messaging
+          - toestemming
+          - identiteit
+      operator: {$ref: "#/definitions/id"}
+      standards_used: {$ref: "#/definitions/id_list"}
+      established: {$ref: "#/definitions/iso_date"}
+      sources: {$ref: "#/definitions/sources_list"}
+
+  standard:
+    type: object
+    additionalProperties: false
+    required: [id, type, name, standard_family, sources]
+    properties:
+      id: {$ref: "#/definitions/id"}
+      type:
+        const: standard
+      name:
+        type: string
+      standard_family:
+        type: string
+        enum:
+          - zib
+          - fhir
+          - hl7_v2
+          - hl7_v3
+          - cda
+          - terminology
+          - i_standaard
+          - edifact
+          - ihe
+      version:
+        type: string
+      publisher:
+        type: string
+      supersedes: {$ref: "#/definitions/id"}
+      superseded_by: {$ref: "#/definitions/id"}
+      sources: {$ref: "#/definitions/sources_list"}
+
+  connection:
+    type: object
+    additionalProperties: false
+    required:
+      - id
+      - type
+      - organization_a
+      - organization_b
+      - network
+      - status
+      - sources
+    properties:
+      id: {$ref: "#/definitions/id"}
+      type:
+        const: connection
+      organization_a: {$ref: "#/definitions/id"}
+      organization_b: {$ref: "#/definitions/id"}
+      network: {$ref: "#/definitions/id"}
+      standard: {$ref: "#/definitions/id"}
+      direction:
+        type: string
+        enum: [bidirectional, a_to_b, b_to_a]
+      data_types:
+        type: array
+        uniqueItems: true
+        items:
+          type: string
+          enum:
+            - medication
+            - referral
+            - lab_result
+            - radiology_image
+            - discharge_summary
+            - basic_dataset
+            - care_transfer
+            - appointment
+            - consent
+            - other
+      status:
+        type: string
+        enum: [active, planned, deprecated, inactive]
+      established: {$ref: "#/definitions/iso_date"}
+      validated_at: {$ref: "#/definitions/iso_date"}
+      sources: {$ref: "#/definitions/sources_list"}
+      confidence: {$ref: "#/definitions/confidence"}
+      needs_verification: {type: boolean}
+
+# Cross-reference regels die de validator afdwingt naast de per-entity
+# JSON Schema. Deze kunnen niet puur in JSON Schema, dus de Python-
+# validator implementeert ze separately.
+crossref_rules:
+  - description: "Elke source_id moet bestaan in /sources/sources.yaml"
+    applies_to: "alle entity types"
+    field: "sources[*]"
+    target: "/sources/sources.yaml::id"
+
+  - description: "organization.systems[*] moet verwijzen naar een bestaand System"
+    applies_to: organization
+    field: "systems[*]"
+    target: "/data/systems/<id>.yaml"
+
+  - description: "organization.networks[*] moet verwijzen naar een bestaand Network"
+    applies_to: organization
+    field: "networks[*]"
+    target: "/data/networks/<id>.yaml"
+
+  - description: "organization.region_iza moet verwijzen naar een Region met region_type=iza"
+    applies_to: organization
+    field: "region_iza"
+    target: "/data/regions/<id>.yaml (region_type=iza)"
+
+  - description: "system.vendor moet verwijzen naar een bestaande Vendor"
+    applies_to: system
+    field: "vendor"
+    target: "/data/vendors/<id>.yaml"
+
+  - description: "connection.organization_a en .organization_b verschillen en bestaan"
+    applies_to: connection
+    field: "organization_a, organization_b"
+    target: "/data/organizations/<id>.yaml"
+
+  - description: "connection.network bestaat"
+    applies_to: connection
+    field: "network"
+    target: "/data/networks/<id>.yaml"

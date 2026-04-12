@@ -1,0 +1,12 @@
+id: sdb-reflex
+type: system
+name: SDB Reflex
+aliases:
+- Reflex
+- SDB/Reflex
+category: epd_revalidatie
+vendor: sdb-groep
+country_origin: NL
+sources:
+- roel-private-excel-2026-04
+confidence: high

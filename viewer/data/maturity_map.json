@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-12T18:45:45",
+    "generated_at": "2026-04-12T18:56:31",
     "n_connections": 3,
-    "n_organizations_scored": 371,
+    "n_organizations_scored": 373,
     "formula": {
       "per_connection": {
         "raw": "paradigm_w * topology_w * status_w * data_w * recency_w",
@@ -594,6 +594,18 @@
       "coord": [
         5.0456,
         52.1386
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "capri-hartrevalidatie",
+      "name": "Capri Hartrevalidatie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -2754,6 +2766,18 @@
       "coord": [
         5.9833,
         50.8881
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mrc-aardenburg",
+      "name": "MRC Aardenburg (Militair Revalidatie Centrum)",
+      "sector": "revalidatie",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.34,
+        52.04
       ],
       "total_score": 0.0,
       "participating_in": []

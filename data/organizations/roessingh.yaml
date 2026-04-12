@@ -12,5 +12,10 @@ locations:
     lon: 6.8937
 sources:
 - claude-knowledge-2026-04
-confidence: low
-needs_verification: true
+- roel-private-excel-2026-04
+confidence: high
+needs_verification: false
+systems:
+- chipsoft-hix
+notes:
+- HiX geimplementeerd, datum onbekend

@@ -18,5 +18,8 @@ locations:
     lon: 4.3097
 sources:
 - claude-knowledge-2026-04
-confidence: low
-needs_verification: true
+- roel-private-excel-2026-04
+confidence: high
+needs_verification: false
+systems:
+- chipsoft-hix

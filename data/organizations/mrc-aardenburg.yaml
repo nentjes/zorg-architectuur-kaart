@@ -1,22 +1,21 @@
-id: de-hoogstraat
+id: mrc-aardenburg
 type: organization
-name: De Hoogstraat Revalidatie
+name: MRC Aardenburg (Militair Revalidatie Centrum)
 aliases:
-- De Hoogstraat
+- MRC
 sector: revalidatie
 country: NL
 locations:
-- city: Utrecht
+- city: Doorn
   province: Utrecht
   country: NL
   coordinates:
-    lat: 52.084
-    lon: 5.1677
+    lat: 52.04
+    lon: 5.34
 region_iza: iza-midden-nederland
+systems:
+- chipsoft-hix
 sources:
-- claude-knowledge-2026-04
 - roel-private-excel-2026-04
 confidence: high
 needs_verification: false
-systems:
-- chipsoft-hix

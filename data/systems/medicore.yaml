@@ -1,0 +1,9 @@
+id: medicore
+type: system
+name: Medicore
+category: epd_msz
+vendor: medicore
+country_origin: NL
+sources:
+- roel-private-excel-2026-04
+confidence: high

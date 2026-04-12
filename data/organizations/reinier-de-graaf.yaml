@@ -1,0 +1,19 @@
+id: reinier-de-graaf
+type: organization
+name: Reinier de Graaf Gasthuis
+aliases:
+- RdGG
+sector: ziekenhuis
+subtype: topklinisch
+country: NL
+locations:
+- city: Delft
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0
+    lon: 4.3642
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

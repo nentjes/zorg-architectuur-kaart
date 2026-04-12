@@ -1,0 +1,17 @@
+id: antonius-zh-sneek
+type: organization
+name: Antonius Ziekenhuis Sneek
+sector: ziekenhuis
+subtype: algemeen
+country: NL
+locations:
+- city: Sneek
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.0325
+    lon: 5.6581
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,20 @@
+id: huw
+type: organization
+name: Huisartsen Utrecht West (HUW)
+aliases:
+- HUW
+sector: huisarts
+subtype: zorggroep
+country: NL
+locations:
+- city: Woerden
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0853
+    lon: 4.8836
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

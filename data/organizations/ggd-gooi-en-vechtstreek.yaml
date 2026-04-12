@@ -1,0 +1,16 @@
+id: ggd-gooi-en-vechtstreek
+type: organization
+name: GGD Gooi en Vechtstreek
+sector: ggd
+country: NL
+locations:
+- city: Bussum
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2667
+    lon: 5.1606
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

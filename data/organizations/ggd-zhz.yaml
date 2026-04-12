@@ -1,0 +1,18 @@
+id: ggd-zhz
+type: organization
+name: Dienst Gezondheid & Jeugd Zuid-Holland Zuid
+aliases:
+- GGD ZHZ
+sector: ggd
+country: NL
+locations:
+- city: Dordrecht
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.8133
+    lon: 4.69
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

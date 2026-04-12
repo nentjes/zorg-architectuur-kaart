@@ -1,0 +1,17 @@
+id: gem-vijfheerenlanden
+type: organization
+name: Gemeente Vijfheerenlanden
+sector: gemeente
+country: NL
+locations:
+- city: Vianen
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 51.9872
+    lon: 5.0972
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

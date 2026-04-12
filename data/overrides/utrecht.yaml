@@ -1,0 +1,26 @@
+# Overrides voor data/manifests/utrecht-v1.yaml
+#
+# Per org-id: velden die NIET uit het manifest komen, maar die Roel
+# (of een andere gevalideerde bron) handmatig weet. Overrides winnen
+# van manifest-defaults. Zie scripts/import_manifest.py.
+#
+# Velden die je hier kunt zetten:
+#   systems: [...]          # overschrijft manifest
+#   networks: [...]         # overschrijft manifest
+#   confidence: high|medium|low
+#   needs_verification: false
+#   extra_sources: [...]    # extra source-ids (geen vervanging)
+#
+# Stel: je weet zeker dat Meander HiX draait en aan LSP hangt:
+#   meander-mc:
+#     systems: [chipsoft-hix]
+#     networks: [lsp]
+#     confidence: high
+#     needs_verification: false
+#
+# Houd dit bestand klein en gevalideerd. Alles wat hier in staat
+# is Roel's persoonlijke kennis — dus géén needs_verification: true
+# mag hier standaard blijven.
+
+version: 1
+overrides: {}

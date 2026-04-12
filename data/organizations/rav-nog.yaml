@@ -1,0 +1,16 @@
+id: rav-nog
+type: organization
+name: Witte Kruis (Noord- en Oost-Gelderland)
+sector: ambulance
+country: NL
+locations:
+- city: Apeldoorn
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.2058
+    lon: 5.9697
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

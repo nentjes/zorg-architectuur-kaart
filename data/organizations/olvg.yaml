@@ -1,0 +1,19 @@
+id: olvg
+type: organization
+name: OLVG
+aliases:
+- Onze Lieve Vrouwe Gasthuis
+sector: ziekenhuis
+subtype: topklinisch
+country: NL
+locations:
+- city: Amsterdam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3608
+    lon: 4.9228
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

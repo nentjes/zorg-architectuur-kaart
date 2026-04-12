@@ -1,0 +1,16 @@
+id: rav-west-brabant
+type: organization
+name: RAV West-Brabant
+sector: ambulance
+country: NL
+locations:
+- city: Breda
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5719
+    lon: 4.7683
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

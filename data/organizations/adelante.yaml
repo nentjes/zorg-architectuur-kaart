@@ -1,0 +1,16 @@
+id: adelante
+type: organization
+name: Adelante Zorggroep
+sector: revalidatie
+country: NL
+locations:
+- city: Hoensbroek
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.9181
+    lon: 5.9306
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

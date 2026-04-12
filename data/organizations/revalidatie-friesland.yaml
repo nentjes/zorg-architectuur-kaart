@@ -1,0 +1,16 @@
+id: revalidatie-friesland
+type: organization
+name: Revalidatie Friesland
+sector: revalidatie
+country: NL
+locations:
+- city: Beetsterzwaag
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.0664
+    lon: 6.0703
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

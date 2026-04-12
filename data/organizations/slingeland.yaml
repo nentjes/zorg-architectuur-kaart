@@ -1,0 +1,17 @@
+id: slingeland
+type: organization
+name: Slingeland Ziekenhuis
+sector: ziekenhuis
+subtype: topklinisch
+country: NL
+locations:
+- city: Doetinchem
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.9656
+    lon: 6.2875
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

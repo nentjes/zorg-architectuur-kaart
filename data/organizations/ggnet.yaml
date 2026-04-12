@@ -1,0 +1,16 @@
+id: ggnet
+type: organization
+name: GGNet
+sector: ggz
+country: NL
+locations:
+- city: Warnsveld
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.1403
+    lon: 6.2128
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

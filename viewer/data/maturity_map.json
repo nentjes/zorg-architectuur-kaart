@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-12T15:47:02",
+    "generated_at": "2026-04-12T16:57:59",
     "n_connections": 3,
-    "n_organizations_scored": 15,
+    "n_organizations_scored": 205,
     "formula": {
       "per_connection": {
         "raw": "paradigm_w * topology_w * status_w * data_w * recency_w",
@@ -179,6 +179,18 @@
       ]
     },
     {
+      "id": "accare",
+      "name": "Accare",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.5639,
+        52.9956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "acute-zorg-euregio",
       "name": "Acute Zorg Euregio",
       "sector": "ambulance",
@@ -186,6 +198,1206 @@
       "coord": [
         6.8937,
         52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "adelante",
+      "name": "Adelante Zorggroep",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        5.9306,
+        50.9181
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "adrz",
+      "name": "Admiraal De Ruyter Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        3.8889,
+        51.5044
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "albert-schweitzer",
+      "name": "Albert Schweitzer Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.6908,
+        51.7972
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "altrecht",
+      "name": "Altrecht",
+      "sector": "ggz",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "amphia",
+      "name": "Amphia Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.7683,
+        51.5719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "amsterdam-umc",
+      "name": "Amsterdam UMC",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.9577,
+        52.2975
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "antes",
+      "name": "Antes",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.4792,
+        51.9225
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "antonius-zh-sneek",
+      "name": "Antonius Ziekenhuis Sneek",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.6581,
+        53.0325
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "arkin",
+      "name": "Arkin",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "avl",
+      "name": "Antoni van Leeuwenhoek",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.85,
+        52.3331
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "axioncontinu",
+      "name": "AxionContinu",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "basalt",
+      "name": "Basalt Revalidatie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        4.4869,
+        52.1581
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "bernhoven",
+      "name": "Bernhoven",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.6167,
+        51.66
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "beweging-3",
+      "name": "Beweging 3.0",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "bravis",
+      "name": "Bravis Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.4667,
+        51.5333
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "careyn",
+      "name": "Careyn",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "catharina-ziekenhuis",
+      "name": "Catharina Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.465,
+        51.4333
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ciran-intergrin",
+      "name": "InteGrin (v/h Ciran)",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cwz",
+      "name": "Canisius-Wilhelmina Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.8217,
+        51.8419
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-hoogstraat",
+      "name": "De Hoogstraat Revalidatie",
+      "sector": "revalidatie",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1677,
+        52.084
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-rijnhoven",
+      "name": "De Rijnhoven",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.955,
+        52.09
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "deventer-ziekenhuis",
+      "name": "Deventer Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.1392,
+        52.2542
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "diakonessenhuis",
+      "name": "Diakonessenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1239,
+        52.0731
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "dijklander",
+      "name": "Dijklander Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.0597,
+        52.6425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "dimence",
+      "name": "Dimence",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.1392,
+        52.2542
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "elkerliek",
+      "name": "Elkerliek Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.65,
+        51.4833
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "erasmus-mc",
+      "name": "Erasmus MC",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.4686,
+        51.9106
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "etz",
+      "name": "Elisabeth-TweeSteden Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.0772,
+        51.5606
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "flevoziekenhuis",
+      "name": "Flevoziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.2153,
+        52.3808
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "franciscus",
+      "name": "Franciscus Gasthuis & Vlietland",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.4697,
+        51.9306
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gelre-ziekenhuizen",
+      "name": "Gelre ziekenhuizen",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.9697,
+        52.2058
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-amersfoort",
+      "name": "Gemeente Amersfoort",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-baarn",
+      "name": "Gemeente Baarn",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2886,
+        52.2119
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-bunnik",
+      "name": "Gemeente Bunnik",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1997,
+        52.066
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-bunschoten",
+      "name": "Gemeente Bunschoten",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3795,
+        52.2442
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-de-bilt",
+      "name": "Gemeente De Bilt",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2,
+        52.1333
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-de-ronde-venen",
+      "name": "Gemeente De Ronde Venen",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.8536,
+        52.2139
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-eemnes",
+      "name": "Gemeente Eemnes",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2619,
+        52.2575
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-houten",
+      "name": "Gemeente Houten",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1681,
+        52.0344
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-ijsselstein",
+      "name": "Gemeente IJsselstein",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0414,
+        52.0206
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-leusden",
+      "name": "Gemeente Leusden",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.4311,
+        52.1317
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-lopik",
+      "name": "Gemeente Lopik",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.9514,
+        51.9758
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-montfoort",
+      "name": "Gemeente Montfoort",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.95,
+        52.045
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-nieuwegein",
+      "name": "Gemeente Nieuwegein",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0806,
+        52.0296
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-oudewater",
+      "name": "Gemeente Oudewater",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.8675,
+        52.0264
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-renswoude",
+      "name": "Gemeente Renswoude",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.5417,
+        52.0833
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-rhenen",
+      "name": "Gemeente Rhenen",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.5672,
+        51.96
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-soest",
+      "name": "Gemeente Soest",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2908,
+        52.1736
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-stichtse-vecht",
+      "name": "Gemeente Stichtse Vecht",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0375,
+        52.1375
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-utrecht",
+      "name": "Gemeente Utrecht",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-utrechtse-heuvelrug",
+      "name": "Gemeente Utrechtse Heuvelrug",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.35,
+        52.0333
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-veenendaal",
+      "name": "Gemeente Veenendaal",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.5558,
+        52.0283
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-vijfheerenlanden",
+      "name": "Gemeente Vijfheerenlanden",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0972,
+        51.9872
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-wijk-bij-duurstede",
+      "name": "Gemeente Wijk bij Duurstede",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3414,
+        51.9722
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-woerden",
+      "name": "Gemeente Woerden",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.8836,
+        52.0853
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-woudenberg",
+      "name": "Gemeente Woudenberg",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.4167,
+        52.0833
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zeist",
+      "name": "Gemeente Zeist",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2339,
+        52.0869
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-amsterdam",
+      "name": "GGD Amsterdam",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.9228,
+        52.3608
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-brabant-zuidoost",
+      "name": "GGD Brabant-Zuidoost",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-drenthe",
+      "name": "GGD Drenthe",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        6.5639,
+        52.9956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-flevoland",
+      "name": "GGD Flevoland",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.4711,
+        52.5183
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-fryslan",
+      "name": "GGD Fryslân",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.7717,
+        53.2042
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-gelderland-midden",
+      "name": "Veiligheids- en Gezondheidsregio Gelderland-Midden",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.8986,
+        51.985
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-gelderland-zuid",
+      "name": "GGD Gelderland-Zuid",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.8533,
+        51.8425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-gooi-en-vechtstreek",
+      "name": "GGD Gooi en Vechtstreek",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.1606,
+        52.2667
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-groningen",
+      "name": "GGD Groningen",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-haaglanden",
+      "name": "GGD Haaglanden",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.3097,
+        52.0786
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-hart-voor-brabant",
+      "name": "GGD Hart voor Brabant",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.2903,
+        51.6892
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-hollands-midden",
+      "name": "GGD Hollands Midden",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-hollands-noorden",
+      "name": "GGD Hollands Noorden",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.7497,
+        52.6336
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-ijsselland",
+      "name": "GGD IJsselland",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        6.0833,
+        52.5167
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-kennemerland",
+      "name": "GGD Kennemerland",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.6462,
+        52.3874
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-limburg-noord",
+      "name": "GGD Limburg-Noord",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        6.1583,
+        51.37
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-nog",
+      "name": "GGD Noord- en Oost-Gelderland",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        6.2128,
+        52.1403
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-rotterdam-rijnmond",
+      "name": "GGD Rotterdam-Rijnmond",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.4792,
+        51.9225
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-twente",
+      "name": "GGD Twente",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-west-brabant",
+      "name": "GGD West-Brabant",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.7683,
+        51.5719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-zaanstreek-waterland",
+      "name": "GGD Zaanstreek-Waterland",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.8233,
+        52.4383
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-zeeland",
+      "name": "GGD Zeeland",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        3.8889,
+        51.5044
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-zhz",
+      "name": "Dienst Gezondheid & Jeugd Zuid-Holland Zuid",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.69,
+        51.8133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-zuid-limburg",
+      "name": "GGD Zuid-Limburg",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.9833,
+        50.8881
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggdru",
+      "name": "GGD regio Utrecht",
+      "sector": "ggd",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2339,
+        52.0869
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggnet",
+      "name": "GGNet",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.2128,
+        52.1403
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-breburg",
+      "name": "GGz Breburg",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.0772,
+        51.5606
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-centraal",
+      "name": "GGZ Centraal",
+      "sector": "ggz",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-drenthe",
+      "name": "GGZ Drenthe",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.5639,
+        52.9956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-friesland",
+      "name": "GGZ Friesland",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.7717,
+        53.2042
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-nhn",
+      "name": "GGZ Noord-Holland-Noord",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.7044,
+        52.6025
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-oost-brabant",
+      "name": "GGZ Oost Brabant",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.6781,
+        51.6056
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "haga",
+      "name": "HagaZiekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.3192,
+        52.0506
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "heliomare",
+      "name": "Heliomare",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        4.5983,
+        52.4961
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hmc",
+      "name": "Haaglanden Medisch Centrum",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.3097,
+        52.0786
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsen-eemland",
+      "name": "Huisartsen Eemland",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huw",
+      "name": "Huisartsen Utrecht West (HUW)",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.8836,
+        52.0853
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ijsselland",
+      "name": "IJsselland Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.5769,
+        51.9294
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ikazia",
+      "name": "Ikazia Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.5122,
+        51.8855
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "isala",
+      "name": "Isala",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.0833,
+        52.5167
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "jbz",
+      "name": "Jeroen Bosch Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.2903,
+        51.6892
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "karakter",
+      "name": "Karakter",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.6683,
+        52.0411
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "klimmendaal",
+      "name": "Klimmendaal",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        5.8744,
+        52.01
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -203,6 +1415,138 @@
       "participating_in": []
     },
     {
+      "id": "lange-land",
+      "name": "LangeLand Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.4931,
+        52.0636
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "laurentius",
+      "name": "Laurentius Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.9872,
+        51.1944
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "leidsche-rijn-julius-gc",
+      "name": "Leidsche Rijn Julius Gezondheidscentra",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.045,
+        52.097
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "lentis",
+      "name": "Lentis",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "libra-revalidatie",
+      "name": "Libra Revalidatie & Audiologie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "lumc",
+      "name": "Leids Universitair Medisch Centrum",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.4771,
+        52.1668
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "maasstad",
+      "name": "Maasstad Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.5342,
+        51.8806
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "maasziekenhuis-pantein",
+      "name": "Maasziekenhuis Pantein",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.9483,
+        51.6467
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "martini-ziekenhuis",
+      "name": "Martini Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.5456,
+        53.2083
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mcl",
+      "name": "Medisch Centrum Leeuwarden",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.7717,
+        53.2042
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "meander-mc",
+      "name": "Meander Medisch Centrum",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "mediant",
       "name": "Mediant Geestelijke Gezondheidszorg",
       "sector": "ggz",
@@ -210,6 +1554,522 @@
       "coord": [
         6.8937,
         52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "merem",
+      "name": "Merem Medische Revalidatie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        5.176,
+        52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mmc",
+      "name": "Máxima MC",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.4044,
+        51.4183
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mondriaan",
+      "name": "Mondriaan",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.9833,
+        50.8881
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mumc",
+      "name": "Maastricht UMC+",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.7063,
+        50.8421
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "nij-smellinghe",
+      "name": "Nij Smellinghe",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.0981,
+        53.1072
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "novadic-kentron",
+      "name": "Novadic-Kentron",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.2889,
+        51.6533
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "nwz",
+      "name": "Noordwest Ziekenhuisgroep",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.7497,
+        52.6336
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "olvg",
+      "name": "OLVG",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.9228,
+        52.3608
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "oogziekenhuis-rotterdam",
+      "name": "Het Oogziekenhuis Rotterdam",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.47,
+        51.9194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ozg",
+      "name": "Ommelander Ziekenhuis Groningen",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.995,
+        53.1628
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "parnassia-groep",
+      "name": "Parnassia Groep",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.3097,
+        52.0786
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "prinses-maxima-centrum",
+      "name": "Prinses Máxima Centrum voor kinderoncologie",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1745,
+        52.087
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "pro-persona",
+      "name": "Pro Persona",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.8533,
+        51.8425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "quarijn",
+      "name": "QuaRijn",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2836,
+        52.0539
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "radboudumc",
+      "name": "Radboudumc",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.8644,
+        51.8244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-amsterdam",
+      "name": "Ambulance Amsterdam",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-brabant-mwn",
+      "name": "RAV Brabant MWN",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.2903,
+        51.6892
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-brabant-zuidoost",
+      "name": "RAV Brabant-Zuidoost",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-drenthe",
+      "name": "UMCG Ambulancezorg — Drenthe",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        6.5639,
+        52.9956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-flevoland",
+      "name": "GGD Flevoland — ambulancezorg",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.4711,
+        52.5183
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-fryslan",
+      "name": "Kijlstra Ambulancegroep Fryslân",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        6.0981,
+        53.1072
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-gelderland-midden",
+      "name": "VGGM — ambulancezorg Gelderland-Midden",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.8986,
+        51.985
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-gelderland-zuid",
+      "name": "RAV Gelderland-Zuid",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.8533,
+        51.8425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-gooi-en-vechtstreek",
+      "name": "RAV Gooi en Vechtstreek",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.176,
+        52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-groningen",
+      "name": "UMCG Ambulancezorg — Groningen",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-haaglanden",
+      "name": "Ambulancezorg Haaglanden",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.3097,
+        52.0786
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-hollands-midden",
+      "name": "RAV Hollands Midden",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-ijsselland",
+      "name": "RAV IJsselland",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        6.0833,
+        52.5167
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-kennemerland",
+      "name": "RAV Kennemerland",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.6462,
+        52.3874
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-limburg-noord",
+      "name": "GGD Limburg-Noord — ambulancezorg",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        6.1583,
+        51.37
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-limburg-zuid",
+      "name": "Ambulancezorg Limburg Zuid",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.691,
+        50.8514
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-nog",
+      "name": "Witte Kruis (Noord- en Oost-Gelderland)",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.9697,
+        52.2058
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-noord-holland-noord",
+      "name": "Ambulancezorg Noord-Holland Noord",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.7497,
+        52.6336
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-rotterdam-rijnmond",
+      "name": "Ambulancezorg Rotterdam-Rijnmond",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.4792,
+        51.9225
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-twente",
+      "name": "Ambulance Oost (Twente)",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        6.793,
+        52.2661
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-west-brabant",
+      "name": "RAV West-Brabant",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.7683,
+        51.5719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-zeeland",
+      "name": "RAV Zeeland",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        3.6108,
+        51.4988
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-zhz",
+      "name": "Ambulancezorg Zuid-Holland Zuid",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.69,
+        51.8133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ravu",
+      "name": "RAV Utrecht (RAVU)",
+      "sector": "ambulance",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2,
+        52.1333
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "reade",
+      "name": "Reade",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        4.8611,
+        52.3381
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "reinier-de-graaf",
+      "name": "Reinier de Graaf Gasthuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.3642,
+        52.0
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "revalidatie-friesland",
+      "name": "Revalidatie Friesland",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        6.0703,
+        53.0664
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "revant",
+      "name": "Revant Revalidatiecentra",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        4.7683,
+        51.5719
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -227,6 +2087,162 @@
       "participating_in": []
     },
     {
+      "id": "rijndam",
+      "name": "Rijndam Revalidatie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        4.4686,
+        51.9106
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rijnstate",
+      "name": "Rijnstate",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.8956,
+        51.9692
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rivas-beatrix",
+      "name": "Beatrixziekenhuis (Rivas)",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.9708,
+        51.8336
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rivierduinen",
+      "name": "GGZ Rivierduinen",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rkz",
+      "name": "Rode Kruis Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.6583,
+        52.4869
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "roessingh",
+      "name": "Roessingh, Centrum voor Revalidatie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "saxenburgh",
+      "name": "Saxenburgh",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.6181,
+        52.5772
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "silverein",
+      "name": "Silverein",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0375,
+        52.1375
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "sint-maartenskliniek",
+      "name": "Sint Maartenskliniek",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.8775,
+        51.8094
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "skb",
+      "name": "Streekziekenhuis Koningin Beatrix",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.7211,
+        51.9703
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "slingeland",
+      "name": "Slingeland Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.2875,
+        51.9656
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "spaarne-gasthuis",
+      "name": "Spaarne Gasthuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.6269,
+        52.3608
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "st-anna",
+      "name": "St. Anna Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.5558,
+        51.42
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "st-antonius",
       "name": "St. Antonius Ziekenhuis",
       "sector": "ziekenhuis",
@@ -234,6 +2250,30 @@
       "coord": [
         5.0806,
         52.0296
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "st-jansdal",
+      "name": "St Jansdal",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.6211,
+        52.3419
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "tactus",
+      "name": "Tactus Verslavingszorg",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.1392,
+        52.2542
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -251,6 +2291,126 @@
       "participating_in": []
     },
     {
+      "id": "tjongerschans",
+      "name": "Tjongerschans",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.9194,
+        52.9592
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "tolbrug",
+      "name": "Tolbrug Specialistische Revalidatie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        5.2903,
+        51.6892
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "treant",
+      "name": "Treant Zorggroep",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.9047,
+        52.7792
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "umcg",
+      "name": "Universitair Medisch Centrum Groningen",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.5614,
+        53.2239
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "unicum-huisartsenzorg",
+      "name": "Unicum Huisartsenzorg",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0375,
+        52.1375
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "van-weel-bethesda",
+      "name": "Van Weel-Bethesda Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.0856,
+        51.7514
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vecht-en-ijssel",
+      "name": "Vecht en IJssel",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "victas",
+      "name": "Victas (verslavingszorg)",
+      "sector": "ggz",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "viecuri",
+      "name": "VieCuri Medisch Centrum",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.1583,
+        51.37
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vincent-van-gogh",
+      "name": "Vincent van Gogh voor Geestelijke Gezondheidszorg",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.9744,
+        51.5256
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "vivium-zorggroep",
       "name": "Vivium Zorggroep",
       "sector": "vvt",
@@ -258,6 +2418,66 @@
       "coord": [
         5.1612,
         52.2967
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vogellanden",
+      "name": "Vogellanden",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        6.0833,
+        52.5167
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "warande",
+      "name": "Warande",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2339,
+        52.0869
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "wza",
+      "name": "Wilhelmina Ziekenhuis Assen",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.5639,
+        52.9956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "yulius",
+      "name": "Yulius",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.69,
+        51.8133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zaans-mc",
+      "name": "Zaans Medisch Centrum",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.8233,
+        52.4383
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -275,6 +2495,42 @@
       "participating_in": []
     },
     {
+      "id": "zgv",
+      "name": "Ziekenhuis Gelderse Vallei",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.6683,
+        52.0411
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ziekenhuis-amstelland",
+      "name": "Ziekenhuis Amstelland",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.8675,
+        52.3019
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-regio-amersfoort",
+      "name": "Zorggroep Regio Amersfoort",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "zorgschakel-enschede",
       "name": "Zorgschakel Enschede",
       "sector": "huisarts",
@@ -282,6 +2538,30 @@
       "coord": [
         6.8937,
         52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorgspectrum",
+      "name": "Zorgspectrum",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0806,
+        52.0296
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zuyderland-mc",
+      "name": "Zuyderland Medisch Centrum",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.9833,
+        50.8881
       ],
       "total_score": 0.0,
       "participating_in": []

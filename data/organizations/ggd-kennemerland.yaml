@@ -1,0 +1,16 @@
+id: ggd-kennemerland
+type: organization
+name: GGD Kennemerland
+sector: ggd
+country: NL
+locations:
+- city: Haarlem
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3874
+    lon: 4.6462
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

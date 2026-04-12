@@ -1,0 +1,16 @@
+id: rav-gelderland-zuid
+type: organization
+name: RAV Gelderland-Zuid
+sector: ambulance
+country: NL
+locations:
+- city: Nijmegen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8425
+    lon: 5.8533
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: rav-brabant-mwn
+type: organization
+name: RAV Brabant MWN
+sector: ambulance
+country: NL
+locations:
+- city: '''s-Hertogenbosch'
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6892
+    lon: 5.2903
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

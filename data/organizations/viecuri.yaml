@@ -1,0 +1,23 @@
+id: viecuri
+type: organization
+name: VieCuri Medisch Centrum
+sector: ziekenhuis
+subtype: topklinisch
+country: NL
+locations:
+- city: Venlo
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.37
+    lon: 6.1583
+- city: Venray
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.5256
+    lon: 5.9744
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

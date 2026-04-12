@@ -1,0 +1,17 @@
+id: oogziekenhuis-rotterdam
+type: organization
+name: Het Oogziekenhuis Rotterdam
+sector: ziekenhuis
+subtype: categoraal
+country: NL
+locations:
+- city: Rotterdam
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9194
+    lon: 4.47
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

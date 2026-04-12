@@ -1,0 +1,17 @@
+id: tactus
+type: organization
+name: Tactus Verslavingszorg
+sector: ggz
+subtype: verslavingszorg
+country: NL
+locations:
+- city: Deventer
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.2542
+    lon: 6.1392
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

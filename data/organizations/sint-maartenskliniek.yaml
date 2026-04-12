@@ -1,0 +1,23 @@
+id: sint-maartenskliniek
+type: organization
+name: Sint Maartenskliniek
+sector: ziekenhuis
+subtype: categoraal
+country: NL
+locations:
+- city: Nijmegen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8094
+    lon: 5.8775
+- city: Woerden
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0853
+    lon: 4.8836
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

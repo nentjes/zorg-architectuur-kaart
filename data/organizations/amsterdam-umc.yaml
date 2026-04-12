@@ -1,0 +1,26 @@
+id: amsterdam-umc
+type: organization
+name: Amsterdam UMC
+aliases:
+- AMC
+- VUmc
+sector: ziekenhuis
+subtype: academisch
+country: NL
+locations:
+- city: Amsterdam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2975
+    lon: 4.9577
+- city: Amsterdam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3358
+    lon: 4.8721
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

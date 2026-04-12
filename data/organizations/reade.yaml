@@ -1,0 +1,16 @@
+id: reade
+type: organization
+name: Reade
+sector: revalidatie
+country: NL
+locations:
+- city: Amsterdam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3381
+    lon: 4.8611
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,19 @@
+id: adrz
+type: organization
+name: Admiraal De Ruyter Ziekenhuis
+aliases:
+- ADRZ
+sector: ziekenhuis
+subtype: algemeen
+country: NL
+locations:
+- city: Goes
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.5044
+    lon: 3.8889
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,17 @@
+id: gem-leusden
+type: organization
+name: Gemeente Leusden
+sector: gemeente
+country: NL
+locations:
+- city: Leusden
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1317
+    lon: 5.4311
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

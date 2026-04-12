@@ -1,0 +1,17 @@
+id: de-rijnhoven
+type: organization
+name: De Rijnhoven
+sector: vvt
+country: NL
+locations:
+- city: Harmelen
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.09
+    lon: 4.955
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

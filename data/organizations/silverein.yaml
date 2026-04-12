@@ -1,0 +1,17 @@
+id: silverein
+type: organization
+name: Silverein
+sector: vvt
+country: NL
+locations:
+- city: Maarssen
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1375
+    lon: 5.0375
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

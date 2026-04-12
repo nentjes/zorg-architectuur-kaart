@@ -1,0 +1,17 @@
+id: van-weel-bethesda
+type: organization
+name: Van Weel-Bethesda Ziekenhuis
+sector: ziekenhuis
+subtype: algemeen
+country: NL
+locations:
+- city: Dirksland
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.7514
+    lon: 4.0856
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

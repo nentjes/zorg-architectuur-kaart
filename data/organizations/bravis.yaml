@@ -1,0 +1,23 @@
+id: bravis
+type: organization
+name: Bravis Ziekenhuis
+sector: ziekenhuis
+subtype: algemeen
+country: NL
+locations:
+- city: Roosendaal
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5333
+    lon: 4.4667
+- city: Bergen op Zoom
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4958
+    lon: 4.2875
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

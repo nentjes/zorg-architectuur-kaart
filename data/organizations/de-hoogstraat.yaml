@@ -1,0 +1,19 @@
+id: de-hoogstraat
+type: organization
+name: De Hoogstraat Revalidatie
+aliases:
+- De Hoogstraat
+sector: revalidatie
+country: NL
+locations:
+- city: Utrecht
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.084
+    lon: 5.1677
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

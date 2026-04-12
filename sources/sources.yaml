@@ -406,3 +406,220 @@ sources:
       Leveranciers-bron voor GLIMS, gebruikt door Labmicta.
       Voor v0.3 (wanneer system.category `lis_lab` beschikbaar is)
       relevant als bron voor de system-entry.
+
+  # -----------------------------------------------------------
+  # Sprint 3 — manifest-bronnen voor landelijke ingest
+  # -----------------------------------------------------------
+
+  - id: claude-knowledge-2026-04
+    title: "Claude LLM kennis (pragmatische LLM-seed voor Sprint 3)"
+    publisher: "Anthropic Claude (LLM)"
+    publisher_type: community
+    date: "2026-04"
+    url: ""
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: dataset
+    access: openbaar
+    license: onbekend
+    notes: >
+      PRAGMATISCHE SEED-BRON. Gebruikt voor entities waarvoor Claude
+      (LLM) de basis-informatie (naam, stad, coordinaten, subtype)
+      direct uit zijn training-data heeft geleverd zonder autoritatieve
+      URL. Elke entity met deze source MOET `needs_verification: true`
+      en `confidence: low` hebben. Doel: snelheid boven exacte
+      juistheid voor eerste landelijke skelet. Gemini en Roel kunnen
+      later per entity verifiëren tegen authoritative ledenlijsten
+      (NFU/STZ/NVZ/Actiz/InEen/etc.) en bij verificatie de source
+      vervangen door een concrete branche-vereniging-bron.
+
+  - id: nfu-ledenlijst-2026
+    title: "NFU — Nederlandse Federatie van Universitair Medische Centra, ledenlijst"
+    publisher: "NFU"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.nfu.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de 8 Universitair Medische Centra
+      (UMC's). Bevat Amsterdam UMC, UMC Utrecht, Erasmus MC, LUMC,
+      Radboudumc, Maastricht UMC+, UMCG, UMC Amsterdam.
+
+  - id: stz-ledenlijst-2026
+    title: "STZ — Samenwerkende Topklinische opleidingsZiekenhuizen, ledenlijst"
+    publisher: "Stichting Samenwerkende Topklinische opleidingsZiekenhuizen"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.stz.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de ~26 topklinische ziekenhuizen
+      in Nederland.
+
+  - id: nvz-ledenlijst-2026
+    title: "NVZ — Nederlandse Vereniging van Ziekenhuizen, ledenlijst"
+    publisher: "NVZ"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://nvz-ziekenhuizen.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de NVZ-leden: ~65 algemene en
+      topklinische ziekenhuizen in Nederland. Overlap met STZ
+      voor topklinische instellingen.
+
+  - id: revalidatie-nederland-ledenlijst-2026
+    title: "Revalidatie Nederland — ledenlijst revalidatiecentra"
+    publisher: "Revalidatie Nederland"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://revalidatie.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de ~23 revalidatiecentra in Nederland.
+
+  - id: ggd-ghor-ledenlijst-2026
+    title: "GGD GHOR Nederland — lijst van regionale GGD'en"
+    publisher: "GGD GHOR Nederland"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://ggdghor.nl/ggden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de 25 regionale GGD'en.
+
+  - id: azn-rav-lijst-2026
+    title: "Ambulancezorg Nederland — lijst van Regionale Ambulancevoorzieningen"
+    publisher: "Ambulancezorg Nederland (AZN)"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.ambulancezorg.nl/rav"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de 25 RAV's in Nederland.
+
+  - id: denederlandse-ggz-ledenlijst-2026
+    title: "de Nederlandse ggz — ledenlijst GGZ-instellingen"
+    publisher: "de Nederlandse ggz"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.denederlandseggz.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor ~30 grote geintegreerde GGZ-instellingen.
+
+  - id: jeugdzorg-nederland-ledenlijst-2026
+    title: "Jeugdzorg Nederland — ledenlijst Gecertificeerde Instellingen"
+    publisher: "Jeugdzorg Nederland"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.jeugdzorgnederland.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de ~15 Gecertificeerde Instellingen
+      voor jeugdbescherming en jeugdreclassering.
+
+  - id: vng-jeugdhulpregios-2026
+    title: "VNG — jeugdhulp inkoopregio's (42 regio's)"
+    publisher: "Vereniging van Nederlandse Gemeenten"
+    publisher_type: overheid
+    date: "2026"
+    url: "https://vng.nl/jeugdhulpregios"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de 42 jeugdhulp-inkoopregio's
+      (onderverdeling van Nederland volgens Jeugdwet 2015).
+
+  - id: actiz-ledenlijst-2026
+    title: "ActiZ — branchevereniging VVT, ledenlijst"
+    publisher: "ActiZ"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.actiz.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor ~250 VVT-koepels en -concerns.
+
+  - id: ineen-ledenlijst-2026
+    title: "InEen — koepel georganiseerde eerste lijn, ledenlijst"
+    publisher: "InEen"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://ineen.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor ~120 huisartsen-zorggroepen en ~115
+      HAP-regio's.
+
+  - id: perined-vsv-lijst-2026
+    title: "Perined — lijst Verloskundige Samenwerkingsverbanden (VSV's)"
+    publisher: "Perined"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.perined.nl/vsv"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor ~70 Verloskundige Samenwerkingsverbanden.
+
+  - id: cbs-gemeentelijke-indeling-2024
+    title: "CBS — Gemeentelijke indeling 2024"
+    publisher: "Centraal Bureau voor de Statistiek"
+    publisher_type: overheid
+    date: "2024-01-01"
+    url: "https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2024"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: dataset
+    access: openbaar
+    license: CC-BY-4.0
+    notes: >
+      Authoritative bron voor de 342 Nederlandse gemeenten per 1-1-2024.
+      Omvat namen, gemeentecodes, provincie-indeling.

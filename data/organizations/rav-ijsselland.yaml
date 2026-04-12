@@ -1,0 +1,16 @@
+id: rav-ijsselland
+type: organization
+name: RAV IJsselland
+sector: ambulance
+country: NL
+locations:
+- city: Zwolle
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.5167
+    lon: 6.0833
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

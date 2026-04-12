@@ -1,0 +1,20 @@
+id: radboudumc
+type: organization
+name: Radboudumc
+aliases:
+- Radboud UMC
+- UMC Nijmegen
+sector: ziekenhuis
+subtype: academisch
+country: NL
+locations:
+- city: Nijmegen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8244
+    lon: 5.8644
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,17 @@
+id: gem-baarn
+type: organization
+name: Gemeente Baarn
+sector: gemeente
+country: NL
+locations:
+- city: Baarn
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.2119
+    lon: 5.2886
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

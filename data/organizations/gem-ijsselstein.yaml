@@ -1,0 +1,17 @@
+id: gem-ijsselstein
+type: organization
+name: Gemeente IJsselstein
+sector: gemeente
+country: NL
+locations:
+- city: IJsselstein
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0206
+    lon: 5.0414
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

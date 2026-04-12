@@ -1,0 +1,17 @@
+id: gem-wijk-bij-duurstede
+type: organization
+name: Gemeente Wijk bij Duurstede
+sector: gemeente
+country: NL
+locations:
+- city: Wijk bij Duurstede
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 51.9722
+    lon: 5.3414
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

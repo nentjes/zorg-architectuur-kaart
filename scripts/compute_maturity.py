@@ -68,11 +68,27 @@ def load_yaml(path: Path) -> dict:
         return yaml.safe_load(f)
 
 
+ENTITY_DIRS = {
+    "organizations",
+    "systems",
+    "vendors",
+    "regions",
+    "networks",
+    "standards",
+    "connections",
+    "usecases",
+    "programs",
+}
+
+
 def load_entities_by_type() -> dict[str, dict[str, dict]]:
     """Return {entity_type: {id: entity}} for all /data/ subdirs."""
     result: dict[str, dict[str, dict]] = {}
     for subdir in sorted(DATA_DIR.iterdir()):
         if not subdir.is_dir():
+            continue
+        if subdir.name not in ENTITY_DIRS:
+            # Skip non-entity folders like manifests/ and overrides/
             continue
         entity_type = subdir.name.rstrip("s")  # organizations → organization
         result[entity_type] = {}
@@ -290,8 +306,16 @@ def score_connection(
 # ---------------------------------------------------------------
 
 def geocode_organization(org: dict) -> list[float] | None:
-    """Return [lon, lat] for the first location with a known city."""
+    """Return [lon, lat] for the organization.
+
+    Prefers explicit coordinates on locations[0].coordinates (schema
+    v0.2.1+). Falls back to CITY_COORDS lookup for legacy orgs without
+    explicit coords.
+    """
     for loc in org.get("locations") or []:
+        coords = loc.get("coordinates")
+        if coords and "lat" in coords and "lon" in coords:
+            return [coords["lon"], coords["lat"]]
         city = loc.get("city")
         if city and city in CITY_COORDS:
             return CITY_COORDS[city]

@@ -1,0 +1,17 @@
+id: haga
+type: organization
+name: HagaZiekenhuis
+sector: ziekenhuis
+subtype: topklinisch
+country: NL
+locations:
+- city: Den Haag
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0506
+    lon: 4.3192
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

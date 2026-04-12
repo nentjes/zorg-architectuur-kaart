@@ -1,0 +1,17 @@
+id: gem-nieuwegein
+type: organization
+name: Gemeente Nieuwegein
+sector: gemeente
+country: NL
+locations:
+- city: Nieuwegein
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0296
+    lon: 5.0806
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

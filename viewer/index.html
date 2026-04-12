@@ -21,29 +21,29 @@
       top: 0;
       bottom: 0;
       left: 0;
-      right: 340px;
+      right: 360px;
     }
     #sidebar {
       position: absolute;
       top: 0;
       bottom: 0;
       right: 0;
-      width: 340px;
-      padding: 16px 20px;
+      width: 360px;
+      padding: 14px 18px;
       background: #fafafa;
       border-left: 1px solid #ddd;
       overflow-y: auto;
       box-sizing: border-box;
       font-size: 13px;
-      line-height: 1.5;
+      line-height: 1.45;
     }
     #sidebar h1 {
       font-size: 16px;
       margin: 0 0 4px 0;
     }
     #sidebar h2 {
-      font-size: 13px;
-      margin: 18px 0 6px 0;
+      font-size: 12px;
+      margin: 16px 0 6px 0;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       color: #555;
@@ -51,23 +51,42 @@
     #sidebar .meta {
       color: #777;
       font-size: 11px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
-    #sidebar .legend-item {
+    #sidebar .legend-item,
+    #sidebar .filter-item {
       display: flex;
       align-items: center;
-      margin: 4px 0;
+      margin: 3px 0;
+      font-size: 12px;
+    }
+    #sidebar .filter-item label {
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    #sidebar .filter-item input {
+      margin-right: 6px;
     }
     #sidebar .swatch {
       display: inline-block;
-      width: 14px;
-      height: 14px;
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
-      margin-right: 8px;
-      border: 1px solid rgba(0,0,0,0.2);
+      margin-right: 7px;
+      border: 1px solid rgba(0,0,0,0.25);
+      flex: 0 0 auto;
+    }
+    #sidebar .filter-item .count {
+      margin-left: auto;
+      color: #999;
+      font-variant-numeric: tabular-nums;
+      font-size: 11px;
     }
     #sidebar .swatch.line {
-      width: 20px;
+      width: 18px;
       height: 3px;
       border-radius: 0;
       border: none;
@@ -90,14 +109,25 @@
     #sidebar .note {
       font-size: 11px;
       color: #888;
-      margin-top: 20px;
-      padding-top: 12px;
+      margin-top: 18px;
+      padding-top: 10px;
       border-top: 1px solid #ddd;
+    }
+    #sidebar .verify-warn {
+      background: #fff4dc;
+      border: 1px solid #e6c38a;
+      color: #8a6000;
+      padding: 6px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      margin: 8px 0 14px 0;
+      line-height: 1.4;
     }
     .maplibregl-popup-content {
       font-size: 12px;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
       padding: 10px 14px;
+      max-width: 260px;
     }
     .maplibregl-popup-content h3 {
       margin: 0 0 4px 0;
@@ -108,6 +138,11 @@
       font-weight: 700;
       color: #0a5;
     }
+    .maplibregl-popup-content .needs-ver {
+      color: #b36700;
+      font-size: 11px;
+      margin-top: 4px;
+    }
   </style>
 </head>
 <body>
@@ -115,28 +150,31 @@
   <div id="sidebar">
     <h1>Zorg Architectuur Kaart</h1>
     <div class="meta">
-      Maturity Score v0.1.1 · gegenereerd uit YAML-bronnen in Git
+      Maturity Score v0.1.1 · YAML-bronnen in Git
+    </div>
+    <div class="verify-warn">
+      <b>LLM-seed:</b> organizations uit <code>claude-knowledge-2026-04</code>
+      zijn <i>needs_verification: true</i>. Door Roel's netwerk te valideren.
     </div>
 
-    <h2>Legenda — data-topologie</h2>
+    <h2>Sectoren</h2>
+    <div id="filters"></div>
+
+    <h2>Connections — topologie</h2>
     <div class="legend-item">
       <span class="swatch" style="background:#2ca02c"></span>
-      Federated (Trijn-model, soevereiniteit)
+      Federated (soevereiniteit)
     </div>
     <div class="legend-item">
       <span class="swatch" style="background:#1f77b4"></span>
-      Hybrid (LSP, landelijk hub)
+      Hybrid (landelijk hub)
     </div>
     <div class="legend-item">
       <span class="swatch" style="background:#d62728"></span>
-      Centralized (vendor-lock-in risico)
-    </div>
-    <div class="legend-item">
-      <span class="swatch" style="background:#999"></span>
-      Geen connections gescoord
+      Centralized (lock-in risico)
     </div>
 
-    <h2>Legenda — status</h2>
+    <h2>Connections — status</h2>
     <div class="legend-item">
       <span class="swatch line" style="background:#2ca02c"></span>
       Production (volle lijn)
@@ -150,20 +188,68 @@
       Planned (dots)
     </div>
 
-    <h2 id="ranking-heading">Top organizations</h2>
+    <h2 id="ranking-heading">Top 15 — Maturity Score</h2>
     <table id="ranking"></table>
 
     <div class="note">
       Achtergrondkaart: <a href="https://www.pdok.nl" target="_blank" rel="noopener">PDOK BRT-Achtergrondkaart</a>
       (Kadaster, CC-BY 4.0). Geen Google Maps. Geen Mapbox.<br><br>
-      Bronnen in <code>/sources/sources.yaml</code>.
-      Score-formule in <code>/schema/maturity-score.yaml</code>.
+      Bronnen: <code>/sources/sources.yaml</code>.
+      Score-formule: <code>/schema/maturity-score.yaml</code>.
     </div>
   </div>
 
   <script>
-    // PDOK BRT-Achtergrondkaart als vector-style
-    // Alternatief raster-style: https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/standaard/EPSG:3857/{z}/{x}/{y}.png
+    // -----------------------------------------------------------------
+    // Sector kleurenpalet — 1 kleur per IZA-sector
+    // -----------------------------------------------------------------
+    const SECTOR_COLORS = {
+      ziekenhuis:   "#c62828",
+      huisarts:     "#2e7d32",
+      apotheek:     "#00897b",
+      vvt:          "#6a1b9a",
+      ggz:          "#ef6c00",
+      zbc:          "#ad1457",
+      gemeente:     "#455a64",
+      jeugdzorg:    "#ff6f00",
+      ambulance:    "#880e4f",
+      geboortezorg: "#ec407a",
+      paramedisch:  "#00838f",
+      revalidatie:  "#4527a0",
+      ggd:          "#37474f",
+      grensregio:   "#795548"
+    };
+    const SECTOR_LABELS = {
+      ziekenhuis:   "Ziekenhuizen",
+      huisarts:     "Huisartsen",
+      apotheek:     "Apotheken",
+      vvt:          "VVT",
+      ggz:          "GGZ",
+      zbc:          "ZBC",
+      gemeente:     "Gemeenten",
+      jeugdzorg:    "Jeugdzorg",
+      ambulance:    "Ambulance (RAV)",
+      geboortezorg: "Geboortezorg",
+      paramedisch:  "Paramedisch",
+      revalidatie:  "Revalidatie",
+      ggd:          "GGD",
+      grensregio:   "Grensregio"
+    };
+    // Flatten color map → ["match", ["get","sector"], k1, v1, ..., fallback]
+    const sectorColorMatch = (() => {
+      const arr = ["match", ["get", "sector"]];
+      for (const [k, v] of Object.entries(SECTOR_COLORS)) arr.push(k, v);
+      arr.push("#888");
+      return arr;
+    })();
+
+    const TOPOLOGY_COLORS = {
+      federated:   "#2ca02c",
+      hybrid:      "#1f77b4",
+      centralized: "#d62728"
+    };
+
+    // PDOK BRT-Achtergrondkaart raster
     const PDOK_STYLE = {
       version: 8,
       sources: {
@@ -177,41 +263,45 @@
         }
       },
       layers: [
-        {
-          id: "brt-layer",
-          type: "raster",
-          source: "brt-achtergrondkaart",
-          minzoom: 0,
-          maxzoom: 19
-        }
+        { id: "brt-layer", type: "raster", source: "brt-achtergrondkaart", minzoom: 0, maxzoom: 19 }
       ]
-    };
-
-    const TOPOLOGY_COLORS = {
-      federated:   "#2ca02c",
-      hybrid:      "#1f77b4",
-      centralized: "#d62728"
-    };
-    const STATUS_DASH = {
-      production: [1],
-      pilot:      [2, 1.5],
-      planned:    [0.6, 1.2],
-      concept:    [0.3, 1],
-      deprecated: [0.3, 1],
-      inactive:   [0.3, 1]
     };
 
     const map = new maplibregl.Map({
       container: "map",
       style: PDOK_STYLE,
-      center: [5.8, 52.15],
+      center: [5.45, 52.15],  // midden NL
       zoom: 7,
-      maxZoom: 14,
+      maxZoom: 15,
       minZoom: 5
     });
 
     map.addControl(new maplibregl.NavigationControl(), "top-left");
     map.addControl(new maplibregl.ScaleControl({ unit: "metric" }), "bottom-left");
+
+    // Active sectors = all by default; user kan deselect
+    let activeSectors = new Set(Object.keys(SECTOR_COLORS));
+
+    function applySectorFilter() {
+      const arr = Array.from(activeSectors);
+      // Filter both clustered source (handled by regenerating data)
+      // en de unclustered layer (via layout filter)
+      const filter = ["in", ["get", "sector"], ["literal", arr]];
+      if (map.getLayer("org-unclustered")) {
+        map.setFilter("org-unclustered", filter);
+      }
+      // Clusters zelf worden door MapLibre berekend op de source data;
+      // de simpelste aanpak is: source-data regenerateren als filter verandert.
+      const filtered = allOrgFeatures.filter(f => activeSectors.has(f.properties.sector));
+      if (map.getSource("organizations")) {
+        map.getSource("organizations").setData({
+          type: "FeatureCollection",
+          features: filtered
+        });
+      }
+    }
+
+    let allOrgFeatures = [];
 
     map.on("load", async () => {
       let data;
@@ -226,9 +316,7 @@
 
       // ----- Build orgs lookup -----
       const orgIndex = {};
-      for (const o of data.organizations) {
-        orgIndex[o.id] = o;
-      }
+      for (const o of data.organizations) orgIndex[o.id] = o;
 
       // ----- Connection features (lines) -----
       const connFeatures = [];
@@ -238,10 +326,7 @@
         if (!a || !b || !a.coord || !b.coord) continue;
         connFeatures.push({
           type: "Feature",
-          geometry: {
-            type: "LineString",
-            coordinates: [a.coord, b.coord]
-          },
+          geometry: { type: "LineString", coordinates: [a.coord, b.coord] },
           properties: {
             id: c.id,
             network: c.network_name || c.network,
@@ -253,9 +338,9 @@
         });
       }
 
-      // ----- Org features (circles) -----
-      const orgFeatures = data.organizations
-        .filter(o => o.coord)
+      // ----- Org features (points, colored by sector) -----
+      allOrgFeatures = data.organizations
+        .filter(o => o.coord && o.sector)
         .map(o => ({
           type: "Feature",
           geometry: { type: "Point", coordinates: o.coord },
@@ -263,19 +348,55 @@
             id: o.id,
             name: o.name,
             sector: o.sector,
-            region: o.region_iza,
+            region: o.region_iza || "",
             total_score: o.total_score,
             n_connections: (o.participating_in || []).length
           }
         }));
 
+      // ----- Count per sector (voor filter-paneel) -----
+      const sectorCount = {};
+      for (const f of allOrgFeatures) {
+        const s = f.properties.sector;
+        sectorCount[s] = (sectorCount[s] || 0) + 1;
+      }
+
+      // ----- Bouw filter-paneel -----
+      const filtersDiv = document.getElementById("filters");
+      for (const key of Object.keys(SECTOR_COLORS)) {
+        if (!sectorCount[key]) continue;  // geen data → skip filter
+        const wrap = document.createElement("div");
+        wrap.className = "filter-item";
+        wrap.innerHTML = `
+          <label>
+            <input type="checkbox" data-sector="${key}" checked>
+            <span class="swatch" style="background:${SECTOR_COLORS[key]}"></span>
+            ${SECTOR_LABELS[key] || key}
+            <span class="count">${sectorCount[key]}</span>
+          </label>
+        `;
+        filtersDiv.appendChild(wrap);
+      }
+      filtersDiv.addEventListener("change", (e) => {
+        const cb = e.target.closest("input[type=checkbox]");
+        if (!cb) return;
+        const sec = cb.dataset.sector;
+        if (cb.checked) activeSectors.add(sec);
+        else activeSectors.delete(sec);
+        applySectorFilter();
+      });
+
+      // ----- Sources -----
       map.addSource("connections", {
         type: "geojson",
         data: { type: "FeatureCollection", features: connFeatures }
       });
       map.addSource("organizations", {
         type: "geojson",
-        data: { type: "FeatureCollection", features: orgFeatures }
+        data: { type: "FeatureCollection", features: allOrgFeatures },
+        cluster: true,
+        clusterRadius: 45,
+        clusterMaxZoom: 11
       });
 
       // ----- Connection lines -----
@@ -294,9 +415,7 @@
           ],
           "line-width": [
             "interpolate", ["linear"], ["get", "final_score"],
-            0, 1.5,
-            0.5, 4,
-            1.0, 7
+            0, 1.5, 0.5, 4, 1.0, 7
           ],
           "line-dasharray": [
             "match",
@@ -310,46 +429,91 @@
         }
       });
 
-      // ----- Organization circles -----
+      // ----- Cluster circles -----
       map.addLayer({
-        id: "org-circles",
+        id: "clusters",
         type: "circle",
         source: "organizations",
+        filter: ["has", "point_count"],
         paint: {
-          "circle-radius": [
-            "interpolate", ["linear"], ["get", "total_score"],
-            0,    6,
-            0.3,  10,
-            0.6,  16,
-            1.0,  22
-          ],
           "circle-color": [
-            "case",
-            ["==", ["get", "total_score"], 0], "#999999",
-            "#0a5"
+            "step", ["get", "point_count"],
+            "#90caf9", 10,
+            "#42a5f5", 30,
+            "#1976d2"
           ],
-          "circle-opacity": 0.75,
+          "circle-radius": [
+            "step", ["get", "point_count"],
+            14, 10,
+            20, 30,
+            28
+          ],
+          "circle-stroke-width": 2,
+          "circle-stroke-color": "#fff",
+          "circle-opacity": 0.85
+        }
+      });
+      map.addLayer({
+        id: "cluster-count",
+        type: "symbol",
+        source: "organizations",
+        filter: ["has", "point_count"],
+        layout: {
+          "text-field": ["get", "point_count_abbreviated"],
+          "text-size": 12,
+          "text-font": ["Noto Sans Regular"]
+        },
+        paint: { "text-color": "#fff" }
+      });
+
+      // ----- Unclustered org points (colored by sector) -----
+      map.addLayer({
+        id: "org-unclustered",
+        type: "circle",
+        source: "organizations",
+        filter: ["!", ["has", "point_count"]],
+        paint: {
+          "circle-color": sectorColorMatch,
+          "circle-radius": [
+            "interpolate", ["linear"], ["zoom"],
+            6, 4,
+            10, 6,
+            13, 9
+          ],
+          "circle-opacity": 0.85,
           "circle-stroke-width": 1.5,
           "circle-stroke-color": "#fff"
         }
       });
 
-      // ----- Hover cursor -----
-      map.on("mouseenter", "org-circles", () => map.getCanvas().style.cursor = "pointer");
-      map.on("mouseleave", "org-circles", () => map.getCanvas().style.cursor = "");
-      map.on("mouseenter", "conn-lines", () => map.getCanvas().style.cursor = "pointer");
-      map.on("mouseleave", "conn-lines", () => map.getCanvas().style.cursor = "");
+      // ----- Hover cursors -----
+      for (const l of ["org-unclustered", "clusters", "conn-lines"]) {
+        map.on("mouseenter", l, () => map.getCanvas().style.cursor = "pointer");
+        map.on("mouseleave", l, () => map.getCanvas().style.cursor = "");
+      }
+
+      // ----- Cluster click: zoom in -----
+      map.on("click", "clusters", async (e) => {
+        const features = map.queryRenderedFeatures(e.point, { layers: ["clusters"] });
+        const clusterId = features[0].properties.cluster_id;
+        const source = map.getSource("organizations");
+        try {
+          const zoom = await source.getClusterExpansionZoom(clusterId);
+          map.easeTo({ center: features[0].geometry.coordinates, zoom });
+        } catch (err) { /* noop */ }
+      });
 
       // ----- Popups: orgs -----
-      map.on("click", "org-circles", (e) => {
+      map.on("click", "org-unclustered", (e) => {
         const p = e.features[0].properties;
         new maplibregl.Popup()
           .setLngLat(e.features[0].geometry.coordinates)
           .setHTML(`
             <h3>${p.name}</h3>
-            <div>${p.sector || ""} · ${p.region || ""}</div>
+            <div>${SECTOR_LABELS[p.sector] || p.sector}${p.region ? " · " + p.region : ""}</div>
             <div>Score: <span class="score">${Number(p.total_score).toFixed(3)}</span></div>
             <div>Connections: ${p.n_connections}</div>
+            <div class="needs-ver">⚠ needs verification (LLM-seed)</div>
           `)
           .addTo(map);
       });
@@ -369,13 +533,14 @@
           .addTo(map);
       });
 
-      // ----- Sidebar ranking -----
+      // ----- Sidebar ranking (top 15, score > 0) -----
       const tbl = document.getElementById("ranking");
       const rows = data.organizations
+        .filter(o => o.total_score > 0)
         .slice(0, 15)
         .map(o => `<tr><td>${o.name}</td><td>${o.total_score.toFixed(3)}</td></tr>`)
         .join("");
-      tbl.innerHTML = rows;
+      tbl.innerHTML = rows || `<tr><td colspan="2" style="color:#999">Nog geen scoring-data</td></tr>`;
     });
   </script>
 </body>

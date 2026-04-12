@@ -1,0 +1,17 @@
+id: gem-bunnik
+type: organization
+name: Gemeente Bunnik
+sector: gemeente
+country: NL
+locations:
+- city: Bunnik
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.066
+    lon: 5.1997
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: ggz-oost-brabant
+type: organization
+name: GGZ Oost Brabant
+sector: ggz
+country: NL
+locations:
+- city: Boekel
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6056
+    lon: 5.6781
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

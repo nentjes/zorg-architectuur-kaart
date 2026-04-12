@@ -1,4 +1,11 @@
-# Entities — Zorg Architectuur Kaart ontologie v0.2
+# Entities — Zorg Architectuur Kaart ontologie v0.2.1
+
+> **v0.2.1 (2026-04-12)** — minor bump: `organization.sector`-enum
+> uitgebreid met `revalidatie` en `ggd`. Reden: landelijke batch van
+> ~23 revalidatiecentra (Revalidatie Nederland) en 25 GGD'en (GGD
+> GHOR NL) kan anders niet schema-conform worden vastgelegd. Geen
+> breaking change.
+
 
 ## Waarom een ontologie
 

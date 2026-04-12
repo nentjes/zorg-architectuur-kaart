@@ -1,0 +1,20 @@
+id: hus
+type: organization
+name: "Huisartsen Utrecht Stad"
+aliases:
+  - "HUS"
+sector: huisarts
+subtype: "zorggroep"
+country: NL
+locations:
+  - city: "Utrecht"
+    province: "Utrecht"
+    country: NL
+region_iza: iza-midden-nederland
+networks:
+  - lsp
+  - trijn-platform
+sources:
+  - plan-trijn-midden-nederland-2025
+confidence: medium
+needs_verification: true

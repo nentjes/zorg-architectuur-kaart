@@ -1,0 +1,15 @@
+id: conn-trijn-hus-umc-utrecht
+type: connection
+organization_a: hus
+organization_b: umc-utrecht
+network: trijn-platform
+direction: bidirectional
+data_types:
+  - basic_dataset
+  - lab_result
+  - discharge_summary
+status: pilot
+sources:
+  - plan-trijn-midden-nederland-2025
+confidence: medium
+needs_verification: true

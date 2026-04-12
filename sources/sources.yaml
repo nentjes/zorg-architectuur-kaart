@@ -373,3 +373,36 @@ sources:
     notes: >
       Leveranciers-bron voor CityGIS — het ritregistratie-systeem
       gebruikt door RAV's, waaronder via Acute Zorg Euregio.
+
+  - id: epic-website
+    title: "Epic Systems — EPD productinformatie"
+    publisher: "Epic Systems Corporation"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://www.epic.com"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron voor Epic, het Amerikaanse EPD dat in
+      Nederland onder meer bij UMC Utrecht (HiX is primair, Epic
+      koppelingen) en St. Antonius draait. Mag nooit enige bron
+      zijn voor klant-claim.
+
+  - id: mips-clinisys-website
+    title: "MIPS / CliniSys — GLIMS laboratorium-informatiesysteem"
+    publisher: "CliniSys (MIPS Diagnostic)"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://www.clinisys.com"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron voor GLIMS, gebruikt door Labmicta.
+      Voor v0.3 (wanneer system.category `lis_lab` beschikbaar is)
+      relevant als bron voor de system-entry.

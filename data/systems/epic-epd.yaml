@@ -1,0 +1,16 @@
+id: epic-epd
+type: system
+name: "Epic EPD"
+aliases:
+  - "Epic"
+  - "Epic Systems EPD"
+category: epd_ziekenhuis
+vendor: epic
+# country_origin weggelaten — US past niet in v0.2 enum [NL,DE,BE,LU]
+# Zie v0.3-issue-6 in entities.md
+standards_supported:
+  - nl-core-r4
+sources:
+  - epic-website
+  - plan-trijn-midden-nederland-2025
+confidence: medium

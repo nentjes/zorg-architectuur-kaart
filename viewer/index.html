@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zorg Architectuur Kaart — v0.1.1</title>
+
+  <!-- MapLibre GL JS v4.7 — open-source, geen Google/Mapbox dependency -->
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    }
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 340px;
+    }
+    #sidebar {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 340px;
+      padding: 16px 20px;
+      background: #fafafa;
+      border-left: 1px solid #ddd;
+      overflow-y: auto;
+      box-sizing: border-box;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    #sidebar h1 {
+      font-size: 16px;
+      margin: 0 0 4px 0;
+    }
+    #sidebar h2 {
+      font-size: 13px;
+      margin: 18px 0 6px 0;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #555;
+    }
+    #sidebar .meta {
+      color: #777;
+      font-size: 11px;
+      margin-bottom: 12px;
+    }
+    #sidebar .legend-item {
+      display: flex;
+      align-items: center;
+      margin: 4px 0;
+    }
+    #sidebar .swatch {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      margin-right: 8px;
+      border: 1px solid rgba(0,0,0,0.2);
+    }
+    #sidebar .swatch.line {
+      width: 20px;
+      height: 3px;
+      border-radius: 0;
+      border: none;
+    }
+    #sidebar table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    #sidebar table td {
+      padding: 3px 4px;
+      border-bottom: 1px solid #eee;
+    }
+    #sidebar table td:last-child {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      color: #0a5;
+      font-weight: 600;
+    }
+    #sidebar .note {
+      font-size: 11px;
+      color: #888;
+      margin-top: 20px;
+      padding-top: 12px;
+      border-top: 1px solid #ddd;
+    }
+    .maplibregl-popup-content {
+      font-size: 12px;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      padding: 10px 14px;
+    }
+    .maplibregl-popup-content h3 {
+      margin: 0 0 4px 0;
+      font-size: 13px;
+    }
+    .maplibregl-popup-content .score {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0a5;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="sidebar">
+    <h1>Zorg Architectuur Kaart</h1>
+    <div class="meta">
+      Maturity Score v0.1.1 · gegenereerd uit YAML-bronnen in Git
+    </div>
+
+    <h2>Legenda — data-topologie</h2>
+    <div class="legend-item">
+      <span class="swatch" style="background:#2ca02c"></span>
+      Federated (Trijn-model, soevereiniteit)
+    </div>
+    <div class="legend-item">
+      <span class="swatch" style="background:#1f77b4"></span>
+      Hybrid (LSP, landelijk hub)
+    </div>
+    <div class="legend-item">
+      <span class="swatch" style="background:#d62728"></span>
+      Centralized (vendor-lock-in risico)
+    </div>
+    <div class="legend-item">
+      <span class="swatch" style="background:#999"></span>
+      Geen connections gescoord
+    </div>
+
+    <h2>Legenda — status</h2>
+    <div class="legend-item">
+      <span class="swatch line" style="background:#2ca02c"></span>
+      Production (volle lijn)
+    </div>
+    <div class="legend-item">
+      <span class="swatch line" style="background:#ff9900; background-image: linear-gradient(90deg, #ff9900 50%, transparent 50%); background-size: 8px 3px;"></span>
+      Pilot (streepjes)
+    </div>
+    <div class="legend-item">
+      <span class="swatch line" style="background:#aaa; background-image: linear-gradient(90deg, #aaa 30%, transparent 30%); background-size: 4px 3px;"></span>
+      Planned (dots)
+    </div>
+
+    <h2 id="ranking-heading">Top organizations</h2>
+    <table id="ranking"></table>
+
+    <div class="note">
+      Achtergrondkaart: <a href="https://www.pdok.nl" target="_blank" rel="noopener">PDOK BRT-Achtergrondkaart</a>
+      (Kadaster, CC-BY 4.0). Geen Google Maps. Geen Mapbox.<br><br>
+      Bronnen in <code>/sources/sources.yaml</code>.
+      Score-formule in <code>/schema/maturity-score.yaml</code>.
+    </div>
+  </div>
+
+  <script>
+    // PDOK BRT-Achtergrondkaart als vector-style
+    // Alternatief raster-style: https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/standaard/EPSG:3857/{z}/{x}/{y}.png
+    const PDOK_STYLE = {
+      version: 8,
+      sources: {
+        "brt-achtergrondkaart": {
+          type: "raster",
+          tiles: [
+            "https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/standaard/EPSG:3857/{z}/{x}/{y}.png"
+          ],
+          tileSize: 256,
+          attribution: '&copy; <a href="https://www.kadaster.nl">Kadaster</a> / PDOK (CC-BY 4.0)'
+        }
+      },
+      layers: [
+        {
+          id: "brt-layer",
+          type: "raster",
+          source: "brt-achtergrondkaart",
+          minzoom: 0,
+          maxzoom: 19
+        }
+      ]
+    };
+
+    const TOPOLOGY_COLORS = {
+      federated:   "#2ca02c",
+      hybrid:      "#1f77b4",
+      centralized: "#d62728"
+    };
+    const STATUS_DASH = {
+      production: [1],
+      pilot:      [2, 1.5],
+      planned:    [0.6, 1.2],
+      concept:    [0.3, 1],
+      deprecated: [0.3, 1],
+      inactive:   [0.3, 1]
+    };
+
+    const map = new maplibregl.Map({
+      container: "map",
+      style: PDOK_STYLE,
+      center: [5.8, 52.15],
+      zoom: 7,
+      maxZoom: 14,
+      minZoom: 5
+    });
+
+    map.addControl(new maplibregl.NavigationControl(), "top-left");
+    map.addControl(new maplibregl.ScaleControl({ unit: "metric" }), "bottom-left");
+
+    map.on("load", async () => {
+      let data;
+      try {
+        const resp = await fetch("data/maturity_map.json");
+        data = await resp.json();
+      } catch (e) {
+        document.getElementById("ranking-heading").innerText = "FOUT bij laden data";
+        console.error(e);
+        return;
+      }
+
+      // ----- Build orgs lookup -----
+      const orgIndex = {};
+      for (const o of data.organizations) {
+        orgIndex[o.id] = o;
+      }
+
+      // ----- Connection features (lines) -----
+      const connFeatures = [];
+      for (const c of data.connections) {
+        const a = orgIndex[c.organization_a];
+        const b = orgIndex[c.organization_b];
+        if (!a || !b || !a.coord || !b.coord) continue;
+        connFeatures.push({
+          type: "Feature",
+          geometry: {
+            type: "LineString",
+            coordinates: [a.coord, b.coord]
+          },
+          properties: {
+            id: c.id,
+            network: c.network_name || c.network,
+            topology: c.data_topology,
+            status: c.status,
+            final_score: c.final_score,
+            data_types: (c.data_types || []).join(", ")
+          }
+        });
+      }
+
+      // ----- Org features (circles) -----
+      const orgFeatures = data.organizations
+        .filter(o => o.coord)
+        .map(o => ({
+          type: "Feature",
+          geometry: { type: "Point", coordinates: o.coord },
+          properties: {
+            id: o.id,
+            name: o.name,
+            sector: o.sector,
+            region: o.region_iza,
+            total_score: o.total_score,
+            n_connections: (o.participating_in || []).length
+          }
+        }));
+
+      map.addSource("connections", {
+        type: "geojson",
+        data: { type: "FeatureCollection", features: connFeatures }
+      });
+      map.addSource("organizations", {
+        type: "geojson",
+        data: { type: "FeatureCollection", features: orgFeatures }
+      });
+
+      // ----- Connection lines -----
+      map.addLayer({
+        id: "conn-lines",
+        type: "line",
+        source: "connections",
+        paint: {
+          "line-color": [
+            "match",
+            ["get", "topology"],
+            "federated",   TOPOLOGY_COLORS.federated,
+            "hybrid",      TOPOLOGY_COLORS.hybrid,
+            "centralized", TOPOLOGY_COLORS.centralized,
+            "#888"
+          ],
+          "line-width": [
+            "interpolate", ["linear"], ["get", "final_score"],
+            0, 1.5,
+            0.5, 4,
+            1.0, 7
+          ],
+          "line-dasharray": [
+            "match",
+            ["get", "status"],
+            "production", ["literal", [1]],
+            "pilot",      ["literal", [2, 1.5]],
+            "planned",    ["literal", [0.6, 1.2]],
+            ["literal", [0.3, 1]]
+          ],
+          "line-opacity": 0.85
+        }
+      });
+
+      // ----- Organization circles -----
+      map.addLayer({
+        id: "org-circles",
+        type: "circle",
+        source: "organizations",
+        paint: {
+          "circle-radius": [
+            "interpolate", ["linear"], ["get", "total_score"],
+            0,    6,
+            0.3,  10,
+            0.6,  16,
+            1.0,  22
+          ],
+          "circle-color": [
+            "case",
+            ["==", ["get", "total_score"], 0], "#999999",
+            "#0a5"
+          ],
+          "circle-opacity": 0.75,
+          "circle-stroke-width": 1.5,
+          "circle-stroke-color": "#fff"
+        }
+      });
+
+      // ----- Hover cursor -----
+      map.on("mouseenter", "org-circles", () => map.getCanvas().style.cursor = "pointer");
+      map.on("mouseleave", "org-circles", () => map.getCanvas().style.cursor = "");
+      map.on("mouseenter", "conn-lines", () => map.getCanvas().style.cursor = "pointer");
+      map.on("mouseleave", "conn-lines", () => map.getCanvas().style.cursor = "");
+
+      // ----- Popups: orgs -----
+      map.on("click", "org-circles", (e) => {
+        const p = e.features[0].properties;
+        new maplibregl.Popup()
+          .setLngLat(e.features[0].geometry.coordinates)
+          .setHTML(`
+            <h3>${p.name}</h3>
+            <div>${p.sector || ""} · ${p.region || ""}</div>
+            <div>Score: <span class="score">${Number(p.total_score).toFixed(3)}</span></div>
+            <div>Connections: ${p.n_connections}</div>
+          `)
+          .addTo(map);
+      });
+
+      // ----- Popups: connections -----
+      map.on("click", "conn-lines", (e) => {
+        const p = e.features[0].properties;
+        new maplibregl.Popup()
+          .setLngLat(e.lngLat)
+          .setHTML(`
+            <h3>${p.network}</h3>
+            <div>Status: ${p.status}</div>
+            <div>Topologie: ${p.topology}</div>
+            <div>Data: ${p.data_types}</div>
+            <div>Score: <span class="score">${Number(p.final_score).toFixed(3)}</span></div>
+          `)
+          .addTo(map);
+      });
+
+      // ----- Sidebar ranking -----
+      const tbl = document.getElementById("ranking");
+      const rows = data.organizations
+        .slice(0, 15)
+        .map(o => `<tr><td>${o.name}</td><td>${o.total_score.toFixed(3)}</td></tr>`)
+        .join("");
+      tbl.innerHTML = rows;
+    });
+  </script>
+</body>
+</html>

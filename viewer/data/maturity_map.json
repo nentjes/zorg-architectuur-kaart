@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "schema_version": "0.1.1",
+    "generated_at": "2026-04-12T15:47:02",
+    "n_connections": 3,
+    "n_organizations_scored": 15,
+    "formula": {
+      "per_connection": {
+        "raw": "paradigm_w * topology_w * status_w * data_w * recency_w",
+        "final": "raw * conform_w * open_w",
+        "knockout": "if any knockouts match: final = 0"
+      },
+      "per_organization": {
+        "aggregate": "sum of final_score over participating connections"
+      }
+    }
+  },
+  "connections": [
+    {
+      "id": "conn-lsp-hzt-tao-ua",
+      "organization_a": "hzt",
+      "organization_b": "tao-ua",
+      "network": "lsp",
+      "network_name": "Landelijk Schakelpunt (LSP)",
+      "data_topology": "hybrid",
+      "status": "production",
+      "data_types": [
+        "medication"
+      ],
+      "breakdown": {
+        "paradigm_label": "lsp",
+        "paradigm_w": 0.6,
+        "topology_w": 1.0,
+        "status_w": 1.0,
+        "data_w": 0.8,
+        "recency_w": 1.0,
+        "conform_w": 1.0,
+        "open_w": 1.0
+      },
+      "raw_score": 0.48,
+      "final_score": 0.48
+    },
+    {
+      "id": "conn-trijn-hus-umc-utrecht",
+      "organization_a": "hus",
+      "organization_b": "umc-utrecht",
+      "network": "trijn-platform",
+      "network_name": "Trijn federatief zorgdata-platform Midden-Nederland",
+      "data_topology": "federated",
+      "status": "pilot",
+      "data_types": [
+        "basic_dataset",
+        "lab_result",
+        "discharge_summary"
+      ],
+      "breakdown": {
+        "paradigm_label": "fhir_api",
+        "paradigm_w": 1.0,
+        "topology_w": 1.2,
+        "status_w": 0.5,
+        "data_w": 0.7667,
+        "recency_w": 1.0,
+        "conform_w": 1.0,
+        "open_w": 1.0
+      },
+      "raw_score": 0.46,
+      "final_score": 0.46
+    },
+    {
+      "id": "conn-rdh-twente-mst-carintreggeland",
+      "organization_a": "carintreggeland",
+      "organization_b": "mst",
+      "network": "rdh-twente",
+      "network_name": "Regionale Datahub Twente",
+      "data_topology": "centralized",
+      "status": "planned",
+      "data_types": [
+        "discharge_summary",
+        "care_transfer",
+        "basic_dataset"
+      ],
+      "breakdown": {
+        "paradigm_label": "fhir_api",
+        "paradigm_w": 1.0,
+        "topology_w": 0.8,
+        "status_w": 0.1,
+        "data_w": 0.9,
+        "recency_w": 1.0,
+        "conform_w": 1.0,
+        "open_w": 1.0
+      },
+      "raw_score": 0.072,
+      "final_score": 0.072
+    }
+  ],
+  "organizations": [
+    {
+      "id": "hzt",
+      "name": "Huisartsenzorg Twente",
+      "sector": "huisarts",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.793,
+        52.2661
+      ],
+      "total_score": 0.48,
+      "participating_in": [
+        "conn-lsp-hzt-tao-ua"
+      ]
+    },
+    {
+      "id": "tao-ua",
+      "name": "Twentse Apothekers Organisatie / Unie der Apotheken",
+      "sector": "apotheek",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.48,
+      "participating_in": [
+        "conn-lsp-hzt-tao-ua"
+      ]
+    },
+    {
+      "id": "hus",
+      "name": "Huisartsen Utrecht Stad",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.46,
+      "participating_in": [
+        "conn-trijn-hus-umc-utrecht"
+      ]
+    },
+    {
+      "id": "umc-utrecht",
+      "name": "Universitair Medisch Centrum Utrecht",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.46,
+      "participating_in": [
+        "conn-trijn-hus-umc-utrecht"
+      ]
+    },
+    {
+      "id": "carintreggeland",
+      "name": "Carintreggeland",
+      "sector": "vvt",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.793,
+        52.2661
+      ],
+      "total_score": 0.072,
+      "participating_in": [
+        "conn-rdh-twente-mst-carintreggeland"
+      ]
+    },
+    {
+      "id": "mst",
+      "name": "Medisch Spectrum Twente",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.072,
+      "participating_in": [
+        "conn-rdh-twente-mst-carintreggeland"
+      ]
+    },
+    {
+      "id": "acute-zorg-euregio",
+      "name": "Acute Zorg Euregio",
+      "sector": "ambulance",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "labmicta",
+      "name": "Labmicta",
+      "sector": "zbc",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.793,
+        52.2661
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mediant",
+      "name": "Mediant Geestelijke Gezondheidszorg",
+      "sector": "ggz",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rhgv",
+      "name": "Regio Huisartsen Gooi & Vechtstreek",
+      "sector": "huisarts",
+      "region_iza": "iza-gooi-en-vechtstreek",
+      "coord": [
+        5.176,
+        52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "st-antonius",
+      "name": "St. Antonius Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0806,
+        52.0296
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "tergooi-mc",
+      "name": "Tergooi MC",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-gooi-en-vechtstreek",
+      "coord": [
+        5.176,
+        52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vivium-zorggroep",
+      "name": "Vivium Zorggroep",
+      "sector": "vvt",
+      "region_iza": "iza-gooi-en-vechtstreek",
+      "coord": [
+        5.1612,
+        52.2967
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zgt",
+      "name": "Ziekenhuisgroep Twente",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.6604,
+        52.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorgschakel-enschede",
+      "name": "Zorgschakel Enschede",
+      "sector": "huisarts",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    }
+  ]
+}

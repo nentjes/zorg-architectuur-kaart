@@ -39,10 +39,24 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
 SCHEMA_FILE = REPO_ROOT / "schema" / "maturity-score.yaml"
-BUILD_DIR = REPO_ROOT / "build"
-OUTPUT_FILE = BUILD_DIR / "maturity.json"
+VIEWER_DATA_DIR = REPO_ROOT / "viewer" / "data"
+OUTPUT_FILE = VIEWER_DATA_DIR / "maturity_map.json"
 
 SCHEMA_VERSION = "0.1.1"
+
+# Hardcoded geocode voor cities in de huidige dataset.
+# v0.3-issue: vervangen door PDOK Locatieserver lookup met caching.
+# Coördinaten in [lon, lat] WGS84 (GeoJSON-conventie).
+CITY_COORDS: dict[str, list[float]] = {
+    "Enschede":   [6.8937, 52.2215],
+    "Hengelo":    [6.7930, 52.2661],
+    "Almelo":     [6.6604, 52.3508],
+    "Utrecht":    [5.1214, 52.0907],
+    "Nieuwegein": [5.0806, 52.0296],
+    "Hilversum":  [5.1760, 52.2292],
+    "Blaricum":   [5.2500, 52.2711],
+    "Naarden":    [5.1612, 52.2967],
+}
 
 
 # ---------------------------------------------------------------
@@ -252,6 +266,8 @@ def score_connection(
         "organization_a": connection["organization_a"],
         "organization_b": connection["organization_b"],
         "network": network_id,
+        "network_name": network.get("name", network_id),
+        "data_topology": network.get("data_topology"),
         "status": connection["status"],
         "data_types": connection.get("data_types") or [],
         "breakdown": {
@@ -273,21 +289,47 @@ def score_connection(
 # Aggregation per organization
 # ---------------------------------------------------------------
 
+def geocode_organization(org: dict) -> list[float] | None:
+    """Return [lon, lat] for the first location with a known city."""
+    for loc in org.get("locations") or []:
+        city = loc.get("city")
+        if city and city in CITY_COORDS:
+            return CITY_COORDS[city]
+    return None
+
+
 def aggregate_per_organization(
     scored_connections: list[dict],
     entities: dict,
 ) -> list[dict]:
+    """Include ALL organizations, also those without connections."""
     totals: dict[str, dict] = {}
+
+    # Step 1: seed with ALL organizations (score 0 if no connections)
+    for org_id, org in entities.get("organization", {}).items():
+        totals[org_id] = {
+            "id": org_id,
+            "name": org.get("name", org_id),
+            "sector": org.get("sector"),
+            "region_iza": org.get("region_iza"),
+            "coord": geocode_organization(org),  # [lon, lat] or None
+            "total_score": 0.0,
+            "participating_in": [],
+        }
+
+    # Step 2: accumulate scores from connections
     for conn in scored_connections:
         for role in ("organization_a", "organization_b"):
             org_id = conn[role]
             if org_id not in totals:
-                org = entities["organization"].get(org_id, {})
+                # connection references an unknown org — should not happen
+                # if cross-refs are valid, but degrade gracefully
                 totals[org_id] = {
                     "id": org_id,
-                    "name": org.get("name", org_id),
-                    "sector": org.get("sector"),
-                    "region_iza": org.get("region_iza"),
+                    "name": org_id,
+                    "sector": None,
+                    "region_iza": None,
+                    "coord": None,
                     "total_score": 0.0,
                     "participating_in": [],
                 }
@@ -365,7 +407,7 @@ def main() -> int:
         json.dump(output, sys.stdout, indent=2, ensure_ascii=False)
         sys.stdout.write("\n")
     else:
-        BUILD_DIR.mkdir(exist_ok=True)
+        VIEWER_DATA_DIR.mkdir(parents=True, exist_ok=True)
         with OUTPUT_FILE.open("w", encoding="utf-8") as f:
             json.dump(output, f, indent=2, ensure_ascii=False)
             f.write("\n")

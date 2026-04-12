@@ -14,5 +14,10 @@ locations:
     lon: 4.7044
 sources:
 - claude-knowledge-2026-04
-confidence: low
+- gemini-ggz-research-2026-04
+confidence: medium
 needs_verification: true
+systems:
+- nedap-ons
+notes:
+- 'uitzondering: volledig op Nedap'

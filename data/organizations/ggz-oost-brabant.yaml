@@ -12,5 +12,11 @@ locations:
     lon: 5.6781
 sources:
 - claude-knowledge-2026-04
-confidence: low
+- gemini-ggz-research-2026-04
+confidence: medium
 needs_verification: true
+systems:
+- nexus-kis
+- tenzinger-fier
+notes:
+- Nexus voor klinisch

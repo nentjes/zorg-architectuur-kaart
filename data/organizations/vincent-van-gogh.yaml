@@ -12,5 +12,11 @@ locations:
     lon: 5.9744
 sources:
 - claude-knowledge-2026-04
-confidence: low
+- gemini-ggz-research-2026-04
+confidence: medium
 needs_verification: true
+systems:
+- nedap-ons
+- tenzinger-fier
+notes:
+- focus op VVT-connectie

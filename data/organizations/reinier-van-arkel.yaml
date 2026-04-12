@@ -1,22 +1,19 @@
-id: emergis
+id: reinier-van-arkel
 type: organization
-name: Emergis
+name: Reinier van Arkel
 sector: ggz
 subtype: geintegreerd
 country: NL
 locations:
-- city: Goes
-  province: Zeeland
+- city: '''s-Hertogenbosch'
+  province: Noord-Brabant
   country: NL
   coordinates:
-    lat: 51.5048
-    lon: 3.8881
+    lat: 51.6978
+    lon: 5.3037
+systems:
+- tenzinger-user
 sources:
-- claude-knowledge-2026-04
 - gemini-ggz-research-2026-04
 confidence: medium
 needs_verification: true
-systems:
-- tenzinger-user
-notes:
-- GGZ Zeeland

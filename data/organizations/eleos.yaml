@@ -1,23 +1,23 @@
-id: kwintes
+id: eleos
 type: organization
-name: Kwintes
+name: Eleos
+aliases:
+- De Hoop/Eleos
 sector: ggz
-subtype: beschermd-wonen
+subtype: confessioneel
 country: NL
 locations:
-- city: Zeist
+- city: Amersfoort
   province: Utrecht
   country: NL
   coordinates:
-    lat: 52.0894
-    lon: 5.2324
-region_iza: iza-midden-nederland
+    lat: 52.1561
+    lon: 5.3878
+systems:
+- tenzinger-user
 sources:
-- claude-knowledge-2026-04
 - gemini-ggz-research-2026-04
 confidence: medium
 needs_verification: true
-systems:
-- mextra
 notes:
-- begeleid wonen
+- Christelijke GGZ, landelijk verspreid

@@ -1,0 +1,7 @@
+id: nexus-ag
+type: vendor
+name: Nexus AG
+country_origin: DE
+sources:
+- gemini-ggz-research-2026-04
+confidence: medium

@@ -12,5 +12,11 @@ locations:
     lon: 4.3097
 sources:
 - claude-knowledge-2026-04
-confidence: low
+- gemini-ggz-research-2026-04
+confidence: medium
 needs_verification: true
+systems:
+- tenzinger-user
+- tenzinger-fier
+notes:
+- grootste GGZ-speler NL

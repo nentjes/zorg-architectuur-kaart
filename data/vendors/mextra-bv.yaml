@@ -1,0 +1,7 @@
+id: mextra-bv
+type: vendor
+name: Mextra
+country_origin: NL
+sources:
+- gemini-ggz-research-2026-04
+confidence: medium

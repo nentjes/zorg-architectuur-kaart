@@ -1,0 +1,11 @@
+id: nexus-kis
+type: system
+name: Nexus KIS
+aliases:
+- Nexus
+category: epd_msz
+vendor: nexus-ag
+country_origin: DE
+sources:
+- gemini-ggz-research-2026-04
+confidence: medium

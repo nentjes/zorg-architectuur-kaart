@@ -1,22 +1,21 @@
-id: emergis
+id: ggz-ingeest
 type: organization
-name: Emergis
+name: GGZ inGeest
 sector: ggz
 subtype: geintegreerd
 country: NL
 locations:
-- city: Goes
-  province: Zeeland
+- city: Amsterdam
+  province: Noord-Holland
   country: NL
   coordinates:
-    lat: 51.5048
-    lon: 3.8881
+    lat: 52.3344
+    lon: 4.8661
+systems:
+- epic-epd
 sources:
-- claude-knowledge-2026-04
 - gemini-ggz-research-2026-04
 confidence: medium
 needs_verification: true
-systems:
-- tenzinger-user
 notes:
-- GGZ Zeeland
+- 'Uitzondering: draait mee op Epic-stack van Amsterdam UMC'

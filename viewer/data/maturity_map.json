@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-12T18:56:31",
+    "generated_at": "2026-04-12T19:57:06",
     "n_connections": 3,
-    "n_organizations_scored": 373,
+    "n_organizations_scored": 376,
     "formula": {
       "per_connection": {
         "raw": "paradigm_w * topology_w * status_w * data_w * recency_w",
@@ -971,6 +971,18 @@
       "participating_in": []
     },
     {
+      "id": "eleos",
+      "name": "Eleos",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "elkerliek",
       "name": "Elkerliek Ziekenhuis",
       "sector": "ziekenhuis",
@@ -1806,6 +1818,18 @@
       "coord": [
         5.7717,
         53.2042
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-ingeest",
+      "name": "GGZ inGeest",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.8661,
+        52.3344
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -3450,6 +3474,18 @@
       "coord": [
         4.3642,
         52.0
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "reinier-van-arkel",
+      "name": "Reinier van Arkel",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.3037,
+        51.6978
       ],
       "total_score": 0.0,
       "participating_in": []

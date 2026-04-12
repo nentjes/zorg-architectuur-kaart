@@ -12,5 +12,10 @@ locations:
     lon: 6.2128
 sources:
 - claude-knowledge-2026-04
-confidence: low
+- gemini-ggz-research-2026-04
+confidence: medium
 needs_verification: true
+systems:
+- chipsoft-hix
+notes:
+- 'uitzondering: HiX i.p.v. Tenzinger'

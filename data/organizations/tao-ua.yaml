@@ -1,0 +1,23 @@
+id: tao-ua
+type: organization
+name: "Twentse Apothekers Organisatie / Unie der Apotheken"
+aliases:
+  - "TAO-UA"
+  - "TAO"
+sector: apotheek
+subtype: "samenwerkingsverband"
+country: NL
+locations:
+  - city: "Enschede"
+    province: "Overijssel"
+    country: NL
+region_iza: iza-twente
+systems:
+  - pharmacom
+networks:
+  - rdh-twente
+  - lsp
+sources:
+  - plan-rdh-twente-2025
+confidence: medium
+needs_verification: true

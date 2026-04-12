@@ -1,0 +1,17 @@
+id: conn-rdh-twente-mst-carintreggeland
+type: connection
+organization_a: carintreggeland
+organization_b: mst
+network: rdh-twente
+direction: b_to_a  # eOverdracht van MST (b) naar Carintreggeland (a)
+data_types:
+  - discharge_summary
+  - care_transfer
+  - basic_dataset
+status: planned
+realizes_usecases:
+  - uc-acp-in-de-keten
+sources:
+  - plan-rdh-twente-2025
+confidence: medium
+needs_verification: true

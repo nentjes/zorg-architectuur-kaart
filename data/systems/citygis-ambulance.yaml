@@ -1,0 +1,12 @@
+id: citygis-ambulance
+type: system
+name: "CityGIS ritregistratie ambulance"
+aliases:
+  - "CityGIS"
+category: ritregistratie_ambulance
+vendor: citygis
+country_origin: NL
+sources:
+  - citygis-website
+  - plan-rdh-twente-2025
+confidence: medium

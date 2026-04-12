@@ -1,0 +1,14 @@
+id: pharmacom
+type: system
+name: "PharmaPartners Pharmacom"
+aliases:
+  - "Pharmacom"
+category: ais_apotheek
+vendor: pharmapartners
+country_origin: NL
+standards_supported:
+  - zib-2020
+sources:
+  - pharmapartners-website
+  - plan-rdh-twente-2025
+confidence: high

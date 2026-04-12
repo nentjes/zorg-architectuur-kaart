@@ -1,0 +1,21 @@
+id: hzt
+type: organization
+name: "Huisartsenzorg Twente"
+aliases:
+  - "HZT"
+sector: huisarts
+subtype: "zorggroep"
+country: NL
+locations:
+  - city: "Hengelo"
+    province: "Overijssel"
+    country: NL
+region_iza: iza-twente
+systems:
+  - viplive
+networks:
+  - rdh-twente
+  - lsp
+sources:
+  - plan-rdh-twente-2025
+confidence: high

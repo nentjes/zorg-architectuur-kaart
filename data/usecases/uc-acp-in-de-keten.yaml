@@ -9,9 +9,17 @@ description: >
   op het moment van zorgverlening beschikbaar. Doel: voorkomen
   van onbedoelde opnames, behandelingen of reanimaties die strijdig
   zijn met de wens van de patiënt.
+
+  Landelijke basis: de richtlijn Proactieve Zorgplanning van PZNL
+  (Palliatieve Zorg Nederland). Operationele pilot: Stichting
+  CareCodex in de regio Twente werkt aan uniform digitaliseren en
+  herkenbaar overdragen van ACP-gegevens tussen ketenpartners.
+  't Gezond Gooi noemt ACP als één van de negen klantreizen zonder
+  systeemaanwijzing — daar staat de use case nog op level 1 (Papier).
 domain: acute_zorg
-maturity_level: 1
-realized_by_connections: []
+maturity_level: 2
+realized_by_connections:
+  - conn-rdh-twente-mst-carintreggeland
 realized_by_systems: []
 regions:
   - iza-twente
@@ -22,4 +30,6 @@ iza_goal_link: "passende zorg — de juiste zorg op de juiste plek"
 sources:
   - plan-rdh-twente-2025
   - plan-gezond-gooi-2025
+  - pznl-richtlijn-proactieve-zorgplanning
+  - carecodex-pilot-twente
 confidence: medium

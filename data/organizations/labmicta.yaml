@@ -1,0 +1,19 @@
+id: labmicta
+type: organization
+name: "Labmicta"
+aliases:
+  - "LabMicTA"
+sector: zbc
+subtype: "lab"
+country: NL
+locations:
+  - city: "Hengelo"
+    province: "Overijssel"
+    country: NL
+region_iza: iza-twente
+networks:
+  - rdh-twente
+sources:
+  - plan-rdh-twente-2025
+confidence: medium
+needs_verification: true

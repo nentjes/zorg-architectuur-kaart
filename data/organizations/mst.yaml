@@ -1,0 +1,20 @@
+id: mst
+type: organization
+name: "Medisch Spectrum Twente"
+aliases:
+  - "MST"
+sector: ziekenhuis
+subtype: "topklinisch"
+country: NL
+locations:
+  - city: "Enschede"
+    province: "Overijssel"
+    country: NL
+region_iza: iza-twente
+systems:
+  - chipsoft-hix
+networks:
+  - rdh-twente
+sources:
+  - plan-rdh-twente-2025
+confidence: high

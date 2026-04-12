@@ -1,0 +1,16 @@
+id: chipsoft-hix
+type: system
+name: "ChipSoft HiX"
+aliases:
+  - "HiX"
+  - "HiX 6.3"
+category: epd_ziekenhuis
+vendor: chipsoft
+country_origin: NL
+standards_supported:
+  - zib-2020
+  - nl-core-r4
+sources:
+  - chipsoft-website
+  - plan-rdh-twente-2025
+confidence: high

@@ -509,3 +509,67 @@ gevuld (bijvoorbeeld `validated_at` op Connections vóór de eerste v0.5
 seeding). Dat is oké — de schema-validator accepteert afwezige optionele
 velden. De ontologie-guard waarschuwt alleen bij velden die in geen enkele
 entiteit-definitie voorkomen.
+
+## Naming-conventies voor `id`
+
+Vastgesteld 2026-04-12 in overleg met Gemini (zie
+[`/overleg/gemini/2026-04-12-03-antwoord-na-sprint-0.md`](../overleg/gemini/2026-04-12-03-antwoord-na-sprint-0.md)).
+
+**Kernregel:** *geen type-prefix, tenzij de naam anders collision-risico
+heeft met een andere entiteit.*
+
+- **Program, Standard, Network, Vendor, Region, System, Organization:**
+  geen prefix. De folder `/data/<type>/` geeft het type al aan, en de
+  korte vorm is URL- en grep-vriendelijker.
+  Voorbeelden: `vipp5`, `zib-2020`, `lsp`, `mitz`, `microsoft-nl`,
+  `iza-twente`, `chipsoft-hix`, `mst`.
+
+- **UseCase:** verplicht prefix `uc-`. Use-case-namen zijn functioneel
+  ("ACP in de keten", "360-graden beeld") en botsen anders met
+  organisaties of locaties. Voorbeelden: `uc-acp-in-de-keten`,
+  `uc-360-graden-beeld`.
+
+- **Connection:** verplicht prefix `conn-`. Een connection-id is
+  synthetisch (geen eigen menselijke naam) en moet herkenbaar zijn
+  als edge. Voorbeelden: `conn-lsp-hzt-tao-ua`,
+  `conn-rdh-twente-mst-carintreggeland`.
+
+- **Regio's van type `iza`:** mogen het natuurlijke prefix `iza-`
+  gebruiken als het de leesbaarheid verbetert (`iza-twente`,
+  `iza-gooi-en-vechtstreek`, `iza-midden-nederland`) — dat is geen
+  type-prefix maar een semantische prefix (het regio-regime).
+  Regio's van andere types (`roaz`, `ggd`, `rso`) volgen dezelfde
+  logica: `roaz-euregio`, `ggd-twente`, etc.
+
+- **Multi-sector systemen (bijv. Nedap Ons):** één system-entry per
+  productnaam, niet één per sector. Als in v0.2 de `category`-enum
+  geen passende waarde heeft, kiezen we de *dominante* sector en
+  markeren we het gat voor v0.3. Nedap Ons → `ecd_vvt`, ook al
+  wordt het bij Mediant in GGZ-configuratie gebruikt.
+
+Deze conventies worden afgedwongen door de `governance-ontology-guard`
+bij PR-review, niet door JSON Schema (want JSON Schema heeft geen
+cross-entity-patronen per type).
+
+## Open v0.3-issues
+
+Uit de Sprint 0/1-ervaring zijn de volgende schema-gaten vastgesteld
+die in v0.3 opgelost worden:
+
+- **v0.3-1** `network.operator` uitbreiden zodat het ook naar een
+  `organization` kan verwijzen (of `operator_org` als apart veld).
+  Reden: VZVZ en Zorgnetoost zijn juridische samenwerkingsverbanden,
+  geen leveranciers. Voor nu: vendor-hack met `vendor_role: operator`.
+- **v0.3-2** `standard.standard_family`-enum uitbreiden met
+  `informatiestandaard` / `richtlijn`. Reden: de PZNL-richtlijn
+  Proactieve Zorgplanning past nergens in de huidige enum.
+- **v0.3-3** `system.category`-enum uitbreiden met `lis_lab`. Reden:
+  Labmicta / GLIMS kan nu niet als system worden vastgelegd.
+- **v0.3-4** `organization.sector`-enum uitbreiden met
+  `samenwerkingsverband` (of `overig` + `subtype`). Reden: ROAZ'en
+  zoals Acute Zorg Euregio en thematische stichtingen (CareCodex,
+  PZNL) hebben geen passende sector.
+- **v0.3-5** `system.version`-veld toevoegen. Voor nu gebruiken we
+  `aliases: ["HiX 6.3"]` — werkt voor display maar niet voor
+  version-drift-analyse.
+entiteit-definitie voorkomen.

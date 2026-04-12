@@ -254,3 +254,122 @@ sources:
       Mitz is de opvolger van het LSP-opt-in voor brede
       toestemming. Basisregister voor alle `network`-entities van
       `network_type: toestemming`.
+
+  # -------------------------------------------------------------
+  # Zorgstandaarden (richtlijnen)
+  # -------------------------------------------------------------
+
+  - id: pznl-richtlijn-proactieve-zorgplanning
+    title: "Richtlijn Proactieve Zorgplanning (Advance Care Planning)"
+    publisher: "Palliatieve Zorg Nederland (PZNL)"
+    publisher_type: standaardisatie-organisatie
+    date: "2022"
+    url: "https://palliaweb.nl"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: standaard
+    access: openbaar
+    license: onbekend
+    notes: >
+      Landelijke richtlijn voor Advance Care Planning. Past nog niet
+      in het v0.2-`standard.standard_family` enum — zie v0.3-issue 2
+      in /schema/entities.md. Voor nu als bron-entry gebruikt om de
+      `uc-acp-in-de-keten`-usecase te onderbouwen. URL naar de
+      canonieke richtlijn op palliaweb.nl nog te verifiëren.
+
+  - id: carecodex-pilot-twente
+    title: "Stichting CareCodex — pilot uniforme ACP-overdracht Twente"
+    publisher: "Stichting CareCodex"
+    publisher_type: samenwerkingsverband
+    date: "2024"
+    url: ""
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: plan
+    access: openbaar
+    license: onbekend
+    notes: >
+      Door Gemini genoemd (antwoord #3) als de eerste operationele
+      pilot in Nederland waarin ACP-gegevens uniform worden
+      gedigitaliseerd en overgedragen tussen ketenpartners in Twente.
+      Bevestigt dat `uc-acp-in-de-keten` op maturity_level 2
+      (Technisch mogelijk / PoC) staat. URL nog te verifiëren.
+
+  # -------------------------------------------------------------
+  # Leveranciers-websites (voor system-entries)
+  # -------------------------------------------------------------
+
+  - id: chipsoft-website
+    title: "ChipSoft — HiX EPD productinformatie"
+    publisher: "ChipSoft"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://www.chipsoft.com/nl/hix"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron. Mag niet de enige bron zijn voor claim
+      "organisatie X draait op HiX" — moet altijd gecombineerd met
+      een onafhankelijke bron (jaarverslag, aanbesteding, plan).
+
+  - id: nedap-website
+    title: "Nedap Healthcare — Ons productinformatie"
+    publisher: "Nedap"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://nedap.com/healthcare"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron. Dezelfde regel als hierboven: niet enige
+      bron voor klant-claims.
+
+  - id: pharmapartners-website
+    title: "PharmaPartners — Medicom en Pharmacom productinformatie"
+    publisher: "PharmaPartners"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://www.pharmapartners.nl"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron voor Medicom (HIS) en Pharmacom (AIS).
+
+  - id: topicus-viplive-website
+    title: "Topicus — VIPLive keten-informatiesysteem"
+    publisher: "Topicus Healthcare"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://www.topicus.nl/zorg/oplossingen/viplive"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron voor VIPLive, het ketensamenwerkings-platform
+      gebruikt door onder meer HZT (Huisartsenzorg Twente).
+
+  - id: citygis-website
+    title: "CityGIS — ritregistratie ambulance"
+    publisher: "CityGIS"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://www.citygis.nl"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron voor CityGIS — het ritregistratie-systeem
+      gebruikt door RAV's, waaronder via Acute Zorg Euregio.

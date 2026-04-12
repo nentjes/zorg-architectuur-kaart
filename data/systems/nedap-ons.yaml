@@ -1,0 +1,15 @@
+id: nedap-ons
+type: system
+name: "Nedap Ons"
+aliases:
+  - "Ons"
+  - "Nedap ONS"
+category: ecd_vvt
+vendor: nedap
+country_origin: NL
+standards_supported:
+  - zib-2020
+sources:
+  - nedap-website
+  - plan-rdh-twente-2025
+confidence: high

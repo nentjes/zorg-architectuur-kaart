@@ -1,0 +1,9 @@
+id: citygis
+type: vendor
+name: "CityGIS"
+country: NL
+vendor_role: product_vendor
+website: "https://www.citygis.nl"
+sources:
+  - citygis-website
+  - plan-rdh-twente-2025

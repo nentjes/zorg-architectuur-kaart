@@ -1,0 +1,11 @@
+id: chipsoft
+type: vendor
+name: "ChipSoft"
+aliases:
+  - "ChipSoft B.V."
+country: NL
+vendor_role: product_vendor
+website: "https://www.chipsoft.com"
+sources:
+  - chipsoft-website
+  - plan-rdh-twente-2025

@@ -1,10 +1,10 @@
-# Relations — Zorg Architectuur Kaart edge-model v0.1
+# Relations — Zorg Architectuur Kaart edge-model v0.2
 
 ## Graph overview
 
-De kaart is een graaf. **Nodes** zijn de zes entiteiten uit `entities.md`
-(Organization, System, Vendor, Region, Network, Standard). **Edges** zijn
-de relaties tussen die nodes.
+De kaart is een graaf. **Nodes** zijn de acht non-edge-entiteiten uit
+`entities.md` (Organization, System, Vendor, Region, Network, Standard,
+UseCase, Program). **Edges** zijn de relaties tussen die nodes.
 
 We onderscheiden twee soorten edges:
 
@@ -25,16 +25,26 @@ We onderscheiden twee soorten edges:
 | SUBSIDIARY_OF | Organization | Organization | many-to-one | `parent_organization: <id>` | inherent |
 | SUPPLIED_BY | System | Vendor | many-to-one | `vendor: <id>` op System | inherent |
 | IMPLEMENTS_STANDARD | System | Standard | many-to-many | `standards_supported: [<id>]` op System | **leveranciers-PR mag niet enige bron zijn** |
+| DEPLOYED_IN | System | Network | many-to-many | `deployed_in: [<id>]` op System *(v0.2)* | inherent via System.sources |
 | OPERATES_NETWORK | Organization | Network | one-to-one per network | `operator: <id>` op Network | inherent |
 | NETWORK_USES_STANDARD | Network | Standard | many-to-many | `standards_used: [<id>]` op Network | inherent |
 | PARTICIPATES_IN_NETWORK | Organization | Network | many-to-many | `networks: [<id>]` op Organization | **vereist publieke bron die de specifieke aansluiting noemt** |
 | LEAD_OF_REGION | Region | Organization | one-to-one | `lead_organization: <id>` op Region | inherent |
 | PARTICIPATES_IN_REGION | Region | Organization | many-to-many | `participating_organizations: [<id>]` op Region | inherent |
+| CHILD_VENDOR_OF | Vendor | Vendor | many-to-one | `parent_vendor: <id>` op Vendor *(v0.2)* | inherent |
+| REALIZES_USECASE | Connection | UseCase | many-to-many | `realizes_usecases: [<id>]` op Connection *(v0.2)* | inherent via Connection.sources |
+| USECASE_VIA_SYSTEM | UseCase | System | many-to-many | `realized_by_systems: [<id>]` op UseCase *(v0.2)* | inherent via UseCase.sources |
+| USECASE_VIA_CONNECTION | UseCase | Connection | many-to-many | `realized_by_connections: [<id>]` op UseCase *(v0.2)* | inherent via UseCase.sources |
+| USECASE_IN_REGION | UseCase | Region | many-to-many | `regions: [<id>]` op UseCase *(v0.2)* | inherent |
+| USECASE_DRIVEN_BY_PROGRAM | UseCase | Program | many-to-many | `programs: [<id>]` op UseCase *(v0.2)* | inherent |
+| ENFORCES_STANDARD | Program | Standard | many-to-many | `enforces_standards: [<id>]` op Program *(v0.2)* | **programma-regeling als bron vereist** |
+| PROGRAM_TARGETS_REGION | Program | Region | many-to-many | `target_regions: [<id>]` op Program *(v0.2)* | inherent |
 
 Inline edges worden door de schema-validator gecheckt op:
 1. Bestaat het target-`id` als file in de juiste `/data/<type>/` folder?
 2. Is het type van het target correct (bijv. `systems: [<id>]` moet naar
    System verwijzen, niet naar Vendor)?
+3. Voor `CHILD_VENDOR_OF`: geen circulaire parent_vendor-ketens (A→B→A).
 
 ## Entity edges: Connection
 
@@ -92,13 +102,23 @@ waarbij `weighted_value` een functie is van:
 
 - **Network-type gewicht** — bijv. een landelijke hub (LSP) weegt anders
   dan een regionale XDS
+- **Network-topology gewicht** — `federated` vs `centralized` vs
+  `hybrid` wegen potentieel anders *(v0.2)*
 - **Data-type gewicht** — bijv. volledige care transfer weegt meer dan een
   enkele afspraak
-- **Status multiplier** — `active` weegt vol, `planned` weegt fractioneel,
-  `deprecated` weegt nul of negatief
+- **Status multiplier** — `production` weegt vol, `pilot` gedeeltelijk,
+  `planned` fractioneel, `concept` minimaal (intentie), `deprecated` /
+  `inactive` nul of negatief *(v0.2: enum uitgebreid met `concept` en
+  `pilot`)*
 - **Recentheids-factor** — `validated_at` ouder dan 12 maanden schaalt af
 - **Standaard-conformiteit bonus** — Connections met een gespecificeerde
   `standard:` die door beide systemen wordt ondersteund krijgen een bonus
+- **Open-standaarden bonus** *(v0.2)* — gebruik van open datamodellen
+  (OpenEHR, OMOP) boven proprietary (MS CDM) krijgt een duurzaamheids-bonus
+- **Compliance knock-out** *(v0.2)* — een `centralized` datahub die
+  patiënt-BSN verwerkt zonder aantoonbare NEN 7510 / Wbsn-z conformiteit
+  kan de Maturity-score van afhankelijke Connections op 0 zetten, ongeacht
+  andere gewichten
 
 De exacte gewichten (numbers) staan **niet** in dit document. Ze horen in
 `/schema/maturity-score.yaml`, een apart file dat door de

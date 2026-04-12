@@ -1,4 +1,4 @@
-# Entities — Zorg Architectuur Kaart ontologie v0.1
+# Entities — Zorg Architectuur Kaart ontologie v0.2
 
 ## Waarom een ontologie
 
@@ -24,6 +24,8 @@ Elke entiteit-instance leeft als één YAML-bestand onder
       networks/        lsp.yaml
       standards/       fhir-r4-nl-core.yaml
       connections/     conn-amsterdam-umc-amsterdam-huisartsen-lsp.yaml
+      usecases/        uc-360-graden-beeld.yaml
+      programs/        vipp5.yaml
 
 De bestandsnaam zonder extensie is gelijk aan het `id`-veld. Elke YAML
 bevat een `type:`-veld dat overeenkomt met de entiteitsoort. Dit is
@@ -33,7 +35,7 @@ maakt schema-validatie per-file mogelijk zonder folder-context.
 Validatie tegen `/schema/schema.yaml` is verplicht en wordt door de CI
 afgedwongen op elke PR.
 
-## De zeven entiteiten
+## De negen entiteiten
 
 1. **Organization** — een juridische of operationele zorg-entiteit
 2. **System** — een softwaresysteem (EPD, ECD, HIS, AIS, portal, hub)
@@ -43,10 +45,22 @@ afgedwongen op elke PR.
 6. **Standard** — een interoperabiliteits-standaard (Zib, FHIR, HL7, terminologie)
 7. **Connection** — een geverifieerde data-uitwisselingsrelatie tussen twee
    `Organization`s via een `Network`, optioneel met een `Standard`
+8. **UseCase** — een zorgfunctionele behoefte die door meerdere organisaties
+   gedeeld wordt (de "vraag", gerealiseerd via `Connection`s en `System`s)
+9. **Program** — een landelijk of regionaal financieringsprogramma dat
+   `Standards` afdwingt bij deelnemende `Organization`s (VIPP5, InZicht, OPEN)
 
-De eerste zes zijn **nodes** in de graaf. **Connection is de edge**, en die
-entiteit is wat deze kaart uniek maakt — zonder Connections is het een
-sticker-album; met Connections is het een interoperabiliteitskaart.
+De eerste zes en de twee laatste zijn **nodes** in de graaf.
+**Connection is de enige edge-entiteit**, en die is wat deze kaart uniek
+maakt — zonder Connections is het een sticker-album; met Connections is het
+een interoperabiliteitskaart.
+
+`UseCase` en `Program` zijn nieuw in v0.2. Ze bestaan omdat regio's
+identieke use cases (360-graden beeld, ACP in de keten) met radicaal
+verschillende techniek oplossen; en omdat VIPP-programma's de werkelijke
+drijvende kracht achter standaard-adoptie zijn. Zonder deze twee entiteiten
+zijn regio-overstijgende vergelijking en financieringsprikkel-analyse niet
+zichtbaar in de kaart.
 
 ---
 
@@ -122,7 +136,9 @@ PGO-portal en integratie-hubs.
 `id`, `type: system`, `name`, `category`, `vendor`, `sources`
 
 ### Optionele velden
-`country_origin`, `standards_supported`, `aliases`, `confidence`
+`country_origin`, `standards_supported`, `aliases`, `confidence`,
+`deployed_in` *(nieuw in v0.2 — lijst van `Network`-ids waarin dit systeem
+is uitgerold; bijv. Microsoft Fabric `deployed_in: [rdh-twente]`)*
 
 ### Voorbeeld
 
@@ -147,20 +163,36 @@ sources:
 ## 3. Vendor
 
 ### Wat het IS
-De juridische leverancier van één of meerdere `System`s. Apart van System
-omdat één vendor meerdere systemen kan leveren, en systemen kunnen van
-eigenaar wisselen (M&A, carve-out, rebranding).
+Een partij die in de zorg-IT-stack één of meer van de volgende rollen
+vervult: `product_vendor` (bezit en ontwikkelt een `System`),
+`platform_provider` (levert het onderliggende cloud- of
+infrastructuur-platform waarop een `System` draait), `implementation_partner`
+(integreert, configureert en implementeert de oplossing bij een klant), of
+`operator` (voert het operationeel beheer op de regionale uitrol).
+
+Apart van `System` omdat één vendor meerdere systemen kan leveren, en
+systemen kunnen van eigenaar wisselen (M&A, carve-out, rebranding). En
+nieuw in v0.2: een datahub zoals RDH Twente kent tegelijkertijd drie
+vendors in drie verschillende rollen — Microsoft als `platform_provider`,
+KPMG als `implementation_partner`, Zorgnetoost als `operator`. Die
+onderscheiden maakt de kaart voor vendor-lock-in-analyse.
 
 ### Wat het NIET is
-- Een consultancy of integratiepartner die geen eigen product levert
-- Een dochterbedrijf dat geen eigen juridische entiteit is
-- Een generieke dienstverlener (hosting, telecom)
+- Een dochterbedrijf dat geen eigen juridische entiteit is — gebruik
+  `parent_vendor` of `parent_company`
+- Een generieke dienstverlener die geen zorg-IT-rol heeft (hosting,
+  telecom)
 
 ### Verplichte velden
 `id`, `type: vendor`, `name`, `sources`
 
 ### Optionele velden
-`country`, `parent_company`, `website`, `aliases`
+`country`, `parent_company`, `parent_vendor` *(nieuw in v0.2 — verwijst
+naar een andere `Vendor`-id als de parent zelf ook als vendor-entry
+bestaat; anders gebruik `parent_company: string`)*, `vendor_role`
+*(nieuw in v0.2, default `product_vendor`, enum:
+`product_vendor | platform_provider | implementation_partner | operator`)*,
+`website`, `aliases`
 
 ---
 
@@ -206,7 +238,25 @@ Mitz, Nuts.
 `id`, `type: network`, `name`, `network_type`, `sources`
 
 ### Optionele velden
-`operator`, `standards_used`, `established`, `aliases`
+`operator`, `standards_used`, `established`, `aliases`, `data_topology`
+*(nieuw in v0.2, enum: `centralized | federated | hybrid`)*,
+`deployed_systems` *(afgeleid — lijst van `System`-ids die
+`deployed_in: [<dit network>]` hebben; niet in YAML, alleen in afgeleide
+views)*
+
+### `data_topology` — betekenis
+
+- **`centralized`** — data vloeit naar één centrale store. Voorbeelden:
+  RDH Twente (Microsoft Fabric als datahub), een klassieke RSO-XDS
+  repository.
+- **`federated`** — data blijft bij de bron; het netwerk is een dunne
+  laag eroverheen die on-demand bevraagt. Voorbeelden: Trijn (CumuluZ),
+  Nuts-gebaseerde federaties, MedMij PGO-flow.
+- **`hybrid`** — mix van beide binnen één netwerk. Voorbeeld: LSP,
+  waar medicatiegegevens centraal worden gesynchroniseerd (push) maar
+  dossier-fetch federated on-demand gebeurt.
+
+Dit veld is in v0.2 optioneel. Het wordt in v0.3 verplicht.
 
 ---
 
@@ -254,7 +304,23 @@ noemt binnen het genoemde netwerk.
 
 ### Optionele velden
 `standard`, `direction`, `data_types`, `established`, `validated_at`,
-`confidence`, `needs_verification`
+`confidence`, `needs_verification`, `realizes_usecases` *(nieuw in v0.2 —
+lijst van `UseCase`-ids die deze Connection helpt realiseren)*
+
+### Status-enum (uitgebreid in v0.2)
+
+De status-enum is in v0.2 verrijkt met `concept` en `pilot`, aansluitend
+op de UseCase-ladder:
+
+- `concept` — staat in een plan, nog geen concreet ontwerp
+- `planned` — ontwerp rond, budget toegekend, nog niet live
+- `pilot` — live in testopstelling of bij beperkt aantal partijen
+- `production` — operationeel
+- `deprecated` — vervangen maar nog niet afgeschakeld
+- `inactive` — afgeschakeld
+
+De numerieke weging van deze waardes in de IZA Maturity Score hoort in
+`/schema/maturity-score.yaml`, niet hier.
 
 ### Voorbeeld
 
@@ -276,6 +342,132 @@ sources:
   - vzvz-aansluitregister-2025-q3
   - amsterdam-umc-jaarverslag-2023
 confidence: high
+```
+
+---
+
+## 8. UseCase
+
+### Wat het IS
+Een zorgfunctionele behoefte — een "vraag" vanuit het primaire zorgproces
+— die door meerdere organisaties in meerdere regio's wordt gedeeld, en die
+via `Connection`s en/of `System`s wordt gerealiseerd. Voorbeelden: "360-
+graden beeld patiënt in de acute keten", "ACP in de keten", "Regionaal
+capaciteitsinzicht", "Gekoppelde thuismonitoring".
+
+UseCases zijn de gemeenschappelijke taal tussen regio's. Twente en Trijn
+noemen allebei het 360-graden beeld, maar lossen het op met radicaal
+verschillende techniek (centralized Microsoft Fabric vs. federatief
+CumuluZ). Door de UseCase als eerste-klas entiteit te modelleren kun je
+die vergelijking maken zonder de techniek-keuze met de functionele
+behoefte te verwarren.
+
+### Wat het NIET is
+- Een project, programma of initiatief — dat is een `Program`
+- Een feature van één systeem — die hoort op het `System` zelf
+- Een losse ambitie zonder minstens één bronplan dat hem benoemt
+
+### Verplichte velden
+`id`, `type: usecase`, `name`, `domain`, `sources`
+
+### Optionele velden
+`description`, `maturity_level` (1-4), `realized_by_connections`,
+`realized_by_systems`, `regions`, `programs`, `iza_goal_link`
+
+### `domain`-enum
+`acute_zorg | chronische_zorg | ouderenzorg | ggz | geboortezorg |
+medicatie | preventie | capaciteit | pgo | overig`
+
+### UseCase maturity-ladder
+
+| Level | Naam | Bewijs dat je nodig hebt |
+|---|---|---|
+| 1 | Papier | De use case staat in minstens één regioplan of transformatieplan |
+| 2 | Technisch mogelijk | PoC werkt, of systemen die de use case zouden realiseren ondersteunen de benodigde standaarden |
+| 3 | Regionaal operationeel | Pilot draait in minstens één IZA-regio voor ≥1 keten, met aantoonbaar gebruik |
+| 4 | Landelijk herbruikbaar | Minstens één andere IZA-regio heeft de oplossing (code, datamodel, integratie) daadwerkelijk overgenomen |
+
+Claude berekent `maturity_level` niet zelf. De waarde wordt gezet op
+basis van `sources` en de status van de `realized_by_connections`.
+
+### Voorbeeld
+
+```yaml
+id: uc-360-graden-beeld
+type: usecase
+name: "360-graden beeld patiënt in de acute keten"
+domain: acute_zorg
+description: >
+  Zorgverleners in de acute keten (huisartsenpost, ambulance,
+  ziekenhuis-SEH, VVT-doorstroom) hebben binnen vijf minuten een volledig
+  beeld van medicatie, allergieën, behandelbeperkingen, recente contacten
+  en actuele labuitslagen van een patiënt.
+maturity_level: 2
+realized_by_connections:
+  - conn-twente-rdh-360-graden
+realized_by_systems:
+  - microsoft-fabric-rdh-twente
+regions:
+  - iza-twente
+  - iza-midden-nederland
+programs:
+  - vipp5
+iza_goal_link: "passende zorg — de juiste zorg op de juiste plek"
+sources:
+  - transformatieplan-rdh-twente-2025
+  - transformatieplan-trijn-midden-nederland-2025
+```
+
+---
+
+## 9. Program
+
+### Wat het IS
+Een landelijk of regionaal financieringsprogramma dat één of meer
+`Standards` afdwingt bij deelnemende `Organization`s. Programma's zijn
+de werkelijke drijvende kracht achter standaard-adoptie in de Nederlandse
+zorg — ze verklaren waarom organisaties op hetzelfde moment massaal aan
+dezelfde Zibs gaan.
+
+Voorbeelden: VIPP5 (ziekenhuizen), InZicht (VVT), OPEN (huisartsen),
+BabyConnect (geboortezorg), VIPP GGZ, VIPP Farmacie.
+
+### Wat het NIET is
+- Een wet of ministeriële regeling als zodanig (die staat in de
+  `sources` en wordt via `funder` genoemd)
+- Een softwareproduct of -bundel
+- Een tijdelijke subsidie zonder verplichte standaard-adoptie
+
+### Verplichte velden
+`id`, `type: program`, `name`, `scope`, `sources`
+
+### Optionele velden
+`funder`, `start_date`, `end_date`, `budget_eur`, `enforces_standards`,
+`target_sectors`, `target_regions`, `website`
+
+### `scope`-enum
+`landelijk | regionaal | sector`
+
+### Voorbeeld
+
+```yaml
+id: vipp5
+type: program
+name: VIPP5
+scope: landelijk
+funder: "Ministerie van VWS"
+start_date: "2020-01-01"
+end_date: "2024-12-31"
+budget_eur: 75000000
+enforces_standards:
+  - zib-2020
+  - fhir-r4-nl-core
+  - mp9
+target_sectors:
+  - ziekenhuis
+website: "https://www.dus-i.nl/subsidies/vipp-5"
+sources:
+  - dusi-vipp5-regeling-2020
 ```
 
 ---

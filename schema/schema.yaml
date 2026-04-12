@@ -1,13 +1,23 @@
-# Zorg Architectuur Kaart — machine-leesbaar schema v0.1
+# Zorg Architectuur Kaart — machine-leesbaar schema v0.2
 #
 # Dit bestand is de bron van waarheid voor CI-validatie. Elke YAML onder
 # /data/<type>/ moet tegen de overeenkomstige entry in `entity_types`
 # valideren. Zie /schema/entities.md en /schema/relations.md voor de
 # menselijke uitleg en ontwerpkeuzes.
+#
+# v0.2 wijzigingen t.o.v. v0.1 (zie
+# /overleg/proposals/2026-04-12-ontology-v0.2.md voor de volledige diff):
+#   - Nieuwe entiteit `usecase` (8e entity)
+#   - Nieuwe entiteit `program` (9e entity)
+#   - `network.data_topology` (enum: centralized | federated | hybrid)
+#   - `vendor.vendor_role` (enum) en `vendor.parent_vendor` (id-ref)
+#   - `system.deployed_in` (id_list → networks)
+#   - `connection.status` enum uitgebreid met `concept` en `pilot`
+#   - `connection.realizes_usecases` (id_list → usecases)
 
 $schema: "https://json-schema.org/draft/2020-12/schema"
-title: "Zorg Architectuur Kaart — schema v0.1"
-version: "0.1.0"
+title: "Zorg Architectuur Kaart — schema v0.2"
+version: "0.2.0"
 
 # Hergebruikbare primitieven — verwezen met $ref vanuit entity_types.
 definitions:
@@ -152,6 +162,7 @@ entity_types:
       vendor: {$ref: "#/definitions/id"}
       country_origin: {$ref: "#/definitions/country"}
       standards_supported: {$ref: "#/definitions/id_list"}
+      deployed_in: {$ref: "#/definitions/id_list"}  # v0.2 — Network-ids
       sources: {$ref: "#/definitions/sources_list"}
       confidence: {$ref: "#/definitions/confidence"}
 
@@ -170,6 +181,15 @@ entity_types:
         items: {type: string}
       country: {$ref: "#/definitions/country"}
       parent_company: {type: string}
+      parent_vendor: {$ref: "#/definitions/id"}  # v0.2 — ref naar andere Vendor
+      vendor_role:                               # v0.2 — default product_vendor
+        type: string
+        enum:
+          - product_vendor
+          - platform_provider
+          - implementation_partner
+          - operator
+        default: product_vendor
       website:
         type: string
         format: uri
@@ -228,6 +248,13 @@ entity_types:
           - legacy_messaging
           - toestemming
           - identiteit
+          - regionale_datahub   # v0.2 — bijv. RDH Twente, CumuluZ
+      data_topology:            # v0.2 — optioneel in v0.2, verplicht in v0.3
+        type: string
+        enum:
+          - centralized
+          - federated
+          - hybrid
       operator: {$ref: "#/definitions/id"}
       standards_used: {$ref: "#/definitions/id_list"}
       established: {$ref: "#/definitions/iso_date"}
@@ -303,12 +330,115 @@ entity_types:
             - other
       status:
         type: string
-        enum: [active, planned, deprecated, inactive]
+        # v0.2 — enum uitgebreid met concept en pilot; active hernoemd
+        # naar production om aan te sluiten op de UseCase-ladder.
+        enum:
+          - concept
+          - planned
+          - pilot
+          - production
+          - deprecated
+          - inactive
+      realizes_usecases: {$ref: "#/definitions/id_list"}  # v0.2 — UseCase-ids
       established: {$ref: "#/definitions/iso_date"}
       validated_at: {$ref: "#/definitions/iso_date"}
       sources: {$ref: "#/definitions/sources_list"}
       confidence: {$ref: "#/definitions/confidence"}
       needs_verification: {type: boolean}
+
+  usecase:
+    type: object
+    additionalProperties: false
+    required: [id, type, name, domain, sources]
+    properties:
+      id: {$ref: "#/definitions/id"}
+      type:
+        const: usecase
+      name:
+        type: string
+        minLength: 2
+      description:
+        type: string
+      domain:
+        type: string
+        enum:
+          - acute_zorg
+          - chronische_zorg
+          - ouderenzorg
+          - ggz
+          - geboortezorg
+          - medicatie
+          - preventie
+          - capaciteit
+          - pgo
+          - overig
+      maturity_level:
+        type: integer
+        minimum: 1
+        maximum: 4
+        # 1 = Papier
+        # 2 = Technisch mogelijk (PoC)
+        # 3 = Regionaal operationeel (Pilot)
+        # 4 = Landelijk herbruikbaar (andere IZA-regio heeft overgenomen)
+      realized_by_connections: {$ref: "#/definitions/id_list"}
+      realized_by_systems: {$ref: "#/definitions/id_list"}
+      regions: {$ref: "#/definitions/id_list"}
+      programs: {$ref: "#/definitions/id_list"}
+      iza_goal_link:
+        type: string
+      sources: {$ref: "#/definitions/sources_list"}
+      confidence: {$ref: "#/definitions/confidence"}
+
+  program:
+    type: object
+    additionalProperties: false
+    required: [id, type, name, scope, sources]
+    properties:
+      id: {$ref: "#/definitions/id"}
+      type:
+        const: program
+      name:
+        type: string
+        minLength: 2
+      aliases:
+        type: array
+        items: {type: string}
+      scope:
+        type: string
+        enum:
+          - landelijk
+          - regionaal
+          - sector
+      funder:
+        type: string
+      start_date: {$ref: "#/definitions/iso_date"}
+      end_date: {$ref: "#/definitions/iso_date"}
+      budget_eur:
+        type: number
+        minimum: 0
+      enforces_standards: {$ref: "#/definitions/id_list"}
+      target_sectors:
+        type: array
+        uniqueItems: true
+        items:
+          type: string
+          enum:
+            - ziekenhuis
+            - huisarts
+            - apotheek
+            - vvt
+            - ggz
+            - zbc
+            - gemeente
+            - jeugdzorg
+            - ambulance
+            - geboortezorg
+            - paramedisch
+      target_regions: {$ref: "#/definitions/id_list"}
+      website:
+        type: string
+        format: uri
+      sources: {$ref: "#/definitions/sources_list"}
 
 # Cross-reference regels die de validator afdwingt naast de per-entity
 # JSON Schema. Deze kunnen niet puur in JSON Schema, dus de Python-
@@ -348,3 +478,50 @@ crossref_rules:
     applies_to: connection
     field: "network"
     target: "/data/networks/<id>.yaml"
+
+  # v0.2 crossref-regels
+
+  - description: "system.deployed_in[*] moet verwijzen naar bestaand Network"
+    applies_to: system
+    field: "deployed_in[*]"
+    target: "/data/networks/<id>.yaml"
+
+  - description: "vendor.parent_vendor moet verwijzen naar bestaande Vendor (en geen circulaire keten)"
+    applies_to: vendor
+    field: "parent_vendor"
+    target: "/data/vendors/<id>.yaml"
+
+  - description: "connection.realizes_usecases[*] moet verwijzen naar bestaande UseCase"
+    applies_to: connection
+    field: "realizes_usecases[*]"
+    target: "/data/usecases/<id>.yaml"
+
+  - description: "usecase.realized_by_connections[*] moet verwijzen naar bestaande Connection"
+    applies_to: usecase
+    field: "realized_by_connections[*]"
+    target: "/data/connections/<id>.yaml"
+
+  - description: "usecase.realized_by_systems[*] moet verwijzen naar bestaand System"
+    applies_to: usecase
+    field: "realized_by_systems[*]"
+    target: "/data/systems/<id>.yaml"
+
+  - description: "usecase.regions[*] moet verwijzen naar bestaande Region"
+    applies_to: usecase
+    field: "regions[*]"
+    target: "/data/regions/<id>.yaml"
+
+  - description: "usecase.programs[*] moet verwijzen naar bestaand Program"
+    applies_to: usecase
+    field: "programs[*]"
+    target: "/data/programs/<id>.yaml"
+
+  - description: "program.enforces_standards[*] moet verwijzen naar bestaande Standard"
+    applies_to: program
+    field: "enforces_standards[*]"
+    target: "/data/standards/<id>.yaml"
+
+  - description: "program.target_regions[*] moet verwijzen naar bestaande Region"
+    applies_to: program
+    field: "target_regions[*]"
+    target: "/data/regions/<id>.yaml"

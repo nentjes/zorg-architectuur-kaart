@@ -1,0 +1,9 @@
+id: microsoft-nl
+type: vendor
+name: "Microsoft Nederland"
+country: NL
+parent_company: "Microsoft Corporation (US)"
+vendor_role: platform_provider
+website: "https://www.microsoft.com/nl-nl/industry/health"
+sources:
+  - plan-rdh-twente-2025

@@ -1,0 +1,7 @@
+id: iza-midden-nederland
+type: region
+name: "IZA-regio Midden-Nederland (Trijn)"
+region_type: iza
+sources:
+  - regioplan-iza-deel-3
+  - plan-trijn-midden-nederland-2025

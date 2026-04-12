@@ -1,0 +1,10 @@
+id: vzvz
+type: vendor
+name: "VZVZ — Vereniging van Zorgaanbieders voor Zorgcommunicatie"
+aliases:
+  - "VZVZ"
+country: NL
+vendor_role: operator
+website: "https://www.vzvz.nl"
+sources:
+  - vzvz-lsp-werking

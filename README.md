@@ -27,6 +27,9 @@ inzicht in wie met wie verbonden is — en wie niet.
 - 🤝 **Community-gedreven** — iedereen kan bijdragen via Pull Requests
 - ⚖️ **Onvervalsbaar** — branch protection + verplichte review + CI-validatie
 - 💶 **Non-profit** — geen verdienmodel, geen vendor-belangen
+- 🇳🇱 **Soeverein** — tooling-voorkeur NL → EU → US, open source boven
+  proprietary, geen runtime vendor lock-in.
+  Zie [ADR 2026-04-12](overleg/proposals/2026-04-12-02-architectuur-principes-en-visualisatie.md).
 
 ## Status
 
@@ -38,8 +41,10 @@ zodra de eerste milestone is gepubliceerd.
 
     /schema/      Ontologie: entiteiten, relaties, veldendefinities
     /data/        De kaart zelf (YAML per entiteit)
-    /sources/     Bronnenregister — elke datapunt verwijst hiernaar
-    /viewer/      Interactieve visualisatie (GitHub Pages)
+    /sources/     Bronnenregister — elk datapunt verwijst hiernaar
+    /referenties/ Lokale kopie van publieke bron-PDF's
+    /overleg/     Proposals, gemini-correspondentie, besluiten
+    /viewer/      (nog niet gebouwd — volgt na Sprint 0 data-seed)
     /.github/     CI-checks: bronverplichting, schema-validatie
 
 ## Bijdragen

@@ -1,0 +1,8 @@
+id: kpmg-health
+type: vendor
+name: "KPMG Health Advisory"
+country: NL
+parent_company: "KPMG International"
+vendor_role: implementation_partner
+sources:
+  - plan-rdh-twente-2025

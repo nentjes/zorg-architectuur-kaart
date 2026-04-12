@@ -1,0 +1,12 @@
+id: trijn-platform
+type: network
+name: "Trijn federatief zorgdata-platform Midden-Nederland"
+aliases:
+  - "Trijn"
+network_type: regionale_datahub
+data_topology: federated
+standards_used:
+  - zib-2020
+  - nl-core-r4
+sources:
+  - plan-trijn-midden-nederland-2025

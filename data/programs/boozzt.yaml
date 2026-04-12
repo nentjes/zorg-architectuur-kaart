@@ -1,0 +1,15 @@
+id: boozzt
+type: program
+name: "Boozzt — basisvoorziening Mitz en Zorg-AB"
+scope: landelijk
+funder: "VZVZ (via landelijke middelen)"
+enforces_standards: []
+target_sectors:
+  - huisarts
+  - ziekenhuis
+  - apotheek
+  - vvt
+  - ggz
+sources:
+  - vzvz-boozzt-programma
+  - plan-gezond-gooi-2025

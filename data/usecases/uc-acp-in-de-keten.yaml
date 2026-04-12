@@ -1,0 +1,25 @@
+id: uc-acp-in-de-keten
+type: usecase
+name: "Advance Care Planning in de keten"
+description: >
+  Een patiënt legt samen met de behandelend arts zijn/haar
+  behandelwensen en -grenzen vast (Advance Care Planning / ACP),
+  en deze wensen zijn vervolgens voor iedere betrokken zorgverlener
+  in de keten — huisarts, HAP, ambulance, SEH, ziekenhuis, VVT —
+  op het moment van zorgverlening beschikbaar. Doel: voorkomen
+  van onbedoelde opnames, behandelingen of reanimaties die strijdig
+  zijn met de wens van de patiënt.
+domain: acute_zorg
+maturity_level: 1
+realized_by_connections: []
+realized_by_systems: []
+regions:
+  - iza-twente
+  - iza-gooi-en-vechtstreek
+programs:
+  - vipp5
+iza_goal_link: "passende zorg — de juiste zorg op de juiste plek"
+sources:
+  - plan-rdh-twente-2025
+  - plan-gezond-gooi-2025
+confidence: medium

@@ -1,0 +1,8 @@
+id: zorgnetoost
+type: vendor
+name: "Zorgnetoost"
+country: NL
+vendor_role: operator
+website: "https://www.zorgnetoost.nl"
+sources:
+  - plan-rdh-twente-2025

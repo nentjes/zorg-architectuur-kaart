@@ -1,0 +1,7 @@
+id: iza-twente
+type: region
+name: "IZA-regio Twente"
+region_type: iza
+sources:
+  - regioplan-iza-deel-3
+  - plan-rdh-twente-2025

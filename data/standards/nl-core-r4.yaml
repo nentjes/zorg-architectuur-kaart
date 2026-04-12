@@ -1,0 +1,9 @@
+id: nl-core-r4
+type: standard
+name: "nl-core — Nederlandse kernprofielen op FHIR R4"
+standard_family: fhir
+version: "R4"
+publisher: "Nictiz / HL7 Nederland"
+sources:
+  - nictiz-nl-core-fhir-r4
+  - regioplan-iza-deel-3

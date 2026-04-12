@@ -1,0 +1,14 @@
+id: inzicht
+type: program
+name: "InZicht — Subsidieregeling informatie-uitwisseling VVT"
+aliases:
+  - "VIPP InZicht"
+scope: landelijk
+funder: "Ministerie van VWS (via DUS-I)"
+start_date: "2020-01-01"
+enforces_standards:
+  - zib-2020
+target_sectors:
+  - vvt
+sources:
+  - dusi-inzicht-regeling

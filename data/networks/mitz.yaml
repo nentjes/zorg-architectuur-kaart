@@ -1,0 +1,12 @@
+id: mitz
+type: network
+name: "Mitz Toestemmingsvoorziening"
+aliases:
+  - "Mitz"
+network_type: toestemming
+data_topology: centralized
+operator: vzvz
+standards_used: []
+sources:
+  - mitz-afsprakenstelsel
+  - plan-gezond-gooi-2025

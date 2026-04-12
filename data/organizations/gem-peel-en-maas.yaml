@@ -1,0 +1,16 @@
+id: gem-peel-en-maas
+type: organization
+name: Gemeente Peel en Maas
+sector: gemeente
+country: NL
+locations:
+- city: Panningen
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.3347
+    lon: 5.9806
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

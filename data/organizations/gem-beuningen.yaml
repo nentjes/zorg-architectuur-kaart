@@ -1,0 +1,16 @@
+id: gem-beuningen
+type: organization
+name: Gemeente Beuningen
+sector: gemeente
+country: NL
+locations:
+- city: Beuningen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8606
+    lon: 5.7694
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

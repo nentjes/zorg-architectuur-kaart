@@ -1,0 +1,16 @@
+id: gem-stede-broec
+type: organization
+name: Gemeente Stede Broec
+sector: gemeente
+country: NL
+locations:
+- city: Bovenkarspel
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.6931
+    lon: 5.2361
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

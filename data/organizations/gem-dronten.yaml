@@ -1,0 +1,16 @@
+id: gem-dronten
+type: organization
+name: Gemeente Dronten
+sector: gemeente
+country: NL
+locations:
+- city: Dronten
+  province: Flevoland
+  country: NL
+  coordinates:
+    lat: 52.525
+    lon: 5.7175
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

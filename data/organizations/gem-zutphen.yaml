@@ -1,0 +1,16 @@
+id: gem-zutphen
+type: organization
+name: Gemeente Zutphen
+sector: gemeente
+country: NL
+locations:
+- city: Zutphen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.1408
+    lon: 6.1944
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

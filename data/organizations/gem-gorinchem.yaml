@@ -1,0 +1,16 @@
+id: gem-gorinchem
+type: organization
+name: Gemeente Gorinchem
+sector: gemeente
+country: NL
+locations:
+- city: Gorinchem
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.8308
+    lon: 4.975
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

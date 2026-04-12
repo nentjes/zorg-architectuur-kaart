@@ -1,0 +1,16 @@
+id: gem-zoeterwoude
+type: organization
+name: Gemeente Zoeterwoude
+sector: gemeente
+country: NL
+locations:
+- city: Zoeterwoude
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.1339
+    lon: 4.5003
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-nunspeet
+type: organization
+name: Gemeente Nunspeet
+sector: gemeente
+country: NL
+locations:
+- city: Nunspeet
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.3814
+    lon: 5.7833
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-waalre
+type: organization
+name: Gemeente Waalre
+sector: gemeente
+country: NL
+locations:
+- city: Waalre
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.3889
+    lon: 5.4572
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

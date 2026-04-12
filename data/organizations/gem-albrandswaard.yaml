@@ -1,0 +1,16 @@
+id: gem-albrandswaard
+type: organization
+name: Gemeente Albrandswaard
+sector: gemeente
+country: NL
+locations:
+- city: Poortugaal
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.8544
+    lon: 4.4117
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

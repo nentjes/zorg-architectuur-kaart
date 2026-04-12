@@ -1,0 +1,16 @@
+id: gem-amstelveen
+type: organization
+name: Gemeente Amstelveen
+sector: gemeente
+country: NL
+locations:
+- city: Amstelveen
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3081
+    lon: 4.8597
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

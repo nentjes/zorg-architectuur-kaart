@@ -1,0 +1,16 @@
+id: gem-voorst
+type: organization
+name: Gemeente Voorst
+sector: gemeente
+country: NL
+locations:
+- city: Twello
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.2328
+    lon: 6.1056
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

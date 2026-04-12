@@ -1,0 +1,16 @@
+id: gem-waterland
+type: organization
+name: Gemeente Waterland
+sector: gemeente
+country: NL
+locations:
+- city: Monnickendam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.4594
+    lon: 5.0378
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

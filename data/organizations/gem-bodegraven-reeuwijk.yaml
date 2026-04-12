@@ -1,0 +1,16 @@
+id: gem-bodegraven-reeuwijk
+type: organization
+name: Gemeente Bodegraven-Reeuwijk
+sector: gemeente
+country: NL
+locations:
+- city: Bodegraven
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0828
+    lon: 4.7492
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

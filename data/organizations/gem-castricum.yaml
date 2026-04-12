@@ -1,0 +1,16 @@
+id: gem-castricum
+type: organization
+name: Gemeente Castricum
+sector: gemeente
+country: NL
+locations:
+- city: Castricum
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.5456
+    lon: 4.6589
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

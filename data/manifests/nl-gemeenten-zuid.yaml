@@ -1,0 +1,100 @@
+# Manifest: gemeenten Zuid-NL — Sprint 4b
+# Scope: Noord-Brabant (54) + Limburg (31) = 85
+# Coords: hoofdplaats/gemeentehuis WGS84.
+# Rol in IZA: Wmo + Jeugdwet opdrachtgever.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # Noord-Brabant (54)
+  - {id: gem-altena, name: "Gemeente Altena", sector: gemeente, locations: [{city: "Almkerk", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.7561, lon: 4.9453}}]}
+  - {id: gem-asten, name: "Gemeente Asten", sector: gemeente, locations: [{city: "Asten", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4042, lon: 5.7517}}]}
+  - {id: gem-baarle-nassau, name: "Gemeente Baarle-Nassau", sector: gemeente, locations: [{city: "Baarle-Nassau", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4428, lon: 4.9283}}]}
+  - {id: gem-bergeijk, name: "Gemeente Bergeijk", sector: gemeente, locations: [{city: "Bergeijk", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.3189, lon: 5.3519}}]}
+  - {id: gem-bergen-op-zoom, name: "Gemeente Bergen op Zoom", sector: gemeente, locations: [{city: "Bergen op Zoom", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4953, lon: 4.2928}}]}
+  - {id: gem-bernheze, name: "Gemeente Bernheze", sector: gemeente, locations: [{city: "Heesch", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.7361, lon: 5.5297}}]}
+  - {id: gem-best, name: "Gemeente Best", sector: gemeente, locations: [{city: "Best", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5094, lon: 5.3917}}]}
+  - {id: gem-bladel, name: "Gemeente Bladel", sector: gemeente, locations: [{city: "Bladel", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.3683, lon: 5.2189}}]}
+  - {id: gem-boekel, name: "Gemeente Boekel", sector: gemeente, locations: [{city: "Boekel", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6003, lon: 5.6761}}]}
+  - {id: gem-boxtel, name: "Gemeente Boxtel", sector: gemeente, locations: [{city: "Boxtel", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5903, lon: 5.3317}}]}
+  - {id: gem-breda, name: "Gemeente Breda", sector: gemeente, locations: [{city: "Breda", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5719, lon: 4.7683}}]}
+  - {id: gem-cranendonck, name: "Gemeente Cranendonck", sector: gemeente, locations: [{city: "Budel", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.2861, lon: 5.5858}}]}
+  - {id: gem-deurne, name: "Gemeente Deurne", sector: gemeente, locations: [{city: "Deurne", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4608, lon: 5.7956}}]}
+  - {id: gem-dongen, name: "Gemeente Dongen", sector: gemeente, locations: [{city: "Dongen", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6267, lon: 4.9392}}]}
+  - {id: gem-drimmelen, name: "Gemeente Drimmelen", sector: gemeente, locations: [{city: "Made", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6775, lon: 4.7942}}]}
+  - {id: gem-eersel, name: "Gemeente Eersel", sector: gemeente, locations: [{city: "Eersel", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.3575, lon: 5.3172}}]}
+  - {id: gem-eindhoven, name: "Gemeente Eindhoven", sector: gemeente, locations: [{city: "Eindhoven", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4416, lon: 5.4697}}]}
+  - {id: gem-etten-leur, name: "Gemeente Etten-Leur", sector: gemeente, locations: [{city: "Etten-Leur", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5711, lon: 4.6356}}]}
+  - {id: gem-geertruidenberg, name: "Gemeente Geertruidenberg", sector: gemeente, locations: [{city: "Raamsdonksveer", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6775, lon: 4.8817}}]}
+  - {id: gem-geldrop-mierlo, name: "Gemeente Geldrop-Mierlo", sector: gemeente, locations: [{city: "Geldrop", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4200, lon: 5.5581}}]}
+  - {id: gem-gemert-bakel, name: "Gemeente Gemert-Bakel", sector: gemeente, locations: [{city: "Gemert", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5547, lon: 5.6908}}]}
+  - {id: gem-gilze-en-rijen, name: "Gemeente Gilze en Rijen", sector: gemeente, locations: [{city: "Rijen", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5858, lon: 4.9219}}]}
+  - {id: gem-goirle, name: "Gemeente Goirle", sector: gemeente, locations: [{city: "Goirle", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5200, lon: 5.0631}}]}
+  - {id: gem-halderberge, name: "Gemeente Halderberge", sector: gemeente, locations: [{city: "Oudenbosch", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5858, lon: 4.5261}}]}
+  - {id: gem-heeze-leende, name: "Gemeente Heeze-Leende", sector: gemeente, locations: [{city: "Heeze", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.3864, lon: 5.5714}}]}
+  - {id: gem-helmond, name: "Gemeente Helmond", sector: gemeente, locations: [{city: "Helmond", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4822, lon: 5.6614}}]}
+  - {id: gem-heusden, name: "Gemeente Heusden", sector: gemeente, locations: [{city: "Vlijmen", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6839, lon: 5.2253}}]}
+  - {id: gem-hilvarenbeek, name: "Gemeente Hilvarenbeek", sector: gemeente, locations: [{city: "Hilvarenbeek", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4867, lon: 5.1336}}]}
+  - {id: gem-laarbeek, name: "Gemeente Laarbeek", sector: gemeente, locations: [{city: "Beek en Donk", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5336, lon: 5.6319}}]}
+  - {id: gem-land-van-cuijk, name: "Gemeente Land van Cuijk", sector: gemeente, locations: [{city: "Cuijk", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.7283, lon: 5.8783}}]}
+  - {id: gem-loon-op-zand, name: "Gemeente Loon op Zand", sector: gemeente, locations: [{city: "Kaatsheuvel", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6550, lon: 5.0419}}]}
+  - {id: gem-maashorst, name: "Gemeente Maashorst", sector: gemeente, locations: [{city: "Uden", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6622, lon: 5.6183}}]}
+  - {id: gem-meierijstad, name: "Gemeente Meierijstad", sector: gemeente, locations: [{city: "Veghel", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6139, lon: 5.5408}}]}
+  - {id: gem-moerdijk, name: "Gemeente Moerdijk", sector: gemeente, locations: [{city: "Zevenbergen", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6447, lon: 4.6058}}]}
+  - {id: gem-nuenen, name: "Gemeente Nuenen c.a.", sector: gemeente, locations: [{city: "Nuenen", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4714, lon: 5.5550}}]}
+  - {id: gem-oirschot, name: "Gemeente Oirschot", sector: gemeente, locations: [{city: "Oirschot", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4997, lon: 5.3047}}]}
+  - {id: gem-oisterwijk, name: "Gemeente Oisterwijk", sector: gemeente, locations: [{city: "Oisterwijk", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5792, lon: 5.1903}}]}
+  - {id: gem-oosterhout, name: "Gemeente Oosterhout", sector: gemeente, locations: [{city: "Oosterhout", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6461, lon: 4.8589}}]}
+  - {id: gem-oss, name: "Gemeente Oss", sector: gemeente, locations: [{city: "Oss", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.7650, lon: 5.5181}}]}
+  - {id: gem-reusel-de-mierden, name: "Gemeente Reusel-De Mierden", sector: gemeente, locations: [{city: "Reusel", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.3606, lon: 5.1478}}]}
+  - {id: gem-roosendaal, name: "Gemeente Roosendaal", sector: gemeente, locations: [{city: "Roosendaal", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5308, lon: 4.4653}}]}
+  - {id: gem-rucphen, name: "Gemeente Rucphen", sector: gemeente, locations: [{city: "Rucphen", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5344, lon: 4.5475}}]}
+  - {id: gem-sint-michielsgestel, name: "Gemeente Sint-Michielsgestel", sector: gemeente, locations: [{city: "Sint-Michielsgestel", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6472, lon: 5.3486}}]}
+  - {id: gem-someren, name: "Gemeente Someren", sector: gemeente, locations: [{city: "Someren", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.3836, lon: 5.7117}}]}
+  - {id: gem-son-en-breugel, name: "Gemeente Son en Breugel", sector: gemeente, locations: [{city: "Son", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5108, lon: 5.4894}}]}
+  - {id: gem-steenbergen, name: "Gemeente Steenbergen", sector: gemeente, locations: [{city: "Steenbergen", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5936, lon: 4.3178}}]}
+  - {id: gem-tilburg, name: "Gemeente Tilburg", sector: gemeente, locations: [{city: "Tilburg", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5555, lon: 5.0913}}]}
+  - {id: gem-valkenswaard, name: "Gemeente Valkenswaard", sector: gemeente, locations: [{city: "Valkenswaard", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.3508, lon: 5.4608}}]}
+  - {id: gem-veldhoven, name: "Gemeente Veldhoven", sector: gemeente, locations: [{city: "Veldhoven", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4183, lon: 5.4036}}]}
+  - {id: gem-vught, name: "Gemeente Vught", sector: gemeente, locations: [{city: "Vught", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6533, lon: 5.2864}}]}
+  - {id: gem-waalre, name: "Gemeente Waalre", sector: gemeente, locations: [{city: "Waalre", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.3889, lon: 5.4572}}]}
+  - {id: gem-waalwijk, name: "Gemeente Waalwijk", sector: gemeente, locations: [{city: "Waalwijk", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6839, lon: 5.0694}}]}
+  - {id: gem-woensdrecht, name: "Gemeente Woensdrecht", sector: gemeente, locations: [{city: "Hoogerheide", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4356, lon: 4.3336}}]}
+  - {id: gem-zundert, name: "Gemeente Zundert", sector: gemeente, locations: [{city: "Zundert", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4697, lon: 4.6586}}]}
+
+  # Limburg (31)
+  - {id: gem-beek, name: "Gemeente Beek", sector: gemeente, locations: [{city: "Beek", province: "Limburg", country: NL, coordinates: {lat: 50.9403, lon: 5.8081}}]}
+  - {id: gem-beekdaelen, name: "Gemeente Beekdaelen", sector: gemeente, locations: [{city: "Schinnen", province: "Limburg", country: NL, coordinates: {lat: 50.9564, lon: 5.8756}}]}
+  - {id: gem-beesel, name: "Gemeente Beesel", sector: gemeente, locations: [{city: "Reuver", province: "Limburg", country: NL, coordinates: {lat: 51.2853, lon: 6.0867}}]}
+  - {id: gem-bergen-l, name: "Gemeente Bergen (L)", sector: gemeente, locations: [{city: "Bergen", province: "Limburg", country: NL, coordinates: {lat: 51.5956, lon: 6.0458}}]}
+  - {id: gem-brunssum, name: "Gemeente Brunssum", sector: gemeente, locations: [{city: "Brunssum", province: "Limburg", country: NL, coordinates: {lat: 50.9475, lon: 5.9711}}]}
+  - {id: gem-echt-susteren, name: "Gemeente Echt-Susteren", sector: gemeente, locations: [{city: "Echt", province: "Limburg", country: NL, coordinates: {lat: 51.1033, lon: 5.8725}}]}
+  - {id: gem-eijsden-margraten, name: "Gemeente Eijsden-Margraten", sector: gemeente, locations: [{city: "Margraten", province: "Limburg", country: NL, coordinates: {lat: 50.8347, lon: 5.8167}}]}
+  - {id: gem-gennep, name: "Gemeente Gennep", sector: gemeente, locations: [{city: "Gennep", province: "Limburg", country: NL, coordinates: {lat: 51.6964, lon: 5.9706}}]}
+  - {id: gem-gulpen-wittem, name: "Gemeente Gulpen-Wittem", sector: gemeente, locations: [{city: "Gulpen", province: "Limburg", country: NL, coordinates: {lat: 50.8158, lon: 5.8867}}]}
+  - {id: gem-heerlen, name: "Gemeente Heerlen", sector: gemeente, locations: [{city: "Heerlen", province: "Limburg", country: NL, coordinates: {lat: 50.8882, lon: 5.9795}}]}
+  - {id: gem-horst-aan-de-maas, name: "Gemeente Horst aan de Maas", sector: gemeente, locations: [{city: "Horst", province: "Limburg", country: NL, coordinates: {lat: 51.4547, lon: 6.0419}}]}
+  - {id: gem-kerkrade, name: "Gemeente Kerkrade", sector: gemeente, locations: [{city: "Kerkrade", province: "Limburg", country: NL, coordinates: {lat: 50.8656, lon: 6.0619}}]}
+  - {id: gem-landgraaf, name: "Gemeente Landgraaf", sector: gemeente, locations: [{city: "Landgraaf", province: "Limburg", country: NL, coordinates: {lat: 50.9092, lon: 6.0269}}]}
+  - {id: gem-leudal, name: "Gemeente Leudal", sector: gemeente, locations: [{city: "Heythuysen", province: "Limburg", country: NL, coordinates: {lat: 51.2489, lon: 5.9231}}]}
+  - {id: gem-maasgouw, name: "Gemeente Maasgouw", sector: gemeente, locations: [{city: "Maasbracht", province: "Limburg", country: NL, coordinates: {lat: 51.1497, lon: 5.8881}}]}
+  - {id: gem-maastricht, name: "Gemeente Maastricht", sector: gemeente, locations: [{city: "Maastricht", province: "Limburg", country: NL, coordinates: {lat: 50.8514, lon: 5.6910}}]}
+  - {id: gem-meerssen, name: "Gemeente Meerssen", sector: gemeente, locations: [{city: "Meerssen", province: "Limburg", country: NL, coordinates: {lat: 50.8833, lon: 5.7517}}]}
+  - {id: gem-mook-en-middelaar, name: "Gemeente Mook en Middelaar", sector: gemeente, locations: [{city: "Mook", province: "Limburg", country: NL, coordinates: {lat: 51.7664, lon: 5.8844}}]}
+  - {id: gem-nederweert, name: "Gemeente Nederweert", sector: gemeente, locations: [{city: "Nederweert", province: "Limburg", country: NL, coordinates: {lat: 51.2886, lon: 5.7486}}]}
+  - {id: gem-peel-en-maas, name: "Gemeente Peel en Maas", sector: gemeente, locations: [{city: "Panningen", province: "Limburg", country: NL, coordinates: {lat: 51.3347, lon: 5.9806}}]}
+  - {id: gem-roerdalen, name: "Gemeente Roerdalen", sector: gemeente, locations: [{city: "Sint Odiliënberg", province: "Limburg", country: NL, coordinates: {lat: 51.1508, lon: 5.9942}}]}
+  - {id: gem-roermond, name: "Gemeente Roermond", sector: gemeente, locations: [{city: "Roermond", province: "Limburg", country: NL, coordinates: {lat: 51.1942, lon: 5.9878}}]}
+  - {id: gem-simpelveld, name: "Gemeente Simpelveld", sector: gemeente, locations: [{city: "Simpelveld", province: "Limburg", country: NL, coordinates: {lat: 50.8289, lon: 5.9833}}]}
+  - {id: gem-sittard-geleen, name: "Gemeente Sittard-Geleen", sector: gemeente, locations: [{city: "Sittard", province: "Limburg", country: NL, coordinates: {lat: 50.9997, lon: 5.8708}}]}
+  - {id: gem-stein, name: "Gemeente Stein", sector: gemeente, locations: [{city: "Stein", province: "Limburg", country: NL, coordinates: {lat: 50.9708, lon: 5.7656}}]}
+  - {id: gem-vaals, name: "Gemeente Vaals", sector: gemeente, locations: [{city: "Vaals", province: "Limburg", country: NL, coordinates: {lat: 50.7714, lon: 6.0156}}]}
+  - {id: gem-valkenburg-aan-de-geul, name: "Gemeente Valkenburg aan de Geul", sector: gemeente, locations: [{city: "Valkenburg", province: "Limburg", country: NL, coordinates: {lat: 50.8658, lon: 5.8303}}]}
+  - {id: gem-venlo, name: "Gemeente Venlo", sector: gemeente, locations: [{city: "Venlo", province: "Limburg", country: NL, coordinates: {lat: 51.3703, lon: 6.1725}}]}
+  - {id: gem-venray, name: "Gemeente Venray", sector: gemeente, locations: [{city: "Venray", province: "Limburg", country: NL, coordinates: {lat: 51.5258, lon: 5.9747}}]}
+  - {id: gem-voerendaal, name: "Gemeente Voerendaal", sector: gemeente, locations: [{city: "Voerendaal", province: "Limburg", country: NL, coordinates: {lat: 50.8836, lon: 5.9303}}]}
+  - {id: gem-weert, name: "Gemeente Weert", sector: gemeente, locations: [{city: "Weert", province: "Limburg", country: NL, coordinates: {lat: 51.2508, lon: 5.7069}}]}

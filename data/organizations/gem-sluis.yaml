@@ -1,0 +1,16 @@
+id: gem-sluis
+type: organization
+name: Gemeente Sluis
+sector: gemeente
+country: NL
+locations:
+- city: Oostburg
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.3306
+    lon: 3.5028
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

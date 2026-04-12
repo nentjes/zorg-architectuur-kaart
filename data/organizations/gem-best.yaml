@@ -1,0 +1,16 @@
+id: gem-best
+type: organization
+name: Gemeente Best
+sector: gemeente
+country: NL
+locations:
+- city: Best
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5094
+    lon: 5.3917
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-westerkwartier
+type: organization
+name: Gemeente Westerkwartier
+sector: gemeente
+country: NL
+locations:
+- city: Leek
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.1628
+    lon: 6.3769
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

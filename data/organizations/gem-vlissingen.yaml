@@ -1,0 +1,16 @@
+id: gem-vlissingen
+type: organization
+name: Gemeente Vlissingen
+sector: gemeente
+country: NL
+locations:
+- city: Vlissingen
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.4425
+    lon: 3.5736
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

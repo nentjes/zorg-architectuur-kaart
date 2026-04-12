@@ -1,0 +1,16 @@
+id: gem-olst-wijhe
+type: organization
+name: Gemeente Olst-Wijhe
+sector: gemeente
+country: NL
+locations:
+- city: Wijhe
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.3847
+    lon: 6.1258
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

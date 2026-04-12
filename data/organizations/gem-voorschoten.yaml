@@ -1,0 +1,16 @@
+id: gem-voorschoten
+type: organization
+name: Gemeente Voorschoten
+sector: gemeente
+country: NL
+locations:
+- city: Voorschoten
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.1258
+    lon: 4.4497
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

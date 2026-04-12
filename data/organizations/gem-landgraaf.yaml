@@ -1,0 +1,16 @@
+id: gem-landgraaf
+type: organization
+name: Gemeente Landgraaf
+sector: gemeente
+country: NL
+locations:
+- city: Landgraaf
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.9092
+    lon: 6.0269
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

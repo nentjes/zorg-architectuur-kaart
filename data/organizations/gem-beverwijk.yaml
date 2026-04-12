@@ -1,0 +1,16 @@
+id: gem-beverwijk
+type: organization
+name: Gemeente Beverwijk
+sector: gemeente
+country: NL
+locations:
+- city: Beverwijk
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.4847
+    lon: 4.6564
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

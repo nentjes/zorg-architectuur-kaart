@@ -1,0 +1,16 @@
+id: gem-goes
+type: organization
+name: Gemeente Goes
+sector: gemeente
+country: NL
+locations:
+- city: Goes
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.5047
+    lon: 3.8881
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

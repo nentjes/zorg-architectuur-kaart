@@ -1,0 +1,16 @@
+id: gem-dalfsen
+type: organization
+name: Gemeente Dalfsen
+sector: gemeente
+country: NL
+locations:
+- city: Dalfsen
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.5081
+    lon: 6.255
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

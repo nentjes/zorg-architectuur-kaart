@@ -1,0 +1,16 @@
+id: gem-smallingerland
+type: organization
+name: Gemeente Smallingerland
+sector: gemeente
+country: NL
+locations:
+- city: Drachten
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.1128
+    lon: 6.0989
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

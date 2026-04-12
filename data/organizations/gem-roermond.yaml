@@ -1,0 +1,16 @@
+id: gem-roermond
+type: organization
+name: Gemeente Roermond
+sector: gemeente
+country: NL
+locations:
+- city: Roermond
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.1942
+    lon: 5.9878
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

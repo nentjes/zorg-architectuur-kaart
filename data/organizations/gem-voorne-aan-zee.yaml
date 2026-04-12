@@ -1,0 +1,16 @@
+id: gem-voorne-aan-zee
+type: organization
+name: Gemeente Voorne aan Zee
+sector: gemeente
+country: NL
+locations:
+- city: Hellevoetsluis
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.8361
+    lon: 4.1397
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

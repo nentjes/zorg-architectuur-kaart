@@ -1,0 +1,16 @@
+id: gem-schiedam
+type: organization
+name: Gemeente Schiedam
+sector: gemeente
+country: NL
+locations:
+- city: Schiedam
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9194
+    lon: 4.3889
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

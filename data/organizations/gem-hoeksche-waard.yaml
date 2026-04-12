@@ -1,0 +1,16 @@
+id: gem-hoeksche-waard
+type: organization
+name: Gemeente Hoeksche Waard
+sector: gemeente
+country: NL
+locations:
+- city: Oud-Beijerland
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.8225
+    lon: 4.4119
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

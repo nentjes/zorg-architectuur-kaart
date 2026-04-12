@@ -1,0 +1,16 @@
+id: gem-drechterland
+type: organization
+name: Gemeente Drechterland
+sector: gemeente
+country: NL
+locations:
+- city: Hoogkarspel
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.6881
+    lon: 5.1572
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

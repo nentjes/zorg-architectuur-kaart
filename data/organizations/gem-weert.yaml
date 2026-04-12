@@ -1,0 +1,16 @@
+id: gem-weert
+type: organization
+name: Gemeente Weert
+sector: gemeente
+country: NL
+locations:
+- city: Weert
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.2508
+    lon: 5.7069
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

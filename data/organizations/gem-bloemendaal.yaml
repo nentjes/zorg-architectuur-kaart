@@ -1,0 +1,16 @@
+id: gem-bloemendaal
+type: organization
+name: Gemeente Bloemendaal
+sector: gemeente
+country: NL
+locations:
+- city: Overveen
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.4028
+    lon: 4.6006
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-sint-michielsgestel
+type: organization
+name: Gemeente Sint-Michielsgestel
+sector: gemeente
+country: NL
+locations:
+- city: Sint-Michielsgestel
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6472
+    lon: 5.3486
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

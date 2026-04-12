@@ -1,0 +1,16 @@
+id: gem-rucphen
+type: organization
+name: Gemeente Rucphen
+sector: gemeente
+country: NL
+locations:
+- city: Rucphen
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5344
+    lon: 4.5475
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

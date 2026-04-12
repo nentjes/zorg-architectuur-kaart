@@ -1,0 +1,16 @@
+id: gem-zwijndrecht
+type: organization
+name: Gemeente Zwijndrecht
+sector: gemeente
+country: NL
+locations:
+- city: Zwijndrecht
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.8131
+    lon: 4.6403
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

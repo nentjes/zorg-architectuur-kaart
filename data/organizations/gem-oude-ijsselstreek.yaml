@@ -1,0 +1,16 @@
+id: gem-oude-ijsselstreek
+type: organization
+name: Gemeente Oude IJsselstreek
+sector: gemeente
+country: NL
+locations:
+- city: Gendringen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8708
+    lon: 6.3831
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

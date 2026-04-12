@@ -1,0 +1,16 @@
+id: gem-beesel
+type: organization
+name: Gemeente Beesel
+sector: gemeente
+country: NL
+locations:
+- city: Reuver
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.2853
+    lon: 6.0867
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-heusden
+type: organization
+name: Gemeente Heusden
+sector: gemeente
+country: NL
+locations:
+- city: Vlijmen
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6839
+    lon: 5.2253
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

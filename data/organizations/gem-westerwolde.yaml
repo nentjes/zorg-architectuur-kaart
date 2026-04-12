@@ -1,0 +1,16 @@
+id: gem-westerwolde
+type: organization
+name: Gemeente Westerwolde
+sector: gemeente
+country: NL
+locations:
+- city: Sellingen
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 52.9681
+    lon: 7.15
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

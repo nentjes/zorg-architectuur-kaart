@@ -1,0 +1,16 @@
+id: gem-gennep
+type: organization
+name: Gemeente Gennep
+sector: gemeente
+country: NL
+locations:
+- city: Gennep
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.6964
+    lon: 5.9706
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

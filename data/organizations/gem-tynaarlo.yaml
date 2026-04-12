@@ -1,0 +1,16 @@
+id: gem-tynaarlo
+type: organization
+name: Gemeente Tynaarlo
+sector: gemeente
+country: NL
+locations:
+- city: Vries
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 53.0706
+    lon: 6.5836
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

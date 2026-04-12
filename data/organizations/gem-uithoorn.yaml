@@ -1,0 +1,16 @@
+id: gem-uithoorn
+type: organization
+name: Gemeente Uithoorn
+sector: gemeente
+country: NL
+locations:
+- city: Uithoorn
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2364
+    lon: 4.825
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-laren-nh
+type: organization
+name: Gemeente Laren (NH)
+sector: gemeente
+country: NL
+locations:
+- city: Laren
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2567
+    lon: 5.2306
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

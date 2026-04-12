@@ -1,0 +1,16 @@
+id: gem-lingewaard
+type: organization
+name: Gemeente Lingewaard
+sector: gemeente
+country: NL
+locations:
+- city: Bemmel
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8908
+    lon: 5.8925
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

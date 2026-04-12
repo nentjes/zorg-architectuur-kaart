@@ -1,0 +1,16 @@
+id: gem-sudwest-fryslan
+type: organization
+name: Gemeente Súdwest-Fryslân
+sector: gemeente
+country: NL
+locations:
+- city: Sneek
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.0322
+    lon: 5.6575
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

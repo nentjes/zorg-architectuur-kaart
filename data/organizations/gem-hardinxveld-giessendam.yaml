@@ -1,0 +1,16 @@
+id: gem-hardinxveld-giessendam
+type: organization
+name: Gemeente Hardinxveld-Giessendam
+sector: gemeente
+country: NL
+locations:
+- city: Hardinxveld-Giessendam
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.8267
+    lon: 4.8467
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-alphen-aan-den-rijn
+type: organization
+name: Gemeente Alphen aan den Rijn
+sector: gemeente
+country: NL
+locations:
+- city: Alphen aan den Rijn
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.1292
+    lon: 4.6564
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

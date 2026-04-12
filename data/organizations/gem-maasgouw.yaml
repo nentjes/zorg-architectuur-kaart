@@ -1,0 +1,16 @@
+id: gem-maasgouw
+type: organization
+name: Gemeente Maasgouw
+sector: gemeente
+country: NL
+locations:
+- city: Maasbracht
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.1497
+    lon: 5.8881
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

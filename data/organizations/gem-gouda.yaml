@@ -1,0 +1,16 @@
+id: gem-gouda
+type: organization
+name: Gemeente Gouda
+sector: gemeente
+country: NL
+locations:
+- city: Gouda
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0117
+    lon: 4.7106
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

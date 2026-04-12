@@ -1,0 +1,16 @@
+id: gem-epe
+type: organization
+name: Gemeente Epe
+sector: gemeente
+country: NL
+locations:
+- city: Epe
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.3475
+    lon: 5.9886
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

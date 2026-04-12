@@ -1,0 +1,16 @@
+id: gem-pijnacker-nootdorp
+type: organization
+name: Gemeente Pijnacker-Nootdorp
+sector: gemeente
+country: NL
+locations:
+- city: Pijnacker
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.02
+    lon: 4.4306
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

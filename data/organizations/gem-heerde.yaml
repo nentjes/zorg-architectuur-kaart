@@ -1,0 +1,16 @@
+id: gem-heerde
+type: organization
+name: Gemeente Heerde
+sector: gemeente
+country: NL
+locations:
+- city: Heerde
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.3886
+    lon: 6.0389
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

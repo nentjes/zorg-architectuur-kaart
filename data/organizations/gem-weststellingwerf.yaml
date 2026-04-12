@@ -1,0 +1,16 @@
+id: gem-weststellingwerf
+type: organization
+name: Gemeente Weststellingwerf
+sector: gemeente
+country: NL
+locations:
+- city: Wolvega
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 52.8778
+    lon: 6.0042
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

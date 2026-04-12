@@ -1,0 +1,16 @@
+id: gem-dijk-en-waard
+type: organization
+name: Gemeente Dijk en Waard
+sector: gemeente
+country: NL
+locations:
+- city: Heerhugowaard
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.6706
+    lon: 4.8447
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

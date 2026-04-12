@@ -1,0 +1,16 @@
+id: gem-ouder-amstel
+type: organization
+name: Gemeente Ouder-Amstel
+sector: gemeente
+country: NL
+locations:
+- city: Ouderkerk aan de Amstel
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2928
+    lon: 4.9083
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-bergeijk
+type: organization
+name: Gemeente Bergeijk
+sector: gemeente
+country: NL
+locations:
+- city: Bergeijk
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.3189
+    lon: 5.3519
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

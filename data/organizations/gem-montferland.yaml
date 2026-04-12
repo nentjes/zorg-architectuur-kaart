@@ -1,0 +1,16 @@
+id: gem-montferland
+type: organization
+name: Gemeente Montferland
+sector: gemeente
+country: NL
+locations:
+- city: Didam
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.9381
+    lon: 6.1397
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

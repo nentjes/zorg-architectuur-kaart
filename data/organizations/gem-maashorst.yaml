@@ -1,0 +1,16 @@
+id: gem-maashorst
+type: organization
+name: Gemeente Maashorst
+sector: gemeente
+country: NL
+locations:
+- city: Uden
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6622
+    lon: 5.6183
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

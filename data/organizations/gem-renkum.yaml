@@ -1,0 +1,16 @@
+id: gem-renkum
+type: organization
+name: Gemeente Renkum
+sector: gemeente
+country: NL
+locations:
+- city: Oosterbeek
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.9886
+    lon: 5.8433
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

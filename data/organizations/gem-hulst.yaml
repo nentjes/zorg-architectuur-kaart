@@ -1,0 +1,16 @@
+id: gem-hulst
+type: organization
+name: Gemeente Hulst
+sector: gemeente
+country: NL
+locations:
+- city: Hulst
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.2806
+    lon: 4.0506
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

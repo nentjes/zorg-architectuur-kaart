@@ -1,0 +1,16 @@
+id: gem-blaricum
+type: organization
+name: Gemeente Blaricum
+sector: gemeente
+country: NL
+locations:
+- city: Blaricum
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2722
+    lon: 5.25
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

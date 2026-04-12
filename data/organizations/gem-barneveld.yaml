@@ -1,0 +1,16 @@
+id: gem-barneveld
+type: organization
+name: Gemeente Barneveld
+sector: gemeente
+country: NL
+locations:
+- city: Barneveld
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.1403
+    lon: 5.5847
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

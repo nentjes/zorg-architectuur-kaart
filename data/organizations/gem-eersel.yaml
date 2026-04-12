@@ -1,0 +1,16 @@
+id: gem-eersel
+type: organization
+name: Gemeente Eersel
+sector: gemeente
+country: NL
+locations:
+- city: Eersel
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.3575
+    lon: 5.3172
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

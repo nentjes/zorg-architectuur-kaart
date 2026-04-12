@@ -1,0 +1,16 @@
+id: gem-west-maas-en-waal
+type: organization
+name: Gemeente West Maas en Waal
+sector: gemeente
+country: NL
+locations:
+- city: Beneden-Leeuwen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8858
+    lon: 5.5367
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

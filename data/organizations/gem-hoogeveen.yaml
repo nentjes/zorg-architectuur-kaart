@@ -1,0 +1,16 @@
+id: gem-hoogeveen
+type: organization
+name: Gemeente Hoogeveen
+sector: gemeente
+country: NL
+locations:
+- city: Hoogeveen
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.7228
+    lon: 6.4767
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

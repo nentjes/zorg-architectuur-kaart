@@ -1,0 +1,16 @@
+id: gem-krimpen-aan-den-ijssel
+type: organization
+name: Gemeente Krimpen aan den IJssel
+sector: gemeente
+country: NL
+locations:
+- city: Krimpen aan den IJssel
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9175
+    lon: 4.5944
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

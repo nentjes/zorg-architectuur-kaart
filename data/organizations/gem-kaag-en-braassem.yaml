@@ -1,0 +1,16 @@
+id: gem-kaag-en-braassem
+type: organization
+name: Gemeente Kaag en Braassem
+sector: gemeente
+country: NL
+locations:
+- city: Roelofarendsveen
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.2028
+    lon: 4.6339
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

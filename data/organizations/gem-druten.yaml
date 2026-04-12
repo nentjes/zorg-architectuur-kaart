@@ -1,0 +1,16 @@
+id: gem-druten
+type: organization
+name: Gemeente Druten
+sector: gemeente
+country: NL
+locations:
+- city: Druten
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8878
+    lon: 5.6011
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

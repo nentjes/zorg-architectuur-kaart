@@ -1,0 +1,16 @@
+id: gem-de-fryske-marren
+type: organization
+name: Gemeente De Fryske Marren
+sector: gemeente
+country: NL
+locations:
+- city: Joure
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 52.9606
+    lon: 5.7997
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

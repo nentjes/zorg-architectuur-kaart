@@ -1,0 +1,16 @@
+id: gem-oosterhout
+type: organization
+name: Gemeente Oosterhout
+sector: gemeente
+country: NL
+locations:
+- city: Oosterhout
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6461
+    lon: 4.8589
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

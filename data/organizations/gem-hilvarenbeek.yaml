@@ -1,0 +1,16 @@
+id: gem-hilvarenbeek
+type: organization
+name: Gemeente Hilvarenbeek
+sector: gemeente
+country: NL
+locations:
+- city: Hilvarenbeek
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4867
+    lon: 5.1336
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

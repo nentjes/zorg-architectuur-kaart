@@ -1,0 +1,16 @@
+id: gem-elburg
+type: organization
+name: Gemeente Elburg
+sector: gemeente
+country: NL
+locations:
+- city: Elburg
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.4447
+    lon: 5.8372
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

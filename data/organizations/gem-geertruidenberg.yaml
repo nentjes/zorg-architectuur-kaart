@@ -1,0 +1,16 @@
+id: gem-geertruidenberg
+type: organization
+name: Gemeente Geertruidenberg
+sector: gemeente
+country: NL
+locations:
+- city: Raamsdonksveer
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6775
+    lon: 4.8817
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

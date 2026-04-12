@@ -1,0 +1,16 @@
+id: gem-west-betuwe
+type: organization
+name: Gemeente West Betuwe
+sector: gemeente
+country: NL
+locations:
+- city: Geldermalsen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8819
+    lon: 5.2897
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

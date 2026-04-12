@@ -1,0 +1,16 @@
+id: gem-zaanstad
+type: organization
+name: Gemeente Zaanstad
+sector: gemeente
+country: NL
+locations:
+- city: Zaandam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.4389
+    lon: 4.8289
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

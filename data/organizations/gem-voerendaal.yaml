@@ -1,0 +1,16 @@
+id: gem-voerendaal
+type: organization
+name: Gemeente Voerendaal
+sector: gemeente
+country: NL
+locations:
+- city: Voerendaal
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.8836
+    lon: 5.9303
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

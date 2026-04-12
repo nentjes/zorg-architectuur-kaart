@@ -1,0 +1,16 @@
+id: gem-twenterand
+type: organization
+name: Gemeente Twenterand
+sector: gemeente
+country: NL
+locations:
+- city: Vriezenveen
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.4083
+    lon: 6.625
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

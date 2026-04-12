@@ -1,0 +1,17 @@
+id: huisartsen-rivierenland
+type: organization
+name: Huisartsen Rivierenland
+sector: huisarts
+subtype: zorggroep
+country: NL
+locations:
+- city: Tiel
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8869
+    lon: 5.4286
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

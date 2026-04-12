@@ -1,0 +1,16 @@
+id: kalorama
+type: organization
+name: Kalorama
+sector: vvt
+country: NL
+locations:
+- city: Beek-Ubbergen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8319
+    lon: 5.9183
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

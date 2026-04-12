@@ -1,0 +1,127 @@
+# Manifest: apotheek-ketens NL — Sprint 4 coarse ingest
+#
+# Doel: hoofdkantoren van de grote apotheek-ketens en -koepels op
+# de kaart. Individuele openbare apotheken (~1.970) parkeren we —
+# Roel pakt eventueel een praktijkbestand er later bij.
+#
+# Elke keten krijgt één punt op zijn hoofdkantoor. Systemen
+# (Pharmacom, CGM Aposys) zijn bewust NIET geseed: de keten zelf
+# gebruikt vaak iets anders dan zijn aangesloten apotheken.
+#
+# Bron: claude-knowledge-2026-04. confidence: low, needs_verification: true.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  - id: benu-apotheek
+    name: "BENU Apotheek (Brocacef)"
+    aliases: ["BENU"]
+    sector: apotheek
+    subtype: "keten"
+    locations:
+      - city: "Maarssen"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1386, lon: 5.0456}
+
+  - id: service-apotheek
+    name: "Service Apotheek (Mosadex)"
+    aliases: ["Service Apotheek", "Mosadex"]
+    sector: apotheek
+    subtype: "keten"
+    locations:
+      - city: "Oss"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.7649, lon: 5.5236}
+
+  - id: alphega-apotheek
+    name: "Alphega Apotheek (Alliance Healthcare)"
+    aliases: ["Alphega"]
+    sector: apotheek
+    subtype: "keten"
+    locations:
+      - city: "Den Bosch"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.6978, lon: 5.3037}
+
+  - id: boots-apotheek-nl
+    name: "Boots Apotheek Nederland"
+    aliases: ["Boots"]
+    sector: apotheek
+    subtype: "keten"
+    locations:
+      - city: "Nijmegen"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.8126, lon: 5.8372}
+
+  - id: mediq-apotheken
+    name: "Mediq Apotheken"
+    aliases: ["Mediq"]
+    sector: apotheek
+    subtype: "keten"
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+
+  - id: kring-apotheek
+    name: "Kring-apotheek"
+    sector: apotheek
+    subtype: "koepel"
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+
+  - id: dienstapotheek-nl-koepel
+    name: "Dienstapotheken Nederland"
+    aliases: ["DAN"]
+    sector: apotheek
+    subtype: "koepel"
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+
+  - id: knmp
+    name: "KNMP (Koninklijke Nederlandse Maatschappij ter bevordering der Pharmacie)"
+    aliases: ["KNMP"]
+    sector: apotheek
+    subtype: "koepel"
+    locations:
+      - city: "Den Haag"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.0799, lon: 4.3113}
+
+  - id: npa-coop
+    name: "Napco / Napharm (zelfstandige apothekers)"
+    aliases: ["NApCo"]
+    sector: apotheek
+    subtype: "koepel"
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3676, lon: 4.9041}
+
+  - id: brocacef-groep
+    name: "Brocacef Groep"
+    aliases: ["Brocacef"]
+    sector: apotheek
+    subtype: "groothandel-keten"
+    locations:
+      - city: "Maarssen"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1386, lon: 5.0456}

@@ -1,0 +1,19 @@
+id: sge-eindhoven
+type: organization
+name: SGE (Stichting Gezondheidscentra Eindhoven)
+aliases:
+- SGE
+sector: huisarts
+subtype: zorggroep
+country: NL
+locations:
+- city: Eindhoven
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4416
+    lon: 5.4697
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

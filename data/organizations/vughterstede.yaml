@@ -1,0 +1,16 @@
+id: vughterstede
+type: organization
+name: Vughterstede
+sector: vvt
+country: NL
+locations:
+- city: Vught
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6542
+    lon: 5.2867
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

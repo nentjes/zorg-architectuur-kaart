@@ -1,0 +1,19 @@
+id: stad-holland-zorggroep
+type: organization
+name: Stad Holland Zorgverzekeraar / HOZH
+aliases:
+- HOZH
+sector: huisarts
+subtype: zorggroep
+country: NL
+locations:
+- city: Schiedam
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9194
+    lon: 4.3989
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

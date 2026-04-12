@@ -1,0 +1,16 @@
+id: pieter-van-foreest
+type: organization
+name: Pieter van Foreest
+sector: vvt
+country: NL
+locations:
+- city: Delft
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0116
+    lon: 4.3571
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

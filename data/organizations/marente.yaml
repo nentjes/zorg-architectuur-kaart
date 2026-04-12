@@ -1,0 +1,16 @@
+id: marente
+type: organization
+name: Marente
+sector: vvt
+country: NL
+locations:
+- city: Warmond
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.2
+    lon: 4.5
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

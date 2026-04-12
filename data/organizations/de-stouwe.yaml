@@ -1,0 +1,16 @@
+id: de-stouwe
+type: organization
+name: De Stouwe
+sector: vvt
+country: NL
+locations:
+- city: Meppel
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.6954
+    lon: 6.1939
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

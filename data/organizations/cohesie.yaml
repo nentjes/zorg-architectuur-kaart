@@ -1,0 +1,19 @@
+id: cohesie
+type: organization
+name: Cohesie Cure and Care
+aliases:
+- Cohesie
+sector: huisarts
+subtype: zorggroep
+country: NL
+locations:
+- city: Venlo
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.3704
+    lon: 6.1724
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

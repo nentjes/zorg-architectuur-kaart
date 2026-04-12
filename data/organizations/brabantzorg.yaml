@@ -1,0 +1,16 @@
+id: brabantzorg
+type: organization
+name: BrabantZorg
+sector: vvt
+country: NL
+locations:
+- city: Oss
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.7649
+    lon: 5.5236
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

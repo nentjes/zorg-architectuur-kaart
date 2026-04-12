@@ -1,0 +1,16 @@
+id: zorgsaam
+type: organization
+name: ZorgSaam Zeeuws-Vlaanderen
+sector: vvt
+country: NL
+locations:
+- city: Terneuzen
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.3349
+    lon: 3.8264
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

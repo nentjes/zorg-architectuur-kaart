@@ -1,0 +1,16 @@
+id: zzg-zorggroep
+type: organization
+name: ZZG Zorggroep
+sector: vvt
+country: NL
+locations:
+- city: Nijmegen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8126
+    lon: 5.8372
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

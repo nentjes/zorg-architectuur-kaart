@@ -1,0 +1,19 @@
+id: cohaesie-apeldoorn
+type: organization
+name: Huisartsen Coöperatie Apeldoorn
+aliases:
+- Cohaesie Apeldoorn
+sector: huisarts
+subtype: zorggroep
+country: NL
+locations:
+- city: Apeldoorn
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.2112
+    lon: 5.9699
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,19 @@
+id: ggze
+type: organization
+name: GGzE
+aliases:
+- Geestelijke Gezondheidszorg Eindhoven
+sector: ggz
+subtype: geintegreerd
+country: NL
+locations:
+- city: Eindhoven
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4416
+    lon: 5.4697
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

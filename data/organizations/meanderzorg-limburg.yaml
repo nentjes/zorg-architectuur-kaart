@@ -1,0 +1,16 @@
+id: meanderzorg-limburg
+type: organization
+name: Meandergroep Zuid-Limburg
+sector: vvt
+country: NL
+locations:
+- city: Kerkrade
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.8658
+    lon: 6.0614
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,17 @@
+id: meditta
+type: organization
+name: Meditta
+sector: huisarts
+subtype: zorggroep
+country: NL
+locations:
+- city: Echt
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.1004
+    lon: 5.8758
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

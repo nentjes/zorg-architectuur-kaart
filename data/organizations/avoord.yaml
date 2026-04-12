@@ -1,0 +1,16 @@
+id: avoord
+type: organization
+name: Avoord
+sector: vvt
+country: NL
+locations:
+- city: Etten-Leur
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5703
+    lon: 4.6384
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

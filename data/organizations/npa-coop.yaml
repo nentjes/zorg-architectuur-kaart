@@ -1,0 +1,19 @@
+id: npa-coop
+type: organization
+name: Napco / Napharm (zelfstandige apothekers)
+aliases:
+- NApCo
+sector: apotheek
+subtype: koepel
+country: NL
+locations:
+- city: Amsterdam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3676
+    lon: 4.9041
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

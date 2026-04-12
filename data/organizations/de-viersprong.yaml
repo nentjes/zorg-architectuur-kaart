@@ -1,0 +1,17 @@
+id: de-viersprong
+type: organization
+name: De Viersprong
+sector: ggz
+subtype: specialistisch
+country: NL
+locations:
+- city: Halsteren
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.534
+    lon: 4.2897
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

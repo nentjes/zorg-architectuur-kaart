@@ -1,0 +1,19 @@
+id: nhg
+type: organization
+name: Nederlands Huisartsen Genootschap
+aliases:
+- NHG
+sector: huisarts
+subtype: koepel
+country: NL
+locations:
+- city: Utrecht
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0907
+    lon: 5.1214
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

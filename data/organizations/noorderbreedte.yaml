@@ -1,0 +1,16 @@
+id: noorderbreedte
+type: organization
+name: Noorderbreedte
+sector: vvt
+country: NL
+locations:
+- city: Leeuwarden
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.2012
+    lon: 5.7999
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

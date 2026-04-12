@@ -1,0 +1,19 @@
+id: benu-apotheek
+type: organization
+name: BENU Apotheek (Brocacef)
+aliases:
+- BENU
+sector: apotheek
+subtype: keten
+country: NL
+locations:
+- city: Maarssen
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1386
+    lon: 5.0456
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

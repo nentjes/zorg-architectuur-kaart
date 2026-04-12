@@ -1,0 +1,19 @@
+id: hzog
+type: organization
+name: Huisartsenzorg Oost-Groningen
+aliases:
+- HZOG
+sector: huisarts
+subtype: zorggroep
+country: NL
+locations:
+- city: Winschoten
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.1447
+    lon: 7.035
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

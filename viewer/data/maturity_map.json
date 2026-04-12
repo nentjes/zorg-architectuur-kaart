@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-12T17:25:04",
+    "generated_at": "2026-04-12T18:45:45",
     "n_connections": 3,
-    "n_organizations_scored": 205,
+    "n_organizations_scored": 371,
     "formula": {
       "per_connection": {
         "raw": "paradigm_w * topology_w * status_w * data_w * recency_w",
@@ -179,6 +179,18 @@
       ]
     },
     {
+      "id": "aafje",
+      "name": "Aafje",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "accare",
       "name": "Accare",
       "sector": "ggz",
@@ -186,6 +198,18 @@
       "coord": [
         6.5639,
         52.9956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "actiz",
+      "name": "ActiZ",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -239,6 +263,42 @@
       "participating_in": []
     },
     {
+      "id": "allevo",
+      "name": "Allévo",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        3.92,
+        51.6506
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "alphega-apotheek",
+      "name": "Alphega Apotheek (Alliance Healthcare)",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.3037,
+        51.6978
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "alrijne-zorggroep",
+      "name": "Alrijne Zorggroep VVT",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.5364,
+        52.1625
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "altrecht",
       "name": "Altrecht",
       "sector": "ggz",
@@ -251,6 +311,18 @@
       "participating_in": []
     },
     {
+      "id": "amaris",
+      "name": "Amaris Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.2308,
+        52.2556
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "amphia",
       "name": "Amphia Ziekenhuis",
       "sector": "ziekenhuis",
@@ -258,6 +330,30 @@
       "coord": [
         4.7683,
         51.5719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "amstelland-zorg",
+      "name": "Amstelland Zorg",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.86,
+        52.308
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "amstelring",
+      "name": "Amstelring",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -299,6 +395,30 @@
       "participating_in": []
     },
     {
+      "id": "archipel",
+      "name": "Archipel",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "argos-zorggroep",
+      "name": "Argos Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.3989,
+        51.9194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "arkin",
       "name": "Arkin",
       "sector": "ggz",
@@ -306,6 +426,18 @@
       "coord": [
         4.9041,
         52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "attent-zorg",
+      "name": "Attent Zorg en Behandeling",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9775,
+        51.9956
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -323,6 +455,18 @@
       "participating_in": []
     },
     {
+      "id": "avoord",
+      "name": "Avoord",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.6384,
+        51.5703
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "axioncontinu",
       "name": "AxionContinu",
       "sector": "vvt",
@@ -335,6 +479,18 @@
       "participating_in": []
     },
     {
+      "id": "azora",
+      "name": "Azora",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.3739,
+        51.9197
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "basalt",
       "name": "Basalt Revalidatie",
       "sector": "revalidatie",
@@ -342,6 +498,18 @@
       "coord": [
         4.4869,
         52.1581
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "benu-apotheek",
+      "name": "BENU Apotheek (Brocacef)",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.0456,
+        52.1386
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -371,6 +539,30 @@
       "participating_in": []
     },
     {
+      "id": "boots-apotheek-nl",
+      "name": "Boots Apotheek Nederland",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.8372,
+        51.8126
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "brabantzorg",
+      "name": "BrabantZorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.5236,
+        51.7649
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "bravis",
       "name": "Bravis Ziekenhuis",
       "sector": "ziekenhuis",
@@ -378,6 +570,30 @@
       "coord": [
         4.4667,
         51.5333
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "brijder",
+      "name": "Brijder Verslavingszorg",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.7534,
+        52.6324
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "brocacef-groep",
+      "name": "Brocacef Groep",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.0456,
+        52.1386
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -407,6 +623,30 @@
       "participating_in": []
     },
     {
+      "id": "chronic-care-west-brabant",
+      "name": "Chronic Care West-Brabant (CCWB)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.4654,
+        51.5309
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cicero-zorggroep",
+      "name": "Cicero Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9708,
+        50.9467
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "ciran-intergrin",
       "name": "InteGrin (v/h Ciran)",
       "sector": "revalidatie",
@@ -414,6 +654,42 @@
       "coord": [
         5.4697,
         51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cohaesie-apeldoorn",
+      "name": "Huisartsen Coöperatie Apeldoorn",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.9699,
+        52.2112
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cohesie",
+      "name": "Cohesie Cure and Care",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.1724,
+        51.3704
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cordaan",
+      "name": "Cordaan",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -431,6 +707,18 @@
       "participating_in": []
     },
     {
+      "id": "de-friese-wouden",
+      "name": "De Friese Wouden",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.0989,
+        53.1128
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "de-hoogstraat",
       "name": "De Hoogstraat Revalidatie",
       "sector": "revalidatie",
@@ -443,6 +731,18 @@
       "participating_in": []
     },
     {
+      "id": "de-nederlandse-ggz",
+      "name": "de Nederlandse ggz",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "de-rijnhoven",
       "name": "De Rijnhoven",
       "sector": "vvt",
@@ -450,6 +750,78 @@
       "coord": [
         4.955,
         52.09
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-stouwe",
+      "name": "De Stouwe",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.1939,
+        52.6954
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-viersprong",
+      "name": "De Viersprong",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.2897,
+        51.534
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-wever",
+      "name": "De Wever",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.0913,
+        51.5555
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-zorgboog",
+      "name": "De Zorgboog",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.7528,
+        51.4708
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-zorggroep",
+      "name": "De Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.1724,
+        51.3704
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "derdelijn-treant",
+      "name": "Zorggroep Leveste Middenveld",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.8973,
+        52.7858
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -479,6 +851,30 @@
       "participating_in": []
     },
     {
+      "id": "dienstapotheek-nl-koepel",
+      "name": "Dienstapotheken Nederland",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "dignis",
+      "name": "Dignis",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "dijklander",
       "name": "Dijklander Ziekenhuis",
       "sector": "ziekenhuis",
@@ -503,6 +899,66 @@
       "participating_in": []
     },
     {
+      "id": "doh",
+      "name": "DOH (De Ondernemende Huisarts)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "dokter-drenthe",
+      "name": "Dokter Drenthe",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.8973,
+        52.7858
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "drechtdokters",
+      "name": "DrechtDokters",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.6901,
+        51.8133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "driezorg",
+      "name": "Driezorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.083,
+        52.5168
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "elann",
+      "name": "ELANN",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "elkerliek",
       "name": "Elkerliek Ziekenhuis",
       "sector": "ziekenhuis",
@@ -510,6 +966,30 @@
       "coord": [
         5.65,
         51.4833
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "emergis",
+      "name": "Emergis",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        3.8881,
+        51.5048
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "envida",
+      "name": "Envida",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.691,
+        50.8514
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -527,6 +1007,18 @@
       "participating_in": []
     },
     {
+      "id": "espria",
+      "name": "Espria",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.5167,
+        52.8612
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "etz",
       "name": "Elisabeth-TweeSteden Ziekenhuis",
       "sector": "ziekenhuis",
@@ -534,6 +1026,42 @@
       "coord": [
         5.0772,
         51.5606
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "evean",
+      "name": "Evean",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.9596,
+        52.5051
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "fea",
+      "name": "FEA (Federatie Eerstelijnszorg Almelo)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.6604,
+        52.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "fivoor",
+      "name": "Fivoor",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -551,6 +1079,18 @@
       "participating_in": []
     },
     {
+      "id": "florence",
+      "name": "Florence",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.3113,
+        52.0799
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "franciscus",
       "name": "Franciscus Gasthuis & Vlietland",
       "sector": "ziekenhuis",
@@ -558,6 +1098,18 @@
       "coord": [
         4.4697,
         51.9306
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "friese-huisartsenvereniging",
+      "name": "Friese Huisartsen Vereniging",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.0989,
+        53.1128
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1271,6 +1823,42 @@
       "participating_in": []
     },
     {
+      "id": "ggze",
+      "name": "GGzE",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "groenhuysen",
+      "name": "Groenhuysen",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.4654,
+        51.5309
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hadoks",
+      "name": "Hadoks",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.3113,
+        52.0799
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "haga",
       "name": "HagaZiekenhuis",
       "sector": "ziekenhuis",
@@ -1278,6 +1866,18 @@
       "coord": [
         4.3192,
         52.0506
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hartinge",
+      "name": "Zorggroep Tilburg",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.0913,
+        51.5555
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1295,6 +1895,18 @@
       "participating_in": []
     },
     {
+      "id": "hkn-noord-holland-noord",
+      "name": "Huisartsenorganisatie Noord-Kennemerland",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.7534,
+        52.6324
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "hmc",
       "name": "Haaglanden Medisch Centrum",
       "sector": "ziekenhuis",
@@ -1302,6 +1914,42 @@
       "coord": [
         4.3097,
         52.0786
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hozl",
+      "name": "Huisartsen Oostelijk Zuid-Limburg",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.9795,
+        50.8882
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsen-al-flevoland",
+      "name": "Zorggroep Almere",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.2647,
+        52.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsen-coop-goeree-overflakkee",
+      "name": "Huisartsencoöperatie Goeree-Overflakkee",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.1709,
+        51.7575
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1319,6 +1967,78 @@
       "participating_in": []
     },
     {
+      "id": "huisartsen-gooi-vechtstreek",
+      "name": "Huisartsen Gooi en Vechtstreek",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.176,
+        52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsen-rivierenland",
+      "name": "Huisartsen Rivierenland",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.4286,
+        51.8869
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsen-westelijke-mijnstreek",
+      "name": "Huisartsen Westelijke Mijnstreek",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.8696,
+        50.9983
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsenkring-walcheren",
+      "name": "Huisartsen Coöperatie Walcheren",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        3.6109,
+        51.4988
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsenkring-zaanstreek-waterland",
+      "name": "Huisartsen Zaanstreek-Waterland (HZW)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.8289,
+        52.4389
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "humanitas-rotterdam",
+      "name": "Stichting Humanitas Rotterdam",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "huw",
       "name": "Huisartsen Utrecht West (HUW)",
       "sector": "huisarts",
@@ -1326,6 +2046,90 @@
       "coord": [
         4.8836,
         52.0853
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hvo-querido",
+      "name": "HVO-Querido",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hzd-drenthe",
+      "name": "Huisartsenzorg Drenthe",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.5626,
+        52.996
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hzd-zwolle",
+      "name": "Huisartsen Zwolle en omstreken",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.083,
+        52.5168
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hzn-fryslan",
+      "name": "Huisartsen Zorggroep Noord (Friesland)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.7999,
+        53.2012
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hzog",
+      "name": "Huisartsenzorg Oost-Groningen",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        7.035,
+        53.1447
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "icare",
+      "name": "Icare (Espria)",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.1939,
+        52.6954
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ijsselheem",
+      "name": "IJsselheem",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9113,
+        52.5558
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1355,6 +2159,66 @@
       "participating_in": []
     },
     {
+      "id": "ineen",
+      "name": "InEen",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "inforsa",
+      "name": "Inforsa",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "innoforte",
+      "name": "Innoforte",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "internos",
+      "name": "Internos",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.6901,
+        51.8133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "iriszorg",
+      "name": "IrisZorg",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "isala",
       "name": "Isala",
       "sector": "ziekenhuis",
@@ -1367,6 +2231,18 @@
       "participating_in": []
     },
     {
+      "id": "izer",
+      "name": "IZER",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "jbz",
       "name": "Jeroen Bosch Ziekenhuis",
       "sector": "ziekenhuis",
@@ -1374,6 +2250,30 @@
       "coord": [
         5.2903,
         51.6892
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "jellinek",
+      "name": "Jellinek",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "kalorama",
+      "name": "Kalorama",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9183,
+        51.8319
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1403,6 +2303,66 @@
       "participating_in": []
     },
     {
+      "id": "knmp",
+      "name": "KNMP (Koninklijke Nederlandse Maatschappij ter bevordering der Pharmacie)",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        4.3113,
+        52.0799
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "knooppunt-ketenzorg",
+      "name": "Knooppunt Ketenzorg",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "kring-apotheek",
+      "name": "Kring-apotheek",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "kwadrantgroep",
+      "name": "KwadrantGroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.0989,
+        53.1128
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "kwintes",
+      "name": "Kwintes",
+      "sector": "ggz",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2324,
+        52.0894
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "labmicta",
       "name": "Labmicta",
       "sector": "zbc",
@@ -1415,6 +2375,18 @@
       "participating_in": []
     },
     {
+      "id": "land-van-horne",
+      "name": "Land van Horne",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.7056,
+        51.2511
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "lange-land",
       "name": "LangeLand Ziekenhuis",
       "sector": "ziekenhuis",
@@ -1422,6 +2394,18 @@
       "coord": [
         4.4931,
         52.0636
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "laurens",
+      "name": "Laurens",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1451,6 +2435,18 @@
       "participating_in": []
     },
     {
+      "id": "lelie-zorggroep",
+      "name": "Lelie zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.5775,
+        51.9294
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "lentis",
       "name": "Lentis",
       "sector": "ggz",
@@ -1463,6 +2459,54 @@
       "participating_in": []
     },
     {
+      "id": "leviaan",
+      "name": "Leviaan",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.9596,
+        52.5051
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "levvel",
+      "name": "Levvel",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.9501,
+        52.3146
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "lhv",
+      "name": "Landelijke Huisartsen Vereniging",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "libertas-leiden",
+      "name": "Libertas Leiden",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "libra-revalidatie",
       "name": "Libra Revalidatie & Audiologie",
       "sector": "revalidatie",
@@ -1470,6 +2514,30 @@
       "coord": [
         5.4697,
         51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "lister",
+      "name": "Lister",
+      "sector": "ggz",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "livio",
+      "name": "Livio",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.8937,
+        52.2215
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1511,6 +2579,30 @@
       "participating_in": []
     },
     {
+      "id": "marente",
+      "name": "Marente",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.5,
+        52.2
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "marga-klompe",
+      "name": "Marga Klompé",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.5656,
+        51.9828
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "martini-ziekenhuis",
       "name": "Martini Ziekenhuis",
       "sector": "ziekenhuis",
@@ -1547,6 +2639,18 @@
       "participating_in": []
     },
     {
+      "id": "meanderzorg-limburg",
+      "name": "Meandergroep Zuid-Limburg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.0614,
+        50.8658
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "mediant",
       "name": "Mediant Geestelijke Gezondheidszorg",
       "sector": "ggz",
@@ -1554,6 +2658,66 @@
       "coord": [
         6.8937,
         52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "medicamus-lelystad",
+      "name": "MC Flevo (Lelystad)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.4714,
+        52.5185
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "medicamus",
+      "name": "Medicamus",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.6208,
+        52.341
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mediq-apotheken",
+      "name": "Mediq Apotheken",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "meditta",
+      "name": "Meditta",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.8758,
+        51.1004
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "medrie",
+      "name": "Medrie",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.083,
+        52.5168
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1607,6 +2771,18 @@
       "participating_in": []
     },
     {
+      "id": "nhg",
+      "name": "Nederlands Huisartsen Genootschap",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "nij-smellinghe",
       "name": "Nij Smellinghe",
       "sector": "ziekenhuis",
@@ -1614,6 +2790,30 @@
       "coord": [
         6.0981,
         53.1072
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "noorderbreedte",
+      "name": "Noorderbreedte",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.7999,
+        53.2012
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "noorderzorg",
+      "name": "Noorderzorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.9464,
+        52.9925
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1631,6 +2831,30 @@
       "participating_in": []
     },
     {
+      "id": "npa-coop",
+      "name": "Napco / Napharm (zelfstandige apothekers)",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "nucleus-zorg",
+      "name": "Nucleus Zorg",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        3.8264,
+        51.3349
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "nwz",
       "name": "Noordwest Ziekenhuisgroep",
       "sector": "ziekenhuis",
@@ -1638,6 +2862,18 @@
       "coord": [
         4.7497,
         52.6336
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "oce-nijmegen",
+      "name": "OCE Nijmegen",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.8372,
+        51.8126
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1655,6 +2891,30 @@
       "participating_in": []
     },
     {
+      "id": "omring",
+      "name": "Omring",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.0597,
+        52.6425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "onze-huisartsen",
+      "name": "Onze Huisartsen",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "oogziekenhuis-rotterdam",
       "name": "Het Oogziekenhuis Rotterdam",
       "sector": "ziekenhuis",
@@ -1662,6 +2922,30 @@
       "coord": [
         4.47,
         51.9194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "oosterlengte",
+      "name": "Oosterlengte",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        7.035,
+        53.1447
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "osira-amstelring",
+      "name": "Zonnehuisgroep Amstelland",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.86,
+        52.308
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1679,6 +2963,30 @@
       "participating_in": []
     },
     {
+      "id": "palet",
+      "name": "Palet Leeuwarden",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.7999,
+        53.2012
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "pantein",
+      "name": "Pantein",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9478,
+        51.6478
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "parnassia-groep",
       "name": "Parnassia Groep",
       "sector": "ggz",
@@ -1686,6 +2994,54 @@
       "coord": [
         4.3097,
         52.0786
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "parnassia-vvt",
+      "name": "De Zellingen",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.5775,
+        51.9294
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "patyna",
+      "name": "Patyna",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.5272,
+        53.0686
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "pieter-van-foreest",
+      "name": "Pieter van Foreest",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.3571,
+        52.0116
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "pozob",
+      "name": "PoZoB",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.4035,
+        51.4193
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1715,6 +3071,18 @@
       "participating_in": []
     },
     {
+      "id": "proteion",
+      "name": "Proteion",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9247,
+        51.2092
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "quarijn",
       "name": "QuaRijn",
       "sector": "vvt",
@@ -1722,6 +3090,18 @@
       "coord": [
         5.2836,
         52.0539
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "quartz",
+      "name": "Quartz",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.3037,
+        51.6978
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -2051,6 +3431,18 @@
       "participating_in": []
     },
     {
+      "id": "respect-zorggroep",
+      "name": "Respect Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.2711,
+        52.1073
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "revalidatie-friesland",
       "name": "Revalidatie Friesland",
       "sector": "revalidatie",
@@ -2082,6 +3474,42 @@
       "coord": [
         5.176,
         52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rhz-rotterdam",
+      "name": "Ruysdael Zorggroep",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ribw-brabant",
+      "name": "RIBW Brabant",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.0913,
+        51.5555
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rijncoepel",
+      "name": "Rijncoepel",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -2159,6 +3587,42 @@
       "participating_in": []
     },
     {
+      "id": "rohamsterdam",
+      "name": "ROHA (Regionale Organisatie Huisartsen Amsterdam)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "saffier",
+      "name": "Saffier",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.3113,
+        52.0799
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "savant",
+      "name": "Savant Zorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.6614,
+        51.4826
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "saxenburgh",
       "name": "Saxenburgh",
       "sector": "ziekenhuis",
@@ -2166,6 +3630,54 @@
       "coord": [
         6.6181,
         52.5772
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "sensire",
+      "name": "Sensire",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.465,
+        51.9434
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "service-apotheek",
+      "name": "Service Apotheek (Mosadex)",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.5236,
+        51.7649
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "sevagram",
+      "name": "Sevagram",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9795,
+        50.8882
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "sge-eindhoven",
+      "name": "SGE (Stichting Gezondheidscentra Eindhoven)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -2183,6 +3695,18 @@
       "participating_in": []
     },
     {
+      "id": "sint-jacob",
+      "name": "Sint Jacob",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.6462,
+        52.3874
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "sint-maartenskliniek",
       "name": "Sint Maartenskliniek",
       "sector": "ziekenhuis",
@@ -2190,6 +3714,18 @@
       "coord": [
         5.8775,
         51.8094
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "siza",
+      "name": "Siza",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -2267,6 +3803,66 @@
       "participating_in": []
     },
     {
+      "id": "stad-holland-zorggroep",
+      "name": "Stad Holland Zorgverzekeraar / HOZH",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.3989,
+        51.9194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "surplus",
+      "name": "Surplus",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.7683,
+        51.5719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "svrz",
+      "name": "SVRZ",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        3.6109,
+        51.4988
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "swz-zorg",
+      "name": "SWZ Zorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.4906,
+        51.5139
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "syntein",
+      "name": "Syntein",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.9478,
+        51.6478
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "tactus",
       "name": "Tactus Verslavingszorg",
       "sector": "ggz",
@@ -2279,6 +3875,18 @@
       "participating_in": []
     },
     {
+      "id": "tante-louise",
+      "name": "tanteLouise",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.2871,
+        51.4936
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "tergooi-mc",
       "name": "Tergooi MC",
       "sector": "ziekenhuis",
@@ -2286,6 +3894,30 @@
       "coord": [
         5.176,
         52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "thebe",
+      "name": "Thebe",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.0913,
+        51.5555
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "thoon",
+      "name": "THOON",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.793,
+        52.2661
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -2315,6 +3947,42 @@
       "participating_in": []
     },
     {
+      "id": "topaz",
+      "name": "Topaz",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "trajectum",
+      "name": "Trajectum",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.083,
+        52.5168
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "transfore",
+      "name": "Transfore",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.1639,
+        52.2551
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "treant",
       "name": "Treant Zorggroep",
       "sector": "ziekenhuis",
@@ -2322,6 +3990,18 @@
       "coord": [
         6.9047,
         52.7792
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "trivium-meulenbelt",
+      "name": "TriviumMeulenbeltZorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.6604,
+        52.3508
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -2346,6 +4026,30 @@
       "coord": [
         5.0375,
         52.1375
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "valkenhof",
+      "name": "Valkenhof",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.4606,
+        51.3528
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "van-neynsel",
+      "name": "Van Neynsel",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.3037,
+        51.6978
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -2411,6 +4115,18 @@
       "participating_in": []
     },
     {
+      "id": "vitalis-wooncentra",
+      "name": "Vitalis WoonZorg Groep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "vivium-zorggroep",
       "name": "Vivium Zorggroep",
       "sector": "vvt",
@@ -2418,6 +4134,18 @@
       "coord": [
         5.1612,
         52.2967
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vnn",
+      "name": "Verslavingszorg Noord Nederland",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -2435,6 +4163,30 @@
       "participating_in": []
     },
     {
+      "id": "vughterstede",
+      "name": "Vughterstede",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.2867,
+        51.6542
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "waalboog",
+      "name": "De Waalboog",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.8372,
+        51.8126
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "warande",
       "name": "Warande",
       "sector": "vvt",
@@ -2447,6 +4199,30 @@
       "participating_in": []
     },
     {
+      "id": "woonzorg-zeeland",
+      "name": "WVO Zorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        3.5736,
+        51.4426
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "woonzorgcentra-haaglanden",
+      "name": "Woonzorgcentra Haaglanden",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.3113,
+        52.0799
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "wza",
       "name": "Wilhelmina Ziekenhuis Assen",
       "sector": "ziekenhuis",
@@ -2454,6 +4230,18 @@
       "coord": [
         6.5639,
         52.9956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "youz",
+      "name": "Youz",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -2483,6 +4271,30 @@
       "participating_in": []
     },
     {
+      "id": "zel",
+      "name": "ZEL (Zorggroep Eerste Lijn)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.2036,
+        51.9939
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zgr-twenterand",
+      "name": "ZorgAccent",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.6604,
+        52.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "zgt",
       "name": "Ziekenhuisgroep Twente",
       "sector": "ziekenhuis",
@@ -2507,6 +4319,30 @@
       "participating_in": []
     },
     {
+      "id": "zgwa-wageningen",
+      "name": "Zorggroep Gelderse Vallei (ZGV) / Wageningen e.o.",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.6661,
+        52.047
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zgwa",
+      "name": "Zorggroep Oude en Nieuwe Land",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.7497,
+        52.7108
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "ziekenhuis-amstelland",
       "name": "Ziekenhuis Amstelland",
       "sector": "ziekenhuis",
@@ -2519,6 +4355,90 @@
       "participating_in": []
     },
     {
+      "id": "zinn",
+      "name": "ZINN",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zio",
+      "name": "ZIO (Zorg in Ontwikkeling)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.691,
+        50.8514
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorgbalans",
+      "name": "Zorgbalans",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.6462,
+        52.3874
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-apeldoorn-gv",
+      "name": "Zorggroep Apeldoorn",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9699,
+        52.2112
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-apeldoorn",
+      "name": "Atlant Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9699,
+        52.2112
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-groningen",
+      "name": "Zorggroep Groningen",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-oss",
+      "name": "Zorggroep Regio Oss",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.5236,
+        51.7649
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "zorggroep-regio-amersfoort",
       "name": "Zorggroep Regio Amersfoort",
       "sector": "huisarts",
@@ -2526,6 +4446,54 @@
       "coord": [
         5.3878,
         52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-sint-maarten",
+      "name": "Zorggroep Sint Maarten",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.9294,
+        52.3133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-zoetermeer",
+      "name": "Zorggroep Zoetermeer",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.4937,
+        52.0608
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorgring-nhn",
+      "name": "Magentazorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.7534,
+        52.6324
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorgsaam",
+      "name": "ZorgSaam Zeeuws-Vlaanderen",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        3.8264,
+        51.3349
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -2562,6 +4530,30 @@
       "coord": [
         5.9833,
         50.8881
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zuyderland-vvt",
+      "name": "Zuyderland Care",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.8696,
+        50.9983
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zzg-zorggroep",
+      "name": "ZZG Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.8372,
+        51.8126
       ],
       "total_score": 0.0,
       "participating_in": []

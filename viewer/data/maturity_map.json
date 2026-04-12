@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-12T19:57:06",
-    "n_connections": 3,
+    "generated_at": "2026-04-12T21:04:10",
+    "n_connections": 4,
     "n_organizations_scored": 376,
     "formula": {
       "per_connection": {
@@ -91,9 +91,48 @@
       },
       "raw_score": 0.072,
       "final_score": 0.072
+    },
+    {
+      "id": "conn-altrecht-umcu-lsp",
+      "organization_a": "altrecht",
+      "organization_b": "umc-utrecht",
+      "network": "lsp",
+      "network_name": "Landelijk Schakelpunt (LSP)",
+      "data_topology": "hybrid",
+      "status": "planned",
+      "data_types": [
+        "medication"
+      ],
+      "breakdown": {
+        "paradigm_label": "lsp",
+        "paradigm_w": 0.6,
+        "topology_w": 1.0,
+        "status_w": 0.1,
+        "data_w": 0.8,
+        "recency_w": 1.0,
+        "conform_w": 1.0,
+        "open_w": 1.0
+      },
+      "raw_score": 0.048,
+      "final_score": 0.048
     }
   ],
   "organizations": [
+    {
+      "id": "umc-utrecht",
+      "name": "Universitair Medisch Centrum Utrecht",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.508,
+      "participating_in": [
+        "conn-altrecht-umcu-lsp",
+        "conn-trijn-hus-umc-utrecht"
+      ]
+    },
     {
       "id": "hzt",
       "name": "Huisartsenzorg Twente",
@@ -137,20 +176,6 @@
       ]
     },
     {
-      "id": "umc-utrecht",
-      "name": "Universitair Medisch Centrum Utrecht",
-      "sector": "ziekenhuis",
-      "region_iza": "iza-midden-nederland",
-      "coord": [
-        5.1214,
-        52.0907
-      ],
-      "total_score": 0.46,
-      "participating_in": [
-        "conn-trijn-hus-umc-utrecht"
-      ]
-    },
-    {
       "id": "carintreggeland",
       "name": "Carintreggeland",
       "sector": "vvt",
@@ -176,6 +201,20 @@
       "total_score": 0.072,
       "participating_in": [
         "conn-rdh-twente-mst-carintreggeland"
+      ]
+    },
+    {
+      "id": "altrecht",
+      "name": "Altrecht",
+      "sector": "ggz",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.048,
+      "participating_in": [
+        "conn-altrecht-umcu-lsp"
       ]
     },
     {
@@ -294,18 +333,6 @@
       "coord": [
         4.5364,
         52.1625
-      ],
-      "total_score": 0.0,
-      "participating_in": []
-    },
-    {
-      "id": "altrecht",
-      "name": "Altrecht",
-      "sector": "ggz",
-      "region_iza": "iza-midden-nederland",
-      "coord": [
-        5.1214,
-        52.0907
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -736,8 +763,8 @@
       "sector": "revalidatie",
       "region_iza": "iza-midden-nederland",
       "coord": [
-        5.1677,
-        52.084
+        5.1571,
+        52.0839
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -3460,8 +3487,8 @@
       "sector": "revalidatie",
       "region_iza": null,
       "coord": [
-        4.8611,
-        52.3381
+        4.8693,
+        52.3625
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -3640,8 +3667,8 @@
       "sector": "revalidatie",
       "region_iza": null,
       "coord": [
-        6.8937,
-        52.2215
+        6.8533,
+        52.2394
       ],
       "total_score": 0.0,
       "participating_in": []

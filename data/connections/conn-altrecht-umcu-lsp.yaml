@@ -1,0 +1,16 @@
+id: conn-altrecht-umcu-lsp
+type: connection
+organization_a: altrecht
+organization_b: umc-utrecht
+network: lsp
+direction: bidirectional
+data_types:
+  - medication
+status: planned
+established: null
+sources:
+  - gemini-ggz-research-2026-04
+confidence: low
+needs_verification: true
+notes:
+  - "Kritieke interop-link regio Utrecht. Altrecht draait Tenzinger User (GGZ), UMCU draait ChipSoft HiX (ziekenhuis). Medicatie-overdracht tussen GGZ en somatische zorg is hier cruciaal — status: planned (placeholder — upgrade naar production zodra harde data beschikbaar is)."

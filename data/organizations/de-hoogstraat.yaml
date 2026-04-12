@@ -9,9 +9,10 @@ locations:
 - city: Utrecht
   province: Utrecht
   country: NL
+  address: "Rembrandtkade 10, 3583 TM Utrecht (Rijnsweerd, bij UMCU)"
   coordinates:
-    lat: 52.084
-    lon: 5.1677
+    lat: 52.0839
+    lon: 5.1571
 region_iza: iza-midden-nederland
 sources:
 - claude-knowledge-2026-04

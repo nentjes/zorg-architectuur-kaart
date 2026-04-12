@@ -7,9 +7,10 @@ locations:
 - city: Enschede
   province: Overijssel
   country: NL
+  address: "Roessinghsbleekweg 33, 7522 AH Enschede"
   coordinates:
-    lat: 52.2215
-    lon: 6.8937
+    lat: 52.2394
+    lon: 6.8533
 sources:
 - claude-knowledge-2026-04
 - roel-private-excel-2026-04

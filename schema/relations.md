@@ -122,8 +122,10 @@ waarbij `weighted_value` een functie is van:
 
 De exacte gewichten (numbers) staan **niet** in dit document. Ze horen in
 `/schema/maturity-score.yaml`, een apart file dat door de
-**Strategische Architect** (Gemini) wordt gevuld en onderhouden. Dat file
-is in v0.1 opzettelijk leeg met alleen een `TODO:`-structuur.
+**Strategische Architect** (Gemini) wordt gevuld en onderhouden. Sinds
+v0.1.1 (2026-04-12) zijn alle 5 assen compleet: transport_paradigm,
+topology, status, data_type, recency — plus twee multiplicatief-gestapelde
+bonussen (standard_conformance ×1.15, open_standard ×1.2).
 
 Reden voor de splitsing: de ontologie (dit document) is neutraal en
 feitelijk. De scoring-logica is methodologie en heeft aparte

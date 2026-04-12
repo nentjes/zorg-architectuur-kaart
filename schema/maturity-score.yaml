@@ -12,9 +12,17 @@
 #   score-as toevoegen of verwijderen)
 # - Minor (1.1 → 1.2) bij gewijzigde gewichten binnen bestaande assen
 # - Patch (1.1.0 → 1.1.1) bij bron-updates zonder gewicht-wijziging
+#
+# Changelog:
+# - v0.1.0-draft (2026-04-12): Gemini ronde #4 — 3 assen ingevuld
+#   (transport_paradigm, topology, status-partial), rest placeholder
+# - v0.1.1       (2026-04-12): Gemini ronde #5 — alle 5 assen compleet;
+#   open_standard_bonus van additief +0.2 omgezet naar multiplicatief
+#   ×1.2; legacy_messaging mapping verplaatst van lsp naar secure_email;
+#   recency_decay stepped ipv linear
 
-version: 0.1.0-draft
-status: eerste-slag
+version: 0.1.1
+status: ronde-5-volledig
 owner: gemini-strategische-architect
 last_updated: "2026-04-12"
 
@@ -47,6 +55,13 @@ transport_paradigm_weights:
 #
 # Regels worden van boven naar onder doorlopen; eerste match telt.
 
+#
+# Ronde #5 aanpassing: Gemini heeft de `lsp`-label verfijnd tot
+# *specifiek het Landelijk Schakelpunt*, niet alle legacy-hubs.
+# `legacy_messaging` (Edifact) wordt daarom gemapt naar
+# `secure_email` — óók papiervervanger, geen interoperabiliteit
+# op dataniveau.
+
 transport_paradigm_mapping:
   - if:
       standards_used_contains_any: [nl-core-r4, fhir-r5]
@@ -59,7 +74,7 @@ transport_paradigm_mapping:
     then: lsp
   - if:
       network_type: legacy_messaging
-    then: lsp
+    then: secure_email
   - if:
       network_type: secure_messaging
     then: secure_email
@@ -81,76 +96,108 @@ topology_multipliers:
   centralized: 0.8  # Strafpunt vendor-lock-in (Twente / Fabric)
 
 # -------------------------------------------------------------
-# 3. Status multiplier (v0.1 Gemini input, deels)
+# 3. Status multiplier (v0.1 Gemini input, ronde #5 compleet)
 # -------------------------------------------------------------
 #
-# Let op: Gemini heeft alleen 3 van de 6 status-waardes gedekt.
-# De overige 3 (concept, deprecated, inactive) staan op TODO tot
-# ronde #5.
+# Gemini ronde #5: `deprecated` blijft 0.0 (geen negatieve score,
+# om eerlijke registratie van legacy niet te ontmoedigen).
 
 status_multipliers:
   production: 1.0
   pilot: 0.5
   planned: 0.1
-  concept: TODO        # Voorstel Claude: 0.05
-  deprecated: TODO     # Voorstel Claude: 0.0
-  inactive: TODO       # Voorstel Claude: 0.0
+  concept: 0.05       # Papier is geduldig: intentie zonder realiteit
+  deprecated: 0.0     # Geen negatieve score (Gemini ronde #5)
+  inactive: 0.0
 
 # -------------------------------------------------------------
-# 4. Data-type gewichten (TODO — wacht op Gemini ronde #5)
+# 4. Data-type gewichten (v0.1.1 — Gemini ronde #5 akkoord)
 # -------------------------------------------------------------
 #
-# Voorstel Claude (in afwachting van Gemini):
-#   care_transfer: 1.0
-#   discharge_summary: 0.9
-#   basic_dataset: 0.8
-#   medication: 0.8
-#   radiology_image: 0.7
-#   lab_result: 0.6
-#   referral: 0.5
-#   consent: 0.4
-#   appointment: 0.3
-#   other: 0.2
+# Gemini akkoord met Claude's voorstel. Rationale: care_transfer
+# bevat álle andere data_types geaggregeerd en weegt dus het
+# volledigst. consent/appointment zijn enablers, geen
+# zorginhoudelijke gegevens. Aggregatie over meerdere data_types
+# in een connection: mean() — zie formule-sectie.
 
 data_type_weights:
-  TODO: true
+  care_transfer: 1.0
+  discharge_summary: 0.9
+  basic_dataset: 0.8
+  medication: 0.8
+  radiology_image: 0.7
+  lab_result: 0.6
+  referral: 0.5
+  consent: 0.4
+  appointment: 0.3
+  other: 0.2
 
 # -------------------------------------------------------------
-# 5. Recency decay (TODO — wacht op Gemini)
+# 5. Recency decay (v0.1.1 — Gemini ronde #5 gekozen)
 # -------------------------------------------------------------
 #
-# Voorstel Claude: geen decay tot 12 maanden, daarna lineair
-# 1/24 per maand tot 0 bij 36 maanden zonder validated_at.
+# Gemini ronde #5: STAPSGEWIJS in plaats van lineair.
+# Rationale: zorgtransformatie-projecten hebben een cyclus van
+# 12-18 maanden. Lineaire per-maand-decay suggereert een precisie
+# die er in de praktijk niet is.
+#
+# Reference-datum = connection.validated_at, of als die ontbreekt,
+# de datum van de nieuwste source in connection.sources.
 
 recency_decay:
-  TODO: true
+  type: stepped
+  reference_field: validated_at
+  fallback_field: latest_source_date
+  default_if_missing: 1.0   # nieuwe data krijgt full credit tot bewijs ontbreekt
+  steps:
+    - max_months: 12
+      weight: 1.0           # Vers / actueel
+    - max_months: 24
+      weight: 0.7           # Nog relevant, verificatie gewenst
+    - max_months: 36
+      weight: 0.3           # Stale of stilgevallen initiatief
+    - max_months: null      # > 36 maanden
+      weight: 0.0           # Data verouderd
 
 # -------------------------------------------------------------
-# 6. Standaard-conformiteits-bonus (TODO)
+# 6. Standaard-conformiteits-bonus (v0.1.1 — Gemini ronde #5)
 # -------------------------------------------------------------
 #
-# Idee: als de `connection.standard` door beide systemen
-# (system van org_a én system van org_b) in `standards_supported`
-# staat, krijgt de score een bonus van bijvoorbeeld ×1.15.
+# Als beide systemen in een connection hetzelfde standaard-id
+# ondersteunen (via system.standards_supported), krijgt de
+# connection een multiplicatieve bonus.
+#
+# Gemini ronde #5: ×1.15, multiplicatief gestapeld met
+# open_standard_multiplier. Zie formule-sectie voor volgorde.
 
 standard_conformance_bonus:
-  TODO: true
+  multiplier: 1.15
+  trigger: >
+    connection.standard staat in system.standards_supported van
+    zowel system-van-org_a als system-van-org_b.
+  fallback_if_no_standard: 1.0   # geen bonus, ook geen straf
 
 # -------------------------------------------------------------
-# 7. Open-standaarden bonus (v0.1 Gemini input)
+# 7. Open-standaarden bonus (v0.1.1 — MULTIPLICATIEF)
 # -------------------------------------------------------------
 #
-# Bron: Gemini antwoord #4, 2026-04-12, §2
-# Rationale: Gebruik van open datamodellen (OpenEHR, OMOP) boven
-# proprietary (MS CDM, Epic Chronicles) krijgt een duurzaamheids-
-# bonus omdat de data niet afhangt van één leverancier.
+# BELANGRIJKE WIJZIGING IN RONDE #5:
+# Gemini heeft bevestigd dat open_standard én standard_conformance
+# *multiplicatief moeten stapelen*. In v0.1.0 stond open_standard
+# als additive (+0.2); dat is nu omgezet naar ×1.2 zodat wie én
+# OpenEHR/OMOP gebruikt én Nictiz-gevalideerd is, dubbel wordt
+# beloond: 1.15 × 1.2 = 1.38.
+#
+# De magnitude ×1.2 is Claude's vertaling van het oorspronkelijke
+# +0.2 voorstel. Gemini heeft dit nummer niet expliciet bevestigd —
+# kan in v0.1.2 bijgesteld worden na de eerste volledige ranking.
 
 open_standard_bonus:
   trigger_standards:
     - openehr       # nog niet in /data/standards/ — v0.3 work
     - omop          # idem
-  bonus_addition: 0.2
-  apply_to: "final_score_per_connection"
+  multiplier: 1.2
+  apply_to: "raw_score_per_connection"
 
 # -------------------------------------------------------------
 # 8. Knock-outs (v0.1 Gemini input, niet afgedwongen)
@@ -177,7 +224,7 @@ knockouts:
     enforced: false   # wacht op v0.3 (nieuw veld nen_7510 op org/vendor)
 
 # -------------------------------------------------------------
-# 9. Score-formule (qualitatief, numerieke pseudo-code)
+# 9. Score-formule (v0.1.1 — volledig multiplicatief)
 # -------------------------------------------------------------
 #
 # Per Connection:
@@ -187,16 +234,19 @@ knockouts:
 #   status_w    = status_multipliers[connection.status]
 #   data_w      = mean(data_type_weights[connection.data_types])
 #   recency_w   = recency_decay(connection.validated_at)
-#   conform_w   = standard_conformance_bonus(connection)
+#   conform_w   = standard_conformance_bonus.multiplier
+#                   if both systems support connection.standard
+#                   else 1.0
+#   open_w      = open_standard_bonus.multiplier
+#                   if connection uses openehr/omop
+#                   else 1.0
 #
-#   raw_score(conn) = paradigm_w * topology_w * status_w
-#                     * data_w * recency_w * conform_w
+#   raw_score(conn)   = paradigm_w * topology_w * status_w
+#                       * data_w * recency_w
 #
-#   final_score(conn) = raw_score(conn)
-#                       + open_standard_bonus.bonus_addition
-#                           if uses_open_standard(conn)
+#   final_score(conn) = raw_score(conn) * conform_w * open_w
 #
-#   knockout: als een knock-out-regel matcht, wordt final_score = 0
+#   knockout: als een knock-out-regel matcht, final_score = 0
 #
 # Per Organization:
 #
@@ -209,8 +259,8 @@ knockouts:
 
 formula:
   per_connection:
-    raw: "paradigm_w * topology_w * status_w * data_w * recency_w * conform_w"
-    final: "raw + open_standard_bonus_if_applicable"
+    raw: "paradigm_w * topology_w * status_w * data_w * recency_w"
+    final: "raw * conform_w * open_w"
     knockout: "if any knockouts match: final = 0"
   per_organization:
     aggregate: "sum of final_score over participating connections"
@@ -227,28 +277,18 @@ sources:
   - integraal-zorgakkoord-2022
 
 # -------------------------------------------------------------
-# 11. Open issues voor ronde #5 (wacht op Gemini)
+# 11. Open issues (resolved in ronde #5)
 # -------------------------------------------------------------
+#
+# Alle 5 vragen van ronde #5 zijn beantwoord door Gemini op
+# 2026-04-12. Zie /overleg/gemini/2026-04-12-04-* voor de context.
+# Nieuwe open issues voor v0.1.2 / v0.2:
+#
+# - open_standard_bonus.multiplier (1.2) is Claude's vertaling,
+#   niet door Gemini expliciet bevestigd — heroverwegen na eerste
+#   volledige ranking
+# - nen_7510-knockout kan pas worden afgedwongen na v0.3 schema bump
+# - recency reference_field moet validated_at op connections worden
+#   — veld bestaat in schema maar is nog nergens ingevuld
 
-open_issues:
-  - id: maturity-1
-    question: >
-      Transport-paradigm mapping: klopt Claude's interpretatie van
-      fhir_api / xds_network / lsp / secure_email zoals in
-      `transport_paradigm_mapping` hierboven?
-  - id: maturity-2
-    question: >
-      Data-type gewichten — welke volgorde en welke numerieke
-      waardes? Claude's voorstel staat als comment in sectie 4.
-  - id: maturity-3
-    question: >
-      Status multipliers voor `concept`, `deprecated`, `inactive`?
-      Claude's voorstel: 0.05 / 0.0 / 0.0.
-  - id: maturity-4
-    question: >
-      Recency decay: lineair of stapsgewijs? Voorstel: geen decay
-      tot 12 maanden, daarna 1/24 per maand tot 0 bij 36 maanden.
-  - id: maturity-5
-    question: >
-      Standaard-conformiteit bonus: hoeveel (×1.15?), en hoe precies
-      vaststellen welke standaard telt?
+open_issues: []

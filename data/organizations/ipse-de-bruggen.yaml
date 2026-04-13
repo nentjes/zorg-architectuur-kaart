@@ -1,0 +1,17 @@
+id: ipse-de-bruggen
+type: organization
+name: Ipse de Bruggen
+sector: ggz
+subtype: lvg
+country: NL
+locations:
+- city: Nieuwveen
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.1556
+    lon: 4.7506
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

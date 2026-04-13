@@ -1,0 +1,17 @@
+id: fpc-van-mesdag
+type: organization
+name: FPC Dr. S. van Mesdag
+sector: ggz
+subtype: forensisch
+country: NL
+locations:
+- city: Groningen
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.2194
+    lon: 6.5665
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

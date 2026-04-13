@@ -1,0 +1,18 @@
+id: poliklinische-apotheek-mumc
+type: organization
+name: Poliklinische Apotheek MUMC+
+sector: apotheek
+subtype: poliklinisch
+parent_organization: mumc
+country: NL
+locations:
+- city: Maastricht
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.8408
+    lon: 5.7125
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

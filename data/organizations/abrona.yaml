@@ -1,0 +1,17 @@
+id: abrona
+type: organization
+name: Abrona
+sector: ggz
+subtype: lvg
+country: NL
+locations:
+- city: Huis ter Heide
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1556
+    lon: 5.2528
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

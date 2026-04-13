@@ -1,0 +1,17 @@
+id: velthuis-kliniek
+type: organization
+name: Velthuis Kliniek
+sector: zbc
+subtype: cosmetisch
+country: NL
+locations:
+- city: Rotterdam
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9225
+    lon: 4.4792
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

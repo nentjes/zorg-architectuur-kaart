@@ -1,0 +1,18 @@
+id: indigo
+type: organization
+name: Indigo
+sector: ggz
+subtype: basis-ggz
+parent_organization: parnassia-groep
+country: NL
+locations:
+- city: Den Haag
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0705
+    lon: 4.3007
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

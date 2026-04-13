@@ -1,0 +1,17 @@
+id: fpc-veldzicht
+type: organization
+name: Centrum voor Transculturele Psychiatrie Veldzicht
+sector: ggz
+subtype: forensisch
+country: NL
+locations:
+- city: Balkbrug
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.5942
+    lon: 6.4464
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

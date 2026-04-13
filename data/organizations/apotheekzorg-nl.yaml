@@ -1,0 +1,17 @@
+id: apotheekzorg-nl
+type: organization
+name: Apotheekzorg
+sector: apotheek
+subtype: thuiszorg-farma
+country: NL
+locations:
+- city: Veldhoven
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4183
+    lon: 5.4036
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

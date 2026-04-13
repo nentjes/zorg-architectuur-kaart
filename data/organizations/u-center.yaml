@@ -1,0 +1,17 @@
+id: u-center
+type: organization
+name: U-Center
+sector: ggz
+subtype: verslaving-forensisch
+country: NL
+locations:
+- city: Epen
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.7839
+    lon: 5.9258
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,19 @@
+id: mind-landelijk-platform
+type: organization
+name: MIND Landelijk Platform Psychische Gezondheid
+aliases:
+- MIND
+sector: ggz
+subtype: patientenkoepel
+country: NL
+locations:
+- city: Amersfoort
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1561
+    lon: 5.3878
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

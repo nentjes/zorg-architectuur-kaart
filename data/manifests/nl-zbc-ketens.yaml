@@ -1,0 +1,335 @@
+# Manifest: ZBC's (Zelfstandige Behandelcentra) — Sprint 5a
+# Scope: grote ZBC-ketens + bekende solo-centra, ~35 entries.
+# Target long tail: ZKN-ledenlijst (~200) via Gemini later.
+# Coords: hoofdlocatie/HQ WGS84.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # Top-3 ZBC-ketens
+  - id: bergman-clinics
+    name: "Bergman Clinics"
+    aliases: ["Bergman", "Bergman Clinics Nederland"]
+    sector: zbc
+    subtype: multi-specialistisch
+    locations:
+      - city: "Naarden"
+        province: "Noord-Holland"
+        country: NL
+        address: "Rijksweg 69, 1411 GE Naarden"
+        coordinates: {lat: 52.2978, lon: 5.1578}
+    aliases_note: "Grootste ZBC-keten van NL, ~50+ locaties, oogheelkunde/orthopedie/dermatologie/vrouwgeneeskunde"
+
+  - id: equipe-zorgbedrijven
+    name: "Equipe Zorgbedrijven"
+    sector: zbc
+    subtype: plastisch-chirurgisch
+    locations:
+      - city: "Eindhoven"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4416, lon: 5.4697}
+
+  - id: velthuis-kliniek
+    name: "Velthuis Kliniek"
+    sector: zbc
+    subtype: cosmetisch
+    locations:
+      - city: "Rotterdam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9225, lon: 4.4792}
+
+  # Grote orthopedie-ketens
+  - id: annatommie-mc
+    name: "Annatommie MC"
+    sector: zbc
+    subtype: orthopedie
+    locations:
+      - city: "Amersfoort"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1561, lon: 5.3878}
+
+  - id: kliniek-park-geldermalsen
+    name: "Kliniek Park Geldermalsen"
+    sector: zbc
+    subtype: orthopedie
+    locations:
+      - city: "Geldermalsen"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.8819, lon: 5.2897}
+
+  - id: orthopedium
+    name: "Orthopedium"
+    sector: zbc
+    subtype: orthopedie
+    locations:
+      - city: "Delft"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.0116, lon: 4.3571}
+
+  # Dermatologie
+  - id: dc-klinieken
+    name: "DC Klinieken"
+    aliases: ["Dermatologisch Centrum"]
+    sector: zbc
+    subtype: dermatologie
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3702, lon: 4.8952}
+
+  - id: mohsa-kliniek
+    name: "MohsA Kliniek"
+    sector: zbc
+    subtype: dermatologie
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3702, lon: 4.8952}
+
+  # Cardiologie
+  - id: cardiologie-centra-nederland
+    name: "Cardiologie Centra Nederland"
+    aliases: ["CCN"]
+    sector: zbc
+    subtype: cardiologie
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3702, lon: 4.8952}
+
+  # Oogheelkunde
+  - id: eyescan
+    name: "Eyescan"
+    sector: zbc
+    subtype: oogheelkunde
+    locations:
+      - city: "Velp"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 52.0014, lon: 5.9806}
+
+  - id: iriscentrum
+    name: "Iriscentrum"
+    sector: zbc
+    subtype: oogheelkunde
+    locations:
+      - city: "Eindhoven"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4416, lon: 5.4697}
+
+  - id: oogzorgnetwerk
+    name: "Oogzorgnetwerk"
+    sector: zbc
+    subtype: oogheelkunde
+    locations:
+      - city: "Tilburg"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5555, lon: 5.0913}
+
+  # Plastisch/cosmetisch
+  - id: xpert-clinics
+    name: "Xpert Clinics"
+    sector: zbc
+    subtype: plastisch-chirurgisch
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3702, lon: 4.8952}
+
+  - id: boerhaave-medisch-centrum
+    name: "Boerhaave Medisch Centrum"
+    sector: zbc
+    subtype: plastisch-chirurgisch
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3702, lon: 4.8952}
+
+  - id: moens-clinic
+    name: "Moens Clinic"
+    sector: zbc
+    subtype: cosmetisch
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3702, lon: 4.8952}
+
+  # Multi-specialisme
+  - id: zonnestraal
+    name: "Medisch Centrum Zonnestraal"
+    sector: zbc
+    subtype: multi-specialistisch
+    locations:
+      - city: "Hilversum"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.2292, lon: 5.1669}
+
+  - id: mc-zuiderzee
+    name: "MC Zuiderzee"
+    sector: zbc
+    subtype: multi-specialistisch
+    locations:
+      - city: "Lelystad"
+        province: "Flevoland"
+        country: NL
+        coordinates: {lat: 52.5185, lon: 5.4714}
+
+  # Nicheklinieken
+  - id: proctos-kliniek
+    name: "Proctos Kliniek"
+    sector: zbc
+    subtype: proctologie
+    locations:
+      - city: "Bilthoven"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1367, lon: 5.2047}
+
+  - id: rughuis
+    name: "Rughuis"
+    sector: zbc
+    subtype: orthopedie
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3702, lon: 4.8952}
+
+  - id: scoliose-kliniek
+    name: "Scoliose Kliniek"
+    sector: zbc
+    subtype: orthopedie
+    locations:
+      - city: "Amersfoort"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1561, lon: 5.3878}
+
+  # Dialyse
+  - id: dianet
+    name: "Dianet"
+    sector: zbc
+    subtype: dialyse
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+
+  - id: dialyse-centrum-groningen
+    name: "Dialyse Centrum Groningen"
+    sector: zbc
+    subtype: dialyse
+    locations:
+      - city: "Groningen"
+        province: "Groningen"
+        country: NL
+        coordinates: {lat: 53.2194, lon: 6.5665}
+
+  # GGZ/slaap (grensgevallen)
+  - id: slaapkliniek-kempenhaeghe
+    name: "Slaapkliniek Kempenhaeghe"
+    sector: zbc
+    subtype: slaap
+    locations:
+      - city: "Heeze"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.3864, lon: 5.5714}
+
+  # Mauritsklinieken-groep
+  - id: mauritsklinieken
+    name: "Mauritsklinieken"
+    sector: zbc
+    subtype: huidtherapie
+    locations:
+      - city: "Den Bosch"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.6978, lon: 5.3037}
+
+  # Obesitas / bariatrie
+  - id: nederlandse-obesitas-kliniek
+    name: "Nederlandse Obesitas Kliniek"
+    aliases: ["NOK"]
+    sector: zbc
+    subtype: bariatrie
+    locations:
+      - city: "Huis ter Heide"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1556, lon: 5.2528}
+
+  # Gynaecologie / fertiliteit
+  - id: medisch-centrum-kinderwens
+    name: "Medisch Centrum Kinderwens"
+    sector: zbc
+    subtype: fertiliteit
+    locations:
+      - city: "Leiderdorp"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.1614, lon: 4.5356}
+
+  # Koepel
+  - id: zkn
+    name: "Zelfstandige Klinieken Nederland"
+    aliases: ["ZKN"]
+    sector: zbc
+    subtype: brancheorganisatie
+    locations:
+      - city: "Zoetermeer"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.0575, lon: 4.4933}
+
+  # Pijnbehandeling
+  - id: rugpoli
+    name: "Rugpoli"
+    sector: zbc
+    subtype: pijnbehandeling
+    locations:
+      - city: "Delden"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.2603, lon: 6.7114}
+
+  # Radiologie / diagnostiek-ZBC
+  - id: prescan
+    name: "Prescan"
+    sector: zbc
+    subtype: diagnostiek
+    locations:
+      - city: "Kaatsheuvel"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.6550, lon: 5.0419}
+
+  # KNO
+  - id: keelneusoorkliniek
+    name: "KNO-Kliniek Rotterdam"
+    sector: zbc
+    subtype: kno
+    locations:
+      - city: "Rotterdam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9225, lon: 4.4792}

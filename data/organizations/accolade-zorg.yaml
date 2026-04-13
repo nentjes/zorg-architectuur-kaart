@@ -1,0 +1,16 @@
+id: accolade-zorg
+type: organization
+name: Accolade Zorggroep
+sector: vvt
+country: NL
+locations:
+- city: Bosch en Duin
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1303
+    lon: 5.2011
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: zorgaccent
+type: organization
+name: ZorgAccent
+sector: vvt
+country: NL
+locations:
+- city: Almelo
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.3564
+    lon: 6.6625
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

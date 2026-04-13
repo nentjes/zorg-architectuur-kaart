@@ -1,0 +1,18 @@
+id: poliklinische-apotheek-aumc
+type: organization
+name: Poliklinische Apotheek AUMC
+sector: apotheek
+subtype: poliklinisch
+parent_organization: amsterdam-umc
+country: NL
+locations:
+- city: Amsterdam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3567
+    lon: 4.9572
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

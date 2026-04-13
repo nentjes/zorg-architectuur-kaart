@@ -1,0 +1,17 @@
+id: slaapkliniek-kempenhaeghe
+type: organization
+name: Slaapkliniek Kempenhaeghe
+sector: zbc
+subtype: slaap
+country: NL
+locations:
+- city: Heeze
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.3864
+    lon: 5.5714
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

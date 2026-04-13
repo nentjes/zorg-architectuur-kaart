@@ -1,0 +1,18 @@
+id: poliklinische-apotheek-umcg
+type: organization
+name: Poliklinische Apotheek UMCG
+sector: apotheek
+subtype: poliklinisch
+parent_organization: umcg
+country: NL
+locations:
+- city: Groningen
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.2236
+    lon: 6.5419
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

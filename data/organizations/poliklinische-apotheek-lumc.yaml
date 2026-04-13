@@ -1,0 +1,18 @@
+id: poliklinische-apotheek-lumc
+type: organization
+name: Poliklinische Apotheek LUMC
+sector: apotheek
+subtype: poliklinisch
+parent_organization: lumc
+country: NL
+locations:
+- city: Leiden
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.1667
+    lon: 4.4778
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

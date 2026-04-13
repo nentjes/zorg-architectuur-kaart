@@ -1,0 +1,16 @@
+id: laverhof
+type: organization
+name: Laverhof
+sector: vvt
+country: NL
+locations:
+- city: Heeswijk-Dinther
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6525
+    lon: 5.4839
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

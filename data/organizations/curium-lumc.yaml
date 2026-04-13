@@ -1,0 +1,17 @@
+id: curium-lumc
+type: organization
+name: Curium-LUMC
+sector: ggz
+subtype: jeugd
+country: NL
+locations:
+- city: Oegstgeest
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.1814
+    lon: 4.4747
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

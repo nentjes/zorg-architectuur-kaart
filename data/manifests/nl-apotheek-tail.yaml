@@ -1,0 +1,32 @@
+# Manifest: apotheek tail — Sprint 5a
+# Scope: ontbrekende grote apotheek-ketens/-coöperaties + poliklinische
+# apotheken van UMCs. Van 11 → ~25.
+# Target long tail: KNMP-ledenlijst via Gemini.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # Grote ontbrekende ketens/coöperaties
+  - {id: mosadex, name: "Mosadex", aliases: ["Mosadex Coöperatie"], sector: apotheek, subtype: cooperatie, locations: [{city: "Leiderdorp", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1614, lon: 4.5356}}]}
+  - {id: centrafarm, name: "Centrafarm", sector: apotheek, subtype: groothandel-apotheek, locations: [{city: "Etten-Leur", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5711, lon: 4.6356}}]}
+  - {id: pluripharm, name: "Pluripharm", sector: apotheek, subtype: keten, locations: [{city: "Ridderkerk", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8725, lon: 4.6022}}]}
+  - {id: escura-apotheek, name: "Escura Apotheken", sector: apotheek, subtype: keten, locations: [{city: "Eindhoven", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4416, lon: 5.4697}}]}
+  - {id: apotheekholland, name: "Apotheek.nl / Apotheekholland", sector: apotheek, subtype: online, locations: [{city: "Nijmegen", province: "Gelderland", country: NL, coordinates: {lat: 51.8426, lon: 5.8528}}]}
+  - {id: apotheekzorg-nl, name: "Apotheekzorg", sector: apotheek, subtype: thuiszorg-farma, locations: [{city: "Veldhoven", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4183, lon: 5.4036}}]}
+  - {id: lloyds-apotheek, name: "LLOYDS Apotheek", sector: apotheek, subtype: keten, locations: [{city: "Hoofddorp", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3028, lon: 4.6892}}]}
+
+  # Poliklinische apotheken van UMCs (aparte rechtspersoon)
+  - {id: poliklinische-apotheek-utrecht, name: "Poliklinische Apotheek Utrecht", sector: apotheek, subtype: poliklinisch, parent_organization: umc-utrecht, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0861, lon: 5.1767}}]}
+  - {id: poliklinische-apotheek-aumc, name: "Poliklinische Apotheek AUMC", sector: apotheek, subtype: poliklinisch, parent_organization: amsterdam-umc, locations: [{city: "Amsterdam", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3567, lon: 4.9572}}]}
+  - {id: poliklinische-apotheek-umcg, name: "Poliklinische Apotheek UMCG", sector: apotheek, subtype: poliklinisch, parent_organization: umcg, locations: [{city: "Groningen", province: "Groningen", country: NL, coordinates: {lat: 53.2236, lon: 6.5419}}]}
+  - {id: poliklinische-apotheek-emc, name: "Poliklinische Apotheek Erasmus MC", sector: apotheek, subtype: poliklinisch, parent_organization: erasmus-mc, locations: [{city: "Rotterdam", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9097, lon: 4.4642}}]}
+  - {id: poliklinische-apotheek-radboud, name: "Poliklinische Apotheek Radboudumc", sector: apotheek, subtype: poliklinisch, parent_organization: radboudumc, locations: [{city: "Nijmegen", province: "Gelderland", country: NL, coordinates: {lat: 51.8256, lon: 5.8658}}]}
+  - {id: poliklinische-apotheek-mumc, name: "Poliklinische Apotheek MUMC+", sector: apotheek, subtype: poliklinisch, parent_organization: mumc, locations: [{city: "Maastricht", province: "Limburg", country: NL, coordinates: {lat: 50.8408, lon: 5.7125}}]}
+  - {id: poliklinische-apotheek-lumc, name: "Poliklinische Apotheek LUMC", sector: apotheek, subtype: poliklinisch, parent_organization: lumc, locations: [{city: "Leiden", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1667, lon: 4.4778}}]}
+
+  # Kennisinstituten / infrastructuur
+  - {id: sir-institute, name: "SIR — Stichting Informatie Receptuur", aliases: ["SIR"], sector: apotheek, subtype: kennisinstituut, locations: [{city: "Leiden", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1601, lon: 4.4970}}]}

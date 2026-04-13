@@ -1,0 +1,16 @@
+id: groot-hoogwaak
+type: organization
+name: Groot Hoogwaak
+sector: vvt
+country: NL
+locations:
+- city: Noordwijk
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.2403
+    lon: 4.4303
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

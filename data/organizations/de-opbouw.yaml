@@ -1,0 +1,16 @@
+id: de-opbouw
+type: organization
+name: De Opbouw
+sector: vvt
+country: NL
+locations:
+- city: Bunnik
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0681
+    lon: 5.2003
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

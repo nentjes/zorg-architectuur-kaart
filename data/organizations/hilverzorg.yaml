@@ -1,0 +1,16 @@
+id: hilverzorg
+type: organization
+name: HilverZorg
+sector: vvt
+country: NL
+locations:
+- city: Hilversum
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2292
+    lon: 5.1669
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

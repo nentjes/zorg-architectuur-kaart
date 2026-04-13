@@ -1,0 +1,18 @@
+id: poliklinische-apotheek-emc
+type: organization
+name: Poliklinische Apotheek Erasmus MC
+sector: apotheek
+subtype: poliklinisch
+parent_organization: erasmus-mc
+country: NL
+locations:
+- city: Rotterdam
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9097
+    lon: 4.4642
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

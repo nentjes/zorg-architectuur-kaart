@@ -1,0 +1,16 @@
+id: zorggroep-oude-en-nieuwe-land
+type: organization
+name: Zorggroep Oude en Nieuwe Land
+sector: vvt
+country: NL
+locations:
+- city: Emmeloord
+  province: Flevoland
+  country: NL
+  coordinates:
+    lat: 52.7108
+    lon: 5.7472
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

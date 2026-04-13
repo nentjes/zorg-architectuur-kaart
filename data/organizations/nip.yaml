@@ -1,0 +1,19 @@
+id: nip
+type: organization
+name: Nederlands Instituut van Psychologen
+aliases:
+- NIP
+sector: ggz
+subtype: beroepsvereniging
+country: NL
+locations:
+- city: Utrecht
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0907
+    lon: 5.1214
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

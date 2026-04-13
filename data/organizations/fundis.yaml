@@ -1,0 +1,18 @@
+id: fundis
+type: organization
+name: Fundis
+aliases:
+- Vierstroom
+sector: vvt
+country: NL
+locations:
+- city: Gouda
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0117
+    lon: 4.7106
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

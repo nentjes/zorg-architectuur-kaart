@@ -1,0 +1,16 @@
+id: hof-en-hiem
+type: organization
+name: Hof en Hiem
+sector: vvt
+country: NL
+locations:
+- city: Joure
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 52.9664
+    lon: 5.7992
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

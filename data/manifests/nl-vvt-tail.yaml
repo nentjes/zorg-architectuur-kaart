@@ -1,0 +1,64 @@
+# Manifest: VVT tail — Sprint 5a
+# Scope: van 96 → ~130 VVT-orgs door middelgrote concerns toe te voegen.
+# Target long tail: ActiZ-ledenlijst via Gemini voor volledige dekking.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # Zuid-Holland
+  - {id: rivas-zorggroep, name: "Rivas Zorggroep", sector: vvt, locations: [{city: "Gorinchem", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8308, lon: 4.9750}}]}
+  - {id: fundis, name: "Fundis", aliases: ["Vierstroom"], sector: vvt, locations: [{city: "Gouda", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0117, lon: 4.7106}}]}
+  - {id: hww-zorg, name: "HWW Zorg", sector: vvt, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0705, lon: 4.3007}}]}
+  - {id: de-zellingen, name: "De Zellingen", sector: vvt, locations: [{city: "Capelle aan den IJssel", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9303, lon: 4.5764}}]}
+  - {id: zorgpartners-midden-holland, name: "Zorgpartners Midden-Holland", sector: vvt, locations: [{city: "Gouda", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0117, lon: 4.7106}}]}
+  - {id: groot-hoogwaak, name: "Groot Hoogwaak", sector: vvt, locations: [{city: "Noordwijk", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.2403, lon: 4.4303}}]}
+
+  # Utrecht
+  - {id: opella, name: "Opella", sector: vvt, locations: [{city: "Ede", province: "Gelderland", country: NL, coordinates: {lat: 52.0336, lon: 5.6642}}]}
+  - {id: charim, name: "Charim", sector: vvt, locations: [{city: "Veenendaal", province: "Utrecht", country: NL, coordinates: {lat: 52.0289, lon: 5.5572}}]}
+  - {id: de-opbouw, name: "De Opbouw", sector: vvt, locations: [{city: "Bunnik", province: "Utrecht", country: NL, coordinates: {lat: 52.0681, lon: 5.2003}}]}
+  - {id: reinaerde, name: "Reinaerde", sector: vvt, subtype: vg-vvt, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: accolade-zorg, name: "Accolade Zorggroep", sector: vvt, locations: [{city: "Bosch en Duin", province: "Utrecht", country: NL, coordinates: {lat: 52.1303, lon: 5.2011}}]}
+
+  # Noord-Holland
+  - {id: magentazorg, name: "Magentazorg", sector: vvt, locations: [{city: "Alkmaar", province: "Noord-Holland", country: NL, coordinates: {lat: 52.6322, lon: 4.7533}}]}
+  - {id: hilverzorg, name: "HilverZorg", sector: vvt, locations: [{city: "Hilversum", province: "Noord-Holland", country: NL, coordinates: {lat: 52.2292, lon: 5.1669}}]}
+  - {id: zonnehuisgroep-amstelland, name: "Zonnehuisgroep Amstelland", sector: vvt, locations: [{city: "Amstelveen", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3081, lon: 4.8597}}]}
+  - {id: wilgaerden, name: "Wilgaerden", sector: vvt, locations: [{city: "Hoorn", province: "Noord-Holland", country: NL, coordinates: {lat: 52.6425, lon: 5.0597}}]}
+  - {id: woonzorggroep-samen, name: "Woonzorggroep Samen", sector: vvt, locations: [{city: "Schagen", province: "Noord-Holland", country: NL, coordinates: {lat: 52.7878, lon: 4.7981}}]}
+  - {id: beth-shalom, name: "Beth Shalom", sector: vvt, subtype: joods, locations: [{city: "Amsterdam", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3702, lon: 4.8952}}]}
+
+  # Gelderland
+  - {id: liemerije, name: "Liemerije", sector: vvt, locations: [{city: "Duiven", province: "Gelderland", country: NL, coordinates: {lat: 51.9486, lon: 6.0181}}]}
+  - {id: careaz, name: "Careaz", sector: vvt, locations: [{city: "Hengelo (Gld)", province: "Gelderland", country: NL, coordinates: {lat: 52.0669, lon: 6.2944}}]}
+  - {id: insula-dei-huize-kohlmann, name: "Insula Dei Huize Kohlmann", sector: vvt, locations: [{city: "Arnhem", province: "Gelderland", country: NL, coordinates: {lat: 51.9851, lon: 5.8987}}]}
+
+  # Overijssel / Drenthe
+  - {id: de-posten, name: "De Posten", sector: vvt, locations: [{city: "Enschede", province: "Overijssel", country: NL, coordinates: {lat: 52.2215, lon: 6.8937}}]}
+  - {id: zorgaccent, name: "ZorgAccent", sector: vvt, locations: [{city: "Almelo", province: "Overijssel", country: NL, coordinates: {lat: 52.3564, lon: 6.6625}}]}
+  - {id: zorggroep-solis, name: "Zorggroep Solis", sector: vvt, locations: [{city: "Deventer", province: "Overijssel", country: NL, coordinates: {lat: 52.2553, lon: 6.1639}}]}
+  - {id: viattence, name: "Viattence", sector: vvt, locations: [{city: "Heerde", province: "Gelderland", country: NL, coordinates: {lat: 52.3886, lon: 6.0389}}]}
+
+  # Flevoland
+  - {id: coloriet, name: "Coloriet", sector: vvt, locations: [{city: "Lelystad", province: "Flevoland", country: NL, coordinates: {lat: 52.5185, lon: 5.4714}}]}
+  - {id: zorggroep-oude-en-nieuwe-land, name: "Zorggroep Oude en Nieuwe Land", sector: vvt, locations: [{city: "Emmeloord", province: "Flevoland", country: NL, coordinates: {lat: 52.7108, lon: 5.7472}}]}
+
+  # Noord-Brabant
+  - {id: oktober, name: "Oktober", sector: vvt, locations: [{city: "Deurne", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4608, lon: 5.7956}}]}
+  - {id: laverhof, name: "Laverhof", sector: vvt, locations: [{city: "Heeswijk-Dinther", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6525, lon: 5.4839}}]}
+  - {id: sint-annaklooster, name: "Sint Annaklooster", sector: vvt, locations: [{city: "Eindhoven", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4416, lon: 5.4697}}]}
+  - {id: schakelring, name: "Schakelring", sector: vvt, locations: [{city: "Waalwijk", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6839, lon: 5.0694}}]}
+  - {id: mijzo, name: "Mijzo", sector: vvt, locations: [{city: "Waalwijk", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6839, lon: 5.0694}}]}
+
+  # Limburg
+  - {id: meandergroep-zuid-limburg, name: "MeanderGroep Zuid-Limburg", sector: vvt, locations: [{city: "Heerlen", province: "Limburg", country: NL, coordinates: {lat: 50.8882, lon: 5.9795}}]}
+  - {id: vivantes-zorgcentra, name: "Vivantes Zorgcentra", sector: vvt, locations: [{city: "Geleen", province: "Limburg", country: NL, coordinates: {lat: 50.9706, lon: 5.8317}}]}
+
+  # Friesland / Groningen
+  - {id: hof-en-hiem, name: "Hof en Hiem", sector: vvt, locations: [{city: "Joure", province: "Friesland", country: NL, coordinates: {lat: 52.9664, lon: 5.7992}}]}
+  - {id: zorgcentra-meriant, name: "Meriant", sector: vvt, locations: [{city: "Heerenveen", province: "Friesland", country: NL, coordinates: {lat: 52.9598, lon: 5.9180}}]}
+  - {id: de-hoven, name: "De Hoven", sector: vvt, locations: [{city: "Roden", province: "Drenthe", country: NL, coordinates: {lat: 53.1333, lon: 6.4264}}]}

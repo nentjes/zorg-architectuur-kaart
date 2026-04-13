@@ -1,0 +1,17 @@
+id: prinsenstichting
+type: organization
+name: Prinsenstichting
+sector: ggz
+subtype: lvg
+country: NL
+locations:
+- city: Purmerend
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.505
+    lon: 4.9597
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

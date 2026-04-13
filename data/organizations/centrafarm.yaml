@@ -1,0 +1,17 @@
+id: centrafarm
+type: organization
+name: Centrafarm
+sector: apotheek
+subtype: groothandel-apotheek
+country: NL
+locations:
+- city: Etten-Leur
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5711
+    lon: 4.6356
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

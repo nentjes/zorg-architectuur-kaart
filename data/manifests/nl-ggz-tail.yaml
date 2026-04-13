@@ -1,0 +1,58 @@
+# Manifest: GGZ tail — Sprint 5a
+# Scope: uitbreiding van 46 → ~77 GGZ-orgs: forensisch, jeugd, LVG,
+# RIBW-wonen, verslaving-niches en koepelorganisaties.
+# Target: de Nederlandse ggz-ledenlijst via Gemini voor long tail.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # Forensische GGZ (FPC's + Pompestichting)
+  - {id: pompestichting, name: "Pompestichting", aliases: ["Pompekliniek"], sector: ggz, subtype: forensisch, locations: [{city: "Nijmegen", province: "Gelderland", country: NL, coordinates: {lat: 51.8426, lon: 5.8528}}]}
+  - {id: van-der-hoeven-kliniek, name: "Van der Hoeven Kliniek", sector: ggz, subtype: forensisch, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: fpc-van-mesdag, name: "FPC Dr. S. van Mesdag", sector: ggz, subtype: forensisch, locations: [{city: "Groningen", province: "Groningen", country: NL, coordinates: {lat: 53.2194, lon: 6.5665}}]}
+  - {id: fpc-oostvaarderskliniek, name: "FPC Oostvaarderskliniek", sector: ggz, subtype: forensisch, locations: [{city: "Almere", province: "Flevoland", country: NL, coordinates: {lat: 52.3508, lon: 5.2647}}]}
+  - {id: fpc-veldzicht, name: "Centrum voor Transculturele Psychiatrie Veldzicht", sector: ggz, subtype: forensisch, locations: [{city: "Balkbrug", province: "Overijssel", country: NL, coordinates: {lat: 52.5942, lon: 6.4464}}]}
+
+  # Kind- en jeugd-GGZ
+  - {id: de-jutters, name: "De Jutters", sector: ggz, subtype: jeugd, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0705, lon: 4.3007}}]}
+  - {id: yes-we-can-clinics, name: "Yes We Can Clinics", sector: ggz, subtype: jeugd-verslaving, locations: [{city: "Eindhoven", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4416, lon: 5.4697}}]}
+  - {id: curium-lumc, name: "Curium-LUMC", sector: ggz, subtype: jeugd, locations: [{city: "Oegstgeest", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1814, lon: 4.4747}}]}
+  - {id: altra, name: "Altra", sector: ggz, subtype: jeugd, locations: [{city: "Amsterdam", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3702, lon: 4.8952}}]}
+
+  # Verslaving + niche
+  - {id: u-center, name: "U-Center", sector: ggz, subtype: verslaving-forensisch, locations: [{city: "Epen", province: "Limburg", country: NL, coordinates: {lat: 50.7839, lon: 5.9258}}]}
+
+  # Parnassia-merken als aparte orgs (voor traceability)
+  - {id: i-psy, name: "i-psy", sector: ggz, subtype: transcultureel, parent_organization: parnassia-groep, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0705, lon: 4.3007}}]}
+  - {id: psyq, name: "PsyQ", sector: ggz, subtype: specialistisch, parent_organization: parnassia-groep, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0705, lon: 4.3007}}]}
+  - {id: indigo, name: "Indigo", sector: ggz, subtype: basis-ggz, parent_organization: parnassia-groep, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0705, lon: 4.3007}}]}
+
+  # Private/online-GGZ
+  - {id: mentaal-beter, name: "Mentaal Beter", sector: ggz, subtype: basis-ggz, locations: [{city: "Bilthoven", province: "Utrecht", country: NL, coordinates: {lat: 52.1367, lon: 5.2047}}]}
+  - {id: ggz-momentum, name: "GGZ Momentum", sector: ggz, subtype: specialistisch, locations: [{city: "Venray", province: "Limburg", country: NL, coordinates: {lat: 51.5258, lon: 5.9747}}]}
+
+  # LVG / verstandelijk gehandicapten-zorg met GGZ-component
+  - {id: s-heeren-loo, name: "'s Heeren Loo", sector: ggz, subtype: lvg, locations: [{city: "Amersfoort", province: "Utrecht", country: NL, coordinates: {lat: 52.1561, lon: 5.3878}}]}
+  - {id: ipse-de-bruggen, name: "Ipse de Bruggen", sector: ggz, subtype: lvg, locations: [{city: "Nieuwveen", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1556, lon: 4.7506}}]}
+  - {id: koraal-groep, name: "Koraal Groep", sector: ggz, subtype: lvg, locations: [{city: "Sittard", province: "Limburg", country: NL, coordinates: {lat: 50.9997, lon: 5.8708}}]}
+  - {id: cello, name: "Cello", sector: ggz, subtype: lvg, locations: [{city: "Vught", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6533, lon: 5.2864}}]}
+  - {id: odion, name: "Odion", sector: ggz, subtype: lvg, locations: [{city: "Purmerend", province: "Noord-Holland", country: NL, coordinates: {lat: 52.5050, lon: 4.9597}}]}
+  - {id: prinsenstichting, name: "Prinsenstichting", sector: ggz, subtype: lvg, locations: [{city: "Purmerend", province: "Noord-Holland", country: NL, coordinates: {lat: 52.5050, lon: 4.9597}}]}
+  - {id: abrona, name: "Abrona", sector: ggz, subtype: lvg, locations: [{city: "Huis ter Heide", province: "Utrecht", country: NL, coordinates: {lat: 52.1556, lon: 5.2528}}]}
+
+  # RIBW's (Regionale Instellingen voor Beschermd Wonen)
+  - {id: ribw-kam, name: "RIBW Kennemerland Amstelland Meerlanden", aliases: ["RIBW KAM"], sector: ggz, subtype: beschermd-wonen, locations: [{city: "Haarlem", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3874, lon: 4.6462}}]}
+  - {id: ribw-go, name: "RIBW Groep Overijssel", aliases: ["RIBW GO"], sector: ggz, subtype: beschermd-wonen, locations: [{city: "Zwolle", province: "Overijssel", country: NL, coordinates: {lat: 52.5168, lon: 6.0831}}]}
+  - {id: ribw-zwwf, name: "RIBW Zaanstreek/Waterland/West-Friesland", aliases: ["RIBW ZWWF"], sector: ggz, subtype: beschermd-wonen, locations: [{city: "Purmerend", province: "Noord-Holland", country: NL, coordinates: {lat: 52.5050, lon: 4.9597}}]}
+  - {id: ribw-niri, name: "RIBW Nijmegen en Rivierenland", aliases: ["RIBW NiRi"], sector: ggz, subtype: beschermd-wonen, locations: [{city: "Nijmegen", province: "Gelderland", country: NL, coordinates: {lat: 51.8426, lon: 5.8528}}]}
+  - {id: ribw-fonteyn, name: "RIBW Fonteynenburg", sector: ggz, subtype: beschermd-wonen, locations: [{city: "Rijswijk", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0361, lon: 4.3244}}]}
+
+  # Koepels en kennisinstellingen
+  - {id: trimbos-instituut, name: "Trimbos-instituut", sector: ggz, subtype: kennisinstituut, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: mind-landelijk-platform, name: "MIND Landelijk Platform Psychische Gezondheid", aliases: ["MIND"], sector: ggz, subtype: patientenkoepel, locations: [{city: "Amersfoort", province: "Utrecht", country: NL, coordinates: {lat: 52.1561, lon: 5.3878}}]}
+  - {id: nvvp, name: "Nederlandse Vereniging voor Psychiatrie", aliases: ["NVvP"], sector: ggz, subtype: beroepsvereniging, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: nip, name: "Nederlands Instituut van Psychologen", aliases: ["NIP"], sector: ggz, subtype: beroepsvereniging, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}

@@ -1,0 +1,17 @@
+id: cello
+type: organization
+name: Cello
+sector: ggz
+subtype: lvg
+country: NL
+locations:
+- city: Vught
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6533
+    lon: 5.2864
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

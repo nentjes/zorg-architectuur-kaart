@@ -1,0 +1,16 @@
+id: wilgaerden
+type: organization
+name: Wilgaerden
+sector: vvt
+country: NL
+locations:
+- city: Hoorn
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.6425
+    lon: 5.0597
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

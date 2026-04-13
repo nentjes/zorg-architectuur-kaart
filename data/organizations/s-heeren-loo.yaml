@@ -1,0 +1,17 @@
+id: s-heeren-loo
+type: organization
+name: '''s Heeren Loo'
+sector: ggz
+subtype: lvg
+country: NL
+locations:
+- city: Amersfoort
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1561
+    lon: 5.3878
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

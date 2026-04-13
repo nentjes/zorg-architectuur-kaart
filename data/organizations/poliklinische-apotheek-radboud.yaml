@@ -1,0 +1,18 @@
+id: poliklinische-apotheek-radboud
+type: organization
+name: Poliklinische Apotheek Radboudumc
+sector: apotheek
+subtype: poliklinisch
+parent_organization: radboudumc
+country: NL
+locations:
+- city: Nijmegen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8256
+    lon: 5.8658
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

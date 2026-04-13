@@ -1,0 +1,17 @@
+id: yes-we-can-clinics
+type: organization
+name: Yes We Can Clinics
+sector: ggz
+subtype: jeugd-verslaving
+country: NL
+locations:
+- city: Eindhoven
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4416
+    lon: 5.4697
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

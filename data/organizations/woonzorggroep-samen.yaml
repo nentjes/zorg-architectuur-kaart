@@ -1,0 +1,16 @@
+id: woonzorggroep-samen
+type: organization
+name: Woonzorggroep Samen
+sector: vvt
+country: NL
+locations:
+- city: Schagen
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.7878
+    lon: 4.7981
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

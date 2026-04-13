@@ -1,0 +1,21 @@
+id: bergman-clinics
+type: organization
+name: Bergman Clinics
+aliases:
+- Bergman
+- Bergman Clinics Nederland
+sector: zbc
+subtype: multi-specialistisch
+country: NL
+locations:
+- city: Naarden
+  province: Noord-Holland
+  country: NL
+  address: Rijksweg 69, 1411 GE Naarden
+  coordinates:
+    lat: 52.2978
+    lon: 5.1578
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: careaz
+type: organization
+name: Careaz
+sector: vvt
+country: NL
+locations:
+- city: Hengelo (Gld)
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.0669
+    lon: 6.2944
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

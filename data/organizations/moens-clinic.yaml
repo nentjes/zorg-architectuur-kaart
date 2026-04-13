@@ -1,0 +1,17 @@
+id: moens-clinic
+type: organization
+name: Moens Clinic
+sector: zbc
+subtype: cosmetisch
+country: NL
+locations:
+- city: Amsterdam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3702
+    lon: 4.8952
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: coloriet
+type: organization
+name: Coloriet
+sector: vvt
+country: NL
+locations:
+- city: Lelystad
+  province: Flevoland
+  country: NL
+  coordinates:
+    lat: 52.5185
+    lon: 5.4714
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

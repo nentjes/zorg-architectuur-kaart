@@ -1,0 +1,16 @@
+id: mijzo
+type: organization
+name: Mijzo
+sector: vvt
+country: NL
+locations:
+- city: Waalwijk
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6839
+    lon: 5.0694
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

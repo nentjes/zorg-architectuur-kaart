@@ -1,0 +1,16 @@
+id: zonnehuisgroep-amstelland
+type: organization
+name: Zonnehuisgroep Amstelland
+sector: vvt
+country: NL
+locations:
+- city: Amstelveen
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3081
+    lon: 4.8597
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

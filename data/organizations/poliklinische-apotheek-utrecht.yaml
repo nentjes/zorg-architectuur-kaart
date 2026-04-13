@@ -1,0 +1,18 @@
+id: poliklinische-apotheek-utrecht
+type: organization
+name: Poliklinische Apotheek Utrecht
+sector: apotheek
+subtype: poliklinisch
+parent_organization: umc-utrecht
+country: NL
+locations:
+- city: Utrecht
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0861
+    lon: 5.1767
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

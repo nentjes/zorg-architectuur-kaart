@@ -1,0 +1,17 @@
+id: kliniek-park-geldermalsen
+type: organization
+name: Kliniek Park Geldermalsen
+sector: zbc
+subtype: orthopedie
+country: NL
+locations:
+- city: Geldermalsen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8819
+    lon: 5.2897
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

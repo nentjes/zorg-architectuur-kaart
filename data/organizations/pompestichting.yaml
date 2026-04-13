@@ -1,0 +1,19 @@
+id: pompestichting
+type: organization
+name: Pompestichting
+aliases:
+- Pompekliniek
+sector: ggz
+subtype: forensisch
+country: NL
+locations:
+- city: Nijmegen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8426
+    lon: 5.8528
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

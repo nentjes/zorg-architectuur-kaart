@@ -1,0 +1,17 @@
+id: pluripharm
+type: organization
+name: Pluripharm
+sector: apotheek
+subtype: keten
+country: NL
+locations:
+- city: Ridderkerk
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.8725
+    lon: 4.6022
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

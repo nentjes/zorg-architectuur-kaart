@@ -1,0 +1,17 @@
+id: proctos-kliniek
+type: organization
+name: Proctos Kliniek
+sector: zbc
+subtype: proctologie
+country: NL
+locations:
+- city: Bilthoven
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1367
+    lon: 5.2047
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

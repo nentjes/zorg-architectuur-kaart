@@ -1,0 +1,17 @@
+id: koraal-groep
+type: organization
+name: Koraal Groep
+sector: ggz
+subtype: lvg
+country: NL
+locations:
+- city: Sittard
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.9997
+    lon: 5.8708
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,25 @@
+id: djh-van-steenis-huisarts
+type: organization
+name: D.J.H. van Steenis, huisarts
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Jonkheer Ramweg 17
+  city: SCHALKWIJK
+  postcode: 3998 JP
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0317
+    lon: 5.205

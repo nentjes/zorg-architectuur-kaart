@@ -1,0 +1,25 @@
+id: hap-bilthoven-noord
+type: organization
+name: HAP Bilthoven Noord
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Julianalaan 17a
+  city: Bilthoven
+  postcode: 3722 GD
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1283
+    lon: 5.1967

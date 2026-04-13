@@ -1,0 +1,25 @@
+id: hap-ewoud-en-elisabeth
+type: organization
+name: Huisartsenpraktijk Ewoud en Elisabeth
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- microhis-x
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Gansfortstraat 6
+  city: Wijk bij Duurstede
+  postcode: 3961 CR
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 51.9714
+    lon: 5.3339

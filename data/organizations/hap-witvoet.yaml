@@ -1,0 +1,25 @@
+id: hap-witvoet
+type: organization
+name: Huisartsenpraktijk Witvoet
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Hoog Kanje 186-C1
+  city: Zeist
+  postcode: 3708 DL
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0882
+    lon: 5.2293

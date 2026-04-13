@@ -1,0 +1,25 @@
+id: huisartsenij-lege-artis-bv-praktijk-gotz
+type: organization
+name: Huisartsenij Lege Artis B.V. - praktijk Gotz
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- microhis-x
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Hof van Batenstein 4
+  city: VIANEN UT
+  postcode: 4131 HC
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 51.9917
+    lon: 5.0917

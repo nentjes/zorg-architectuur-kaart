@@ -1,0 +1,13 @@
+id: microhis-x
+type: system
+name: "MicroHIS X"
+aliases:
+  - "MicroHIS"
+category: his_huisarts
+vendor: dedalus
+country_origin: NL
+standards_supported:
+  - zib-2020
+sources:
+  - unicum-spotler-contacten-2024
+confidence: high

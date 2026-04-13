@@ -1,0 +1,22 @@
+id: jkh-nievaart-gc-batau
+type: organization
+name: J.K.H. Nievaart / GC Batau
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Richterslaan 52-54
+  city: Nieuwegein
+  postcode: 3431 AK
+  province: Utrecht
+  country: NL

@@ -1,0 +1,25 @@
+id: hap-pp-groen
+type: organization
+name: Huisartspraktijk P.P. Groen
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Dorpsstraat 23
+  city: DOORN
+  postcode: 3941 JK
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0417
+    lon: 5.37

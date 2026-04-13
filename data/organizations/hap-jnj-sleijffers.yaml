@@ -1,0 +1,25 @@
+id: hap-jnj-sleijffers
+type: organization
+name: Huisartspraktijk J.N.J. Sleijffers
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- medicom
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Sandelhout 1
+  city: Houten
+  postcode: 3991 PZ
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.025
+    lon: 5.1667

@@ -1,0 +1,25 @@
+id: mevr-drs-aa-aukema-huisarts
+type: organization
+name: Mevr. Drs. A.A. Aukema, huisarts
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Arnhemsebovenweg 285e
+  city: Driebergen-Rijsenburg
+  postcode: 3971 MH
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.055
+    lon: 5.2833

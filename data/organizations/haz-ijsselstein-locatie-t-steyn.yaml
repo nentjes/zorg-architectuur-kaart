@@ -1,0 +1,16 @@
+id: haz-ijsselstein-locatie-t-steyn
+type: organization
+name: Huisartsenzorg Ijsselstein, locatie ´t Steyn
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- microhis-x
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high

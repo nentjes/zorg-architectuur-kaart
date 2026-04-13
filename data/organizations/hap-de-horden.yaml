@@ -1,0 +1,25 @@
+id: hap-de-horden
+type: organization
+name: Huisartsenpraktijk de Horden
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- microhis-x
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Dukdalf 1a
+  city: Wijk bij Duurstede
+  postcode: 3961 LA
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 51.9714
+    lon: 5.3339

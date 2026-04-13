@@ -1,0 +1,25 @@
+id: hap-krabbe
+type: organization
+name: Huisartsenpraktijk Krabbe
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Rademakerstraat 91
+  city: Soesterberg
+  postcode: 3769 BC
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1333
+    lon: 5.2833

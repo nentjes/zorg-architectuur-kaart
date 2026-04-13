@@ -1,0 +1,25 @@
+id: ha-praktijk-ew-van-de-beek
+type: organization
+name: Huisarts praktijk E.W. van de Beek
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Laantje zonder Eind 3
+  city: Zeist
+  postcode: 3701 BT
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0882
+    lon: 5.2293

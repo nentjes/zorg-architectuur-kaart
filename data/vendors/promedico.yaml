@@ -1,0 +1,12 @@
+id: promedico
+type: vendor
+name: "Promedico"
+aliases:
+  - "Promedico ASP"
+  - "Promedico VDF"
+country: NL
+parent_company: "PharmaPartners (onderdeel Cegedim)"
+vendor_role: product_vendor
+website: "https://www.promedico.nl"
+sources:
+  - unicum-spotler-contacten-2024

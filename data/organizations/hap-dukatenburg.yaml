@@ -1,0 +1,25 @@
+id: hap-dukatenburg
+type: organization
+name: Huisartspraktijk Dukatenburg
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Dukatenburg 16
+  city: Nieuwegein
+  postcode: 3437 AC
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0269
+    lon: 5.0869

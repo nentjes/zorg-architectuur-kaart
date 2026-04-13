@@ -1,0 +1,25 @@
+id: mh-grol-hap-vreeswijk
+type: organization
+name: M.H. Grol Huisartsenpraktijk Vreeswijk
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Fort Vreeswijk 1A
+  city: Nieuwegein
+  postcode: 3433 ZZ
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0269
+    lon: 5.0869

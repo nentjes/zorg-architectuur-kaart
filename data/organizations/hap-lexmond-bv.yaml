@@ -1,0 +1,25 @@
+id: hap-lexmond-bv
+type: organization
+name: Huisartsenpraktijk Lexmond B.V.
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Kortenhoevenseweg 59b
+  city: Lexmond
+  postcode: 4128 CN
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 51.96
+    lon: 5.0267

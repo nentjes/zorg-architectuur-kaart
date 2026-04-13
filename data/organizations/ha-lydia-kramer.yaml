@@ -1,0 +1,25 @@
+id: ha-lydia-kramer
+type: organization
+name: Huisarts Lydia Kramer
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Schippersdreef 2 c
+  city: DRIEBERGEN-RIJSENBURG
+  postcode: 3972 VA
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.055
+    lon: 5.2833

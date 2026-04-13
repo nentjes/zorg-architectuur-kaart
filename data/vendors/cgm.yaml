@@ -1,0 +1,12 @@
+id: cgm
+type: vendor
+name: "CompuGroup Medical (CGM)"
+aliases:
+  - "CGM"
+  - "Pharmeon"
+country: NL
+parent_company: "CompuGroup Medical SE"
+vendor_role: product_vendor
+website: "https://www.cgm.com/nl"
+sources:
+  - unicum-spotler-contacten-2024

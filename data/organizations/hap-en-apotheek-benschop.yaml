@@ -1,0 +1,22 @@
+id: hap-en-apotheek-benschop
+type: organization
+name: Huisartsenpraktijk en Apotheek Benschop
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-vdf
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Florijn 3
+  city: Benschop
+  postcode: 3405 BM
+  province: Utrecht
+  country: NL

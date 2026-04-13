@@ -1,0 +1,11 @@
+id: dedalus
+type: vendor
+name: "Dedalus"
+aliases:
+  - "DXC Technology"
+country: NL
+parent_company: "Dedalus Group"
+vendor_role: product_vendor
+website: "https://www.dedalus.com/nl"
+sources:
+  - unicum-spotler-contacten-2024

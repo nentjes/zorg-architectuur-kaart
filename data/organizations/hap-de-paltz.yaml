@@ -1,0 +1,22 @@
+id: hap-de-paltz
+type: organization
+name: Huisartsenpraktijk De Paltz
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Paltzerweg 210
+  city: Den Dolder
+  postcode: 3734 CN
+  province: Utrecht
+  country: NL

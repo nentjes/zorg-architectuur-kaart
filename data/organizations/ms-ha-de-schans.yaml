@@ -1,0 +1,25 @@
+id: ms-ha-de-schans
+type: organization
+name: Maatschap Huisartsen de Schans
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Zoutkamperschans 1
+  city: Nieuwegein
+  postcode: 3432 TZ
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0269
+    lon: 5.0869

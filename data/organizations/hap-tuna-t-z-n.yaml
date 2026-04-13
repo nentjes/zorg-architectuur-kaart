@@ -1,0 +1,25 @@
+id: hap-tuna-t-z-n
+type: organization
+name: Huisartspraktijk Tuna-Tüzün
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Laan van Vollenhove 20 a
+  city: ZEIST
+  postcode: 3706 AA
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0882
+    lon: 5.2293

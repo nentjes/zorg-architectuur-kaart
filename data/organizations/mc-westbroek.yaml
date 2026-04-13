@@ -1,0 +1,22 @@
+id: mc-westbroek
+type: organization
+name: Medisch Centrum Westbroek
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-vdf
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Postbus 85314
+  city: UTRECHT
+  postcode: 3508 AH
+  province: Utrecht
+  country: NL

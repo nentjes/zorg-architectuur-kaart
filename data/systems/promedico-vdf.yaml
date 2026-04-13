@@ -1,0 +1,9 @@
+id: promedico-vdf
+type: system
+name: "Promedico VDF"
+category: his_huisarts
+vendor: promedico
+country_origin: NL
+sources:
+  - unicum-spotler-contacten-2024
+confidence: medium

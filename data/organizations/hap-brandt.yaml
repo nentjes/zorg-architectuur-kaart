@@ -1,0 +1,22 @@
+id: hap-brandt
+type: organization
+name: Huisartsenpraktijk Brandt
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Dolderseweg 57a
+  city: Den Dolder
+  postcode: 3734 BB
+  province: Utrecht
+  country: NL

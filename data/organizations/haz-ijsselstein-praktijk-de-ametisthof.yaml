@@ -1,0 +1,25 @@
+id: haz-ijsselstein-praktijk-de-ametisthof
+type: organization
+name: Huisartsenzorg IJsselstein, praktijk de Ametisthof
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- cgm-huisarts
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Marinus Vermeerplein 2
+  city: IJsselstein Ut
+  postcode: 3402 HZ
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0219
+    lon: 5.0425

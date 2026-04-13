@@ -1,0 +1,9 @@
+id: omnihis
+type: vendor
+name: "OmniHis"
+aliases:
+  - "OmniHis Scipio"
+country: NL
+vendor_role: product_vendor
+sources:
+  - unicum-spotler-contacten-2024

@@ -1,0 +1,22 @@
+id: hap-hoef-en-haag
+type: organization
+name: Huisartsenpraktijk Hoef en Haag
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Bastionstraat 21
+  city: Hoef En Haag
+  postcode: 4125 TV
+  province: Utrecht
+  country: NL

@@ -1,0 +1,9 @@
+id: cgm-huisarts
+type: system
+name: "CGM Huisarts"
+category: his_huisarts
+vendor: cgm
+country_origin: NL
+sources:
+  - unicum-spotler-contacten-2024
+confidence: medium

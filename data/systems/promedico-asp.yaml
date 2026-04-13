@@ -1,0 +1,13 @@
+id: promedico-asp
+type: system
+name: "Promedico ASP"
+aliases:
+  - "Promedico"
+category: his_huisarts
+vendor: promedico
+country_origin: NL
+standards_supported:
+  - zib-2020
+sources:
+  - unicum-spotler-contacten-2024
+confidence: high

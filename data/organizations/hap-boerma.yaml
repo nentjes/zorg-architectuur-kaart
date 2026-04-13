@@ -1,0 +1,25 @@
+id: hap-boerma
+type: organization
+name: Huisartsenpraktijk Boerma
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- medicom
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Hofspoor 4
+  city: Houten
+  postcode: 3994 VZ
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.025
+    lon: 5.1667

@@ -1,0 +1,25 @@
+id: hap-h-van-den-assem
+type: organization
+name: Huisartspraktijk H. van den Assem
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- microhis-x
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Prins Bernhardweg 69
+  city: Houten
+  postcode: 3991 DE
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.025
+    lon: 5.1667

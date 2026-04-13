@@ -1,0 +1,25 @@
+id: hap-lopik
+type: organization
+name: Huisartsenpraktijk Lopik
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Beatrixplantsoen 1b
+  city: Lopik
+  postcode: 3411 DA
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 51.9733
+    lon: 4.95

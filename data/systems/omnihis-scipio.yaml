@@ -1,0 +1,11 @@
+id: omnihis-scipio
+type: system
+name: "OmniHis Scipio"
+aliases:
+  - "OmniHis"
+category: his_huisarts
+vendor: omnihis
+country_origin: NL
+sources:
+  - unicum-spotler-contacten-2024
+confidence: medium

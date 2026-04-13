@@ -1,0 +1,25 @@
+id: hap-langbroek
+type: organization
+name: Huisartspraktijk Langbroek
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Brink 12
+  city: Langbroek
+  postcode: 3947 NS
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0267
+    lon: 5.3367

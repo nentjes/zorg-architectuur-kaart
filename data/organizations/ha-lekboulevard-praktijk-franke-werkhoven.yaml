@@ -1,0 +1,16 @@
+id: ha-lekboulevard-praktijk-franke-werkhoven
+type: organization
+name: Huisartsen Lekboulevard, Praktijk Franke/Werkhoven
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high

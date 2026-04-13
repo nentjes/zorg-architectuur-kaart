@@ -1,0 +1,22 @@
+id: hap-cothen
+type: organization
+name: Huisartsenpraktijk Cothen
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- microhis-x
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: V.B. Calkoenstraat 27
+  city: Cothen
+  postcode: 3945 CC
+  province: Utrecht
+  country: NL

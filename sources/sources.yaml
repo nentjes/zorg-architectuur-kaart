@@ -733,3 +733,34 @@ sources:
     notes: >
       Authoritative bron voor de 342 Nederlandse gemeenten per 1-1-2024.
       Omvat namen, gemeentecodes, provincie-indeling.
+
+  - id: unicum-spotler-contacten-2024
+    title: "Spotler Contacten-export Unicum Huisartsenzorg — ZOU & LEK"
+    publisher: "Unicum Huisartsenzorg"
+    publisher_type: samenwerkingsverband
+    date: "2024-09-24"
+    url: ""
+    url_todo: true
+    retrieved_at: "2026-04-13"
+    source_type: dataset
+    access: niet_openbaar
+    license: onbekend
+    notes: >
+      Bevat contactgegevens, adressen en HIS-systemen van 111 huisartsenpraktijken
+      in regio Zuidoost-Utrecht (ZOU) en Lekstroom (LEK). Gecombineerd uit
+      ExportContacts_2024_09_24.xlsx, ZOU.xlsx, LEK.xlsx en ZAL-rapportagebestanden.
+
+  - id: open-zal-praktijken-2022
+    title: "OPEN ZAL — Praktijken op ZAL Unicum Huisartsenzorg"
+    publisher: "VZVZ / Unicum Huisartsenzorg"
+    publisher_type: samenwerkingsverband
+    date: "2022-05-04"
+    url: ""
+    url_todo: true
+    retrieved_at: "2026-04-13"
+    source_type: dataset
+    access: niet_openbaar
+    license: onbekend
+    notes: >
+      Lijst van 111 praktijken met AGB-code, naam, DVZA-koppeling en
+      HIS-systeem, afkomstig uit het OPEN-programma / Zorgadressenlijst.

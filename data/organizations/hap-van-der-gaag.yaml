@@ -1,0 +1,22 @@
+id: hap-van-der-gaag
+type: organization
+name: Huisartsenpraktijk van der Gaag
+sector: huisarts
+subtype: praktijk
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+systems:
+- promedico-asp
+networks:
+- lsp
+sources:
+- open-zal-praktijken-2022
+- unicum-spotler-contacten-2024
+confidence: high
+locations:
+- address: Oranjeplaats 21c
+  city: Schoonhoven
+  postcode: 2871 TL
+  province: Utrecht
+  country: NL

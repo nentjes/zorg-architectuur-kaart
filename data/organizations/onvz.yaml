@@ -1,0 +1,21 @@
+id: onvz
+type: organization
+name: ONVZ Zorgverzekeraar
+aliases:
+- ONVZ
+- PNOzorg
+- VvAA Zorgverzekering
+sector: zorgverzekeraar
+subtype: concern
+country: NL
+locations:
+- city: Houten
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0289
+    lon: 5.1683
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,19 @@
+id: rivm
+type: organization
+name: Rijksinstituut voor Volksgezondheid en Milieu
+aliases:
+- RIVM
+sector: koepel
+subtype: kennisinstituut
+country: NL
+locations:
+- city: Bilthoven
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1367
+    lon: 5.2047
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

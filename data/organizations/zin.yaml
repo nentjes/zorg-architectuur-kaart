@@ -1,0 +1,20 @@
+id: zin
+type: organization
+name: Zorginstituut Nederland
+aliases:
+- ZIN
+- ZINL
+sector: koepel
+subtype: stelselagent
+country: NL
+locations:
+- city: Diemen
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.34
+    lon: 4.9589
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

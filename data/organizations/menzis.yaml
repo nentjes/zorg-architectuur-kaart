@@ -1,0 +1,20 @@
+id: menzis
+type: organization
+name: Menzis
+aliases:
+- Anderzorg
+- HEMA Zorgverzekering
+sector: zorgverzekeraar
+subtype: concern
+country: NL
+locations:
+- city: Wageningen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.9692
+    lon: 5.6653
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

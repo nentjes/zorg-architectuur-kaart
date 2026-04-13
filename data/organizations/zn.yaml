@@ -1,0 +1,19 @@
+id: zn
+type: organization
+name: Zorgverzekeraars Nederland
+aliases:
+- ZN
+sector: zorgverzekeraar
+subtype: koepel
+country: NL
+locations:
+- city: Zeist
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0892
+    lon: 5.2322
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

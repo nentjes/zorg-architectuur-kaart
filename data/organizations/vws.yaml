@@ -1,0 +1,19 @@
+id: vws
+type: organization
+name: Ministerie van Volksgezondheid, Welzijn en Sport
+aliases:
+- VWS
+sector: koepel
+subtype: ministerie
+country: NL
+locations:
+- city: Den Haag
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0803
+    lon: 4.3242
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

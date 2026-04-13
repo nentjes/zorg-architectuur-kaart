@@ -1,0 +1,21 @@
+id: dsw
+type: organization
+name: DSW Zorgverzekeraar
+aliases:
+- DSW
+- Stad Holland
+- inTwente
+sector: zorgverzekeraar
+subtype: concern
+country: NL
+locations:
+- city: Schiedam
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9192
+    lon: 4.3886
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

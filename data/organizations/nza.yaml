@@ -1,0 +1,19 @@
+id: nza
+type: organization
+name: Nederlandse Zorgautoriteit
+aliases:
+- NZa
+sector: koepel
+subtype: toezicht
+country: NL
+locations:
+- city: Utrecht
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0894
+    lon: 5.1097
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

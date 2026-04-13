@@ -1,0 +1,21 @@
+id: eno
+type: organization
+name: ENO
+aliases:
+- Salland
+- HollandZorg
+- ZorgDirect
+sector: zorgverzekeraar
+subtype: concern
+country: NL
+locations:
+- city: Deventer
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.2553
+    lon: 6.1639
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,52 @@
+# Manifest: koepels, stelselpartijen, toezicht, kennis — Sprint 5c
+# Scope: cross-sectorale koepels (branche, beroepsgroep), stelselpartijen
+# (ministerie, toezicht, agentschappen), kennisinstituten.
+# Sector-specifieke koepels (KNOV, KNMP-sectoraal, etc.) staan al in hun
+# eigen sector — deze worden niet gemigreerd.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # Ministerie
+  - {id: vws, name: "Ministerie van Volksgezondheid, Welzijn en Sport", aliases: ["VWS"], sector: koepel, subtype: ministerie, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0803, lon: 4.3242}}]}
+
+  # Toezicht
+  - {id: nza, name: "Nederlandse Zorgautoriteit", aliases: ["NZa"], sector: koepel, subtype: toezicht, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0894, lon: 5.1097}}]}
+  - {id: igj, name: "Inspectie Gezondheidszorg en Jeugd", aliases: ["IGJ"], sector: koepel, subtype: toezicht, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: acm, name: "Autoriteit Consument & Markt", aliases: ["ACM"], sector: koepel, subtype: toezicht, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0803, lon: 4.3242}}]}
+
+  # Stelsel / agentschappen / kennis
+  - {id: zin, name: "Zorginstituut Nederland", aliases: ["ZIN", "ZINL"], sector: koepel, subtype: stelselagent, locations: [{city: "Diemen", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3400, lon: 4.9589}}]}
+  - {id: nictiz, name: "Nictiz", sector: koepel, subtype: kennisinstituut, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0803, lon: 4.3242}}]}
+  - {id: rivm, name: "Rijksinstituut voor Volksgezondheid en Milieu", aliases: ["RIVM"], sector: koepel, subtype: kennisinstituut, locations: [{city: "Bilthoven", province: "Utrecht", country: NL, coordinates: {lat: 52.1367, lon: 5.2047}}]}
+  - {id: cbg, name: "College ter Beoordeling van Geneesmiddelen", aliases: ["CBG"], sector: koepel, subtype: stelselagent, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: cibg, name: "CIBG", sector: koepel, subtype: stelselagent, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0803, lon: 4.3242}}]}
+
+  # Branche: zorgaanbieders
+  # Sector-specifieke branche-orgs staan onder hun eigen sector met
+  # subtype: koepel (conform het patroon van KNOV/KNGF/Jeugdzorg NL).
+  # Alleen VGN staat onder `koepel` omdat de gehandicaptenzorg geen eigen
+  # sector heeft (zit verdeeld over ggz/vvt).
+  - {id: nvz, name: "Nederlandse Vereniging van Ziekenhuizen", aliases: ["NVZ"], sector: ziekenhuis, subtype: koepel, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: nfu, name: "Nederlandse Federatie van Universitair Medische Centra", aliases: ["NFU"], sector: ziekenhuis, subtype: koepel, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: vgn, name: "Vereniging Gehandicaptenzorg Nederland", aliases: ["VGN"], sector: koepel, subtype: branche-gehandicaptenzorg, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+
+  # Branche: beroepsgroep (cross-sector)
+  - {id: lhv, name: "Landelijke Huisartsen Vereniging", aliases: ["LHV"], sector: koepel, subtype: beroepsvereniging, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: nhg, name: "Nederlands Huisartsen Genootschap", aliases: ["NHG"], sector: koepel, subtype: kennisinstituut, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: knmp, name: "Koninklijke Nederlandse Maatschappij ter bevordering der Pharmacie", aliases: ["KNMP"], sector: koepel, subtype: beroepsvereniging, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0803, lon: 4.3242}}]}
+  - {id: knmg, name: "Koninklijke Nederlandsche Maatschappij tot bevordering der Geneeskunst", aliases: ["KNMG"], sector: koepel, subtype: beroepsvereniging, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: fms, name: "Federatie Medisch Specialisten", aliases: ["FMS"], sector: koepel, subtype: beroepsvereniging, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: vvn, name: "Verpleegkundigen & Verzorgenden Nederland", aliases: ["V&VN"], sector: koepel, subtype: beroepsvereniging, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: nvab, name: "Nederlandse Vereniging voor Arbeids- en Bedrijfsgeneeskunde", aliases: ["NVAB"], sector: koepel, subtype: beroepsvereniging, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+
+  # Patiëntenkoepels
+  - {id: patientenfederatie-nederland, name: "Patiëntenfederatie Nederland", sector: koepel, subtype: patientenkoepel, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: zorgbelang-nederland, name: "Zorgbelang Nederland", sector: koepel, subtype: patientenkoepel, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+
+  # Gemeentelijke koepel
+  - {id: vng, name: "Vereniging van Nederlandse Gemeenten", aliases: ["VNG"], sector: koepel, subtype: branche, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0803, lon: 4.3242}}]}

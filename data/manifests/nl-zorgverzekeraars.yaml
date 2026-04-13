@@ -1,0 +1,26 @@
+# Manifest: zorgverzekeraars — Sprint 5c
+# Scope: de 9 zorgverzekeraar-concerns + ZN-koepel.
+# Per roadmap-beslissing: zorgverzekeraars zijn IZA-ondertekenaar +
+# financier, dus wél op de kaart.
+# Op concernniveau, niet per merklabel (Achmea ≠ 5 losse merken).
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # Koepel (sector-specifiek, blijft dus in sector: zorgverzekeraar)
+  - {id: zn, name: "Zorgverzekeraars Nederland", aliases: ["ZN"], sector: zorgverzekeraar, subtype: koepel, locations: [{city: "Zeist", province: "Utrecht", country: NL, coordinates: {lat: 52.0892, lon: 5.2322}}]}
+
+  # Concerns
+  - {id: achmea, name: "Achmea", aliases: ["Zilveren Kruis", "De Friesland", "FBTO", "Interpolis", "Pro Life"], sector: zorgverzekeraar, subtype: concern, locations: [{city: "Zeist", province: "Utrecht", country: NL, coordinates: {lat: 52.0892, lon: 5.2322}}]}
+  - {id: vgz, name: "Coöperatie VGZ", aliases: ["VGZ", "Univé", "IZA", "IZZ", "Bewuzt", "UMC", "Zekur"], sector: zorgverzekeraar, subtype: concern, locations: [{city: "Arnhem", province: "Gelderland", country: NL, coordinates: {lat: 51.9851, lon: 5.8987}}]}
+  - {id: cz, name: "CZ Groep", aliases: ["CZ", "OHRA", "Nationale-Nederlanden Zorg", "Just"], sector: zorgverzekeraar, subtype: concern, locations: [{city: "Tilburg", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5555, lon: 5.0913}}]}
+  - {id: menzis, name: "Menzis", aliases: ["Anderzorg", "HEMA Zorgverzekering"], sector: zorgverzekeraar, subtype: concern, locations: [{city: "Wageningen", province: "Gelderland", country: NL, coordinates: {lat: 51.9692, lon: 5.6653}}]}
+  - {id: dsw, name: "DSW Zorgverzekeraar", aliases: ["DSW", "Stad Holland", "inTwente"], sector: zorgverzekeraar, subtype: concern, locations: [{city: "Schiedam", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9192, lon: 4.3886}}]}
+  - {id: onvz, name: "ONVZ Zorgverzekeraar", aliases: ["ONVZ", "PNOzorg", "VvAA Zorgverzekering"], sector: zorgverzekeraar, subtype: concern, locations: [{city: "Houten", province: "Utrecht", country: NL, coordinates: {lat: 52.0289, lon: 5.1683}}]}
+  - {id: zorg-en-zekerheid, name: "Zorg en Zekerheid", aliases: ["Z&Z", "AZVZ"], sector: zorgverzekeraar, subtype: concern, locations: [{city: "Leiden", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1601, lon: 4.4970}}]}
+  - {id: eno, name: "ENO", aliases: ["Salland", "HollandZorg", "ZorgDirect"], sector: zorgverzekeraar, subtype: concern, locations: [{city: "Deventer", province: "Overijssel", country: NL, coordinates: {lat: 52.2553, lon: 6.1639}}]}
+  - {id: asr-zorg, name: "a.s.r. Ziektekosten", aliases: ["De Amersfoortse", "Ditzo"], sector: zorgverzekeraar, subtype: concern, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}

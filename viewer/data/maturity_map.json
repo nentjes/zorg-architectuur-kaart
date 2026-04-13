@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-13T07:40:38",
+    "generated_at": "2026-04-13T07:55:24",
     "n_connections": 4,
-    "n_organizations_scored": 876,
+    "n_organizations_scored": 905,
     "formula": {
       "per_connection": {
         "raw": "paradigm_w * topology_w * status_w * data_w * recency_w",
@@ -261,6 +261,30 @@
       "coord": [
         5.2011,
         52.1303
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "achmea",
+      "name": "Achmea",
+      "sector": "zorgverzekeraar",
+      "region_iza": null,
+      "coord": [
+        5.2322,
+        52.0892
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "acm",
+      "name": "Autoriteit Consument & Markt",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        4.3242,
+        52.0803
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -549,6 +573,18 @@
       "coord": [
         4.9041,
         52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "asr-zorg",
+      "name": "a.s.r. Ziektekosten",
+      "sector": "zorgverzekeraar",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -866,6 +902,18 @@
       "participating_in": []
     },
     {
+      "id": "cbg",
+      "name": "College ter Beoordeling van Geneesmiddelen",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "cello",
       "name": "Cello",
       "sector": "ggz",
@@ -909,6 +957,18 @@
       "coord": [
         4.4654,
         51.5309
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cibg",
+      "name": "CIBG",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        4.3242,
+        52.0803
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1029,6 +1089,18 @@
       "coord": [
         5.8217,
         51.8419
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cz",
+      "name": "CZ Groep",
+      "sector": "zorgverzekeraar",
+      "region_iza": null,
+      "coord": [
+        5.0913,
+        51.5555
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1394,6 +1466,18 @@
       "participating_in": []
     },
     {
+      "id": "dsw",
+      "name": "DSW Zorgverzekeraar",
+      "sector": "zorgverzekeraar",
+      "region_iza": null,
+      "coord": [
+        4.3886,
+        51.9192
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "elann",
       "name": "ELANN",
       "sector": "huisarts",
@@ -1449,6 +1533,18 @@
       "coord": [
         3.8881,
         51.5048
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "eno",
+      "name": "ENO",
+      "sector": "zorgverzekeraar",
+      "region_iza": null,
+      "coord": [
+        6.1639,
+        52.2553
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1617,6 +1713,18 @@
       "coord": [
         4.3113,
         52.0799
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "fms",
+      "name": "Federatie Medisch Specialisten",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -6602,6 +6710,18 @@
       "participating_in": []
     },
     {
+      "id": "igj",
+      "name": "Inspectie Gezondheidszorg en Jeugd",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "ijsselheem",
       "name": "IJsselheem",
       "sector": "vvt",
@@ -6981,6 +7101,18 @@
       "coord": [
         5.3878,
         52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "knmg",
+      "name": "Koninklijke Nederlandsche Maatschappij tot bevordering der Geneeskunst",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -7622,6 +7754,18 @@
       "participating_in": []
     },
     {
+      "id": "menzis",
+      "name": "Menzis",
+      "sector": "zorgverzekeraar",
+      "region_iza": null,
+      "coord": [
+        5.6653,
+        51.9692
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "merem",
       "name": "Merem Medische Revalidatie",
       "sector": "revalidatie",
@@ -7766,6 +7910,18 @@
       "participating_in": []
     },
     {
+      "id": "nfu",
+      "name": "Nederlandse Federatie van Universitair Medische Centra",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "nhg",
       "name": "Nederlands Huisartsen Genootschap",
       "sector": "huisarts",
@@ -7773,6 +7929,18 @@
       "coord": [
         5.1214,
         52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "nictiz",
+      "name": "Nictiz",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        4.3242,
+        52.0803
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -7874,6 +8042,18 @@
       "participating_in": []
     },
     {
+      "id": "nvab",
+      "name": "Nederlandse Vereniging voor Arbeids- en Bedrijfsgeneeskunde",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "nvd",
       "name": "Nederlandse Vereniging van Diëtisten",
       "sector": "paramedisch",
@@ -7934,6 +8114,18 @@
       "participating_in": []
     },
     {
+      "id": "nvz",
+      "name": "Nederlandse Vereniging van Ziekenhuizen",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "nwz",
       "name": "Noordwest Ziekenhuisgroep",
       "sector": "ziekenhuis",
@@ -7941,6 +8133,18 @@
       "coord": [
         4.7497,
         52.6336
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "nza",
+      "name": "Nederlandse Zorgautoriteit",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        5.1097,
+        52.0894
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -8013,6 +8217,18 @@
       "coord": [
         5.0597,
         52.6425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "onvz",
+      "name": "ONVZ Zorgverzekeraar",
+      "sector": "zorgverzekeraar",
+      "region_iza": null,
+      "coord": [
+        5.1683,
+        52.0289
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -8181,6 +8397,18 @@
       "coord": [
         4.5775,
         51.9294
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "patientenfederatie-nederland",
+      "name": "Patiëntenfederatie Nederland",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -9026,6 +9254,18 @@
       "participating_in": []
     },
     {
+      "id": "rivm",
+      "name": "Rijksinstituut voor Volksgezondheid en Milieu",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        5.2047,
+        52.1367
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "rkz",
       "name": "Rode Kruis Ziekenhuis",
       "sector": "ziekenhuis",
@@ -9710,6 +9950,30 @@
       "participating_in": []
     },
     {
+      "id": "vgn",
+      "name": "Vereniging Gehandicaptenzorg Nederland",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vgz",
+      "name": "Coöperatie VGZ",
+      "sector": "zorgverzekeraar",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "viattence",
       "name": "Viattence",
       "sector": "vvt",
@@ -9801,6 +10065,18 @@
       "coord": [
         5.1612,
         52.2967
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vng",
+      "name": "Vereniging van Nederlandse Gemeenten",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        4.3242,
+        52.0803
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -10058,6 +10334,18 @@
       "participating_in": []
     },
     {
+      "id": "vvn",
+      "name": "Verpleegkundigen & Verzorgenden Nederland",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "vvocm",
       "name": "Vereniging van Oefentherapeuten Cesar en Mensendieck",
       "sector": "paramedisch",
@@ -10065,6 +10353,18 @@
       "coord": [
         5.1214,
         52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vws",
+      "name": "Ministerie van Volksgezondheid, Welzijn en Sport",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        4.3242,
+        52.0803
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -10346,6 +10646,18 @@
       "participating_in": []
     },
     {
+      "id": "zin",
+      "name": "Zorginstituut Nederland",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        4.9589,
+        52.34
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "zinn",
       "name": "ZINN",
       "sector": "vvt",
@@ -10382,6 +10694,18 @@
       "participating_in": []
     },
     {
+      "id": "zn",
+      "name": "Zorgverzekeraars Nederland",
+      "sector": "zorgverzekeraar",
+      "region_iza": null,
+      "coord": [
+        5.2322,
+        52.0892
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "zonnehuisgroep-amstelland",
       "name": "Zonnehuisgroep Amstelland",
       "sector": "vvt",
@@ -10406,6 +10730,18 @@
       "participating_in": []
     },
     {
+      "id": "zorg-en-zekerheid",
+      "name": "Zorg en Zekerheid",
+      "sector": "zorgverzekeraar",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "zorgaccent",
       "name": "ZorgAccent",
       "sector": "vvt",
@@ -10425,6 +10761,18 @@
       "coord": [
         4.6462,
         52.3874
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorgbelang-nederland",
+      "name": "Zorgbelang Nederland",
+      "sector": "koepel",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
       ],
       "total_score": 0.0,
       "participating_in": []

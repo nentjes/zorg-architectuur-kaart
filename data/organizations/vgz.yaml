@@ -1,0 +1,25 @@
+id: vgz
+type: organization
+name: Coöperatie VGZ
+aliases:
+- VGZ
+- Univé
+- IZA
+- IZZ
+- Bewuzt
+- UMC
+- Zekur
+sector: zorgverzekeraar
+subtype: concern
+country: NL
+locations:
+- city: Arnhem
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.9851
+    lon: 5.8987
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,6 +1,6 @@
 # Zorg Architectuur Kaart — ROADMAP
 
-**Status**: levend document. Laatste update: 2026-04-13 (na Sprint 4b).
+**Status**: levend document. Laatste update: 2026-04-13 (na Sprint 5c).
 
 Dit document beschrijft de driefasen-aanpak voor het in kaart brengen van
 het Nederlandse IZA-landschap. Het is de **referentie voor alle sessies**
@@ -36,27 +36,33 @@ het Nederlandse IZA-landschap. Het is de **referentie voor alle sessies**
 **Doel**: iedere organisatie die onder een IZA-afspraak valt staat op de
 kaart, minimaal met naam + locatie + sector.
 
-### Stand van zaken (Sprint 4b)
+### Stand van zaken (na Sprint 5c)
 
 | Sector | Op kaart | Dekking | Opmerking |
 |---|---|---|---|
-| Ziekenhuis | 68 | ~100% | UMCs + STZ + algemene |
+| Gemeente | 340 | 100% | Alle NL-gemeenten (post-2022) |
+| VVT | 132 | ~90% | Top-concerns + middelgrote; long tail via ActiZ |
+| GGZ | 77 | ~80% | Incl. forensisch, LVG, RIBW, Parnassia-merken |
+| Ziekenhuis | 70 | ~100% | UMCs + STZ + algemene + NVZ/NFU-koepels |
+| Huisarts | 61 | ~95% | Zorggroepen + koepels |
+| Geboortezorg | 33 | ~35% | Koepels + 11 kraamzorg + 18 VSV's; long tail via KNOV |
+| ZBC | 31 | ~15% | Ketens + niche; long tail via ZKN |
+| Jeugdzorg | 29 | ~60% | GI's + open jeugdhulp; long tail via Jeugdzorg NL |
+| Apotheek | 26 | ~35% | Ketens + UMC-poli's + SIR; long tail via KNMP |
 | Ambulance | 25 | ~100% | Alle RAV's |
 | GGD | 25 | ~100% | Alle GGD's |
-| Gemeente | 340 | 100% | Alle NL-gemeenten (post-2022) |
-| VVT | 96 | ~85% | Top-concerns, kleine stichtingen missen |
-| GGZ | 46 | ~60% | Top-50, lange staart ontbreekt |
-| Huisarts | 61 | ~95% | Zorggroepen + koepels |
-| Apotheek | 11 | 20% | Alleen ketens |
+| Koepel | 17 | ~80% | VWS, NZa, IGJ, Nictiz, ZIN, RIVM, KNMG, V&VN, etc. |
 | Revalidatie | 17 | ~95% | Near-compleet |
-| ZBC | 1 | <1% | Honderden ontbreken |
-| Paramedisch | 0 | 0% | Nog niet begonnen |
-| Jeugdzorg | 0 | 0% | Nog niet begonnen |
-| Geboortezorg | 0 | 0% | Nog niet begonnen |
-| Koepels/VWS | 0 | 0% | Nog niet begonnen |
-| Zorgverzekeraars | 0 | 0% | Nog niet begonnen |
+| Paramedisch | 12 | ~70% | Koepels + 4 fysio-ketens; géén praktijkniveau |
+| Zorgverzekeraar | 10 | 100% | 9 concerns + ZN |
 
-**Totaal nu: 690 orgs. Target na Fase 1: ~1500-1800 orgs.**
+**Totaal nu: 905 orgs. Target na Fase 1: ~1500-1800 orgs.**
+
+Let op: sector-specifieke koepels (KNOV, KNGF, KNMP, LHV, NHG, ActiZ,
+deNedggz, InEen, Jeugdzorg NL, NJi, ZKN, NVZ, NFU, SIR, Trimbos, MIND,
+etc.) blijven in hun eigen sector met `subtype: koepel`. De sector
+`koepel` is voor cross-sectorale entiteiten (ministerie, toezicht,
+stelselagenten, V&VN, KNMG, FMS, patiëntenfederaties, VNG, VGN).
 
 ### Sprint 5a — Restgaten dichten (bestaande sectoren)
 - **GGZ tail**: van 46 → ~80 instellingen (de Nederlandse ggz-ledenlijst)

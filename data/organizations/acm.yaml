@@ -1,0 +1,19 @@
+id: acm
+type: organization
+name: Autoriteit Consument & Markt
+aliases:
+- ACM
+sector: koepel
+subtype: toezicht
+country: NL
+locations:
+- city: Den Haag
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0803
+    lon: 4.3242
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

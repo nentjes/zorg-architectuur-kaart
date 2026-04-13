@@ -1,0 +1,17 @@
+id: cibg
+type: organization
+name: CIBG
+sector: koepel
+subtype: stelselagent
+country: NL
+locations:
+- city: Den Haag
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0803
+    lon: 4.3242
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,20 @@
+id: asr-zorg
+type: organization
+name: a.s.r. Ziektekosten
+aliases:
+- De Amersfoortse
+- Ditzo
+sector: zorgverzekeraar
+subtype: concern
+country: NL
+locations:
+- city: Utrecht
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0907
+    lon: 5.1214
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

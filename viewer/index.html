@@ -204,36 +204,40 @@
     // Sector kleurenpalet — 1 kleur per IZA-sector
     // -----------------------------------------------------------------
     const SECTOR_COLORS = {
-      ziekenhuis:   "#c62828",
-      huisarts:     "#2e7d32",
-      apotheek:     "#00897b",
-      vvt:          "#6a1b9a",
-      ggz:          "#ef6c00",
-      zbc:          "#ad1457",
-      gemeente:     "#455a64",
-      jeugdzorg:    "#ff6f00",
-      ambulance:    "#880e4f",
-      geboortezorg: "#ec407a",
-      paramedisch:  "#00838f",
-      revalidatie:  "#4527a0",
-      ggd:          "#37474f",
-      grensregio:   "#795548"
+      ziekenhuis:      "#c62828",
+      huisarts:        "#2e7d32",
+      apotheek:        "#00897b",
+      vvt:             "#6a1b9a",
+      ggz:             "#ef6c00",
+      zbc:             "#ad1457",
+      gemeente:        "#455a64",
+      jeugdzorg:       "#ff6f00",
+      ambulance:       "#880e4f",
+      geboortezorg:    "#ec407a",
+      paramedisch:     "#00838f",
+      revalidatie:     "#4527a0",
+      ggd:             "#37474f",
+      grensregio:      "#795548",
+      koepel:          "#1565c0",
+      zorgverzekeraar: "#827717"
     };
     const SECTOR_LABELS = {
-      ziekenhuis:   "Ziekenhuizen",
-      huisarts:     "Huisartsen",
-      apotheek:     "Apotheken",
-      vvt:          "VVT",
-      ggz:          "GGZ",
-      zbc:          "ZBC",
-      gemeente:     "Gemeenten",
-      jeugdzorg:    "Jeugdzorg",
-      ambulance:    "Ambulance (RAV)",
-      geboortezorg: "Geboortezorg",
-      paramedisch:  "Paramedisch",
-      revalidatie:  "Revalidatie",
-      ggd:          "GGD",
-      grensregio:   "Grensregio"
+      ziekenhuis:      "Ziekenhuizen",
+      huisarts:        "Huisartsen",
+      apotheek:        "Apotheken",
+      vvt:             "VVT",
+      ggz:             "GGZ",
+      zbc:             "ZBC",
+      gemeente:        "Gemeenten",
+      jeugdzorg:       "Jeugdzorg",
+      ambulance:       "Ambulance (RAV)",
+      geboortezorg:    "Geboortezorg",
+      paramedisch:     "Paramedisch",
+      revalidatie:     "Revalidatie",
+      ggd:             "GGD",
+      grensregio:      "Grensregio",
+      koepel:          "Koepels / stelsel",
+      zorgverzekeraar: "Zorgverzekeraars"
     };
     // Flatten color map → ["match", ["get","sector"], k1, v1, ..., fallback]
     const sectorColorMatch = (() => {

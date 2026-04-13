@@ -17,7 +17,7 @@
 
 $schema: "https://json-schema.org/draft/2020-12/schema"
 title: "Zorg Architectuur Kaart — schema v0.2"
-version: "0.2.1"
+version: "0.2.2"
 
 # Hergebruikbare primitieven — verwezen met $ref vanuit entity_types.
 definitions:
@@ -116,6 +116,12 @@ entity_types:
           - revalidatie       # v0.2.1
           - ggd               # v0.2.1
           - grensregio
+          - koepel            # v0.2.2 — Sprint 5c: brancheorgs, stelselpartijen,
+                              #          toezichthouders, kennisinstituten, ministeries.
+                              #          Sector-specifieke koepels kunnen ook in
+                              #          hun eigen sector staan (bijv. KNOV onder
+                              #          geboortezorg); dit is voor cross-sectoraal.
+          - zorgverzekeraar   # v0.2.2 — Sprint 5c: de 9 verzekeraar-concerns + ZN.
       subtype:
         type: string
       parent_organization:

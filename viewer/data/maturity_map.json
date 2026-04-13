@@ -1,10 +1,10 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-13T14:22:38",
-    "git_sha": "6bff02d",
+    "generated_at": "2026-04-13T14:28:02",
+    "git_sha": "bb8ed7e",
     "git_branch": "claude/start-zorg-architectuur-kaart-PKwg0",
-    "git_dirty": false,
+    "git_dirty": true,
     "n_connections": 4,
     "n_organizations_scored": 1136,
     "formula": {
@@ -18450,13 +18450,25 @@
       "sector": "huisarts",
       "region_iza": "iza-midden-nederland",
       "coord": [
-        5.2293,
-        52.0882
+        5.2388,
+        52.0832
       ],
       "coords": [
         [
-          5.2293,
-          52.0882
+          5.2388,
+          52.0832
+        ],
+        [
+          5.1689,
+          52.0317
+        ],
+        [
+          5.2288,
+          52.092
+        ],
+        [
+          5.0875,
+          52.0367
         ]
       ],
       "total_score": 0.0,

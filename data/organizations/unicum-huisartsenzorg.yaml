@@ -9,18 +9,44 @@ sector: huisarts
 subtype: zorggroep
 country: NL
 locations:
-- address: "Laan van Vollenhove 20"
+- address: "Hoog Kanje 186-c2, 3708 DL Zeist (kantoor)"
   city: Zeist
-  postcode: "3706 AA"
+  postcode: "3708 DL"
   province: Utrecht
   country: NL
   coordinates:
-    lat: 52.0882
-    lon: 5.2293
+    lat: 52.0832
+    lon: 5.2388
+- address: "Prins Bernhardweg 69, 3991 DE Houten (kantoor)"
+  city: Houten
+  postcode: "3991 DE"
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0317
+    lon: 5.1689
+- address: "Professor Lorentzlaan 76, 3707 HL Zeist (Spoedpost Zeist)"
+  city: Zeist
+  postcode: "3707 HL"
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0920
+    lon: 5.2288
+- address: "Koekoekslaan 1, 3435 CM Nieuwegein (Spoedpost Nieuwegein, St. Antonius)"
+  city: Nieuwegein
+  postcode: "3435 CM"
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0367
+    lon: 5.0875
 region_iza: iza-midden-nederland
 sources:
+- unicum-website-contact-2026
 - unicum-spotler-contacten-2024
 - open-zal-praktijken-2022
 confidence: high
+needs_verification: false
 networks:
 - lsp

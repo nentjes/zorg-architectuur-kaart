@@ -764,3 +764,18 @@ sources:
     notes: >
       Lijst van 111 praktijken met AGB-code, naam, DVZA-koppeling en
       HIS-systeem, afkomstig uit het OPEN-programma / Zorgadressenlijst.
+
+  - id: unicum-website-contact-2026
+    title: "UNICUM Huisartsenzorg — contactpagina"
+    publisher: "Unicum Huisartsenzorg"
+    publisher_type: samenwerkingsverband
+    date: "2026-04-13"
+    url: "https://www.unicum-huisartsenzorg.nl/contact"
+    retrieved_at: "2026-04-13"
+    source_type: website
+    access: openbaar
+    license: copyright
+    notes: >
+      Officiële contactpagina met de actuele kantoor-adressen (Houten +
+      Zeist) en de twee huisartsenspoedposten (Zeist + Nieuwegein).
+      Vervangt de verouderde Spotler-afleiding "Laan van Vollenhove 20".

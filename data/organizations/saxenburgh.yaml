@@ -9,8 +9,8 @@ locations:
   province: Overijssel
   country: NL
   coordinates:
-    lat: 52.5772
-    lon: 6.6181
+    lat: 52.56333
+    lon: 6.61583
 sources:
 - claude-knowledge-2026-04
 confidence: low

@@ -9,14 +9,14 @@ locations:
   province: Limburg
   country: NL
   coordinates:
-    lat: 50.8881
-    lon: 5.9833
+    lat: 50.88556
+    lon: 5.99194
 - city: Sittard-Geleen
   province: Limburg
   country: NL
   coordinates:
-    lat: 50.9892
-    lon: 5.8689
+    lat: 50.99111
+    lon: 5.88139
 sources:
 - claude-knowledge-2026-04
 confidence: low

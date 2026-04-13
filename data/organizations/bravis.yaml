@@ -9,14 +9,14 @@ locations:
   province: Noord-Brabant
   country: NL
   coordinates:
-    lat: 51.5333
-    lon: 4.4667
+    lat: 51.53111
+    lon: 4.48306
 - city: Bergen op Zoom
   province: Noord-Brabant
   country: NL
   coordinates:
-    lat: 51.4958
-    lon: 4.2875
+    lat: 51.48444
+    lon: 4.275
 sources:
 - claude-knowledge-2026-04
 confidence: low

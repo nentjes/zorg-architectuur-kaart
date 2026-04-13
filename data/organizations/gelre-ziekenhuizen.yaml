@@ -9,14 +9,14 @@ locations:
   province: Gelderland
   country: NL
   coordinates:
-    lat: 52.2058
-    lon: 5.9697
+    lat: 52.21083
+    lon: 5.98694
 - city: Zutphen
   province: Gelderland
   country: NL
   coordinates:
-    lat: 52.1383
-    lon: 6.1964
+    lat: 52.13556
+    lon: 6.22722
 sources:
 - claude-knowledge-2026-04
 confidence: low

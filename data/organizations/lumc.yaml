@@ -11,8 +11,8 @@ locations:
   province: Zuid-Holland
   country: NL
   coordinates:
-    lat: 52.1668
-    lon: 4.4771
+    lat: 52.16667
+    lon: 4.47778
 sources:
 - claude-knowledge-2026-04
 confidence: low

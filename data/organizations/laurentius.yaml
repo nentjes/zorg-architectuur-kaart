@@ -9,8 +9,8 @@ locations:
   province: Limburg
   country: NL
   coordinates:
-    lat: 51.1944
-    lon: 5.9872
+    lat: 51.19167
+    lon: 5.97278
 sources:
 - claude-knowledge-2026-04
 confidence: low

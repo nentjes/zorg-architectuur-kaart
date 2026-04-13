@@ -11,14 +11,14 @@ locations:
   province: Noord-Brabant
   country: NL
   coordinates:
-    lat: 51.4183
-    lon: 5.4044
+    lat: 51.41861
+    lon: 5.375
 - city: Eindhoven
   province: Noord-Brabant
   country: NL
   coordinates:
-    lat: 51.4416
-    lon: 5.4697
+    lat: 51.43389
+    lon: 5.49806
 sources:
 - claude-knowledge-2026-04
 confidence: low

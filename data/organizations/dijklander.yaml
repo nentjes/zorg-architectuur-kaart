@@ -9,14 +9,14 @@ locations:
   province: Noord-Holland
   country: NL
   coordinates:
-    lat: 52.6425
-    lon: 5.0597
+    lat: 52.63194
+    lon: 5.07333
 - city: Purmerend
   province: Noord-Holland
   country: NL
   coordinates:
-    lat: 52.5056
-    lon: 4.9597
+    lat: 52.51
+    lon: 4.96139
 sources:
 - claude-knowledge-2026-04
 confidence: low

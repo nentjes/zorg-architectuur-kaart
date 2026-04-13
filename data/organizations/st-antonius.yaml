@@ -1,26 +1,32 @@
 id: st-antonius
 type: organization
-name: "St. Antonius Ziekenhuis"
+name: St. Antonius Ziekenhuis
 aliases:
-  - "Sint Antonius"
-  - "Antonius"
+- Sint Antonius
+- Antonius
 sector: ziekenhuis
-subtype: "topklinisch"
+subtype: topklinisch
 country: NL
 locations:
-  - city: "Nieuwegein"
-    province: "Utrecht"
-    country: NL
-  - city: "Utrecht"
-    province: "Utrecht"
-    country: NL
+- city: Nieuwegein
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.03
+    lon: 5.08667
+- city: Utrecht
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.10028
+    lon: 5.04194
 region_iza: iza-midden-nederland
 systems:
-  - epic-epd
+- epic-epd
 networks:
-  - lsp
-  - trijn-platform
+- lsp
+- trijn-platform
 sources:
-  - plan-trijn-midden-nederland-2025
+- plan-trijn-midden-nederland-2025
 confidence: medium
 needs_verification: true

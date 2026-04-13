@@ -9,8 +9,8 @@ locations:
   province: Gelderland
   country: NL
   coordinates:
-    lat: 51.9656
-    lon: 6.2875
+    lat: 51.97778
+    lon: 6.29722
 sources:
 - claude-knowledge-2026-04
 confidence: low

@@ -9,14 +9,14 @@ locations:
   province: Overijssel
   country: NL
   coordinates:
-    lat: 52.5167
-    lon: 6.0833
+    lat: 52.48528
+    lon: 6.11056
 - city: Meppel
   province: Drenthe
   country: NL
   coordinates:
-    lat: 52.6961
-    lon: 6.1917
+    lat: 52.68778
+    lon: 6.19583
 sources:
 - claude-knowledge-2026-04
 confidence: low

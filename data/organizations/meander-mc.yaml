@@ -11,8 +11,8 @@ locations:
   province: Utrecht
   country: NL
   coordinates:
-    lat: 52.1561
-    lon: 5.3878
+    lat: 52.17167
+    lon: 5.40833
 region_iza: iza-midden-nederland
 sources:
 - claude-knowledge-2026-04

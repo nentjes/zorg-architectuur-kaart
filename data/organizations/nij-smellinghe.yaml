@@ -9,8 +9,8 @@ locations:
   province: Friesland
   country: NL
   coordinates:
-    lat: 53.1072
-    lon: 6.0981
+    lat: 53.09833
+    lon: 6.11028
 sources:
 - claude-knowledge-2026-04
 confidence: low

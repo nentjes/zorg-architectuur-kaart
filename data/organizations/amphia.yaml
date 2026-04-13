@@ -9,8 +9,8 @@ locations:
   province: Noord-Brabant
   country: NL
   coordinates:
-    lat: 51.5719
-    lon: 4.7683
+    lat: 51.59694
+    lon: 4.79417
 sources:
 - claude-knowledge-2026-04
 confidence: low

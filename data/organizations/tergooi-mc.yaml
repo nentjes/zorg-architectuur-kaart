@@ -1,26 +1,32 @@
 id: tergooi-mc
 type: organization
-name: "Tergooi MC"
+name: Tergooi MC
 aliases:
-  - "Tergooi"
-  - "Tergooi ziekenhuis"
+- Tergooi
+- Tergooi ziekenhuis
 sector: ziekenhuis
-subtype: "algemeen"
+subtype: algemeen
 country: NL
 locations:
-  - city: "Hilversum"
-    province: "Noord-Holland"
-    country: NL
-  - city: "Blaricum"
-    province: "Noord-Holland"
-    country: NL
+- city: Hilversum
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.23722
+    lon: 5.16222
+- city: Blaricum
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.27389
+    lon: 5.24583
 region_iza: iza-gooi-en-vechtstreek
 systems:
-  - chipsoft-hix
+- chipsoft-hix
 networks:
-  - lsp
-  - mitz
+- lsp
+- mitz
 sources:
-  - plan-gezond-gooi-2025
+- plan-gezond-gooi-2025
 confidence: medium
 needs_verification: true

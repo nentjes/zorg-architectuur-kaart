@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-13T07:55:24",
+    "generated_at": "2026-04-13T08:31:52",
     "n_connections": 4,
     "n_organizations_scored": 905,
     "formula": {
@@ -124,8 +124,8 @@
       "sector": "ziekenhuis",
       "region_iza": "iza-midden-nederland",
       "coord": [
-        5.1214,
-        52.0907
+        5.17657,
+        52.08545
       ],
       "total_score": 0.508,
       "participating_in": [
@@ -195,8 +195,8 @@
       "sector": "ziekenhuis",
       "region_iza": "iza-twente",
       "coord": [
-        6.8937,
-        52.2215
+        6.88655,
+        52.21476
       ],
       "total_score": 0.072,
       "participating_in": [
@@ -343,8 +343,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        3.8889,
-        51.5044
+        3.90028,
+        51.50972
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -439,8 +439,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        4.7683,
-        51.5719
+        4.79417,
+        51.59694
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -787,8 +787,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        4.4667,
-        51.5333
+        4.48306,
+        51.53111
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1399,8 +1399,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        5.0597,
-        52.6425
+        5.07333,
+        52.63194
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1591,8 +1591,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        4.4686,
-        51.9106
+        4.46861,
+        51.91056
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1843,8 +1843,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        5.9697,
-        52.2058
+        5.98694,
+        52.21083
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -6739,8 +6739,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        4.5769,
-        51.9294
+        4.59194,
+        51.93056
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -6871,8 +6871,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        6.0833,
-        52.5167
+        6.11056,
+        52.48528
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -7315,8 +7315,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        5.9872,
-        51.1944
+        5.97278,
+        51.19167
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -7507,8 +7507,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        4.4771,
-        52.1668
+        4.47778,
+        52.16667
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -7627,8 +7627,8 @@
       "sector": "ziekenhuis",
       "region_iza": "iza-midden-nederland",
       "coord": [
-        5.3878,
-        52.1561
+        5.40833,
+        52.17167
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -7807,8 +7807,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        5.4044,
-        51.4183
+        5.375,
+        51.41861
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -7951,8 +7951,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        6.0981,
-        53.1072
+        6.11028,
+        53.09833
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -8131,8 +8131,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        4.7497,
-        52.6336
+        4.74861,
+        52.63667
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -9367,8 +9367,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        6.6181,
-        52.5772
+        6.61583,
+        52.56333
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -9523,8 +9523,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        6.7211,
-        51.9703
+        6.72083,
+        51.96944
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -9547,8 +9547,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        6.2875,
-        51.9656
+        6.29722,
+        51.97778
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -9583,8 +9583,8 @@
       "sector": "ziekenhuis",
       "region_iza": "iza-midden-nederland",
       "coord": [
-        5.0806,
-        52.0296
+        5.08667,
+        52.03
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -9595,8 +9595,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        5.6211,
-        52.3419
+        5.62417,
+        52.33639
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -9715,8 +9715,8 @@
       "sector": "ziekenhuis",
       "region_iza": "iza-gooi-en-vechtstreek",
       "coord": [
-        5.176,
-        52.2292
+        5.16222,
+        52.23722
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -10579,8 +10579,8 @@
       "sector": "ziekenhuis",
       "region_iza": "iza-twente",
       "coord": [
-        6.6604,
-        52.3508
+        6.64722,
+        52.355
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -10591,8 +10591,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        5.6683,
-        52.0411
+        5.67278,
+        52.05083
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -10963,8 +10963,8 @@
       "sector": "ziekenhuis",
       "region_iza": null,
       "coord": [
-        5.9833,
-        50.8881
+        5.99194,
+        50.88556
       ],
       "total_score": 0.0,
       "participating_in": []

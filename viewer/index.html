@@ -306,7 +306,8 @@
     map.on("load", async () => {
       let data;
       try {
-        const resp = await fetch("data/maturity_map.json");
+        // cache-bust: browser moet de nieuwste data pakken na elke git pull
+        const resp = await fetch("data/maturity_map.json?t=" + Date.now());
         data = await resp.json();
       } catch (e) {
         document.getElementById("ranking-heading").innerText = "FOUT bij laden data";

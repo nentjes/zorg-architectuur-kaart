@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-13T08:31:52",
+    "generated_at": "2026-04-13T08:46:05",
     "n_connections": 4,
-    "n_organizations_scored": 905,
+    "n_organizations_scored": 915,
     "formula": {
       "per_connection": {
         "raw": "paradigm_w * topology_w * status_w * data_w * recency_w",
@@ -1118,6 +1118,18 @@
       "participating_in": []
     },
     {
+      "id": "de-forensische-zorgspecialisten",
+      "name": "De Forensische Zorgspecialisten",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.8911,
+        52.3555
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "de-friese-wouden",
       "name": "De Friese Wouden",
       "sector": "vvt",
@@ -1737,6 +1749,18 @@
       "coord": [
         5.2647,
         52.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "fpc-rooyse-wissel",
+      "name": "FPC de Rooyse Wissel",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.9847,
+        51.5272
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -6266,6 +6290,18 @@
       "participating_in": []
     },
     {
+      "id": "ggz-delfland",
+      "name": "GGZ Delfland",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.3562,
+        52.0097
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "ggz-drenthe",
       "name": "GGZ Drenthe",
       "sector": "ggz",
@@ -6338,6 +6374,18 @@
       "participating_in": []
     },
     {
+      "id": "ggz-wnb",
+      "name": "GGZ Westelijk Noord Brabant",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.2797,
+        51.5228
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "ggze",
       "name": "GGzE",
       "sector": "ggz",
@@ -6345,6 +6393,18 @@
       "coord": [
         5.4697,
         51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ghz",
+      "name": "Groene Hart Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.69944,
+        52.01611
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -7778,6 +7838,18 @@
       "participating_in": []
     },
     {
+      "id": "met-ggz",
+      "name": "MET ggz",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.9744,
+        51.5264
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "mijzo",
       "name": "Mijzo",
       "sector": "vvt",
@@ -7881,6 +7953,18 @@
       "coord": [
         5.7063,
         50.8421
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mutsaersstichting",
+      "name": "Mutsaersstichting",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.1722,
+        51.376
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -9110,6 +9194,18 @@
       "participating_in": []
     },
     {
+      "id": "ribw-avv",
+      "name": "RIBW Arnhem en Veluwevallei",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "ribw-brabant",
       "name": "RIBW Brabant",
       "sector": "ggz",
@@ -9621,6 +9717,18 @@
       "coord": [
         5.4714,
         52.5185
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "stichting-de-hoop",
+      "name": "Stichting De Hoop",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.6583,
+        51.8028
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -10953,6 +11061,18 @@
       "coord": [
         5.0806,
         52.0296
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zuyderland-ggz",
+      "name": "Zuyderland GGZ",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.8814,
+        50.9911
       ],
       "total_score": 0.0,
       "participating_in": []

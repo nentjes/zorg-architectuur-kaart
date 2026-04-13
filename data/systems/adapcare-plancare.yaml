@@ -4,9 +4,10 @@ name: "Adapcare PlanCare"
 aliases:
   - "PlanCare"
   - "Adapcare"
-category: epd_ggz
+category: ecd_vvt
 vendor: adapcare
 country_origin: NL
 sources:
   - mni-partners-epd-marktinventarisatie-ggz-2025
+  - mni-partners-epd-marktinventarisatie-vvt-2025
 confidence: high

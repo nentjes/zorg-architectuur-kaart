@@ -1,0 +1,7 @@
+id: qurius
+type: vendor
+name: "Qurius"
+country: NL
+vendor_role: product_vendor
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025

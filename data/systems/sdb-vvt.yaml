@@ -1,0 +1,12 @@
+id: sdb-vvt
+type: system
+name: "SDB Zorg — VVT-dossier"
+aliases:
+  - "SDB Groep VVT"
+  - "SDB Zorg"
+category: ecd_vvt
+vendor: sdb-groep
+country_origin: NL
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high

@@ -1,0 +1,11 @@
+id: ecare-ecd
+type: system
+name: "Ecare ECD"
+aliases:
+  - "Ecare"
+category: ecd_vvt
+vendor: ecare
+country_origin: NL
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high

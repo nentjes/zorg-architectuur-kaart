@@ -1,0 +1,12 @@
+id: tenzinger-caress
+type: system
+name: "Tenzinger Caress"
+aliases:
+  - "Caress"
+  - "Tenzinger VVT"
+category: ecd_vvt
+vendor: tenzinger
+country_origin: NL
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high

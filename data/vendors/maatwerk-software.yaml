@@ -1,0 +1,9 @@
+id: maatwerk-software
+type: vendor
+name: "Maatwerk Software"
+aliases:
+  - "Maatwerk"
+country: NL
+vendor_role: product_vendor
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025

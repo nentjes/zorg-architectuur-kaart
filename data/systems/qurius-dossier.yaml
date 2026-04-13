@@ -1,0 +1,11 @@
+id: qurius-dossier
+type: system
+name: "Qurius ECD"
+aliases:
+  - "Qurius"
+category: ecd_vvt
+vendor: qurius
+country_origin: NL
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high

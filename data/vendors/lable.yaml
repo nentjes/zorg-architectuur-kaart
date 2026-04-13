@@ -1,0 +1,10 @@
+id: lable
+type: vendor
+name: "Lable"
+aliases:
+  - "Lable Care"
+country: NL
+vendor_role: product_vendor
+website: "https://lable.nl"
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025

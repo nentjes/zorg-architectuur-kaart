@@ -1,0 +1,11 @@
+id: maatwerk-dossier
+type: system
+name: "Maatwerk Software ECD"
+aliases:
+  - "Maatwerk"
+category: ecd_vvt
+vendor: maatwerk-software
+country_origin: NL
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high

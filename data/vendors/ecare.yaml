@@ -1,0 +1,11 @@
+id: ecare
+type: vendor
+name: "Ecare"
+aliases:
+  - "Ecare Services"
+  - "Ecare Nederland"
+country: NL
+vendor_role: product_vendor
+website: "https://ecare.nl"
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025

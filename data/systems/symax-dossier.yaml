@@ -1,0 +1,11 @@
+id: symax-dossier
+type: system
+name: "Symax ECD"
+aliases:
+  - "Symax"
+category: ecd_vvt
+vendor: symax
+country_origin: NL
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high

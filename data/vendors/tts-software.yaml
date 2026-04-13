@@ -1,0 +1,9 @@
+id: tts-software
+type: vendor
+name: "TTS Software"
+aliases:
+  - "TTS"
+country: NL
+vendor_role: product_vendor
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025

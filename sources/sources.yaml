@@ -654,6 +654,71 @@ sources:
       EPD-toewijzing (`organization.systems[]`). Administratie en
       Cliëntportaal worden in Fase 2b als sub-systemen gemodelleerd.
 
+  - id: iza-digitaliseringsroutekaart-msz
+    title: "IZA Digitaliseringsroutekaart medisch-specialistische zorg"
+    publisher: "NVZ / NFU / ZKN / Patiëntenfederatie / ZN / VWS (IZA-partijen MSZ)"
+    publisher_type: samenwerkingsverband
+    date: "2024-02-09"
+    url: "https://www.izadigitalisering.nl/MSZ/"
+    url_todo: false
+    retrieved_at: "2026-04-13"
+    source_type: plan
+    access: openbaar
+    license: onbekend
+    notes: >
+      Officiële landingspagina van de IZA-Digitaliseringsroutekaart voor
+      de medisch-specialistische zorg (MSZ). De routekaart vertaalt de
+      IZA-afspraken voor digitalisering naar vier thema's:
+      1) elektronische gegevensuitwisseling, 2) PGO / digitale
+      toegankelijkheid van eigen gezondheidsgegevens, 3) hybride zorg,
+      4) secundair datagebruik. Dit is een levend document dat via
+      stakeholder-bijeenkomsten periodiek wordt geactualiseerd.
+      Autoritatief voor program/usecase-entiteiten rond MSZ-digitalisering
+      in de Zorg Architectuur Kaart — o.a. voor de relatie tussen Twiin,
+      CumuluZ, EHDS en SNOMED als eenheid-van-taal-standaard.
+
+  - id: iza-routekaart-msz-update-nvz
+    title: "Nieuwe versie IZA-routekaart — NVZ-aankondiging"
+    publisher: "NVZ — Nederlandse Vereniging van Ziekenhuizen"
+    publisher_type: samenwerkingsverband
+    date: "2025"
+    url: "https://www.nvz-ziekenhuizen.nl/actualiteit-en-opinie/nieuwe-versie-iza-routekaart"
+    url_todo: false
+    retrieved_at: "2026-04-13"
+    source_type: artikel
+    access: openbaar
+    license: onbekend
+    notes: >
+      NVZ-bericht over de geactualiseerde IZA-Digitaliseringsroutekaart
+      MSZ. Bevat concrete afspraken rond beeldbeschikbaarheid (uitbreiding
+      Twiin-portaal met radiologie-pull, als tijdelijke oplossing in
+      afwachting van EHDS-besluitvorming), SNOMED als standaard voor
+      eenheid van taal, positionering ten opzichte van CumuluZ, en
+      uitbreiding van NIS2-informatie. Secundaire bron — de primaire
+      bron is `iza-digitaliseringsroutekaart-msz`.
+
+  - id: mni-partners-epd-marktinventarisatie-vvt-2025
+    title: "M&I/Partners — Jaarlijkse EPD-marktinventarisatie VVT editie 2025"
+    publisher: "M&I/Partners"
+    publisher_type: onderzoek
+    date: "2025"
+    url: "https://mxi.nl/kennis"
+    url_todo: true
+    retrieved_at: "2026-04-13"
+    source_type: dataset
+    access: openbaar
+    license: onbekend
+    notes: >
+      Jaarlijkse inventarisatie door M&I/Partners van ECD's in de VVT-
+      sector (~175 orgs in editie 2025, inclusief gehandicaptenzorg).
+      Het Power BI dashboard onderscheidt vier kolommen per organisatie:
+      Intramuraal, Extramuraal, Behandeldossier en Cliëntportaal — dat
+      kunnen vier verschillende leveranciers zijn. Sprint 6c gebruikt
+      de **Intramuraal-kolom** als de primaire ECD-toewijzing
+      (`organization.systems[]`); valt terug op Extramuraal als
+      Intramuraal leeg is. Behandeldossier (meestal Gerimedica Ysis)
+      en Cliëntportaal worden in Fase 2b als sub-systemen gemodelleerd.
+
   - id: cbs-gemeentelijke-indeling-2024
     title: "CBS — Gemeentelijke indeling 2024"
     publisher: "Centraal Bureau voor de Statistiek"

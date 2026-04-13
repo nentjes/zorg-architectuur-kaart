@@ -1,0 +1,10 @@
+id: gerimedica
+type: vendor
+name: "Gerimedica"
+aliases:
+  - "Gerimedica BV"
+country: NL
+vendor_role: product_vendor
+website: "https://gerimedica.nl"
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025

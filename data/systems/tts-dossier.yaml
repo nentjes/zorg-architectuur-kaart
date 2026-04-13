@@ -1,0 +1,11 @@
+id: tts-dossier
+type: system
+name: "TTS ECD"
+aliases:
+  - "TTS"
+category: ecd_vvt
+vendor: tts-software
+country_origin: NL
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high

@@ -1,0 +1,12 @@
+id: gerimedica-ysis
+type: system
+name: "Gerimedica Ysis"
+aliases:
+  - "Ysis"
+  - "Gerimedica"
+category: ecd_vvt
+vendor: gerimedica
+country_origin: NL
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high

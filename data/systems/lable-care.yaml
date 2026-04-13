@@ -1,0 +1,11 @@
+id: lable-care
+type: system
+name: "Lable Care"
+aliases:
+  - "Lable"
+category: ecd_vvt
+vendor: lable
+country_origin: NL
+sources:
+  - mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high

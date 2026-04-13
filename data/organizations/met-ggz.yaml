@@ -1,19 +1,21 @@
-id: ggz-friesland
+id: met-ggz
 type: organization
-name: GGZ Friesland
+name: MET ggz
+aliases:
+- MET GGZ
 sector: ggz
+subtype: geintegreerde-ggz
 country: NL
 locations:
-- city: Leeuwarden
-  province: Friesland
+- city: Venray
+  province: Limburg
   country: NL
   coordinates:
-    lat: 53.2042
-    lon: 5.7717
+    lat: 51.5264
+    lon: 5.9744
+systems:
+- sdb-ggz
 sources:
 - mni-partners-epd-marktinventarisatie-ggz-2025
-- claude-knowledge-2026-04
 confidence: high
 needs_verification: false
-systems:
-- nedap-ons-ggz

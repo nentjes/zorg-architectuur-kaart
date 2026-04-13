@@ -1,0 +1,11 @@
+id: medicore-bv
+type: vendor
+name: "Medicore B.V."
+aliases:
+  - "Medicore"
+country: NL
+vendor_role: product_vendor
+website: "https://www.medicore.nl"
+sources:
+  - mni-partners-epd-marktinventarisatie-ggz-2025
+  - roel-private-excel-2026-04

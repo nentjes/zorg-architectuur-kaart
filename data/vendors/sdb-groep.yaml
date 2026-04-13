@@ -1,0 +1,11 @@
+id: sdb-groep
+type: vendor
+name: "SDB Groep"
+aliases:
+  - "SDB"
+  - "SDB Ayton"
+country: NL
+vendor_role: product_vendor
+website: "https://www.sdbgroep.nl"
+sources:
+  - mni-partners-epd-marktinventarisatie-ggz-2025

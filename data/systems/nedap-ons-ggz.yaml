@@ -1,0 +1,15 @@
+id: nedap-ons-ggz
+type: system
+name: "Nedap Ons — GGZ-dossier"
+aliases:
+  - "Nedap Ons GGZ"
+  - "Ons voor GGZ"
+category: epd_ggz
+vendor: nedap
+country_origin: NL
+standards_supported:
+  - zib-2020
+sources:
+  - mni-partners-epd-marktinventarisatie-ggz-2025
+  - nedap-website
+confidence: high

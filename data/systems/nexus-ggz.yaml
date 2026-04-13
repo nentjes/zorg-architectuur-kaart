@@ -1,0 +1,12 @@
+id: nexus-ggz
+type: system
+name: "NEXUS GGZ"
+aliases:
+  - "NEXUS Psychiatrie"
+  - "Nexus GGZ-dossier"
+category: epd_ggz
+vendor: nexus-ag
+country_origin: DE
+sources:
+  - mni-partners-epd-marktinventarisatie-ggz-2025
+confidence: high

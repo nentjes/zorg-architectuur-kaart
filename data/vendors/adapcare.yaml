@@ -1,0 +1,10 @@
+id: adapcare
+type: vendor
+name: "Adapcare"
+aliases:
+  - "Adapcare B.V."
+country: NL
+vendor_role: product_vendor
+website: "https://www.adapcare.nl"
+sources:
+  - mni-partners-epd-marktinventarisatie-ggz-2025

@@ -11,12 +11,12 @@ locations:
     lat: 51.6056
     lon: 5.6781
 sources:
+- mni-partners-epd-marktinventarisatie-ggz-2025
 - claude-knowledge-2026-04
 - gemini-ggz-research-2026-04
-confidence: medium
-needs_verification: true
+confidence: high
+needs_verification: false
 systems:
-- nexus-kis
-- tenzinger-fier
+- nexus-ggz
 notes:
 - Nexus voor klinisch

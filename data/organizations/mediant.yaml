@@ -1,20 +1,21 @@
 id: mediant
 type: organization
-name: "Mediant Geestelijke Gezondheidszorg"
+name: Mediant Geestelijke Gezondheidszorg
 aliases:
-  - "Mediant"
+- Mediant
 sector: ggz
 country: NL
 locations:
-  - city: "Enschede"
-    province: "Overijssel"
-    country: NL
+- city: Enschede
+  province: Overijssel
+  country: NL
 region_iza: iza-twente
 systems:
-  - nedap-ons
+- sdb-ggz
 networks:
-  - rdh-twente
+- rdh-twente
 sources:
-  - plan-rdh-twente-2025
-confidence: medium
-needs_verification: true
+- mni-partners-epd-marktinventarisatie-ggz-2025
+- plan-rdh-twente-2025
+confidence: high
+needs_verification: false

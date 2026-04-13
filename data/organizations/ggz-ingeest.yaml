@@ -12,10 +12,11 @@ locations:
     lat: 52.3344
     lon: 4.8661
 systems:
-- epic-epd
+- pinkroccade-user
 sources:
+- mni-partners-epd-marktinventarisatie-ggz-2025
 - gemini-ggz-research-2026-04
-confidence: medium
-needs_verification: true
+confidence: high
+needs_verification: false
 notes:
 - 'Uitzondering: draait mee op Epic-stack van Amsterdam UMC'

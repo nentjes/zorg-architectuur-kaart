@@ -1,20 +1,21 @@
-id: de-viersprong
+id: ggz-wnb
 type: organization
-name: De Viersprong
+name: GGZ Westelijk Noord Brabant
+aliases:
+- GGZ WNB
 sector: ggz
-subtype: specialistisch
+subtype: geintegreerde-ggz
 country: NL
 locations:
 - city: Halsteren
   province: Noord-Brabant
   country: NL
   coordinates:
-    lat: 51.534
-    lon: 4.2897
+    lat: 51.5228
+    lon: 4.2797
+systems:
+- adapcare-plancare
 sources:
 - mni-partners-epd-marktinventarisatie-ggz-2025
-- claude-knowledge-2026-04
 confidence: high
 needs_verification: false
-systems:
-- nedap-ons-ggz

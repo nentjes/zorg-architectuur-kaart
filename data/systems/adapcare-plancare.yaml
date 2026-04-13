@@ -1,12 +1,12 @@
-id: medicore
+id: adapcare-plancare
 type: system
-name: "Medicore"
+name: "Adapcare PlanCare"
 aliases:
-  - "Medicore EPD"
+  - "PlanCare"
+  - "Adapcare"
 category: epd_ggz
-vendor: medicore-bv
+vendor: adapcare
 country_origin: NL
 sources:
   - mni-partners-epd-marktinventarisatie-ggz-2025
-  - roel-private-excel-2026-04
 confidence: high

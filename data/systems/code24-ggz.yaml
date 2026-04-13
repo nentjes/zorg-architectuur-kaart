@@ -1,12 +1,11 @@
-id: medicore
+id: code24-ggz
 type: system
-name: "Medicore"
+name: "Code24 GGZ-dossier"
 aliases:
-  - "Medicore EPD"
+  - "Code24"
 category: epd_ggz
-vendor: medicore-bv
+vendor: code24
 country_origin: NL
 sources:
   - mni-partners-epd-marktinventarisatie-ggz-2025
-  - roel-private-excel-2026-04
 confidence: high

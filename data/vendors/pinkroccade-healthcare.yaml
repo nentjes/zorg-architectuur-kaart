@@ -1,0 +1,13 @@
+id: pinkroccade-healthcare
+type: vendor
+name: "PinkRoccade Healthcare"
+aliases:
+  - "PinkRoccade"
+  - "PinkRoccade GGZ"
+  - "Total Specific Solutions"
+country: NL
+parent_company: "Total Specific Solutions (TSS) / Constellation Software"
+vendor_role: product_vendor
+website: "https://www.pinkroccadehealthcare.nl"
+sources:
+  - mni-partners-epd-marktinventarisatie-ggz-2025

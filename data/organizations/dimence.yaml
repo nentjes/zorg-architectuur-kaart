@@ -11,11 +11,12 @@ locations:
     lat: 52.2542
     lon: 6.1392
 sources:
+- mni-partners-epd-marktinventarisatie-ggz-2025
 - claude-knowledge-2026-04
 - gemini-ggz-research-2026-04
-confidence: medium
-needs_verification: true
+confidence: high
+needs_verification: false
 systems:
-- tenzinger-user
+- sdb-ggz
 notes:
 - Overijssel/Deventer

@@ -1,12 +1,12 @@
-id: medicore
+id: sdb-ggz
 type: system
-name: "Medicore"
+name: "SDB Zorg — GGZ-dossier"
 aliases:
-  - "Medicore EPD"
+  - "SDB"
+  - "SDB Ggz"
 category: epd_ggz
-vendor: medicore-bv
+vendor: sdb-groep
 country_origin: NL
 sources:
   - mni-partners-epd-marktinventarisatie-ggz-2025
-  - roel-private-excel-2026-04
 confidence: high

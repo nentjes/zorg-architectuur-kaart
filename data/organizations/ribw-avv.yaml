@@ -1,22 +1,21 @@
-id: ribw-niri
+id: ribw-avv
 type: organization
-name: RIBW Nijmegen en Rivierenland
+name: RIBW Arnhem en Veluwevallei
 aliases:
-- RIBW NiRi
+- RIBW AVV
 sector: ggz
-subtype: beschermd-wonen
+subtype: ribw
 country: NL
 locations:
-- city: Nijmegen
+- city: Arnhem
   province: Gelderland
   country: NL
   coordinates:
-    lat: 51.8426
-    lon: 5.8528
-sources:
-- mni-partners-epd-marktinventarisatie-ggz-2025
-- claude-knowledge-2026-04
-confidence: high
-needs_verification: false
+    lat: 51.9851
+    lon: 5.8987
 systems:
 - nedap-ons-ggz
+sources:
+- mni-partners-epd-marktinventarisatie-ggz-2025
+confidence: high
+needs_verification: false

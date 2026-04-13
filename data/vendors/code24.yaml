@@ -1,0 +1,10 @@
+id: code24
+type: vendor
+name: "Code24"
+aliases:
+  - "Code24 B.V."
+country: NL
+vendor_role: product_vendor
+website: "https://www.code24.nl"
+sources:
+  - mni-partners-epd-marktinventarisatie-ggz-2025

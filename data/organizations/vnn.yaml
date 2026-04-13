@@ -14,6 +14,9 @@ locations:
     lat: 53.2194
     lon: 6.5665
 sources:
+- mni-partners-epd-marktinventarisatie-ggz-2025
 - claude-knowledge-2026-04
-confidence: low
-needs_verification: true
+confidence: high
+needs_verification: false
+systems:
+- sdb-ggz

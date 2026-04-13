@@ -1,0 +1,10 @@
+id: health-cloud-initiative
+type: vendor
+name: "Health Cloud Initiative"
+aliases:
+  - "HCI"
+country: NL
+vendor_role: product_vendor
+website: "https://www.healthcloudinitiative.nl"
+sources:
+  - mni-partners-epd-marktinventarisatie-ggz-2025

@@ -1,12 +1,12 @@
-id: medicore
+id: pinkroccade-user
 type: system
-name: "Medicore"
+name: "PinkRoccade USER"
 aliases:
-  - "Medicore EPD"
+  - "USER"
+  - "PinkRoccade GGZ"
 category: epd_ggz
-vendor: medicore-bv
+vendor: pinkroccade-healthcare
 country_origin: NL
 sources:
   - mni-partners-epd-marktinventarisatie-ggz-2025
-  - roel-private-excel-2026-04
 confidence: high

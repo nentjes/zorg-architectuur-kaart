@@ -1,0 +1,12 @@
+id: hci-dossier
+type: system
+name: "Health Cloud Initiative — dossier"
+aliases:
+  - "HCI dossier"
+  - "Health Cloud Initiative"
+category: epd_ggz
+vendor: health-cloud-initiative
+country_origin: NL
+sources:
+  - mni-partners-epd-marktinventarisatie-ggz-2025
+confidence: high

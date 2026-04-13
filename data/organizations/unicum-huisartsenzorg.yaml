@@ -25,22 +25,6 @@ locations:
   coordinates:
     lat: 52.0317
     lon: 5.1689
-- address: "Professor Lorentzlaan 76, 3707 HL Zeist (Spoedpost Zeist)"
-  city: Zeist
-  postcode: "3707 HL"
-  province: Utrecht
-  country: NL
-  coordinates:
-    lat: 52.0920
-    lon: 5.2288
-- address: "Koekoekslaan 1, 3435 CM Nieuwegein (Spoedpost Nieuwegein, St. Antonius)"
-  city: Nieuwegein
-  postcode: "3435 CM"
-  province: Utrecht
-  country: NL
-  coordinates:
-    lat: 52.0367
-    lon: 5.0875
 region_iza: iza-midden-nederland
 sources:
 - unicum-website-contact-2026

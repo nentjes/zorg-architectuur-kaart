@@ -253,26 +253,36 @@
 
   <script>
     // -----------------------------------------------------------------
-    // Sector kleurenpalet — 1 kleur per IZA-sector
+    // Filter-categorieën — 1 tegel per item in de sidebar-filter.
+    // Voor huisartsenzorg splitsen we in subtypes (praktijk / HAP /
+    // zorggroep / koepel) zodat de drie organisatievormen apart in de
+    // legenda én apart te filteren zijn. Andere sectoren zijn 1-op-1
+    // met hun sector-veld.
     // -----------------------------------------------------------------
-    const SECTOR_COLORS = {
-      ziekenhuis:      "#c62828",
-      huisarts:        "#2e7d32",
-      apotheek:        "#00897b",
-      vvt:             "#6a1b9a",
-      ggz:             "#ef6c00",
-      zbc:             "#ad1457",
-      gemeente:        "#455a64",
-      jeugdzorg:       "#ff6f00",
-      ambulance:       "#880e4f",
-      geboortezorg:    "#ec407a",
-      paramedisch:     "#00838f",
-      revalidatie:     "#4527a0",
-      ggd:             "#37474f",
-      grensregio:      "#795548",
-      koepel:          "#1565c0",
-      zorgverzekeraar: "#827717"
+    const FILTER_CATEGORIES = {
+      ziekenhuis:              { color: "#c62828", label: "Ziekenhuizen" },
+      huisarts_praktijk:       { color: "#43a047", label: "Huisartspraktijken" },
+      huisarts_huisartsenpost: { color: "#00695c", label: "Huisartsenposten (HAP)" },
+      huisarts_zorggroep:      { color: "#1b5e20", label: "Zorggroepen huisarts" },
+      huisarts_koepel:         { color: "#2962ff", label: "Koepels huisarts" },
+      apotheek:                { color: "#00897b", label: "Apotheken" },
+      vvt:                     { color: "#6a1b9a", label: "VVT" },
+      ggz:                     { color: "#ef6c00", label: "GGZ" },
+      zbc:                     { color: "#ad1457", label: "ZBC" },
+      gemeente:                { color: "#455a64", label: "Gemeenten" },
+      jeugdzorg:               { color: "#ff6f00", label: "Jeugdzorg" },
+      ambulance:               { color: "#880e4f", label: "Ambulance (RAV)" },
+      geboortezorg:            { color: "#ec407a", label: "Geboortezorg" },
+      paramedisch:             { color: "#00838f", label: "Paramedisch" },
+      revalidatie:             { color: "#4527a0", label: "Revalidatie" },
+      ggd:                     { color: "#37474f", label: "GGD" },
+      grensregio:              { color: "#795548", label: "Grensregio" },
+      koepel:                  { color: "#1565c0", label: "Koepels / stelsel" },
+      zorgverzekeraar:         { color: "#827717", label: "Zorgverzekeraars" }
     };
+
+    // Sector → legacy-label (gebruikt in popup, waar we de IZA-sector
+    // in natuurlijke taal willen tonen, niet de filter-tegel).
     const SECTOR_LABELS = {
       ziekenhuis:      "Ziekenhuizen",
       huisarts:        "Huisartsen",
@@ -291,10 +301,26 @@
       koepel:          "Koepels / stelsel",
       zorgverzekeraar: "Zorgverzekeraars"
     };
-    // Flatten color map → ["match", ["get","sector"], k1, v1, ..., fallback]
+
+    // Binnen huisarts-sector: welke subtypes krijgen een eigen filter-tegel?
+    // Alles wat hierin zit wordt naar huisarts_<subtype> gemapt; alles
+    // wat er niet in zit (of subtype ontbreekt) wordt behandeld als
+    // "huisartspraktijk".
+    const HUISARTS_SUBTYPES = new Set(["huisartsenpost", "zorggroep", "koepel"]);
+
+    function deriveFilterKey(org) {
+      if (org.sector === "huisarts") {
+        const st = org.subtype;
+        if (st && HUISARTS_SUBTYPES.has(st)) return `huisarts_${st}`;
+        return "huisarts_praktijk";
+      }
+      return org.sector;
+    }
+
+    // Flatten color map → ["match", ["get","filterKey"], k1, v1, ..., fallback]
     const sectorColorMatch = (() => {
-      const arr = ["match", ["get", "sector"]];
-      for (const [k, v] of Object.entries(SECTOR_COLORS)) arr.push(k, v);
+      const arr = ["match", ["get", "filterKey"]];
+      for (const [k, v] of Object.entries(FILTER_CATEGORIES)) arr.push(k, v.color);
       arr.push("#888");
       return arr;
     })();
@@ -335,20 +361,21 @@
     map.addControl(new maplibregl.NavigationControl(), "top-left");
     map.addControl(new maplibregl.ScaleControl({ unit: "metric" }), "bottom-left");
 
-    // Active sectors = all by default; user kan deselect
-    let activeSectors = new Set(Object.keys(SECTOR_COLORS));
+    // Active filter-keys = all by default; user kan deselect.
+    // Een filter-key is "sector" voor de meeste sectoren, of
+    // "huisarts_<subtype>" voor huisartsenzorg (zie deriveFilterKey).
+    let activeSectors = new Set(Object.keys(FILTER_CATEGORIES));
 
     function applySectorFilter() {
       const arr = Array.from(activeSectors);
-      // Filter both clustered source (handled by regenerating data)
-      // en de unclustered layer (via layout filter)
-      const filter = ["in", ["get", "sector"], ["literal", arr]];
+      // Filter de unclustered layer op filterKey
+      const filter = ["in", ["get", "filterKey"], ["literal", arr]];
       if (map.getLayer("org-unclustered")) {
         map.setFilter("org-unclustered", filter);
       }
       // Clusters zelf worden door MapLibre berekend op de source data;
       // de simpelste aanpak is: source-data regenerateren als filter verandert.
-      const filtered = allOrgFeatures.filter(f => activeSectors.has(f.properties.sector));
+      const filtered = allOrgFeatures.filter(f => activeSectors.has(f.properties.filterKey));
       if (map.getSource("organizations")) {
         map.getSource("organizations").setData({
           type: "FeatureCollection",
@@ -412,16 +439,21 @@
         });
       }
 
-      // ----- Org features (points, colored by sector) -----
+      // ----- Org features (points, colored by filter-category) -----
       // Multi-site orgs (OLVG Oost+West, Reade, Merem, Amsterdam UMC, ...)
       // expand into one feature per physical location. We prefer the
       // `coords` array (schema v0.2.2+) and fall back to the legacy single
       // `coord` field so the viewer still works on older builds.
+      //
+      // Each feature carries a `filterKey`: voor huisartsenzorg
+      // "huisarts_<subtype>" (splitst praktijk / HAP / zorggroep /
+      // koepel), voor andere sectoren gelijk aan `sector`.
       allOrgFeatures = data.organizations
         .filter(o => o.sector && ((o.coords && o.coords.length) || o.coord))
         .flatMap(o => {
           const locs = (o.coords && o.coords.length) ? o.coords : [o.coord];
           const nLoc = locs.length;
+          const filterKey = deriveFilterKey(o);
           return locs.map((c, idx) => ({
             type: "Feature",
             geometry: { type: "Point", coordinates: c },
@@ -429,6 +461,8 @@
               id: o.id,
               name: o.name,
               sector: o.sector,
+              subtype: o.subtype || "",
+              filterKey: filterKey,
               region: o.region_iza || "",
               total_score: o.total_score,
               n_connections: (o.participating_in || []).length,
@@ -438,24 +472,25 @@
           }));
         });
 
-      // ----- Count per sector (voor filter-paneel) -----
+      // ----- Count per filter-key (voor filter-paneel) -----
       const sectorCount = {};
       for (const f of allOrgFeatures) {
-        const s = f.properties.sector;
-        sectorCount[s] = (sectorCount[s] || 0) + 1;
+        const k = f.properties.filterKey;
+        sectorCount[k] = (sectorCount[k] || 0) + 1;
       }
 
       // ----- Bouw filter-paneel -----
       const filtersDiv = document.getElementById("filters");
-      for (const key of Object.keys(SECTOR_COLORS)) {
+      for (const key of Object.keys(FILTER_CATEGORIES)) {
         if (!sectorCount[key]) continue;  // geen data → skip filter
+        const cat = FILTER_CATEGORIES[key];
         const wrap = document.createElement("div");
         wrap.className = "filter-item";
         wrap.innerHTML = `
           <label>
             <input type="checkbox" data-sector="${key}" checked>
-            <span class="swatch" style="background:${SECTOR_COLORS[key]}"></span>
-            ${SECTOR_LABELS[key] || key}
+            <span class="swatch" style="background:${cat.color}"></span>
+            ${cat.label}
             <span class="count">${sectorCount[key]}</span>
           </label>
         `;

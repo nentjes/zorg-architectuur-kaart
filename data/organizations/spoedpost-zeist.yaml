@@ -1,0 +1,27 @@
+id: spoedpost-zeist
+type: organization
+name: Huisartsenspoedpost Zeist
+aliases:
+- Spoedpost Zeist
+- HAP Zeist
+- Unicum Spoedpost Zeist
+sector: huisarts
+subtype: huisartsenpost
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+locations:
+- address: "Professor Lorentzlaan 76, 3707 HL Zeist"
+  city: Zeist
+  postcode: "3707 HL"
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0920
+    lon: 5.2288
+sources:
+- unicum-website-contact-2026
+confidence: high
+needs_verification: false
+networks:
+- lsp

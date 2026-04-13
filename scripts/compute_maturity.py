@@ -358,6 +358,7 @@ def aggregate_per_organization(
             "id": org_id,
             "name": org.get("name", org_id),
             "sector": org.get("sector"),
+            "subtype": org.get("subtype"),
             "region_iza": org.get("region_iza"),
             "coord": geocode_organization(org),  # [lon, lat] or None (primary)
             "coords": extract_all_coords(org),   # all locations (multi-site)
@@ -376,6 +377,7 @@ def aggregate_per_organization(
                     "id": org_id,
                     "name": org_id,
                     "sector": None,
+                    "subtype": None,
                     "region_iza": None,
                     "coord": None,
                     "coords": [],

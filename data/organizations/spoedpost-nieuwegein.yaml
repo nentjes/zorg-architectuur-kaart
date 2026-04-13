@@ -1,0 +1,27 @@
+id: spoedpost-nieuwegein
+type: organization
+name: Huisartsenspoedpost Nieuwegein
+aliases:
+- Spoedpost Nieuwegein
+- HAP Nieuwegein
+- Unicum Spoedpost Nieuwegein
+sector: huisarts
+subtype: huisartsenpost
+parent_organization: unicum-huisartsenzorg
+country: NL
+region_iza: iza-midden-nederland
+locations:
+- address: "Koekoekslaan 1, 3435 CM Nieuwegein (op het St. Antonius-terrein)"
+  city: Nieuwegein
+  postcode: "3435 CM"
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0367
+    lon: 5.0875
+sources:
+- unicum-website-contact-2026
+confidence: high
+needs_verification: false
+networks:
+- lsp

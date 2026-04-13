@@ -1,0 +1,30 @@
+# Manifest: paramedisch — Sprint 5b
+# Scope: koepels + grote ketens/groepspraktijken.
+# NIET op praktijkniveau (zie roadmap — primaire data ontbreekt, en de
+# ~30k paramedische praktijken horen niet breedte-eerst op de kaart).
+# Target long tail: ledenlijsten KNGF/NVLF/EN/NVD/NVvP/NVH via Gemini.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # Beroepsverenigingen / koepels
+  - {id: kngf, name: "Koninklijk Nederlands Genootschap voor Fysiotherapie", aliases: ["KNGF"], sector: paramedisch, subtype: beroepsvereniging, locations: [{city: "Amersfoort", province: "Utrecht", country: NL, coordinates: {lat: 52.1561, lon: 5.3878}}]}
+  - {id: nvlf, name: "Nederlandse Vereniging voor Logopedie en Foniatrie", aliases: ["NVLF"], sector: paramedisch, subtype: beroepsvereniging, locations: [{city: "Woerden", province: "Utrecht", country: NL, coordinates: {lat: 52.0856, lon: 4.8836}}]}
+  - {id: ergotherapie-nederland, name: "Ergotherapie Nederland", aliases: ["EN"], sector: paramedisch, subtype: beroepsvereniging, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: nvd, name: "Nederlandse Vereniging van Diëtisten", aliases: ["NVD"], sector: paramedisch, subtype: beroepsvereniging, locations: [{city: "Houten", province: "Utrecht", country: NL, coordinates: {lat: 52.0289, lon: 5.1683}}]}
+  - {id: nvvp-podo, name: "Nederlandse Vereniging van Podotherapeuten", aliases: ["NVvP"], sector: paramedisch, subtype: beroepsvereniging, locations: [{city: "Hilversum", province: "Noord-Holland", country: NL, coordinates: {lat: 52.2292, lon: 5.1669}}]}
+  - {id: nvh, name: "Nederlandse Vereniging van Huidtherapeuten", aliases: ["NVH"], sector: paramedisch, subtype: beroepsvereniging, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: vvocm, name: "Vereniging van Oefentherapeuten Cesar en Mensendieck", aliases: ["VvOCM"], sector: paramedisch, subtype: beroepsvereniging, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+
+  # Platform / samenwerking
+  - {id: paramedisch-platform-nederland, name: "Paramedisch Platform Nederland", aliases: ["PPN"], sector: paramedisch, subtype: platform, locations: [{city: "Amersfoort", province: "Utrecht", country: NL, coordinates: {lat: 52.1561, lon: 5.3878}}]}
+
+  # Grote fysio-ketens / holdings
+  - {id: fysioholland, name: "FysioHolland", sector: paramedisch, subtype: fysio-keten, locations: [{city: "Amsterdam", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3702, lon: 4.8952}}]}
+  - {id: fydee, name: "Fydee", sector: paramedisch, subtype: fysio-holding, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: prof-fysio, name: "Pro-F Fysiotherapie", sector: paramedisch, subtype: fysio-keten, locations: [{city: "Nijmegen", province: "Gelderland", country: NL, coordinates: {lat: 51.8426, lon: 5.8528}}]}
+  - {id: fysio-actief, name: "Fysio Actief", sector: paramedisch, subtype: fysio-keten, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}

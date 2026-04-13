@@ -1,0 +1,49 @@
+# Manifest: jeugdzorg — Sprint 5b
+# Scope: Gecertificeerde Instellingen (GI's) voor jeugdbescherming en
+# jeugdreclassering, grote open-jeugdhulp-aanbieders, koepels.
+# Target: Jeugdzorg Nederland-ledenlijst via Gemini voor long tail.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # Koepels / kennisinstituten
+  - {id: jeugdzorg-nederland, name: "Jeugdzorg Nederland", sector: jeugdzorg, subtype: branche, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: nji, name: "Nederlands Jeugdinstituut", aliases: ["NJi"], sector: jeugdzorg, subtype: kennisinstituut, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+
+  # Gecertificeerde Instellingen — landelijk opererend
+  - {id: william-schrikker-stichting, name: "William Schrikker Stichting", aliases: ["WSS", "William Schrikker Groep"], sector: jeugdzorg, subtype: gi, locations: [{city: "Amsterdam", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3702, lon: 4.8952}}]}
+  - {id: leger-des-heils-jjr, name: "Leger des Heils Jeugdbescherming & Reclassering", sector: jeugdzorg, subtype: gi, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: stichting-nidos, name: "Stichting Nidos", sector: jeugdzorg, subtype: voogdij-amv, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+
+  # Gecertificeerde Instellingen — regionaal
+  - {id: jb-west, name: "Jeugdbescherming west", sector: jeugdzorg, subtype: gi, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0705, lon: 4.3007}}]}
+  - {id: jbra, name: "Jeugdbescherming Regio Amsterdam", aliases: ["JBRA"], sector: jeugdzorg, subtype: gi, locations: [{city: "Amsterdam", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3702, lon: 4.8952}}]}
+  - {id: jb-gelderland, name: "Jeugdbescherming Gelderland", sector: jeugdzorg, subtype: gi, locations: [{city: "Arnhem", province: "Gelderland", country: NL, coordinates: {lat: 51.9851, lon: 5.8987}}]}
+  - {id: jb-brabant, name: "Jeugdbescherming Brabant", sector: jeugdzorg, subtype: gi, locations: [{city: "Eindhoven", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4416, lon: 5.4697}}]}
+  - {id: jbov, name: "Jeugdbescherming Overijssel", aliases: ["JBOV"], sector: jeugdzorg, subtype: gi, locations: [{city: "Zwolle", province: "Overijssel", country: NL, coordinates: {lat: 52.5168, lon: 6.0831}}]}
+  - {id: jb-noord, name: "Jeugdbescherming Noord", sector: jeugdzorg, subtype: gi, locations: [{city: "Groningen", province: "Groningen", country: NL, coordinates: {lat: 53.2194, lon: 6.5665}}]}
+  - {id: bureau-jeugdzorg-limburg, name: "Bureau Jeugdzorg Limburg", sector: jeugdzorg, subtype: gi, locations: [{city: "Roermond", province: "Limburg", country: NL, coordinates: {lat: 51.1942, lon: 5.9878}}]}
+
+  # Open jeugdhulp / residentieel
+  - {id: pluryn, name: "Pluryn", sector: jeugdzorg, subtype: residentieel, locations: [{city: "Nijmegen", province: "Gelderland", country: NL, coordinates: {lat: 51.8426, lon: 5.8528}}]}
+  - {id: horizon-jeugdzorg, name: "Horizon Jeugdzorg en Onderwijs", sector: jeugdzorg, subtype: residentieel, locations: [{city: "Rotterdam", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9225, lon: 4.4792}}]}
+  - {id: parlan, name: "Parlan", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Alkmaar", province: "Noord-Holland", country: NL, coordinates: {lat: 52.6322, lon: 4.7533}}]}
+  - {id: levvel, name: "Levvel", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Amsterdam", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3702, lon: 4.8952}}]}
+  - {id: xonar, name: "XONAR", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Maastricht", province: "Limburg", country: NL, coordinates: {lat: 50.8514, lon: 5.6909}}]}
+  - {id: lindenhout, name: "Lindenhout", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Arnhem", province: "Gelderland", country: NL, coordinates: {lat: 51.9851, lon: 5.8987}}]}
+  - {id: entrea-lindenhout, name: "Entrea Lindenhout", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Nijmegen", province: "Gelderland", country: NL, coordinates: {lat: 51.8426, lon: 5.8528}}]}
+  - {id: cardea, name: "Cardea", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Leiden", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1601, lon: 4.4970}}]}
+  - {id: vitree, name: "Vitree", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Lelystad", province: "Flevoland", country: NL, coordinates: {lat: 52.5185, lon: 5.4714}}]}
+  - {id: yorneo, name: "Yorneo", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Assen", province: "Drenthe", country: NL, coordinates: {lat: 52.9994, lon: 6.5639}}]}
+  - {id: elker-poortje, name: "Elker - Het Poortje Jeugdinrichtingen", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Groningen", province: "Groningen", country: NL, coordinates: {lat: 53.2194, lon: 6.5665}}]}
+  - {id: jeugdhulp-friesland, name: "Jeugdhulp Friesland", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Leeuwarden", province: "Friesland", country: NL, coordinates: {lat: 53.2014, lon: 5.7983}}]}
+  - {id: bj-brabant, name: "Bijzonder Jeugdwerk Brabant", aliases: ["BJ Brabant"], sector: jeugdzorg, subtype: regionaal, locations: [{city: "Deurne", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4608, lon: 5.7956}}]}
+  - {id: combinatie-jeugdzorg, name: "Combinatie Jeugdzorg", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Eindhoven", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4416, lon: 5.4697}}]}
+  - {id: juvent, name: "Juvent", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Middelburg", province: "Zeeland", country: NL, coordinates: {lat: 51.4989, lon: 3.6108}}]}
+  - {id: de-rading, name: "De Rading", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: ock-het-spalier, name: "OCK het Spalier", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Haarlem", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3874, lon: 4.6462}}]}
+  - {id: stek-jeugdhulp, name: "Stek Jeugdhulp", sector: jeugdzorg, subtype: regionaal, locations: [{city: "Lelystad", province: "Flevoland", country: NL, coordinates: {lat: 52.5185, lon: 5.4714}}]}

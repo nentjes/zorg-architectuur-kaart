@@ -1,0 +1,17 @@
+id: elker-poortje
+type: organization
+name: Elker - Het Poortje Jeugdinrichtingen
+sector: jeugdzorg
+subtype: regionaal
+country: NL
+locations:
+- city: Groningen
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.2194
+    lon: 6.5665
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

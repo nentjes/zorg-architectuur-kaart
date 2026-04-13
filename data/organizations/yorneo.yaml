@@ -1,0 +1,17 @@
+id: yorneo
+type: organization
+name: Yorneo
+sector: jeugdzorg
+subtype: regionaal
+country: NL
+locations:
+- city: Assen
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.9994
+    lon: 6.5639
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

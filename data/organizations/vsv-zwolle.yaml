@@ -1,0 +1,17 @@
+id: vsv-zwolle
+type: organization
+name: VSV Zwolle
+sector: geboortezorg
+subtype: vsv
+country: NL
+locations:
+- city: Zwolle
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.5168
+    lon: 6.0831
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

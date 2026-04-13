@@ -1,0 +1,17 @@
+id: ock-het-spalier
+type: organization
+name: OCK het Spalier
+sector: jeugdzorg
+subtype: regionaal
+country: NL
+locations:
+- city: Haarlem
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3874
+    lon: 4.6462
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

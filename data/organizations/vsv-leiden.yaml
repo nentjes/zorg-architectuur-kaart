@@ -1,0 +1,17 @@
+id: vsv-leiden
+type: organization
+name: VSV Leiden
+sector: geboortezorg
+subtype: vsv
+country: NL
+locations:
+- city: Leiden
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.1601
+    lon: 4.497
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

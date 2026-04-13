@@ -1,0 +1,19 @@
+id: nvlf
+type: organization
+name: Nederlandse Vereniging voor Logopedie en Foniatrie
+aliases:
+- NVLF
+sector: paramedisch
+subtype: beroepsvereniging
+country: NL
+locations:
+- city: Woerden
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0856
+    lon: 4.8836
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

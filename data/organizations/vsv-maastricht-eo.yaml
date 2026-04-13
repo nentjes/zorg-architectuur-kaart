@@ -1,0 +1,17 @@
+id: vsv-maastricht-eo
+type: organization
+name: VSV Maastricht e.o.
+sector: geboortezorg
+subtype: vsv
+country: NL
+locations:
+- city: Maastricht
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.8514
+    lon: 5.6909
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

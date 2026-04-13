@@ -1,0 +1,17 @@
+id: vsv-twente
+type: organization
+name: VSV Twente
+sector: geboortezorg
+subtype: vsv
+country: NL
+locations:
+- city: Enschede
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.2215
+    lon: 6.8937
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

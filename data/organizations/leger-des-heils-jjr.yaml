@@ -1,0 +1,17 @@
+id: leger-des-heils-jjr
+type: organization
+name: Leger des Heils Jeugdbescherming & Reclassering
+sector: jeugdzorg
+subtype: gi
+country: NL
+locations:
+- city: Utrecht
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0907
+    lon: 5.1214
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

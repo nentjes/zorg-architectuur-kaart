@@ -1,0 +1,52 @@
+# Manifest: geboortezorg — Sprint 5b
+# Scope: koepels, branche, grote kraamzorg-organisaties, bekende VSV's.
+# Target long tail: VSV's (~70) + kraamzorg (~50) + KNOV-ledenlijst via
+# Gemini. Verloskundigenpraktijken NIET op praktijkniveau (zie roadmap).
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # Koepels / platform
+  - {id: knov, name: "Koninklijke Nederlandse Organisatie van Verloskundigen", aliases: ["KNOV"], sector: geboortezorg, subtype: beroepsvereniging, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: bo-geboortezorg, name: "BO Geboortezorg", sector: geboortezorg, subtype: branche-kraamzorg, locations: [{city: "Bilthoven", province: "Utrecht", country: NL, coordinates: {lat: 52.1367, lon: 5.2047}}]}
+  - {id: cpz, name: "College Perinatale Zorg", aliases: ["CPZ"], sector: geboortezorg, subtype: platform, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: perined, name: "Stichting Perined", sector: geboortezorg, subtype: register, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+
+  # Kraamzorg-organisaties (landelijk + regionaal)
+  - {id: naviva-kraamzorg, name: "Naviva Kraamzorg", sector: geboortezorg, subtype: kraamzorg, locations: [{city: "Apeldoorn", province: "Gelderland", country: NL, coordinates: {lat: 52.2112, lon: 5.9699}}]}
+  - {id: isis-kraamzorg, name: "Isis Kraamzorg", sector: geboortezorg, subtype: kraamzorg, locations: [{city: "Ede", province: "Gelderland", country: NL, coordinates: {lat: 52.0336, lon: 5.6642}}]}
+  - {id: kraamzorg-de-waarden, name: "Kraamzorg de Waarden", sector: geboortezorg, subtype: kraamzorg, locations: [{city: "Gorinchem", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8308, lon: 4.9750}}]}
+  - {id: kraamzus, name: "Kraamzus", sector: geboortezorg, subtype: kraamzorg, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: allerzorg-kraamzorg, name: "Allerzorg Kraamzorg", sector: geboortezorg, subtype: kraamzorg, locations: [{city: "Nieuwegein", province: "Utrecht", country: NL, coordinates: {lat: 52.0306, lon: 5.0836}}]}
+  - {id: zin-kraamzorg, name: "ZIN Kraamzorg", sector: geboortezorg, subtype: kraamzorg, locations: [{city: "Rotterdam", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9225, lon: 4.4792}}]}
+  - {id: kraamzorg-mama, name: "Kraamzorg Mama", sector: geboortezorg, subtype: kraamzorg, locations: [{city: "Rotterdam", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9225, lon: 4.4792}}]}
+  - {id: kraamzorg-rotterdam-eo, name: "Kraamzorg Rotterdam e.o.", sector: geboortezorg, subtype: kraamzorg, locations: [{city: "Rotterdam", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9225, lon: 4.4792}}]}
+  - {id: actief-zorg-kraamzorg, name: "Actief Zorg Kraamzorg", sector: geboortezorg, subtype: kraamzorg, locations: [{city: "Almere", province: "Flevoland", country: NL, coordinates: {lat: 52.3508, lon: 5.2647}}]}
+  - {id: kraamzorg-zuid-gelderland, name: "Kraamzorg Zuid-Gelderland", sector: geboortezorg, subtype: kraamzorg, locations: [{city: "Nijmegen", province: "Gelderland", country: NL, coordinates: {lat: 51.8426, lon: 5.8528}}]}
+  - {id: de-kraamvogel, name: "De Kraamvogel", sector: geboortezorg, subtype: kraamzorg, locations: [{city: "Amsterdam", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3702, lon: 4.8952}}]}
+
+  # Bekende VSV's (Verloskundige Samenwerkingsverbanden)
+  # Let op: er zijn ~70 VSV's in NL — dit is een selectie rondom de
+  # grote steden; long tail via Gemini/KNOV.
+  - {id: vsv-amsterdam, name: "VSV Amsterdam", sector: geboortezorg, subtype: vsv, locations: [{city: "Amsterdam", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3702, lon: 4.8952}}]}
+  - {id: vsv-utrecht, name: "VSV Utrecht", sector: geboortezorg, subtype: vsv, locations: [{city: "Utrecht", province: "Utrecht", country: NL, coordinates: {lat: 52.0907, lon: 5.1214}}]}
+  - {id: vsv-rotterdam-rijnmond, name: "VSV Rotterdam-Rijnmond", sector: geboortezorg, subtype: vsv, locations: [{city: "Rotterdam", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9225, lon: 4.4792}}]}
+  - {id: vsv-den-haag, name: "VSV Den Haag", sector: geboortezorg, subtype: vsv, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0705, lon: 4.3007}}]}
+  - {id: vsv-eindhoven, name: "VSV Eindhoven", sector: geboortezorg, subtype: vsv, locations: [{city: "Eindhoven", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.4416, lon: 5.4697}}]}
+  - {id: vsv-maastricht-eo, name: "VSV Maastricht e.o.", sector: geboortezorg, subtype: vsv, locations: [{city: "Maastricht", province: "Limburg", country: NL, coordinates: {lat: 50.8514, lon: 5.6909}}]}
+  - {id: vsv-groningen, name: "VSV Groningen", sector: geboortezorg, subtype: vsv, locations: [{city: "Groningen", province: "Groningen", country: NL, coordinates: {lat: 53.2194, lon: 6.5665}}]}
+  - {id: vsv-leeuwarden, name: "VSV Leeuwarden", sector: geboortezorg, subtype: vsv, locations: [{city: "Leeuwarden", province: "Friesland", country: NL, coordinates: {lat: 53.2014, lon: 5.7983}}]}
+  - {id: vsv-zwolle, name: "VSV Zwolle", sector: geboortezorg, subtype: vsv, locations: [{city: "Zwolle", province: "Overijssel", country: NL, coordinates: {lat: 52.5168, lon: 6.0831}}]}
+  - {id: vsv-arnhem, name: "VSV Arnhem", sector: geboortezorg, subtype: vsv, locations: [{city: "Arnhem", province: "Gelderland", country: NL, coordinates: {lat: 51.9851, lon: 5.8987}}]}
+  - {id: vsv-nijmegen, name: "VSV Nijmegen", sector: geboortezorg, subtype: vsv, locations: [{city: "Nijmegen", province: "Gelderland", country: NL, coordinates: {lat: 51.8426, lon: 5.8528}}]}
+  - {id: vsv-tilburg, name: "VSV Tilburg", sector: geboortezorg, subtype: vsv, locations: [{city: "Tilburg", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5555, lon: 5.0913}}]}
+  - {id: vsv-twente, name: "VSV Twente", sector: geboortezorg, subtype: vsv, locations: [{city: "Enschede", province: "Overijssel", country: NL, coordinates: {lat: 52.2215, lon: 6.8937}}]}
+  - {id: vsv-breda, name: "VSV Breda", sector: geboortezorg, subtype: vsv, locations: [{city: "Breda", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.5719, lon: 4.7683}}]}
+  - {id: vsv-haarlem, name: "VSV Haarlem", sector: geboortezorg, subtype: vsv, locations: [{city: "Haarlem", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3874, lon: 4.6462}}]}
+  - {id: vsv-leiden, name: "VSV Leiden", sector: geboortezorg, subtype: vsv, locations: [{city: "Leiden", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1601, lon: 4.4970}}]}
+  - {id: vsv-amersfoort, name: "VSV Amersfoort", sector: geboortezorg, subtype: vsv, locations: [{city: "Amersfoort", province: "Utrecht", country: NL, coordinates: {lat: 52.1561, lon: 5.3878}}]}
+  - {id: vsv-s-hertogenbosch, name: "VSV 's-Hertogenbosch", sector: geboortezorg, subtype: vsv, locations: [{city: "'s-Hertogenbosch", province: "Noord-Brabant", country: NL, coordinates: {lat: 51.6978, lon: 5.3037}}]}

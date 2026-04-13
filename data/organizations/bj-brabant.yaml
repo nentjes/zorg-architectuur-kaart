@@ -1,0 +1,19 @@
+id: bj-brabant
+type: organization
+name: Bijzonder Jeugdwerk Brabant
+aliases:
+- BJ Brabant
+sector: jeugdzorg
+subtype: regionaal
+country: NL
+locations:
+- city: Deurne
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4608
+    lon: 5.7956
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

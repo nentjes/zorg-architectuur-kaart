@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-13T07:22:38",
+    "generated_at": "2026-04-13T07:40:38",
     "n_connections": 4,
-    "n_organizations_scored": 802,
+    "n_organizations_scored": 876,
     "formula": {
       "per_connection": {
         "raw": "paradigm_w * topology_w * status_w * data_w * recency_w",
@@ -266,6 +266,18 @@
       "participating_in": []
     },
     {
+      "id": "actief-zorg-kraamzorg",
+      "name": "Actief Zorg Kraamzorg",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.2647,
+        52.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "actiz",
       "name": "ActiZ",
       "sector": "vvt",
@@ -321,6 +333,18 @@
       "coord": [
         4.6908,
         51.7972
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "allerzorg-kraamzorg",
+      "name": "Allerzorg Kraamzorg",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.0836,
+        52.0306
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -662,6 +686,30 @@
       "participating_in": []
     },
     {
+      "id": "bj-brabant",
+      "name": "Bijzonder Jeugdwerk Brabant",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.7956,
+        51.4608
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "bo-geboortezorg",
+      "name": "BO Geboortezorg",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.2047,
+        52.1367
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "boerhaave-medisch-centrum",
       "name": "Boerhaave Medisch Centrum",
       "sector": "zbc",
@@ -734,6 +782,18 @@
       "participating_in": []
     },
     {
+      "id": "bureau-jeugdzorg-limburg",
+      "name": "Bureau Jeugdzorg Limburg",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.9878,
+        51.1942
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "capri-hartrevalidatie",
       "name": "Capri Hartrevalidatie",
       "sector": "revalidatie",
@@ -741,6 +801,18 @@
       "coord": [
         4.4777,
         51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cardea",
+      "name": "Cardea",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -902,6 +974,18 @@
       "participating_in": []
     },
     {
+      "id": "combinatie-jeugdzorg",
+      "name": "Combinatie Jeugdzorg",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "cordaan",
       "name": "Cordaan",
       "sector": "vvt",
@@ -909,6 +993,18 @@
       "coord": [
         4.9041,
         52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cpz",
+      "name": "College Perinatale Zorg",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -998,6 +1094,18 @@
       "participating_in": []
     },
     {
+      "id": "de-kraamvogel",
+      "name": "De Kraamvogel",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        4.8952,
+        52.3702
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "de-nederlandse-ggz",
       "name": "de Nederlandse ggz",
       "sector": "ggz",
@@ -1029,6 +1137,18 @@
       "coord": [
         6.8937,
         52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-rading",
+      "name": "De Rading",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1298,6 +1418,18 @@
       "participating_in": []
     },
     {
+      "id": "elker-poortje",
+      "name": "Elker - Het Poortje Jeugdinrichtingen",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "elkerliek",
       "name": "Elkerliek Ziekenhuis",
       "sector": "ziekenhuis",
@@ -1317,6 +1449,18 @@
       "coord": [
         3.8881,
         51.5048
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "entrea-lindenhout",
+      "name": "Entrea Lindenhout",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.8528,
+        51.8426
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1353,6 +1497,18 @@
       "coord": [
         4.4686,
         51.9106
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ergotherapie-nederland",
+      "name": "Ergotherapie Nederland",
+      "sector": "paramedisch",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -1533,6 +1689,42 @@
       "coord": [
         4.7106,
         52.0117
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "fydee",
+      "name": "Fydee",
+      "sector": "paramedisch",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "fysio-actief",
+      "name": "Fysio Actief",
+      "sector": "paramedisch",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "fysioholland",
+      "name": "FysioHolland",
+      "sector": "paramedisch",
+      "region_iza": null,
+      "coord": [
+        4.8952,
+        52.3702
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -6170,6 +6362,18 @@
       "participating_in": []
     },
     {
+      "id": "horizon-jeugdzorg",
+      "name": "Horizon Jeugdzorg en Onderwijs",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        4.4792,
+        51.9225
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "hozl",
       "name": "Huisartsen Oostelijk Zuid-Limburg",
       "sector": "huisarts",
@@ -6554,6 +6758,18 @@
       "participating_in": []
     },
     {
+      "id": "isis-kraamzorg",
+      "name": "Isis Kraamzorg",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.6642,
+        52.0336
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "izer",
       "name": "IZER",
       "sector": "huisarts",
@@ -6561,6 +6777,78 @@
       "coord": [
         4.4777,
         51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "jb-brabant",
+      "name": "Jeugdbescherming Brabant",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "jb-gelderland",
+      "name": "Jeugdbescherming Gelderland",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "jb-noord",
+      "name": "Jeugdbescherming Noord",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "jb-west",
+      "name": "Jeugdbescherming west",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        4.3007,
+        52.0705
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "jbov",
+      "name": "Jeugdbescherming Overijssel",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        6.0831,
+        52.5168
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "jbra",
+      "name": "Jeugdbescherming Regio Amsterdam",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        4.8952,
+        52.3702
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -6585,6 +6873,42 @@
       "coord": [
         4.9041,
         52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "jeugdhulp-friesland",
+      "name": "Jeugdhulp Friesland",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.7983,
+        53.2014
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "jeugdzorg-nederland",
+      "name": "Jeugdzorg Nederland",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "juvent",
+      "name": "Juvent",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        3.6108,
+        51.4989
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -6650,6 +6974,18 @@
       "participating_in": []
     },
     {
+      "id": "kngf",
+      "name": "Koninklijk Nederlands Genootschap voor Fysiotherapie",
+      "sector": "paramedisch",
+      "region_iza": null,
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "knmp",
       "name": "KNMP (Koninklijke Nederlandse Maatschappij ter bevordering der Pharmacie)",
       "sector": "apotheek",
@@ -6674,6 +7010,18 @@
       "participating_in": []
     },
     {
+      "id": "knov",
+      "name": "Koninklijke Nederlandse Organisatie van Verloskundigen",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "koraal-groep",
       "name": "Koraal Groep",
       "sector": "ggz",
@@ -6681,6 +7029,66 @@
       "coord": [
         5.8708,
         50.9997
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "kraamzorg-de-waarden",
+      "name": "Kraamzorg de Waarden",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        4.975,
+        51.8308
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "kraamzorg-mama",
+      "name": "Kraamzorg Mama",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        4.4792,
+        51.9225
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "kraamzorg-rotterdam-eo",
+      "name": "Kraamzorg Rotterdam e.o.",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        4.4792,
+        51.9225
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "kraamzorg-zuid-gelderland",
+      "name": "Kraamzorg Zuid-Gelderland",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.8528,
+        51.8426
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "kraamzus",
+      "name": "Kraamzus",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -6794,6 +7202,18 @@
       "participating_in": []
     },
     {
+      "id": "leger-des-heils-jjr",
+      "name": "Leger des Heils Jeugdbescherming & Reclassering",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "leidsche-rijn-julius-gc",
       "name": "Leidsche Rijn Julius Gezondheidscentra",
       "sector": "huisarts",
@@ -6897,6 +7317,18 @@
       "coord": [
         6.0181,
         51.9486
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "lindenhout",
+      "name": "Lindenhout",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -7310,6 +7742,18 @@
       "participating_in": []
     },
     {
+      "id": "naviva-kraamzorg",
+      "name": "Naviva Kraamzorg",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.9699,
+        52.2112
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "nederlandse-obesitas-kliniek",
       "name": "Nederlandse Obesitas Kliniek",
       "sector": "zbc",
@@ -7349,6 +7793,18 @@
       "id": "nip",
       "name": "Nederlands Instituut van Psychologen",
       "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "nji",
+      "name": "Nederlands Jeugdinstituut",
+      "sector": "jeugdzorg",
       "region_iza": null,
       "coord": [
         5.1214,
@@ -7418,6 +7874,54 @@
       "participating_in": []
     },
     {
+      "id": "nvd",
+      "name": "Nederlandse Vereniging van Diëtisten",
+      "sector": "paramedisch",
+      "region_iza": null,
+      "coord": [
+        5.1683,
+        52.0289
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "nvh",
+      "name": "Nederlandse Vereniging van Huidtherapeuten",
+      "sector": "paramedisch",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "nvlf",
+      "name": "Nederlandse Vereniging voor Logopedie en Foniatrie",
+      "sector": "paramedisch",
+      "region_iza": null,
+      "coord": [
+        4.8836,
+        52.0856
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "nvvp-podo",
+      "name": "Nederlandse Vereniging van Podotherapeuten",
+      "sector": "paramedisch",
+      "region_iza": null,
+      "coord": [
+        5.1669,
+        52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "nvvp",
       "name": "Nederlandse Vereniging voor Psychiatrie",
       "sector": "ggz",
@@ -7449,6 +7953,18 @@
       "coord": [
         5.8372,
         51.8126
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ock-het-spalier",
+      "name": "OCK het Spalier",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        4.6462,
+        52.3874
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -7622,6 +8138,30 @@
       "participating_in": []
     },
     {
+      "id": "paramedisch-platform-nederland",
+      "name": "Paramedisch Platform Nederland",
+      "sector": "paramedisch",
+      "region_iza": null,
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "parlan",
+      "name": "Parlan",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        4.7533,
+        52.6322
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "parnassia-groep",
       "name": "Parnassia Groep",
       "sector": "ggz",
@@ -7658,6 +8198,18 @@
       "participating_in": []
     },
     {
+      "id": "perined",
+      "name": "Stichting Perined",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "pieter-van-foreest",
       "name": "Pieter van Foreest",
       "sector": "vvt",
@@ -7677,6 +8229,18 @@
       "coord": [
         4.6022,
         51.8725
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "pluryn",
+      "name": "Pluryn",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.8528,
+        51.8426
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -7845,6 +8409,18 @@
       "coord": [
         5.2047,
         52.1367
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "prof-fysio",
+      "name": "Pro-F Fysiotherapie",
+      "sector": "paramedisch",
+      "region_iza": null,
+      "coord": [
+        5.8528,
+        51.8426
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -8798,6 +9374,30 @@
       "participating_in": []
     },
     {
+      "id": "stek-jeugdhulp",
+      "name": "Stek Jeugdhulp",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.4714,
+        52.5185
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "stichting-nidos",
+      "name": "Stichting Nidos",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "surplus",
       "name": "Surplus",
       "sector": "vvt",
@@ -9170,6 +9770,18 @@
       "participating_in": []
     },
     {
+      "id": "vitree",
+      "name": "Vitree",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.4714,
+        52.5185
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "vivantes-zorgcentra",
       "name": "Vivantes Zorgcentra",
       "sector": "vvt",
@@ -9218,6 +9830,222 @@
       "participating_in": []
     },
     {
+      "id": "vsv-amersfoort",
+      "name": "VSV Amersfoort",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-amsterdam",
+      "name": "VSV Amsterdam",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        4.8952,
+        52.3702
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-arnhem",
+      "name": "VSV Arnhem",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-breda",
+      "name": "VSV Breda",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        4.7683,
+        51.5719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-den-haag",
+      "name": "VSV Den Haag",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        4.3007,
+        52.0705
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-eindhoven",
+      "name": "VSV Eindhoven",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-groningen",
+      "name": "VSV Groningen",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-haarlem",
+      "name": "VSV Haarlem",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        4.6462,
+        52.3874
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-leeuwarden",
+      "name": "VSV Leeuwarden",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.7983,
+        53.2014
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-leiden",
+      "name": "VSV Leiden",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-maastricht-eo",
+      "name": "VSV Maastricht e.o.",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.6909,
+        50.8514
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-nijmegen",
+      "name": "VSV Nijmegen",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.8528,
+        51.8426
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-rotterdam-rijnmond",
+      "name": "VSV Rotterdam-Rijnmond",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        4.4792,
+        51.9225
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-s-hertogenbosch",
+      "name": "VSV 's-Hertogenbosch",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.3037,
+        51.6978
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-tilburg",
+      "name": "VSV Tilburg",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.0913,
+        51.5555
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-twente",
+      "name": "VSV Twente",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-utrecht",
+      "name": "VSV Utrecht",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vsv-zwolle",
+      "name": "VSV Zwolle",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        6.0831,
+        52.5168
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "vughterstede",
       "name": "Vughterstede",
       "sector": "vvt",
@@ -9225,6 +10053,18 @@
       "coord": [
         5.2867,
         51.6542
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vvocm",
+      "name": "Vereniging van Oefentherapeuten Cesar en Mensendieck",
+      "sector": "paramedisch",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -9261,6 +10101,18 @@
       "coord": [
         5.0597,
         52.6425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "william-schrikker-stichting",
+      "name": "William Schrikker Stichting",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        4.8952,
+        52.3702
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -9314,6 +10166,18 @@
       "participating_in": []
     },
     {
+      "id": "xonar",
+      "name": "XONAR",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        5.6909,
+        50.8514
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "xpert-clinics",
       "name": "Xpert Clinics",
       "sector": "zbc",
@@ -9333,6 +10197,18 @@
       "coord": [
         5.4697,
         51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "yorneo",
+      "name": "Yorneo",
+      "sector": "jeugdzorg",
+      "region_iza": null,
+      "coord": [
+        6.5639,
+        52.9994
       ],
       "total_score": 0.0,
       "participating_in": []
@@ -9453,6 +10329,18 @@
       "coord": [
         4.8675,
         52.3019
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zin-kraamzorg",
+      "name": "ZIN Kraamzorg",
+      "sector": "geboortezorg",
+      "region_iza": null,
+      "coord": [
+        4.4792,
+        51.9225
       ],
       "total_score": 0.0,
       "participating_in": []

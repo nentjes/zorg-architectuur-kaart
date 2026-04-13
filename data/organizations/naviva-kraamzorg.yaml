@@ -1,0 +1,17 @@
+id: naviva-kraamzorg
+type: organization
+name: Naviva Kraamzorg
+sector: geboortezorg
+subtype: kraamzorg
+country: NL
+locations:
+- city: Apeldoorn
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.2112
+    lon: 5.9699
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

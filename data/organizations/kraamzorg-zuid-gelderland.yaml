@@ -1,0 +1,17 @@
+id: kraamzorg-zuid-gelderland
+type: organization
+name: Kraamzorg Zuid-Gelderland
+sector: geboortezorg
+subtype: kraamzorg
+country: NL
+locations:
+- city: Nijmegen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8426
+    lon: 5.8528
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

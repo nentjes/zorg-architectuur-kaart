@@ -7,12 +7,20 @@ sector: ziekenhuis
 subtype: topklinisch
 country: NL
 locations:
-- city: Dordrecht
+- address: "Albert Schweitzerplaats 25, 3318 AT Dordrecht"
+  city: Dordrecht
   province: Zuid-Holland
   country: NL
   coordinates:
     lat: 51.7972
     lon: 4.6908
+- address: "Koninginneweg 1, 3331 EJ Zwijndrecht"
+  city: Zwijndrecht
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.8128
+    lon: 4.6419
 sources:
 - mni-partners-epd-marktinventarisatie-zkh-2026
 - claude-knowledge-2026-04

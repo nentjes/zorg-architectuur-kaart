@@ -4,16 +4,31 @@ name: Merem Medische Revalidatie
 sector: revalidatie
 country: NL
 locations:
-- city: Hilversum
+- address: "Crailoseweg 116, 1272 EX Huizen"
+  city: Huizen
   province: Noord-Holland
   country: NL
   coordinates:
-    lat: 52.2292
-    lon: 5.176
+    lat: 52.2863
+    lon: 5.2289
+- address: "Hospitaalweg 1, 1315 RA Almere"
+  city: Almere
+  province: Flevoland
+  country: NL
+  coordinates:
+    lat: 52.3697
+    lon: 5.2211
+- address: "Soestdijkerstraatweg 129, 1213 VX Hilversum"
+  city: Hilversum
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2350
+    lon: 5.1950
 sources:
 - claude-knowledge-2026-04
 - roel-private-excel-2026-04
-confidence: high
-needs_verification: false
+confidence: medium
+needs_verification: true
 systems:
 - sdb-reflex

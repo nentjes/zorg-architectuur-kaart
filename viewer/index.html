@@ -344,20 +344,30 @@
       }
 
       // ----- Org features (points, colored by sector) -----
+      // Multi-site orgs (OLVG Oost+West, Reade, Merem, Amsterdam UMC, ...)
+      // expand into one feature per physical location. We prefer the
+      // `coords` array (schema v0.2.2+) and fall back to the legacy single
+      // `coord` field so the viewer still works on older builds.
       allOrgFeatures = data.organizations
-        .filter(o => o.coord && o.sector)
-        .map(o => ({
-          type: "Feature",
-          geometry: { type: "Point", coordinates: o.coord },
-          properties: {
-            id: o.id,
-            name: o.name,
-            sector: o.sector,
-            region: o.region_iza || "",
-            total_score: o.total_score,
-            n_connections: (o.participating_in || []).length
-          }
-        }));
+        .filter(o => o.sector && ((o.coords && o.coords.length) || o.coord))
+        .flatMap(o => {
+          const locs = (o.coords && o.coords.length) ? o.coords : [o.coord];
+          const nLoc = locs.length;
+          return locs.map((c, idx) => ({
+            type: "Feature",
+            geometry: { type: "Point", coordinates: c },
+            properties: {
+              id: o.id,
+              name: o.name,
+              sector: o.sector,
+              region: o.region_iza || "",
+              total_score: o.total_score,
+              n_connections: (o.participating_in || []).length,
+              loc_index: idx,
+              loc_count: nLoc
+            }
+          }));
+        });
 
       // ----- Count per sector (voor filter-paneel) -----
       const sectorCount = {};
@@ -511,11 +521,15 @@
       // ----- Popups: orgs -----
       map.on("click", "org-unclustered", (e) => {
         const p = e.features[0].properties;
+        const multi = (p.loc_count && p.loc_count > 1)
+          ? `<div class="multi-site">📍 locatie ${Number(p.loc_index) + 1} van ${p.loc_count}</div>`
+          : "";
         new maplibregl.Popup()
           .setLngLat(e.features[0].geometry.coordinates)
           .setHTML(`
             <h3>${p.name}</h3>
             <div>${SECTOR_LABELS[p.sector] || p.sector}${p.region ? " · " + p.region : ""}</div>
+            ${multi}
             <div>Score: <span class="score">${Number(p.total_score).toFixed(3)}</span></div>
             <div>Connections: ${p.n_connections}</div>
             <div class="needs-ver">⚠ needs verification (LLM-seed)</div>

@@ -5,12 +5,27 @@ sector: ziekenhuis
 subtype: topklinisch
 country: NL
 locations:
-- city: Arnhem
+- address: "Wagnerlaan 55, 6815 AD Arnhem"
+  city: Arnhem
   province: Gelderland
   country: NL
   coordinates:
     lat: 51.9692
     lon: 5.8956
+- address: "President Kennedylaan 100, 6883 AZ Velp"
+  city: Velp
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.0019
+    lon: 5.9833
+- address: "Hunneveldweg 14, 6903 ZN Zevenaar"
+  city: Zevenaar
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.9283
+    lon: 6.0767
 sources:
 - mni-partners-epd-marktinventarisatie-zkh-2026
 - claude-knowledge-2026-04

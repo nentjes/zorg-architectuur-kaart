@@ -306,20 +306,42 @@ def score_connection(
 # ---------------------------------------------------------------
 
 def geocode_organization(org: dict) -> list[float] | None:
-    """Return [lon, lat] for the organization.
+    """Return [lon, lat] for the organization — primary location only.
 
-    Prefers explicit coordinates on locations[0].coordinates (schema
-    v0.2.1+). Falls back to CITY_COORDS lookup for legacy orgs without
-    explicit coords.
+    Used as a single-point anchor (e.g. connection lines between two orgs).
+    For rendering all physical sites of an org, use extract_all_coords().
     """
+    coords_list = extract_all_coords(org)
+    return coords_list[0] if coords_list else None
+
+
+def extract_all_coords(org: dict) -> list[list[float]]:
+    """Return a list of [lon, lat] for EVERY location of the organization.
+
+    Schema v0.2.1+ supports multi-site orgs (OLVG Oost + West, Reade,
+    Merem Hilversum + Almere, ...). Each explicit `coordinates` block is
+    used directly; for locations with only a `city`, CITY_COORDS is used
+    as a fallback. Locations without any resolvable coord are skipped.
+    """
+    result: list[list[float]] = []
     for loc in org.get("locations") or []:
         coords = loc.get("coordinates")
         if coords and "lat" in coords and "lon" in coords:
-            return [coords["lon"], coords["lat"]]
+            result.append([coords["lon"], coords["lat"]])
+            continue
         city = loc.get("city")
         if city and city in CITY_COORDS:
-            return CITY_COORDS[city]
-    return None
+            result.append(CITY_COORDS[city])
+    # De-duplicate while preserving order (two locations may share the same
+    # fallback city coord — don't render them as two identical dots).
+    seen: set[tuple[float, float]] = set()
+    unique: list[list[float]] = []
+    for c in result:
+        key = (c[0], c[1])
+        if key not in seen:
+            seen.add(key)
+            unique.append(c)
+    return unique
 
 
 def aggregate_per_organization(
@@ -336,7 +358,8 @@ def aggregate_per_organization(
             "name": org.get("name", org_id),
             "sector": org.get("sector"),
             "region_iza": org.get("region_iza"),
-            "coord": geocode_organization(org),  # [lon, lat] or None
+            "coord": geocode_organization(org),  # [lon, lat] or None (primary)
+            "coords": extract_all_coords(org),   # all locations (multi-site)
             "total_score": 0.0,
             "participating_in": [],
         }
@@ -354,6 +377,7 @@ def aggregate_per_organization(
                     "sector": None,
                     "region_iza": None,
                     "coord": None,
+                    "coords": [],
                     "total_score": 0.0,
                     "participating_in": [],
                 }

@@ -5,12 +5,20 @@ sector: ziekenhuis
 subtype: algemeen
 country: NL
 locations:
-- city: Helmond
+- address: "Wesselmanlaan 25, 5707 HA Helmond"
+  city: Helmond
   province: Noord-Brabant
   country: NL
   coordinates:
     lat: 51.4833
     lon: 5.65
+- address: "Dunantweg 16, 5751 CB Deurne"
+  city: Deurne
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4644
+    lon: 5.7969
 sources:
 - mni-partners-epd-marktinventarisatie-zkh-2026
 - claude-knowledge-2026-04

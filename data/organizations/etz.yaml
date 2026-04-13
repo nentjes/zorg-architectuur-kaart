@@ -7,12 +7,27 @@ sector: ziekenhuis
 subtype: topklinisch
 country: NL
 locations:
-- city: Tilburg
+- address: "Hilvarenbeekse weg 60, 5022 GC Tilburg (ETZ Elisabeth)"
+  city: Tilburg
   province: Noord-Brabant
   country: NL
   coordinates:
     lat: 51.5606
     lon: 5.0772
+- address: "Dr. Deelenlaan 5, 5042 AD Tilburg (ETZ TweeSteden)"
+  city: Tilburg
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5694
+    lon: 5.0383
+- address: "Kasteellaan 2, 5141 BM Waalwijk"
+  city: Waalwijk
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6867
+    lon: 5.0697
 sources:
 - mni-partners-epd-marktinventarisatie-zkh-2026
 - claude-knowledge-2026-04

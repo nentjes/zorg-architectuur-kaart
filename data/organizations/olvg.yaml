@@ -7,12 +7,20 @@ sector: ziekenhuis
 subtype: topklinisch
 country: NL
 locations:
-- city: Amsterdam
+- address: "Oosterpark 9, 1091 AC Amsterdam"
+  city: Amsterdam
   province: Noord-Holland
   country: NL
   coordinates:
     lat: 52.3608
     lon: 4.9228
+- address: "Jan Tooropstraat 164, 1061 AE Amsterdam"
+  city: Amsterdam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3708
+    lon: 4.8442
 sources:
 - mni-partners-epd-marktinventarisatie-zkh-2026
 - claude-knowledge-2026-04

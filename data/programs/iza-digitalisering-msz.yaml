@@ -1,0 +1,19 @@
+id: iza-digitalisering-msz
+type: program
+name: "IZA Digitaliseringsroutekaart medisch-specialistische zorg"
+aliases:
+  - "IZA-routekaart MSZ"
+  - "Routekaart Digitalisering MSZ"
+  - "IZA Digitaliseringsroutekaart"
+scope: landelijk
+funder: "IZA-partijen MSZ (NVZ / NFU / ZKN / Patiëntenfederatie / ZN / VWS)"
+start_date: "2024-02-09"
+enforces_standards:
+  - zib-2020
+  - nl-core-r4
+  - snomed-ct
+target_sectors:
+  - ziekenhuis
+sources:
+  - iza-digitaliseringsroutekaart-msz
+  - iza-routekaart-msz-update-nvz

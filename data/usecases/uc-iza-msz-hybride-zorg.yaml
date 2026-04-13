@@ -1,0 +1,20 @@
+id: uc-iza-msz-hybride-zorg
+type: usecase
+name: "IZA-routekaart MSZ — Thema 3: Hybride zorg"
+description: >
+  Derde thema van de IZA-Digitaliseringsroutekaart medisch-specialistische
+  zorg: transformatie naar hybride zorg — een mix van fysieke en digitale
+  zorgcontacten, ondersteund door tele­monitoring, videoconsulten, en
+  digitale patiënt­instructies. De ambitie: meer passende zorg en
+  betere capaciteit­benutting door fysieke consulten alleen daar in te
+  zetten waar ze toegevoegde waarde hebben.
+domain: capaciteit
+maturity_level: 2
+realized_by_connections: []
+realized_by_systems: []
+programs:
+  - iza-digitalisering-msz
+iza_goal_link: "transformatie naar hybride zorg (IZA-hoofddoel passende zorg / capaciteit)"
+sources:
+  - iza-digitaliseringsroutekaart-msz
+confidence: high

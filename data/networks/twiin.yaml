@@ -1,0 +1,14 @@
+id: twiin
+type: network
+name: "Twiin"
+aliases:
+  - "Twiin-programma"
+  - "Twiin-zorgplatform"
+network_type: landelijk_hub
+data_topology: hybrid
+standards_used:
+  - zib-2020
+  - nl-core-r4
+sources:
+  - iza-digitaliseringsroutekaart-msz
+  - iza-routekaart-msz-update-nvz

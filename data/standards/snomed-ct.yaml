@@ -1,0 +1,8 @@
+id: snomed-ct
+type: standard
+name: "SNOMED CT"
+standard_family: terminology
+publisher: "SNOMED International (NL: Nictiz als Release Center)"
+sources:
+  - iza-digitaliseringsroutekaart-msz
+  - iza-routekaart-msz-update-nvz

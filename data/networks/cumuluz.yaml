@@ -1,0 +1,13 @@
+id: cumuluz
+type: network
+name: "CumuluZ"
+aliases:
+  - "Cumuluz"
+  - "Cumuluz-federatie"
+network_type: regionale_datahub
+data_topology: federated
+standards_used:
+  - zib-2020
+  - nl-core-r4
+sources:
+  - iza-digitaliseringsroutekaart-msz

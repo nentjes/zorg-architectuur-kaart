@@ -1,0 +1,26 @@
+id: uc-iza-msz-gegevensuitwisseling
+type: usecase
+name: "IZA-routekaart MSZ — Thema 1: Elektronische gegevensuitwisseling"
+description: >
+  Eerste van de vier thema's van de IZA-Digitaliseringsroutekaart
+  medisch-specialistische zorg: elektronische gegevensuitwisseling als
+  standaard in de zorg. Bevat concrete afspraken over (onder andere)
+  beeldbeschikbaarheid — de geactualiseerde routekaart breidt het
+  Twiin-portaal uit met een pull-flow voor radiologische beelden, als
+  tijdelijke oplossing in afwachting van besluitvorming over de
+  European Health Data Space (EHDS). Ook de relatie tussen regionale
+  datauitwisselingsplatformen en CumuluZ en de informatie over NIS2
+  zijn in dit thema opgenomen. SNOMED CT is vastgelegd als de
+  terminologie-standaard voor 'eenheid van taal' in het recorderen
+  en uitwisselen van medische data.
+domain: overig
+maturity_level: 2
+realized_by_connections: []
+realized_by_systems: []
+programs:
+  - iza-digitalisering-msz
+iza_goal_link: "elektronische gegevensuitwisseling als standaard in de zorg (IZA-hoofddoel digitalisering)"
+sources:
+  - iza-digitaliseringsroutekaart-msz
+  - iza-routekaart-msz-update-nvz
+confidence: high

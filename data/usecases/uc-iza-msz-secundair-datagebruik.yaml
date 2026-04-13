@@ -1,0 +1,21 @@
+id: uc-iza-msz-secundair-datagebruik
+type: usecase
+name: "IZA-routekaart MSZ — Thema 4: Secundair datagebruik"
+description: >
+  Vierde thema van de IZA-Digitaliseringsroutekaart medisch-specialistische
+  zorg: data wordt in het zorg­proces digitaal, uniform en gestandaardiseerd
+  vastgelegd en vervolgens beschikbaar gesteld voor diverse secundaire
+  doelen — wetenschappelijk onderzoek, kwaliteits­registraties, populatie-
+  management, beleids­analyse. Vereist 'once-only registratie' aan de bron
+  en alignment met bewerkings­kaders als het European Health Data Space
+  (EHDS) secundary-use-regime.
+domain: overig
+maturity_level: 1
+realized_by_connections: []
+realized_by_systems: []
+programs:
+  - iza-digitalisering-msz
+iza_goal_link: "once-only registratie voor primair én secundair gebruik"
+sources:
+  - iza-digitaliseringsroutekaart-msz
+confidence: high

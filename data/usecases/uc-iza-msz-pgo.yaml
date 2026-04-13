@@ -1,0 +1,22 @@
+id: uc-iza-msz-pgo
+type: usecase
+name: "IZA-routekaart MSZ — Thema 2: Digitale toegang tot eigen gezondheidsgegevens (PGO)"
+description: >
+  Tweede thema van de IZA-Digitaliseringsroutekaart medisch-specialistische
+  zorg: Nederlanders hebben digitaal toegang tot hun eigen gezondheids-
+  gegevens. Richt zich op volwaardige ondersteuning van Persoonlijke
+  Gezondheidsomgevingen (PGO's) via MedMij-koppelingen vanuit de
+  ziekenhuis-EPD's. De IZA-doelstelling: elke Nederlander beschikt
+  uiterlijk in 2025 over digitale toegang tot de eigen gezondheids-
+  gegevens via een PGO naar keuze.
+domain: pgo
+maturity_level: 2
+realized_by_connections: []
+realized_by_systems: []
+programs:
+  - iza-digitalisering-msz
+  - vipp5
+iza_goal_link: "digitale toegang tot eigen gezondheidsgegevens voor elke Nederlander in 2025"
+sources:
+  - iza-digitaliseringsroutekaart-msz
+confidence: high

@@ -1,0 +1,7 @@
+id: iza-gooi-en-vechtstreek
+type: region
+name: "IZA-regio Gooi en Vechtstreek ('t Gezond Gooi)"
+region_type: iza
+sources:
+  - regioplan-iza-deel-3
+  - plan-gezond-gooi-2025

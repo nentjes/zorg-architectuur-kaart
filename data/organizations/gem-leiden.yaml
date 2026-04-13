@@ -1,0 +1,16 @@
+id: gem-leiden
+type: organization
+name: Gemeente Leiden
+sector: gemeente
+country: NL
+locations:
+- city: Leiden
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.1601
+    lon: 4.497
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

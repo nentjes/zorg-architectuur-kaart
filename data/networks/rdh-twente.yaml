@@ -1,0 +1,13 @@
+id: rdh-twente
+type: network
+name: "Regionale Datahub Twente"
+aliases:
+  - "RDH Twente"
+network_type: regionale_datahub
+data_topology: centralized
+operator: zorgnetoost
+standards_used:
+  - zib-2020
+  - nl-core-r4
+sources:
+  - plan-rdh-twente-2025

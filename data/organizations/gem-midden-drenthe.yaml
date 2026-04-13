@@ -1,0 +1,16 @@
+id: gem-midden-drenthe
+type: organization
+name: Gemeente Midden-Drenthe
+sector: gemeente
+country: NL
+locations:
+- city: Beilen
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.8612
+    lon: 6.5167
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

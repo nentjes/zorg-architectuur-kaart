@@ -1,0 +1,16 @@
+id: gem-meierijstad
+type: organization
+name: Gemeente Meierijstad
+sector: gemeente
+country: NL
+locations:
+- city: Veghel
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6139
+    lon: 5.5408
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

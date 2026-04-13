@@ -1,0 +1,16 @@
+id: zorggroep-sint-maarten
+type: organization
+name: Zorggroep Sint Maarten
+sector: vvt
+country: NL
+locations:
+- city: Oldenzaal
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.3133
+    lon: 6.9294
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

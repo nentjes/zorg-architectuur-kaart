@@ -1,0 +1,17 @@
+id: gem-utrechtse-heuvelrug
+type: organization
+name: Gemeente Utrechtse Heuvelrug
+sector: gemeente
+country: NL
+locations:
+- city: Doorn
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0333
+    lon: 5.35
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

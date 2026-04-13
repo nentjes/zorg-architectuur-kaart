@@ -1,0 +1,16 @@
+id: gem-hattem
+type: organization
+name: Gemeente Hattem
+sector: gemeente
+country: NL
+locations:
+- city: Hattem
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.4731
+    lon: 6.0592
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

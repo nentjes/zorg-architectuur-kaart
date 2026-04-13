@@ -1,0 +1,16 @@
+id: gem-hof-van-twente
+type: organization
+name: Gemeente Hof van Twente
+sector: gemeente
+country: NL
+locations:
+- city: Goor
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.23
+    lon: 6.58
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

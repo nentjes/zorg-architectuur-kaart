@@ -1,0 +1,23 @@
+id: eleos
+type: organization
+name: Eleos
+aliases:
+- De Hoop/Eleos
+sector: ggz
+subtype: confessioneel
+country: NL
+locations:
+- city: Amersfoort
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1561
+    lon: 5.3878
+systems:
+- tenzinger-user
+sources:
+- gemini-ggz-research-2026-04
+confidence: medium
+needs_verification: true
+notes:
+- Christelijke GGZ, landelijk verspreid

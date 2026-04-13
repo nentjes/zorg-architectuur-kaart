@@ -1,0 +1,16 @@
+id: rav-flevoland
+type: organization
+name: GGD Flevoland — ambulancezorg
+sector: ambulance
+country: NL
+locations:
+- city: Lelystad
+  province: Flevoland
+  country: NL
+  coordinates:
+    lat: 52.5183
+    lon: 5.4711
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

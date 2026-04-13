@@ -1,0 +1,27 @@
+id: reade
+type: organization
+name: Reade
+sector: revalidatie
+country: NL
+locations:
+- city: Amsterdam
+  province: Noord-Holland
+  country: NL
+  address: "Overtoom 283, 1054 HW Amsterdam"
+  coordinates:
+    lat: 52.3625
+    lon: 4.8693
+- city: Amsterdam
+  province: Noord-Holland
+  country: NL
+  address: "Dr. Jan van Breemenstraat 2, 1056 AB Amsterdam"
+  coordinates:
+    lat: 52.3578
+    lon: 4.8386
+sources:
+- claude-knowledge-2026-04
+- roel-private-excel-2026-04
+confidence: high
+needs_verification: false
+systems:
+- chipsoft-hix

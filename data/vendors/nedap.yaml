@@ -1,0 +1,12 @@
+id: nedap
+type: vendor
+name: "Nedap Healthcare"
+aliases:
+  - "Nedap"
+  - "Nedap N.V."
+country: NL
+vendor_role: product_vendor
+website: "https://nedap.com/healthcare"
+sources:
+  - nedap-website
+  - plan-rdh-twente-2025

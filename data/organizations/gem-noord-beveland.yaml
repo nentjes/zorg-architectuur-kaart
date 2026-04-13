@@ -1,0 +1,16 @@
+id: gem-noord-beveland
+type: organization
+name: Gemeente Noord-Beveland
+sector: gemeente
+country: NL
+locations:
+- city: Wissenkerke
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.5736
+    lon: 3.7497
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

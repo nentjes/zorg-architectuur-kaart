@@ -1,0 +1,9 @@
+id: amriq
+type: system
+name: Amriq
+category: epd_revalidatie
+vendor: amriq
+country_origin: NL
+sources:
+- roel-private-excel-2026-04
+confidence: high

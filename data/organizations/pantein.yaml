@@ -1,0 +1,16 @@
+id: pantein
+type: organization
+name: Pantein
+sector: vvt
+country: NL
+locations:
+- city: Boxmeer
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6478
+    lon: 5.9478
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

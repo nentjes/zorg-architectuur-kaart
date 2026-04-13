@@ -1,0 +1,16 @@
+id: gem-het-hogeland
+type: organization
+name: Gemeente Het Hogeland
+sector: gemeente
+country: NL
+locations:
+- city: Winsum
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.3306
+    lon: 6.5187
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

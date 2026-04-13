@@ -1,0 +1,16 @@
+id: gem-deurne
+type: organization
+name: Gemeente Deurne
+sector: gemeente
+country: NL
+locations:
+- city: Deurne
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4608
+    lon: 5.7956
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

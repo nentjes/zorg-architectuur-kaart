@@ -1,0 +1,16 @@
+id: gem-molenlanden
+type: organization
+name: Gemeente Molenlanden
+sector: gemeente
+country: NL
+locations:
+- city: Bleskensgraaf
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.8819
+    lon: 4.7872
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

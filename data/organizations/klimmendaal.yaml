@@ -1,0 +1,19 @@
+id: klimmendaal
+type: organization
+name: Klimmendaal
+sector: revalidatie
+country: NL
+locations:
+- city: Arnhem
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.01
+    lon: 5.8744
+sources:
+- claude-knowledge-2026-04
+- roel-private-excel-2026-04
+confidence: high
+needs_verification: false
+systems:
+- chipsoft-hix

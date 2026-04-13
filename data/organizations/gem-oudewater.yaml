@@ -1,0 +1,17 @@
+id: gem-oudewater
+type: organization
+name: Gemeente Oudewater
+sector: gemeente
+country: NL
+locations:
+- city: Oudewater
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0264
+    lon: 4.8675
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

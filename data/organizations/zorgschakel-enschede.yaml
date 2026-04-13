@@ -1,0 +1,20 @@
+id: zorgschakel-enschede
+type: organization
+name: "Zorgschakel Enschede"
+sector: huisarts
+subtype: "zorggroep"
+country: NL
+locations:
+  - city: "Enschede"
+    province: "Overijssel"
+    country: NL
+region_iza: iza-twente
+systems:
+  - medicom
+networks:
+  - rdh-twente
+  - lsp
+sources:
+  - plan-rdh-twente-2025
+confidence: medium
+needs_verification: true

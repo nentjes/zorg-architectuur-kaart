@@ -1,0 +1,24 @@
+id: meander-mc
+type: organization
+name: Meander Medisch Centrum
+aliases:
+- Meander
+sector: ziekenhuis
+subtype: topklinisch
+country: NL
+locations:
+- city: Amersfoort
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1561
+    lon: 5.3878
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- chipsoft-hix
+networks:
+- lsp

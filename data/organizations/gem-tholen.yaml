@@ -1,0 +1,16 @@
+id: gem-tholen
+type: organization
+name: Gemeente Tholen
+sector: gemeente
+country: NL
+locations:
+- city: Tholen
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.5339
+    lon: 4.2217
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,21 @@
+id: ggnet
+type: organization
+name: GGNet
+sector: ggz
+country: NL
+locations:
+- city: Warnsveld
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.1403
+    lon: 6.2128
+sources:
+- claude-knowledge-2026-04
+- gemini-ggz-research-2026-04
+confidence: medium
+needs_verification: true
+systems:
+- chipsoft-hix
+notes:
+- 'uitzondering: HiX i.p.v. Tenzinger'

@@ -1,0 +1,29 @@
+id: mmc
+type: organization
+name: Máxima MC
+aliases:
+- MMC
+sector: ziekenhuis
+subtype: topklinisch
+country: NL
+locations:
+- city: Veldhoven
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4183
+    lon: 5.4044
+- city: Eindhoven
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4416
+    lon: 5.4697
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- epic-epd
+networks:
+- lsp

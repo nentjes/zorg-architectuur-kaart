@@ -1,0 +1,16 @@
+id: gem-wormerland
+type: organization
+name: Gemeente Wormerland
+sector: gemeente
+country: NL
+locations:
+- city: Wormer
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.4989
+    lon: 4.7961
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

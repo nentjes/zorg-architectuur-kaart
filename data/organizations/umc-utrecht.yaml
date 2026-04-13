@@ -1,0 +1,22 @@
+id: umc-utrecht
+type: organization
+name: "Universitair Medisch Centrum Utrecht"
+aliases:
+  - "UMC Utrecht"
+  - "UMCU"
+sector: ziekenhuis
+subtype: "academisch"
+country: NL
+locations:
+  - city: "Utrecht"
+    province: "Utrecht"
+    country: NL
+region_iza: iza-midden-nederland
+systems:
+  - chipsoft-hix
+networks:
+  - lsp
+  - trijn-platform
+sources:
+  - plan-trijn-midden-nederland-2025
+confidence: high

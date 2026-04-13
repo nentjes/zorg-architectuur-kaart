@@ -1,0 +1,16 @@
+id: gem-oldambt
+type: organization
+name: Gemeente Oldambt
+sector: gemeente
+country: NL
+locations:
+- city: Winschoten
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.1447
+    lon: 7.035
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

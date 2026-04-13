@@ -1,0 +1,16 @@
+id: gem-terneuzen
+type: organization
+name: Gemeente Terneuzen
+sector: gemeente
+country: NL
+locations:
+- city: Terneuzen
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.335
+    lon: 3.8286
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,17 @@
+id: carintreggeland
+type: organization
+name: "Carintreggeland"
+sector: vvt
+country: NL
+locations:
+  - city: "Hengelo"
+    province: "Overijssel"
+    country: NL
+region_iza: iza-twente
+systems:
+  - nedap-ons
+networks:
+  - rdh-twente
+sources:
+  - plan-rdh-twente-2025
+confidence: high

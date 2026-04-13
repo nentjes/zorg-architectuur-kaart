@@ -1,0 +1,16 @@
+id: zorgring-nhn
+type: organization
+name: Magentazorg
+sector: vvt
+country: NL
+locations:
+- city: Alkmaar
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.6324
+    lon: 4.7534
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

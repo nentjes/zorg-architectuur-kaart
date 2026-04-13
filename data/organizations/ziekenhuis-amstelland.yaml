@@ -1,0 +1,21 @@
+id: ziekenhuis-amstelland
+type: organization
+name: Ziekenhuis Amstelland
+sector: ziekenhuis
+subtype: algemeen
+country: NL
+locations:
+- city: Amstelveen
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3019
+    lon: 4.8675
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- chipsoft-hix
+networks:
+- lsp

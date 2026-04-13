@@ -1,0 +1,11 @@
+id: epic
+type: vendor
+name: "Epic Systems Corporation"
+aliases:
+  - "Epic"
+parent_company: "Epic Systems Corporation, Verona, Wisconsin (US)"
+vendor_role: product_vendor
+website: "https://www.epic.com"
+sources:
+  - epic-website
+  - plan-trijn-midden-nederland-2025

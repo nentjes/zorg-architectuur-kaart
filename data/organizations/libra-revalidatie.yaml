@@ -1,0 +1,25 @@
+id: libra-revalidatie
+type: organization
+name: Libra Revalidatie & Audiologie
+sector: revalidatie
+country: NL
+locations:
+- city: Eindhoven
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4416
+    lon: 5.4697
+- city: Tilburg
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5606
+    lon: 5.0772
+sources:
+- claude-knowledge-2026-04
+- roel-private-excel-2026-04
+confidence: high
+needs_verification: false
+systems:
+- ecaris

@@ -1,0 +1,792 @@
+# Manifest: NL-coarse — revalidatie, GGD, RAV, grote GGZ
+#
+# Doel: de sectoren waar landelijk < 100 organisaties actief zijn
+# compleet op de kaart krijgen. Utrecht-tegenhangers (de-hoogstraat,
+# ggdru, ravu, altrecht, ggz-centraal, victas) zitten in
+# data/manifests/utrecht-v1.yaml en worden door de importer geSKIPt.
+#
+# Niet in dit bestand (parked voor Sprint 5, te grote lijsten of
+# onbetrouwbare LLM-seed):
+#   - Jeugdhulpregio's (42, VNG)
+#   - VSV's (~75)
+#   - Gecertificeerde Instellingen jeugd (15, deels gemerged)
+#   - Apotheekketens (5 relevante, te fragmentair voor een seed)
+#
+# Bron: claude-knowledge-2026-04, confidence: low, needs_verification: true.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # -----------------------------------------------------------
+  # Revalidatiecentra (Revalidatie Nederland, ~20 koepels)
+  # -----------------------------------------------------------
+
+  - id: reade
+    name: "Reade"
+    sector: revalidatie
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3381, lon: 4.8611}
+
+  - id: basalt
+    name: "Basalt Revalidatie"
+    sector: revalidatie
+    locations:
+      - city: "Leiden"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.1581, lon: 4.4869}
+      - city: "Den Haag"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.0786, lon: 4.3097}
+
+  - id: heliomare
+    name: "Heliomare"
+    sector: revalidatie
+    locations:
+      - city: "Wijk aan Zee"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.4961, lon: 4.5983}
+
+  - id: merem
+    name: "Merem Medische Revalidatie"
+    sector: revalidatie
+    locations:
+      - city: "Hilversum"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.2292, lon: 5.1760}
+
+  - id: klimmendaal
+    name: "Klimmendaal"
+    sector: revalidatie
+    locations:
+      - city: "Arnhem"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 52.0100, lon: 5.8744}
+
+  - id: revant
+    name: "Revant Revalidatiecentra"
+    sector: revalidatie
+    locations:
+      - city: "Breda"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5719, lon: 4.7683}
+
+  - id: rijndam
+    name: "Rijndam Revalidatie"
+    sector: revalidatie
+    locations:
+      - city: "Rotterdam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9106, lon: 4.4686}
+
+  - id: roessingh
+    name: "Roessingh, Centrum voor Revalidatie"
+    sector: revalidatie
+    locations:
+      - city: "Enschede"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.2215, lon: 6.8937}
+
+  - id: libra-revalidatie
+    name: "Libra Revalidatie & Audiologie"
+    sector: revalidatie
+    locations:
+      - city: "Eindhoven"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4416, lon: 5.4697}
+      - city: "Tilburg"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5606, lon: 5.0772}
+
+  - id: adelante
+    name: "Adelante Zorggroep"
+    sector: revalidatie
+    locations:
+      - city: "Hoensbroek"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 50.9181, lon: 5.9306}
+
+  - id: vogellanden
+    name: "Vogellanden"
+    sector: revalidatie
+    locations:
+      - city: "Zwolle"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.5167, lon: 6.0833}
+
+  - id: tolbrug
+    name: "Tolbrug Specialistische Revalidatie"
+    sector: revalidatie
+    locations:
+      - city: "'s-Hertogenbosch"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.6892, lon: 5.2903}
+
+  - id: revalidatie-friesland
+    name: "Revalidatie Friesland"
+    sector: revalidatie
+    locations:
+      - city: "Beetsterzwaag"
+        province: "Friesland"
+        country: NL
+        coordinates: {lat: 53.0664, lon: 6.0703}
+
+  - id: ciran-intergrin
+    name: "InteGrin (v/h Ciran)"
+    sector: revalidatie
+    locations:
+      - city: "Eindhoven"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4416, lon: 5.4697}
+
+  # -----------------------------------------------------------
+  # GGD'en (25 regio's)
+  # -----------------------------------------------------------
+
+  - id: ggd-amsterdam
+    name: "GGD Amsterdam"
+    sector: ggd
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3608, lon: 4.9228}
+
+  - id: ggd-haaglanden
+    name: "GGD Haaglanden"
+    sector: ggd
+    locations:
+      - city: "Den Haag"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.0786, lon: 4.3097}
+
+  - id: ggd-rotterdam-rijnmond
+    name: "GGD Rotterdam-Rijnmond"
+    sector: ggd
+    locations:
+      - city: "Rotterdam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9225, lon: 4.4792}
+
+  - id: ggd-hart-voor-brabant
+    name: "GGD Hart voor Brabant"
+    sector: ggd
+    locations:
+      - city: "'s-Hertogenbosch"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.6892, lon: 5.2903}
+
+  - id: ggd-west-brabant
+    name: "GGD West-Brabant"
+    sector: ggd
+    locations:
+      - city: "Breda"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5719, lon: 4.7683}
+
+  - id: ggd-brabant-zuidoost
+    name: "GGD Brabant-Zuidoost"
+    sector: ggd
+    locations:
+      - city: "Eindhoven"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4416, lon: 5.4697}
+
+  - id: ggd-zeeland
+    name: "GGD Zeeland"
+    sector: ggd
+    locations:
+      - city: "Goes"
+        province: "Zeeland"
+        country: NL
+        coordinates: {lat: 51.5044, lon: 3.8889}
+
+  - id: ggd-zuid-limburg
+    name: "GGD Zuid-Limburg"
+    sector: ggd
+    locations:
+      - city: "Heerlen"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 50.8881, lon: 5.9833}
+
+  - id: ggd-limburg-noord
+    name: "GGD Limburg-Noord"
+    sector: ggd
+    locations:
+      - city: "Venlo"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 51.3700, lon: 6.1583}
+
+  - id: ggd-gelderland-zuid
+    name: "GGD Gelderland-Zuid"
+    sector: ggd
+    locations:
+      - city: "Nijmegen"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.8425, lon: 5.8533}
+
+  - id: ggd-gelderland-midden
+    name: "Veiligheids- en Gezondheidsregio Gelderland-Midden"
+    aliases: ["VGGM"]
+    sector: ggd
+    locations:
+      - city: "Arnhem"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.9850, lon: 5.8986}
+
+  - id: ggd-nog
+    name: "GGD Noord- en Oost-Gelderland"
+    aliases: ["NOG"]
+    sector: ggd
+    locations:
+      - city: "Warnsveld"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 52.1403, lon: 6.2128}
+
+  - id: ggd-ijsselland
+    name: "GGD IJsselland"
+    sector: ggd
+    locations:
+      - city: "Zwolle"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.5167, lon: 6.0833}
+
+  - id: ggd-twente
+    name: "GGD Twente"
+    sector: ggd
+    locations:
+      - city: "Enschede"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.2215, lon: 6.8937}
+
+  - id: ggd-drenthe
+    name: "GGD Drenthe"
+    sector: ggd
+    locations:
+      - city: "Assen"
+        province: "Drenthe"
+        country: NL
+        coordinates: {lat: 52.9956, lon: 6.5639}
+
+  - id: ggd-groningen
+    name: "GGD Groningen"
+    sector: ggd
+    locations:
+      - city: "Groningen"
+        province: "Groningen"
+        country: NL
+        coordinates: {lat: 53.2194, lon: 6.5665}
+
+  - id: ggd-fryslan
+    name: "GGD Fryslân"
+    sector: ggd
+    locations:
+      - city: "Leeuwarden"
+        province: "Friesland"
+        country: NL
+        coordinates: {lat: 53.2042, lon: 5.7717}
+
+  - id: ggd-flevoland
+    name: "GGD Flevoland"
+    sector: ggd
+    locations:
+      - city: "Lelystad"
+        province: "Flevoland"
+        country: NL
+        coordinates: {lat: 52.5183, lon: 5.4711}
+
+  - id: ggd-kennemerland
+    name: "GGD Kennemerland"
+    sector: ggd
+    locations:
+      - city: "Haarlem"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3874, lon: 4.6462}
+
+  - id: ggd-hollands-noorden
+    name: "GGD Hollands Noorden"
+    sector: ggd
+    locations:
+      - city: "Alkmaar"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.6336, lon: 4.7497}
+
+  - id: ggd-zaanstreek-waterland
+    name: "GGD Zaanstreek-Waterland"
+    sector: ggd
+    locations:
+      - city: "Zaandam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.4383, lon: 4.8233}
+
+  - id: ggd-hollands-midden
+    name: "GGD Hollands Midden"
+    sector: ggd
+    locations:
+      - city: "Leiden"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.1601, lon: 4.4970}
+
+  - id: ggd-gooi-en-vechtstreek
+    name: "GGD Gooi en Vechtstreek"
+    sector: ggd
+    locations:
+      - city: "Bussum"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.2667, lon: 5.1606}
+
+  - id: ggd-zhz
+    name: "Dienst Gezondheid & Jeugd Zuid-Holland Zuid"
+    aliases: ["GGD ZHZ"]
+    sector: ggd
+    locations:
+      - city: "Dordrecht"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.8133, lon: 4.6900}
+
+  # -----------------------------------------------------------
+  # RAV's (Regionale Ambulancevoorzieningen, 25 regio's)
+  # -----------------------------------------------------------
+
+  - id: rav-amsterdam
+    name: "Ambulance Amsterdam"
+    sector: ambulance
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3676, lon: 4.9041}
+
+  - id: rav-kennemerland
+    name: "RAV Kennemerland"
+    sector: ambulance
+    locations:
+      - city: "Haarlem"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3874, lon: 4.6462}
+
+  - id: rav-noord-holland-noord
+    name: "Ambulancezorg Noord-Holland Noord"
+    sector: ambulance
+    locations:
+      - city: "Alkmaar"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.6336, lon: 4.7497}
+
+  - id: rav-gooi-en-vechtstreek
+    name: "RAV Gooi en Vechtstreek"
+    sector: ambulance
+    locations:
+      - city: "Hilversum"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.2292, lon: 5.1760}
+
+  - id: rav-flevoland
+    name: "GGD Flevoland — ambulancezorg"
+    sector: ambulance
+    locations:
+      - city: "Lelystad"
+        province: "Flevoland"
+        country: NL
+        coordinates: {lat: 52.5183, lon: 5.4711}
+
+  - id: rav-haaglanden
+    name: "Ambulancezorg Haaglanden"
+    sector: ambulance
+    locations:
+      - city: "Den Haag"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.0786, lon: 4.3097}
+
+  - id: rav-hollands-midden
+    name: "RAV Hollands Midden"
+    sector: ambulance
+    locations:
+      - city: "Leiden"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.1601, lon: 4.4970}
+
+  - id: rav-rotterdam-rijnmond
+    name: "Ambulancezorg Rotterdam-Rijnmond"
+    sector: ambulance
+    locations:
+      - city: "Rotterdam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9225, lon: 4.4792}
+
+  - id: rav-zhz
+    name: "Ambulancezorg Zuid-Holland Zuid"
+    sector: ambulance
+    locations:
+      - city: "Dordrecht"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.8133, lon: 4.6900}
+
+  - id: rav-zeeland
+    name: "RAV Zeeland"
+    sector: ambulance
+    locations:
+      - city: "Middelburg"
+        province: "Zeeland"
+        country: NL
+        coordinates: {lat: 51.4988, lon: 3.6108}
+
+  - id: rav-west-brabant
+    name: "RAV West-Brabant"
+    sector: ambulance
+    locations:
+      - city: "Breda"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5719, lon: 4.7683}
+
+  - id: rav-brabant-mwn
+    name: "RAV Brabant MWN"
+    sector: ambulance
+    locations:
+      - city: "'s-Hertogenbosch"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.6892, lon: 5.2903}
+
+  - id: rav-brabant-zuidoost
+    name: "RAV Brabant-Zuidoost"
+    sector: ambulance
+    locations:
+      - city: "Eindhoven"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4416, lon: 5.4697}
+
+  - id: rav-limburg-zuid
+    name: "Ambulancezorg Limburg Zuid"
+    sector: ambulance
+    locations:
+      - city: "Maastricht"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 50.8514, lon: 5.6910}
+
+  - id: rav-limburg-noord
+    name: "GGD Limburg-Noord — ambulancezorg"
+    sector: ambulance
+    locations:
+      - city: "Venlo"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 51.3700, lon: 6.1583}
+
+  - id: rav-gelderland-zuid
+    name: "RAV Gelderland-Zuid"
+    sector: ambulance
+    locations:
+      - city: "Nijmegen"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.8425, lon: 5.8533}
+
+  - id: rav-gelderland-midden
+    name: "VGGM — ambulancezorg Gelderland-Midden"
+    sector: ambulance
+    locations:
+      - city: "Arnhem"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.9850, lon: 5.8986}
+
+  - id: rav-nog
+    name: "Witte Kruis (Noord- en Oost-Gelderland)"
+    sector: ambulance
+    locations:
+      - city: "Apeldoorn"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 52.2058, lon: 5.9697}
+
+  - id: rav-ijsselland
+    name: "RAV IJsselland"
+    sector: ambulance
+    locations:
+      - city: "Zwolle"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.5167, lon: 6.0833}
+
+  - id: rav-twente
+    name: "Ambulance Oost (Twente)"
+    aliases: ["Ambulance Oost"]
+    sector: ambulance
+    locations:
+      - city: "Hengelo"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.2661, lon: 6.7930}
+
+  - id: rav-drenthe
+    name: "UMCG Ambulancezorg — Drenthe"
+    sector: ambulance
+    locations:
+      - city: "Assen"
+        province: "Drenthe"
+        country: NL
+        coordinates: {lat: 52.9956, lon: 6.5639}
+
+  - id: rav-groningen
+    name: "UMCG Ambulancezorg — Groningen"
+    sector: ambulance
+    locations:
+      - city: "Groningen"
+        province: "Groningen"
+        country: NL
+        coordinates: {lat: 53.2194, lon: 6.5665}
+
+  - id: rav-fryslan
+    name: "Kijlstra Ambulancegroep Fryslân"
+    sector: ambulance
+    locations:
+      - city: "Drachten"
+        province: "Friesland"
+        country: NL
+        coordinates: {lat: 53.1072, lon: 6.0981}
+
+  # -----------------------------------------------------------
+  # Grote GGZ-koepels (~18, exclusief Utrecht-instellingen)
+  # -----------------------------------------------------------
+
+  - id: parnassia-groep
+    name: "Parnassia Groep"
+    sector: ggz
+    locations:
+      - city: "Den Haag"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.0786, lon: 4.3097}
+
+  - id: arkin
+    name: "Arkin"
+    sector: ggz
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3676, lon: 4.9041}
+
+  - id: ggz-nhn
+    name: "GGZ Noord-Holland-Noord"
+    aliases: ["GGZ NHN"]
+    sector: ggz
+    locations:
+      - city: "Heiloo"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.6025, lon: 4.7044}
+
+  - id: antes
+    name: "Antes"
+    sector: ggz
+    locations:
+      - city: "Rotterdam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9225, lon: 4.4792}
+
+  - id: yulius
+    name: "Yulius"
+    sector: ggz
+    locations:
+      - city: "Dordrecht"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.8133, lon: 4.6900}
+
+  - id: rivierduinen
+    name: "GGZ Rivierduinen"
+    sector: ggz
+    locations:
+      - city: "Leiden"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.1601, lon: 4.4970}
+
+  - id: ggnet
+    name: "GGNet"
+    sector: ggz
+    locations:
+      - city: "Warnsveld"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 52.1403, lon: 6.2128}
+
+  - id: pro-persona
+    name: "Pro Persona"
+    sector: ggz
+    locations:
+      - city: "Nijmegen"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.8425, lon: 5.8533}
+      - city: "Arnhem"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.9850, lon: 5.8986}
+
+  - id: dimence
+    name: "Dimence"
+    sector: ggz
+    locations:
+      - city: "Deventer"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.2542, lon: 6.1392}
+
+  - id: tactus
+    name: "Tactus Verslavingszorg"
+    sector: ggz
+    subtype: "verslavingszorg"
+    locations:
+      - city: "Deventer"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.2542, lon: 6.1392}
+
+  - id: mondriaan
+    name: "Mondriaan"
+    sector: ggz
+    locations:
+      - city: "Heerlen"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 50.8881, lon: 5.9833}
+      - city: "Maastricht"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 50.8514, lon: 5.6910}
+
+  - id: vincent-van-gogh
+    name: "Vincent van Gogh voor Geestelijke Gezondheidszorg"
+    sector: ggz
+    locations:
+      - city: "Venray"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 51.5256, lon: 5.9744}
+
+  - id: ggz-oost-brabant
+    name: "GGZ Oost Brabant"
+    sector: ggz
+    locations:
+      - city: "Boekel"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.6056, lon: 5.6781}
+
+  - id: ggz-breburg
+    name: "GGz Breburg"
+    sector: ggz
+    locations:
+      - city: "Tilburg"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5606, lon: 5.0772}
+
+  - id: novadic-kentron
+    name: "Novadic-Kentron"
+    sector: ggz
+    subtype: "verslavingszorg"
+    locations:
+      - city: "Vught"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.6533, lon: 5.2889}
+
+  - id: lentis
+    name: "Lentis"
+    sector: ggz
+    locations:
+      - city: "Groningen"
+        province: "Groningen"
+        country: NL
+        coordinates: {lat: 53.2194, lon: 6.5665}
+
+  - id: ggz-drenthe
+    name: "GGZ Drenthe"
+    sector: ggz
+    locations:
+      - city: "Assen"
+        province: "Drenthe"
+        country: NL
+        coordinates: {lat: 52.9956, lon: 6.5639}
+
+  - id: ggz-friesland
+    name: "GGZ Friesland"
+    sector: ggz
+    locations:
+      - city: "Leeuwarden"
+        province: "Friesland"
+        country: NL
+        coordinates: {lat: 53.2042, lon: 5.7717}
+
+  - id: accare
+    name: "Accare"
+    sector: ggz
+    subtype: "kinder_en_jeugd"
+    locations:
+      - city: "Assen"
+        province: "Drenthe"
+        country: NL
+        coordinates: {lat: 52.9956, lon: 6.5639}
+
+  - id: karakter
+    name: "Karakter"
+    sector: ggz
+    subtype: "kinder_en_jeugd"
+    locations:
+      - city: "Ede"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 52.0411, lon: 5.6683}

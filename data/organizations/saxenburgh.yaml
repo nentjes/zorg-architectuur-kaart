@@ -1,0 +1,21 @@
+id: saxenburgh
+type: organization
+name: Saxenburgh
+sector: ziekenhuis
+subtype: algemeen
+country: NL
+locations:
+- city: Hardenberg
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.5772
+    lon: 6.6181
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- chipsoft-hix
+networks:
+- lsp

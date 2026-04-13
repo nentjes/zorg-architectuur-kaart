@@ -1,0 +1,16 @@
+id: gem-kerkrade
+type: organization
+name: Gemeente Kerkrade
+sector: gemeente
+country: NL
+locations:
+- city: Kerkrade
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.8656
+    lon: 6.0619
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

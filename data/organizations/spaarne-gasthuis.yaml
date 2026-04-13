@@ -1,0 +1,27 @@
+id: spaarne-gasthuis
+type: organization
+name: Spaarne Gasthuis
+sector: ziekenhuis
+subtype: topklinisch
+country: NL
+locations:
+- city: Haarlem
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3608
+    lon: 4.6269
+- city: Hoofddorp
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3025
+    lon: 4.6889
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- chipsoft-hix
+networks:
+- lsp

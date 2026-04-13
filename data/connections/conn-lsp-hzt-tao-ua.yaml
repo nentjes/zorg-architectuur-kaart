@@ -1,0 +1,15 @@
+id: conn-lsp-hzt-tao-ua
+type: connection
+organization_a: hzt
+organization_b: tao-ua
+network: lsp
+direction: bidirectional
+data_types:
+  - medication
+status: production
+established: "2015-01-01"
+sources:
+  - plan-rdh-twente-2025
+  - vzvz-lsp-werking
+confidence: medium
+needs_verification: true

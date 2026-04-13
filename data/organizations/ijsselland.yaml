@@ -1,0 +1,21 @@
+id: ijsselland
+type: organization
+name: IJsselland Ziekenhuis
+sector: ziekenhuis
+subtype: algemeen
+country: NL
+locations:
+- city: Capelle aan den IJssel
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9294
+    lon: 4.5769
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- chipsoft-hix
+networks:
+- lsp

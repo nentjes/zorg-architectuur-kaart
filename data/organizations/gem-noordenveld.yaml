@@ -1,0 +1,16 @@
+id: gem-noordenveld
+type: organization
+name: Gemeente Noordenveld
+sector: gemeente
+country: NL
+locations:
+- city: Roden
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 53.1311
+    lon: 6.4269
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

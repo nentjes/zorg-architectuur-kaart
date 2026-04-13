@@ -1,0 +1,16 @@
+id: gem-urk
+type: organization
+name: Gemeente Urk
+sector: gemeente
+country: NL
+locations:
+- city: Urk
+  province: Flevoland
+  country: NL
+  coordinates:
+    lat: 52.6628
+    lon: 5.6028
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

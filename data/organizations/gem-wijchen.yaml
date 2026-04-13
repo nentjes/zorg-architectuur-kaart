@@ -1,0 +1,16 @@
+id: gem-wijchen
+type: organization
+name: Gemeente Wijchen
+sector: gemeente
+country: NL
+locations:
+- city: Wijchen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8067
+    lon: 5.73
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

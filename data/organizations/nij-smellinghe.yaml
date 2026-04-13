@@ -1,0 +1,21 @@
+id: nij-smellinghe
+type: organization
+name: Nij Smellinghe
+sector: ziekenhuis
+subtype: algemeen
+country: NL
+locations:
+- city: Drachten
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.1072
+    lon: 6.0981
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- chipsoft-hix
+networks:
+- lsp

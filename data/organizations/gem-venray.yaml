@@ -1,0 +1,16 @@
+id: gem-venray
+type: organization
+name: Gemeente Venray
+sector: gemeente
+country: NL
+locations:
+- city: Venray
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.5258
+    lon: 5.9747
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

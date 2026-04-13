@@ -1,0 +1,16 @@
+id: gem-harlingen
+type: organization
+name: Gemeente Harlingen
+sector: gemeente
+country: NL
+locations:
+- city: Harlingen
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.1744
+    lon: 5.4239
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

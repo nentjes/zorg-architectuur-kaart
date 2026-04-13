@@ -1,0 +1,16 @@
+id: gem-scherpenzeel
+type: organization
+name: Gemeente Scherpenzeel
+sector: gemeente
+country: NL
+locations:
+- city: Scherpenzeel
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.0825
+    lon: 5.4878
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

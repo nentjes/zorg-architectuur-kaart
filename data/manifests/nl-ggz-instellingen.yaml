@@ -1,0 +1,232 @@
+# Manifest: GGZ-instellingen NL — Sprint 4 aanvullend
+#
+# Doel: de Nederlandse GGZ-leden die nog niet in nl-overig.yaml of
+# utrecht-v1.yaml staan. Grote zorggroepen al geseed in nl-overig
+# (Parnassia, Arkin, GGNet, Pro Persona, Dimence, Mondriaan, Lentis,
+# Vincent van Gogh, GGZ Breburg, GGZ Oost Brabant, Antes, Yulius,
+# Rivierduinen, Tactus, Novadic-Kentron, Accare, GGZ Drenthe,
+# GGZ Friesland, GGZ NHN).
+#
+# Bron: claude-knowledge-2026-04. confidence: low.
+# Systeem-info (USER/Glims/Epic/Nedap-Ons) bewust niet geseed —
+# komt in Sprint 4b na validatie door ICT-managers.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  - id: de-nederlandse-ggz
+    name: "de Nederlandse ggz"
+    aliases: ["GGZ Nederland", "dNggz"]
+    sector: ggz
+    subtype: "koepel"
+    locations:
+      - city: "Amersfoort"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1561, lon: 5.3878}
+
+  - id: ggze
+    name: "GGzE"
+    aliases: ["Geestelijke Gezondheidszorg Eindhoven"]
+    sector: ggz
+    subtype: "geintegreerd"
+    locations:
+      - city: "Eindhoven"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4416, lon: 5.4697}
+
+  - id: emergis
+    name: "Emergis"
+    sector: ggz
+    subtype: "geintegreerd"
+    locations:
+      - city: "Goes"
+        province: "Zeeland"
+        country: NL
+        coordinates: {lat: 51.5048, lon: 3.8881}
+
+  - id: karakter
+    name: "Karakter Kinder- en Jeugdpsychiatrie"
+    aliases: ["Karakter"]
+    sector: ggz
+    subtype: "kind-en-jeugd"
+    locations:
+      - city: "Ede"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 52.0470, lon: 5.6661}
+
+  - id: levvel
+    name: "Levvel"
+    aliases: ["De Bascule", "Spirit"]
+    sector: ggz
+    subtype: "kind-en-jeugd"
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3146, lon: 4.9501}
+
+  - id: youz
+    name: "Youz"
+    sector: ggz
+    subtype: "kind-en-jeugd"
+    parent_organization: parnassia-groep
+    locations:
+      - city: "Rotterdam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9244, lon: 4.4777}
+
+  - id: fivoor
+    name: "Fivoor"
+    sector: ggz
+    subtype: "forensisch"
+    locations:
+      - city: "Rotterdam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9244, lon: 4.4777}
+
+  - id: inforsa
+    name: "Inforsa"
+    sector: ggz
+    subtype: "forensisch"
+    parent_organization: arkin
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3676, lon: 4.9041}
+
+  - id: transfore
+    name: "Transfore"
+    sector: ggz
+    subtype: "forensisch"
+    parent_organization: dimence
+    locations:
+      - city: "Deventer"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.2551, lon: 6.1639}
+
+  - id: de-viersprong
+    name: "De Viersprong"
+    sector: ggz
+    subtype: "specialistisch"
+    locations:
+      - city: "Halsteren"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5340, lon: 4.2897}
+
+  - id: jellinek
+    name: "Jellinek"
+    sector: ggz
+    subtype: "verslaving"
+    parent_organization: arkin
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3676, lon: 4.9041}
+
+  - id: brijder
+    name: "Brijder Verslavingszorg"
+    aliases: ["Brijder"]
+    sector: ggz
+    subtype: "verslaving"
+    parent_organization: parnassia-groep
+    locations:
+      - city: "Alkmaar"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.6324, lon: 4.7534}
+
+  - id: iriszorg
+    name: "IrisZorg"
+    sector: ggz
+    subtype: "verslaving"
+    locations:
+      - city: "Arnhem"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.9851, lon: 5.8987}
+
+  - id: vnn
+    name: "Verslavingszorg Noord Nederland"
+    aliases: ["VNN"]
+    sector: ggz
+    subtype: "verslaving"
+    locations:
+      - city: "Groningen"
+        province: "Groningen"
+        country: NL
+        coordinates: {lat: 53.2194, lon: 6.5665}
+
+  - id: trajectum
+    name: "Trajectum"
+    sector: ggz
+    subtype: "sglvg"
+    locations:
+      - city: "Zwolle"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.5168, lon: 6.0830}
+
+  - id: kwintes
+    name: "Kwintes"
+    sector: ggz
+    subtype: "beschermd-wonen"
+    locations:
+      - city: "Zeist"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0894, lon: 5.2324}
+    region_iza: iza-midden-nederland
+
+  - id: lister
+    name: "Lister"
+    sector: ggz
+    subtype: "beschermd-wonen"
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+    region_iza: iza-midden-nederland
+
+  - id: leviaan
+    name: "Leviaan"
+    sector: ggz
+    subtype: "beschermd-wonen"
+    locations:
+      - city: "Purmerend"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.5051, lon: 4.9596}
+
+  - id: hvo-querido
+    name: "HVO-Querido"
+    sector: ggz
+    subtype: "maatsch-opvang"
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3676, lon: 4.9041}
+
+  - id: ribw-brabant
+    name: "RIBW Brabant"
+    sector: ggz
+    subtype: "beschermd-wonen"
+    locations:
+      - city: "Tilburg"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5555, lon: 5.0913}

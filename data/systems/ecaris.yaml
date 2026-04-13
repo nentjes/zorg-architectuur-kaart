@@ -1,0 +1,9 @@
+id: ecaris
+type: system
+name: Ecaris
+category: epd_revalidatie
+vendor: ecaris
+country_origin: NL
+sources:
+- roel-private-excel-2026-04
+confidence: high

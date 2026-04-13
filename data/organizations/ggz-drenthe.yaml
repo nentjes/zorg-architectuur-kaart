@@ -1,0 +1,21 @@
+id: ggz-drenthe
+type: organization
+name: GGZ Drenthe
+sector: ggz
+country: NL
+locations:
+- city: Assen
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.9956
+    lon: 6.5639
+sources:
+- claude-knowledge-2026-04
+- gemini-ggz-research-2026-04
+confidence: medium
+needs_verification: true
+systems:
+- tenzinger-user
+notes:
+- Drentse keten

@@ -1,0 +1,16 @@
+id: gem-uitgeest
+type: organization
+name: Gemeente Uitgeest
+sector: gemeente
+country: NL
+locations:
+- city: Uitgeest
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.5292
+    lon: 4.7086
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,21 @@
+id: ggz-ingeest
+type: organization
+name: GGZ inGeest
+sector: ggz
+subtype: geintegreerd
+country: NL
+locations:
+- city: Amsterdam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3344
+    lon: 4.8661
+systems:
+- epic-epd
+sources:
+- gemini-ggz-research-2026-04
+confidence: medium
+needs_verification: true
+notes:
+- 'Uitzondering: draait mee op Epic-stack van Amsterdam UMC'

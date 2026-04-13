@@ -1,0 +1,16 @@
+id: gem-rijswijk
+type: organization
+name: Gemeente Rijswijk
+sector: gemeente
+country: NL
+locations:
+- city: Rijswijk
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0361
+    lon: 4.3244
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

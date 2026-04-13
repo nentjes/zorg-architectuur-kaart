@@ -1,0 +1,16 @@
+id: parnassia-vvt
+type: organization
+name: De Zellingen
+sector: vvt
+country: NL
+locations:
+- city: Capelle aan den IJssel
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9294
+    lon: 4.5775
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

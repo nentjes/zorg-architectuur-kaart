@@ -1,0 +1,22 @@
+id: altrecht
+type: organization
+name: Altrecht
+sector: ggz
+country: NL
+locations:
+- city: Utrecht
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0907
+    lon: 5.1214
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+- gemini-ggz-research-2026-04
+confidence: medium
+needs_verification: true
+systems:
+- tenzinger-user
+notes:
+- Utrechtse GGZ-reus; key connection naar UMCU HiX

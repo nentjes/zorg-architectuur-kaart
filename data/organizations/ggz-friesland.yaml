@@ -1,0 +1,16 @@
+id: ggz-friesland
+type: organization
+name: GGZ Friesland
+sector: ggz
+country: NL
+locations:
+- city: Leeuwarden
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.2042
+    lon: 5.7717
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,18 @@
+id: rav-twente
+type: organization
+name: Ambulance Oost (Twente)
+aliases:
+- Ambulance Oost
+sector: ambulance
+country: NL
+locations:
+- city: Hengelo
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.2661
+    lon: 6.793
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

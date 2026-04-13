@@ -1,0 +1,16 @@
+id: gem-noardeast-fryslan
+type: organization
+name: Gemeente Noardeast-Fryslân
+sector: gemeente
+country: NL
+locations:
+- city: Dokkum
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.3289
+    lon: 5.9981
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

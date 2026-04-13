@@ -1,0 +1,16 @@
+id: gem-zaltbommel
+type: organization
+name: Gemeente Zaltbommel
+sector: gemeente
+country: NL
+locations:
+- city: Zaltbommel
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8117
+    lon: 5.2519
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

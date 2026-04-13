@@ -1,0 +1,16 @@
+id: gem-pekela
+type: organization
+name: Gemeente Pekela
+sector: gemeente
+country: NL
+locations:
+- city: Oude Pekela
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.0903
+    lon: 6.9656
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

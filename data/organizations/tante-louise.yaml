@@ -1,0 +1,16 @@
+id: tante-louise
+type: organization
+name: tanteLouise
+sector: vvt
+country: NL
+locations:
+- city: Bergen op Zoom
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4936
+    lon: 4.2871
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

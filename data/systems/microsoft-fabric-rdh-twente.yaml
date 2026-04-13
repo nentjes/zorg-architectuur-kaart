@@ -1,0 +1,17 @@
+id: microsoft-fabric-rdh-twente
+type: system
+name: "Microsoft Fabric (Twente Datahub-deployment)"
+aliases:
+  - "Fabric Twente"
+  - "RDH Twente platform"
+category: hub_integratie
+vendor: microsoft-nl
+country_origin: NL
+standards_supported:
+  - zib-2020
+  - nl-core-r4
+deployed_in:
+  - rdh-twente
+sources:
+  - plan-rdh-twente-2025
+confidence: medium

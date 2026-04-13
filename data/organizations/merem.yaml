@@ -1,0 +1,19 @@
+id: merem
+type: organization
+name: Merem Medische Revalidatie
+sector: revalidatie
+country: NL
+locations:
+- city: Hilversum
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2292
+    lon: 5.176
+sources:
+- claude-knowledge-2026-04
+- roel-private-excel-2026-04
+confidence: high
+needs_verification: false
+systems:
+- sdb-reflex

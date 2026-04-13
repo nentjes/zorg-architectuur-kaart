@@ -1,0 +1,16 @@
+id: ggd-zaanstreek-waterland
+type: organization
+name: GGD Zaanstreek-Waterland
+sector: ggd
+country: NL
+locations:
+- city: Zaandam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.4383
+    lon: 4.8233
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,17 @@
+id: gem-rhenen
+type: organization
+name: Gemeente Rhenen
+sector: gemeente
+country: NL
+locations:
+- city: Rhenen
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 51.96
+    lon: 5.5672
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

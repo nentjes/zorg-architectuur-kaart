@@ -1,0 +1,16 @@
+id: gem-overbetuwe
+type: organization
+name: Gemeente Overbetuwe
+sector: gemeente
+country: NL
+locations:
+- city: Elst
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.9189
+    lon: 5.8417
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

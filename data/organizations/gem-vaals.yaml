@@ -1,0 +1,16 @@
+id: gem-vaals
+type: organization
+name: Gemeente Vaals
+sector: gemeente
+country: NL
+locations:
+- city: Vaals
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.7714
+    lon: 6.0156
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

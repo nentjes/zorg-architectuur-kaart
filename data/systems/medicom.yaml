@@ -1,0 +1,14 @@
+id: medicom
+type: system
+name: "PharmaPartners Medicom"
+aliases:
+  - "Medicom"
+category: his_huisarts
+vendor: pharmapartners
+country_origin: NL
+standards_supported:
+  - zib-2020
+sources:
+  - pharmapartners-website
+  - plan-rdh-twente-2025
+confidence: medium

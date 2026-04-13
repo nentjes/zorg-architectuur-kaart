@@ -1,0 +1,16 @@
+id: gem-berkelland
+type: organization
+name: Gemeente Berkelland
+sector: gemeente
+country: NL
+locations:
+- city: Borculo
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.12
+    lon: 6.5247
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

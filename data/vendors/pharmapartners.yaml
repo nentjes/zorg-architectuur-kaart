@@ -1,0 +1,9 @@
+id: pharmapartners
+type: vendor
+name: "PharmaPartners"
+country: NL
+vendor_role: product_vendor
+website: "https://www.pharmapartners.nl"
+sources:
+  - pharmapartners-website
+  - plan-rdh-twente-2025

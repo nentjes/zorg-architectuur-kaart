@@ -1,0 +1,15 @@
+id: viplive
+type: system
+name: "Topicus VIPLive"
+aliases:
+  - "VIPLive"
+category: hub_integratie
+vendor: topicus
+country_origin: NL
+standards_supported:
+  - zib-2020
+sources:
+  - topicus-viplive-website
+  - plan-rdh-twente-2025
+  - plan-gezond-gooi-2025
+confidence: high

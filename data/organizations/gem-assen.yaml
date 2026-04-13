@@ -1,0 +1,16 @@
+id: gem-assen
+type: organization
+name: Gemeente Assen
+sector: gemeente
+country: NL
+locations:
+- city: Assen
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.996
+    lon: 6.5626
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

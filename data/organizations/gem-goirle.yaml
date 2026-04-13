@@ -1,0 +1,16 @@
+id: gem-goirle
+type: organization
+name: Gemeente Goirle
+sector: gemeente
+country: NL
+locations:
+- city: Goirle
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.52
+    lon: 5.0631
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

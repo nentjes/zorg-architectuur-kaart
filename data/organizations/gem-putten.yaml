@@ -1,0 +1,16 @@
+id: gem-putten
+type: organization
+name: Gemeente Putten
+sector: gemeente
+country: NL
+locations:
+- city: Putten
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.2592
+    lon: 5.61
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,19 @@
+id: reinier-van-arkel
+type: organization
+name: Reinier van Arkel
+sector: ggz
+subtype: geintegreerd
+country: NL
+locations:
+- city: '''s-Hertogenbosch'
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6978
+    lon: 5.3037
+systems:
+- tenzinger-user
+sources:
+- gemini-ggz-research-2026-04
+confidence: medium
+needs_verification: true

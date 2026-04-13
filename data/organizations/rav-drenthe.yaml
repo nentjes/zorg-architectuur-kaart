@@ -1,0 +1,16 @@
+id: rav-drenthe
+type: organization
+name: UMCG Ambulancezorg — Drenthe
+sector: ambulance
+country: NL
+locations:
+- city: Assen
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.9956
+    lon: 6.5639
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,20 @@
+id: mumc
+type: organization
+name: Maastricht UMC+
+aliases:
+- MUMC
+- azM
+sector: ziekenhuis
+subtype: academisch
+country: NL
+locations:
+- city: Maastricht
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.8421
+    lon: 5.7063
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

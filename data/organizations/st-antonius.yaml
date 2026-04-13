@@ -1,0 +1,26 @@
+id: st-antonius
+type: organization
+name: "St. Antonius Ziekenhuis"
+aliases:
+  - "Sint Antonius"
+  - "Antonius"
+sector: ziekenhuis
+subtype: "topklinisch"
+country: NL
+locations:
+  - city: "Nieuwegein"
+    province: "Utrecht"
+    country: NL
+  - city: "Utrecht"
+    province: "Utrecht"
+    country: NL
+region_iza: iza-midden-nederland
+systems:
+  - epic-epd
+networks:
+  - lsp
+  - trijn-platform
+sources:
+  - plan-trijn-midden-nederland-2025
+confidence: medium
+needs_verification: true

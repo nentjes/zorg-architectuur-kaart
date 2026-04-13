@@ -1,0 +1,16 @@
+id: gem-roosendaal
+type: organization
+name: Gemeente Roosendaal
+sector: gemeente
+country: NL
+locations:
+- city: Roosendaal
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5308
+    lon: 4.4653
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

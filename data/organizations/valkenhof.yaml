@@ -1,0 +1,16 @@
+id: valkenhof
+type: organization
+name: Valkenhof
+sector: vvt
+country: NL
+locations:
+- city: Valkenswaard
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.3528
+    lon: 5.4606
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

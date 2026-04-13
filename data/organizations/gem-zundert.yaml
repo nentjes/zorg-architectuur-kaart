@@ -1,0 +1,16 @@
+id: gem-zundert
+type: organization
+name: Gemeente Zundert
+sector: gemeente
+country: NL
+locations:
+- city: Zundert
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4697
+    lon: 4.6586
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

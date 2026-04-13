@@ -1,0 +1,23 @@
+id: kwintes
+type: organization
+name: Kwintes
+sector: ggz
+subtype: beschermd-wonen
+country: NL
+locations:
+- city: Zeist
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0894
+    lon: 5.2324
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+- gemini-ggz-research-2026-04
+confidence: medium
+needs_verification: true
+systems:
+- mextra
+notes:
+- begeleid wonen

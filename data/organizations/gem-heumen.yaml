@@ -1,0 +1,16 @@
+id: gem-heumen
+type: organization
+name: Gemeente Heumen
+sector: gemeente
+country: NL
+locations:
+- city: Malden
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.7808
+    lon: 5.8358
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

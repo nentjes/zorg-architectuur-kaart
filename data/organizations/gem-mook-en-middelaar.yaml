@@ -1,0 +1,16 @@
+id: gem-mook-en-middelaar
+type: organization
+name: Gemeente Mook en Middelaar
+sector: gemeente
+country: NL
+locations:
+- city: Mook
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.7664
+    lon: 5.8844
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

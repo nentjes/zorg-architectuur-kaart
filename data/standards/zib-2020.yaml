@@ -1,0 +1,9 @@
+id: zib-2020
+type: standard
+name: "Zorginformatiebouwstenen (Zibs) — publicatie 2020"
+standard_family: zib
+version: "2020"
+publisher: "Nictiz"
+sources:
+  - nictiz-zibs-2020
+  - regioplan-iza-deel-3

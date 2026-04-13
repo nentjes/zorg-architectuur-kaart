@@ -1,0 +1,17 @@
+id: gem-veenendaal
+type: organization
+name: Gemeente Veenendaal
+sector: gemeente
+country: NL
+locations:
+- city: Veenendaal
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0283
+    lon: 5.5558
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

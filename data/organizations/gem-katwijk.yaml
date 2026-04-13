@@ -1,0 +1,16 @@
+id: gem-katwijk
+type: organization
+name: Gemeente Katwijk
+sector: gemeente
+country: NL
+locations:
+- city: Katwijk
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.2022
+    lon: 4.3981
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

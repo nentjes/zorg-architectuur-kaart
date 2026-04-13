@@ -1,0 +1,21 @@
+id: laurentius
+type: organization
+name: Laurentius Ziekenhuis
+sector: ziekenhuis
+subtype: algemeen
+country: NL
+locations:
+- city: Roermond
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.1944
+    lon: 5.9872
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- chipsoft-hix
+networks:
+- lsp

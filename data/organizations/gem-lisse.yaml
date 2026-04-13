@@ -1,0 +1,16 @@
+id: gem-lisse
+type: organization
+name: Gemeente Lisse
+sector: gemeente
+country: NL
+locations:
+- city: Lisse
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.2606
+    lon: 4.5583
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

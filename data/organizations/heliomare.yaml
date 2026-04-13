@@ -1,0 +1,21 @@
+id: heliomare
+type: organization
+name: Heliomare
+sector: revalidatie
+country: NL
+locations:
+- city: Wijk aan Zee
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.4961
+    lon: 4.5983
+sources:
+- claude-knowledge-2026-04
+- roel-private-excel-2026-04
+confidence: high
+needs_verification: false
+systems:
+- chipsoft-hix
+notes:
+- implementatie/migratie datum onbekend

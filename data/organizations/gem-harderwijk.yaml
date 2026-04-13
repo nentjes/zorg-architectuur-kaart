@@ -1,0 +1,16 @@
+id: gem-harderwijk
+type: organization
+name: Gemeente Harderwijk
+sector: gemeente
+country: NL
+locations:
+- city: Harderwijk
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.3411
+    lon: 5.6208
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-maasdriel
+type: organization
+name: Gemeente Maasdriel
+sector: gemeente
+country: NL
+locations:
+- city: Kerkdriel
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.7744
+    lon: 5.3336
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

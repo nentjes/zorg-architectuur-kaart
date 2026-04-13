@@ -1,0 +1,16 @@
+id: gem-baarle-nassau
+type: organization
+name: Gemeente Baarle-Nassau
+sector: gemeente
+country: NL
+locations:
+- city: Baarle-Nassau
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4428
+    lon: 4.9283
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,17 @@
+id: leviaan
+type: organization
+name: Leviaan
+sector: ggz
+subtype: beschermd-wonen
+country: NL
+locations:
+- city: Purmerend
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.5051
+    lon: 4.9596
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

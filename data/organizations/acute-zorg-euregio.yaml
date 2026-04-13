@@ -1,0 +1,21 @@
+id: acute-zorg-euregio
+type: organization
+name: "Acute Zorg Euregio"
+aliases:
+  - "ROAZ Euregio"
+sector: ambulance
+subtype: "roaz-samenwerkingsverband"
+country: NL
+locations:
+  - city: "Enschede"
+    province: "Overijssel"
+    country: NL
+region_iza: iza-twente
+systems:
+  - citygis-ambulance
+networks:
+  - rdh-twente
+sources:
+  - plan-rdh-twente-2025
+confidence: medium
+needs_verification: true

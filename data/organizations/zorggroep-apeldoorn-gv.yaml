@@ -1,0 +1,16 @@
+id: zorggroep-apeldoorn-gv
+type: organization
+name: Zorggroep Apeldoorn
+sector: vvt
+country: NL
+locations:
+- city: Apeldoorn
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.2112
+    lon: 5.9699
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

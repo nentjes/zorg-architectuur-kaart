@@ -1,0 +1,16 @@
+id: gem-losser
+type: organization
+name: Gemeente Losser
+sector: gemeente
+country: NL
+locations:
+- city: Losser
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.2608
+    lon: 7.0064
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-waadhoeke
+type: organization
+name: Gemeente Waadhoeke
+sector: gemeente
+country: NL
+locations:
+- city: Franeker
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.1853
+    lon: 5.5433
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

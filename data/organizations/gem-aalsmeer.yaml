@@ -1,0 +1,16 @@
+id: gem-aalsmeer
+type: organization
+name: Gemeente Aalsmeer
+sector: gemeente
+country: NL
+locations:
+- city: Aalsmeer
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2644
+    lon: 4.7583
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

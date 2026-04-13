@@ -1,0 +1,124 @@
+# Manifest: gemeenten West-NL — Sprint 4b
+# Scope: Noord-Holland (44) + Zuid-Holland (50) + Zeeland (13) = 107
+# Coords: hoofdplaats/gemeentehuis WGS84.
+# Rol in IZA: Wmo + Jeugdwet opdrachtgever.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # Noord-Holland (44)
+  - {id: gem-aalsmeer, name: "Gemeente Aalsmeer", sector: gemeente, locations: [{city: "Aalsmeer", province: "Noord-Holland", country: NL, coordinates: {lat: 52.2644, lon: 4.7583}}]}
+  - {id: gem-alkmaar, name: "Gemeente Alkmaar", sector: gemeente, locations: [{city: "Alkmaar", province: "Noord-Holland", country: NL, coordinates: {lat: 52.6322, lon: 4.7533}}]}
+  - {id: gem-amstelveen, name: "Gemeente Amstelveen", sector: gemeente, locations: [{city: "Amstelveen", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3081, lon: 4.8597}}]}
+  - {id: gem-amsterdam, name: "Gemeente Amsterdam", sector: gemeente, locations: [{city: "Amsterdam", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3702, lon: 4.8952}}]}
+  - {id: gem-bergen-nh, name: "Gemeente Bergen (NH)", sector: gemeente, locations: [{city: "Bergen", province: "Noord-Holland", country: NL, coordinates: {lat: 52.6711, lon: 4.7022}}]}
+  - {id: gem-beverwijk, name: "Gemeente Beverwijk", sector: gemeente, locations: [{city: "Beverwijk", province: "Noord-Holland", country: NL, coordinates: {lat: 52.4847, lon: 4.6564}}]}
+  - {id: gem-blaricum, name: "Gemeente Blaricum", sector: gemeente, locations: [{city: "Blaricum", province: "Noord-Holland", country: NL, coordinates: {lat: 52.2722, lon: 5.2500}}]}
+  - {id: gem-bloemendaal, name: "Gemeente Bloemendaal", sector: gemeente, locations: [{city: "Overveen", province: "Noord-Holland", country: NL, coordinates: {lat: 52.4028, lon: 4.6006}}]}
+  - {id: gem-castricum, name: "Gemeente Castricum", sector: gemeente, locations: [{city: "Castricum", province: "Noord-Holland", country: NL, coordinates: {lat: 52.5456, lon: 4.6589}}]}
+  - {id: gem-den-helder, name: "Gemeente Den Helder", sector: gemeente, locations: [{city: "Den Helder", province: "Noord-Holland", country: NL, coordinates: {lat: 52.9597, lon: 4.7603}}]}
+  - {id: gem-diemen, name: "Gemeente Diemen", sector: gemeente, locations: [{city: "Diemen", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3397, lon: 4.9625}}]}
+  - {id: gem-dijk-en-waard, name: "Gemeente Dijk en Waard", sector: gemeente, locations: [{city: "Heerhugowaard", province: "Noord-Holland", country: NL, coordinates: {lat: 52.6706, lon: 4.8447}}]}
+  - {id: gem-drechterland, name: "Gemeente Drechterland", sector: gemeente, locations: [{city: "Hoogkarspel", province: "Noord-Holland", country: NL, coordinates: {lat: 52.6881, lon: 5.1572}}]}
+  - {id: gem-edam-volendam, name: "Gemeente Edam-Volendam", sector: gemeente, locations: [{city: "Volendam", province: "Noord-Holland", country: NL, coordinates: {lat: 52.4958, lon: 5.0706}}]}
+  - {id: gem-enkhuizen, name: "Gemeente Enkhuizen", sector: gemeente, locations: [{city: "Enkhuizen", province: "Noord-Holland", country: NL, coordinates: {lat: 52.7053, lon: 5.2914}}]}
+  - {id: gem-gooise-meren, name: "Gemeente Gooise Meren", sector: gemeente, locations: [{city: "Bussum", province: "Noord-Holland", country: NL, coordinates: {lat: 52.2769, lon: 5.1606}}]}
+  - {id: gem-haarlem, name: "Gemeente Haarlem", sector: gemeente, locations: [{city: "Haarlem", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3874, lon: 4.6462}}]}
+  - {id: gem-haarlemmermeer, name: "Gemeente Haarlemmermeer", sector: gemeente, locations: [{city: "Hoofddorp", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3028, lon: 4.6892}}]}
+  - {id: gem-heemskerk, name: "Gemeente Heemskerk", sector: gemeente, locations: [{city: "Heemskerk", province: "Noord-Holland", country: NL, coordinates: {lat: 52.5092, lon: 4.6700}}]}
+  - {id: gem-heemstede, name: "Gemeente Heemstede", sector: gemeente, locations: [{city: "Heemstede", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3533, lon: 4.6222}}]}
+  - {id: gem-heiloo, name: "Gemeente Heiloo", sector: gemeente, locations: [{city: "Heiloo", province: "Noord-Holland", country: NL, coordinates: {lat: 52.6000, lon: 4.7039}}]}
+  - {id: gem-hilversum, name: "Gemeente Hilversum", sector: gemeente, locations: [{city: "Hilversum", province: "Noord-Holland", country: NL, coordinates: {lat: 52.2292, lon: 5.1669}}]}
+  - {id: gem-hollands-kroon, name: "Gemeente Hollands Kroon", sector: gemeente, locations: [{city: "Anna Paulowna", province: "Noord-Holland", country: NL, coordinates: {lat: 52.8711, lon: 4.8558}}]}
+  - {id: gem-hoorn, name: "Gemeente Hoorn", sector: gemeente, locations: [{city: "Hoorn", province: "Noord-Holland", country: NL, coordinates: {lat: 52.6425, lon: 5.0597}}]}
+  - {id: gem-huizen, name: "Gemeente Huizen", sector: gemeente, locations: [{city: "Huizen", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3003, lon: 5.2406}}]}
+  - {id: gem-koggenland, name: "Gemeente Koggenland", sector: gemeente, locations: [{city: "De Goorn", province: "Noord-Holland", country: NL, coordinates: {lat: 52.6583, lon: 4.9708}}]}
+  - {id: gem-landsmeer, name: "Gemeente Landsmeer", sector: gemeente, locations: [{city: "Landsmeer", province: "Noord-Holland", country: NL, coordinates: {lat: 52.4306, lon: 4.9106}}]}
+  - {id: gem-laren-nh, name: "Gemeente Laren (NH)", sector: gemeente, locations: [{city: "Laren", province: "Noord-Holland", country: NL, coordinates: {lat: 52.2567, lon: 5.2306}}]}
+  - {id: gem-medemblik, name: "Gemeente Medemblik", sector: gemeente, locations: [{city: "Wognum", province: "Noord-Holland", country: NL, coordinates: {lat: 52.6742, lon: 5.0308}}]}
+  - {id: gem-oostzaan, name: "Gemeente Oostzaan", sector: gemeente, locations: [{city: "Oostzaan", province: "Noord-Holland", country: NL, coordinates: {lat: 52.4383, lon: 4.8650}}]}
+  - {id: gem-opmeer, name: "Gemeente Opmeer", sector: gemeente, locations: [{city: "Spanbroek", province: "Noord-Holland", country: NL, coordinates: {lat: 52.7078, lon: 4.9508}}]}
+  - {id: gem-ouder-amstel, name: "Gemeente Ouder-Amstel", sector: gemeente, locations: [{city: "Ouderkerk aan de Amstel", province: "Noord-Holland", country: NL, coordinates: {lat: 52.2928, lon: 4.9083}}]}
+  - {id: gem-purmerend, name: "Gemeente Purmerend", sector: gemeente, locations: [{city: "Purmerend", province: "Noord-Holland", country: NL, coordinates: {lat: 52.5050, lon: 4.9597}}]}
+  - {id: gem-schagen, name: "Gemeente Schagen", sector: gemeente, locations: [{city: "Schagen", province: "Noord-Holland", country: NL, coordinates: {lat: 52.7878, lon: 4.7981}}]}
+  - {id: gem-stede-broec, name: "Gemeente Stede Broec", sector: gemeente, locations: [{city: "Bovenkarspel", province: "Noord-Holland", country: NL, coordinates: {lat: 52.6931, lon: 5.2361}}]}
+  - {id: gem-texel, name: "Gemeente Texel", sector: gemeente, locations: [{city: "Den Burg", province: "Noord-Holland", country: NL, coordinates: {lat: 53.0517, lon: 4.7950}}]}
+  - {id: gem-uitgeest, name: "Gemeente Uitgeest", sector: gemeente, locations: [{city: "Uitgeest", province: "Noord-Holland", country: NL, coordinates: {lat: 52.5292, lon: 4.7086}}]}
+  - {id: gem-uithoorn, name: "Gemeente Uithoorn", sector: gemeente, locations: [{city: "Uithoorn", province: "Noord-Holland", country: NL, coordinates: {lat: 52.2364, lon: 4.8250}}]}
+  - {id: gem-velsen, name: "Gemeente Velsen", sector: gemeente, locations: [{city: "IJmuiden", province: "Noord-Holland", country: NL, coordinates: {lat: 52.4603, lon: 4.6108}}]}
+  - {id: gem-waterland, name: "Gemeente Waterland", sector: gemeente, locations: [{city: "Monnickendam", province: "Noord-Holland", country: NL, coordinates: {lat: 52.4594, lon: 5.0378}}]}
+  - {id: gem-wijdemeren, name: "Gemeente Wijdemeren", sector: gemeente, locations: [{city: "Loosdrecht", province: "Noord-Holland", country: NL, coordinates: {lat: 52.2069, lon: 5.0847}}]}
+  - {id: gem-wormerland, name: "Gemeente Wormerland", sector: gemeente, locations: [{city: "Wormer", province: "Noord-Holland", country: NL, coordinates: {lat: 52.4989, lon: 4.7961}}]}
+  - {id: gem-zaanstad, name: "Gemeente Zaanstad", sector: gemeente, locations: [{city: "Zaandam", province: "Noord-Holland", country: NL, coordinates: {lat: 52.4389, lon: 4.8289}}]}
+  - {id: gem-zandvoort, name: "Gemeente Zandvoort", sector: gemeente, locations: [{city: "Zandvoort", province: "Noord-Holland", country: NL, coordinates: {lat: 52.3719, lon: 4.5328}}]}
+
+  # Zuid-Holland (50)
+  - {id: gem-alblasserdam, name: "Gemeente Alblasserdam", sector: gemeente, locations: [{city: "Alblasserdam", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8658, lon: 4.6617}}]}
+  - {id: gem-albrandswaard, name: "Gemeente Albrandswaard", sector: gemeente, locations: [{city: "Poortugaal", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8544, lon: 4.4117}}]}
+  - {id: gem-alphen-aan-den-rijn, name: "Gemeente Alphen aan den Rijn", sector: gemeente, locations: [{city: "Alphen aan den Rijn", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1292, lon: 4.6564}}]}
+  - {id: gem-barendrecht, name: "Gemeente Barendrecht", sector: gemeente, locations: [{city: "Barendrecht", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8519, lon: 4.5389}}]}
+  - {id: gem-bodegraven-reeuwijk, name: "Gemeente Bodegraven-Reeuwijk", sector: gemeente, locations: [{city: "Bodegraven", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0828, lon: 4.7492}}]}
+  - {id: gem-capelle-aan-den-ijssel, name: "Gemeente Capelle aan den IJssel", sector: gemeente, locations: [{city: "Capelle aan den IJssel", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9303, lon: 4.5764}}]}
+  - {id: gem-delft, name: "Gemeente Delft", sector: gemeente, locations: [{city: "Delft", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0116, lon: 4.3571}}]}
+  - {id: gem-den-haag, name: "Gemeente Den Haag", sector: gemeente, locations: [{city: "Den Haag", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0705, lon: 4.3007}}]}
+  - {id: gem-dordrecht, name: "Gemeente Dordrecht", sector: gemeente, locations: [{city: "Dordrecht", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8133, lon: 4.6903}}]}
+  - {id: gem-goeree-overflakkee, name: "Gemeente Goeree-Overflakkee", sector: gemeente, locations: [{city: "Middelharnis", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.7575, lon: 4.1708}}]}
+  - {id: gem-gorinchem, name: "Gemeente Gorinchem", sector: gemeente, locations: [{city: "Gorinchem", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8308, lon: 4.9750}}]}
+  - {id: gem-gouda, name: "Gemeente Gouda", sector: gemeente, locations: [{city: "Gouda", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0117, lon: 4.7106}}]}
+  - {id: gem-hardinxveld-giessendam, name: "Gemeente Hardinxveld-Giessendam", sector: gemeente, locations: [{city: "Hardinxveld-Giessendam", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8267, lon: 4.8467}}]}
+  - {id: gem-hendrik-ido-ambacht, name: "Gemeente Hendrik-Ido-Ambacht", sector: gemeente, locations: [{city: "Hendrik-Ido-Ambacht", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8436, lon: 4.6397}}]}
+  - {id: gem-hillegom, name: "Gemeente Hillegom", sector: gemeente, locations: [{city: "Hillegom", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.2967, lon: 4.5808}}]}
+  - {id: gem-hoeksche-waard, name: "Gemeente Hoeksche Waard", sector: gemeente, locations: [{city: "Oud-Beijerland", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8225, lon: 4.4119}}]}
+  - {id: gem-kaag-en-braassem, name: "Gemeente Kaag en Braassem", sector: gemeente, locations: [{city: "Roelofarendsveen", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.2028, lon: 4.6339}}]}
+  - {id: gem-katwijk, name: "Gemeente Katwijk", sector: gemeente, locations: [{city: "Katwijk", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.2022, lon: 4.3981}}]}
+  - {id: gem-krimpen-aan-den-ijssel, name: "Gemeente Krimpen aan den IJssel", sector: gemeente, locations: [{city: "Krimpen aan den IJssel", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9175, lon: 4.5944}}]}
+  - {id: gem-krimpenerwaard, name: "Gemeente Krimpenerwaard", sector: gemeente, locations: [{city: "Lekkerkerk", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9006, lon: 4.6917}}]}
+  - {id: gem-lansingerland, name: "Gemeente Lansingerland", sector: gemeente, locations: [{city: "Bergschenhoek", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9942, lon: 4.4889}}]}
+  - {id: gem-leiden, name: "Gemeente Leiden", sector: gemeente, locations: [{city: "Leiden", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1601, lon: 4.4970}}]}
+  - {id: gem-leiderdorp, name: "Gemeente Leiderdorp", sector: gemeente, locations: [{city: "Leiderdorp", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1614, lon: 4.5356}}]}
+  - {id: gem-leidschendam-voorburg, name: "Gemeente Leidschendam-Voorburg", sector: gemeente, locations: [{city: "Leidschendam", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0875, lon: 4.3928}}]}
+  - {id: gem-lisse, name: "Gemeente Lisse", sector: gemeente, locations: [{city: "Lisse", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.2606, lon: 4.5583}}]}
+  - {id: gem-maassluis, name: "Gemeente Maassluis", sector: gemeente, locations: [{city: "Maassluis", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9214, lon: 4.2528}}]}
+  - {id: gem-midden-delfland, name: "Gemeente Midden-Delfland", sector: gemeente, locations: [{city: "Schipluiden", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9764, lon: 4.3211}}]}
+  - {id: gem-molenlanden, name: "Gemeente Molenlanden", sector: gemeente, locations: [{city: "Bleskensgraaf", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8819, lon: 4.7872}}]}
+  - {id: gem-nieuwkoop, name: "Gemeente Nieuwkoop", sector: gemeente, locations: [{city: "Nieuwveen", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1556, lon: 4.7506}}]}
+  - {id: gem-nissewaard, name: "Gemeente Nissewaard", sector: gemeente, locations: [{city: "Spijkenisse", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8456, lon: 4.3306}}]}
+  - {id: gem-noordwijk, name: "Gemeente Noordwijk", sector: gemeente, locations: [{city: "Noordwijk", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.2403, lon: 4.4303}}]}
+  - {id: gem-oegstgeest, name: "Gemeente Oegstgeest", sector: gemeente, locations: [{city: "Oegstgeest", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1814, lon: 4.4747}}]}
+  - {id: gem-papendrecht, name: "Gemeente Papendrecht", sector: gemeente, locations: [{city: "Papendrecht", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8308, lon: 4.6881}}]}
+  - {id: gem-pijnacker-nootdorp, name: "Gemeente Pijnacker-Nootdorp", sector: gemeente, locations: [{city: "Pijnacker", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0200, lon: 4.4306}}]}
+  - {id: gem-ridderkerk, name: "Gemeente Ridderkerk", sector: gemeente, locations: [{city: "Ridderkerk", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8725, lon: 4.6022}}]}
+  - {id: gem-rijswijk, name: "Gemeente Rijswijk", sector: gemeente, locations: [{city: "Rijswijk", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0361, lon: 4.3244}}]}
+  - {id: gem-rotterdam, name: "Gemeente Rotterdam", sector: gemeente, locations: [{city: "Rotterdam", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9225, lon: 4.4792}}]}
+  - {id: gem-schiedam, name: "Gemeente Schiedam", sector: gemeente, locations: [{city: "Schiedam", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9194, lon: 4.3889}}]}
+  - {id: gem-sliedrecht, name: "Gemeente Sliedrecht", sector: gemeente, locations: [{city: "Sliedrecht", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8217, lon: 4.7764}}]}
+  - {id: gem-teylingen, name: "Gemeente Teylingen", sector: gemeente, locations: [{city: "Voorhout", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.2172, lon: 4.4897}}]}
+  - {id: gem-vlaardingen, name: "Gemeente Vlaardingen", sector: gemeente, locations: [{city: "Vlaardingen", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9125, lon: 4.3417}}]}
+  - {id: gem-voorne-aan-zee, name: "Gemeente Voorne aan Zee", sector: gemeente, locations: [{city: "Hellevoetsluis", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8361, lon: 4.1397}}]}
+  - {id: gem-voorschoten, name: "Gemeente Voorschoten", sector: gemeente, locations: [{city: "Voorschoten", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1258, lon: 4.4497}}]}
+  - {id: gem-waddinxveen, name: "Gemeente Waddinxveen", sector: gemeente, locations: [{city: "Waddinxveen", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0453, lon: 4.6539}}]}
+  - {id: gem-wassenaar, name: "Gemeente Wassenaar", sector: gemeente, locations: [{city: "Wassenaar", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1450, lon: 4.4003}}]}
+  - {id: gem-westland, name: "Gemeente Westland", sector: gemeente, locations: [{city: "Naaldwijk", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9953, lon: 4.2058}}]}
+  - {id: gem-zoetermeer, name: "Gemeente Zoetermeer", sector: gemeente, locations: [{city: "Zoetermeer", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.0575, lon: 4.4933}}]}
+  - {id: gem-zoeterwoude, name: "Gemeente Zoeterwoude", sector: gemeente, locations: [{city: "Zoeterwoude", province: "Zuid-Holland", country: NL, coordinates: {lat: 52.1339, lon: 4.5003}}]}
+  - {id: gem-zuidplas, name: "Gemeente Zuidplas", sector: gemeente, locations: [{city: "Nieuwerkerk aan den IJssel", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.9767, lon: 4.6083}}]}
+  - {id: gem-zwijndrecht, name: "Gemeente Zwijndrecht", sector: gemeente, locations: [{city: "Zwijndrecht", province: "Zuid-Holland", country: NL, coordinates: {lat: 51.8131, lon: 4.6403}}]}
+
+  # Zeeland (13)
+  - {id: gem-borsele, name: "Gemeente Borsele", sector: gemeente, locations: [{city: "Heinkenszand", province: "Zeeland", country: NL, coordinates: {lat: 51.4956, lon: 3.7758}}]}
+  - {id: gem-goes, name: "Gemeente Goes", sector: gemeente, locations: [{city: "Goes", province: "Zeeland", country: NL, coordinates: {lat: 51.5047, lon: 3.8881}}]}
+  - {id: gem-hulst, name: "Gemeente Hulst", sector: gemeente, locations: [{city: "Hulst", province: "Zeeland", country: NL, coordinates: {lat: 51.2806, lon: 4.0506}}]}
+  - {id: gem-kapelle, name: "Gemeente Kapelle", sector: gemeente, locations: [{city: "Kapelle", province: "Zeeland", country: NL, coordinates: {lat: 51.4819, lon: 3.9625}}]}
+  - {id: gem-middelburg, name: "Gemeente Middelburg", sector: gemeente, locations: [{city: "Middelburg", province: "Zeeland", country: NL, coordinates: {lat: 51.4989, lon: 3.6108}}]}
+  - {id: gem-noord-beveland, name: "Gemeente Noord-Beveland", sector: gemeente, locations: [{city: "Wissenkerke", province: "Zeeland", country: NL, coordinates: {lat: 51.5736, lon: 3.7497}}]}
+  - {id: gem-reimerswaal, name: "Gemeente Reimerswaal", sector: gemeente, locations: [{city: "Kruiningen", province: "Zeeland", country: NL, coordinates: {lat: 51.4656, lon: 4.0322}}]}
+  - {id: gem-schouwen-duiveland, name: "Gemeente Schouwen-Duiveland", sector: gemeente, locations: [{city: "Zierikzee", province: "Zeeland", country: NL, coordinates: {lat: 51.6508, lon: 3.9192}}]}
+  - {id: gem-sluis, name: "Gemeente Sluis", sector: gemeente, locations: [{city: "Oostburg", province: "Zeeland", country: NL, coordinates: {lat: 51.3306, lon: 3.5028}}]}
+  - {id: gem-terneuzen, name: "Gemeente Terneuzen", sector: gemeente, locations: [{city: "Terneuzen", province: "Zeeland", country: NL, coordinates: {lat: 51.3350, lon: 3.8286}}]}
+  - {id: gem-tholen, name: "Gemeente Tholen", sector: gemeente, locations: [{city: "Tholen", province: "Zeeland", country: NL, coordinates: {lat: 51.5339, lon: 4.2217}}]}
+  - {id: gem-veere, name: "Gemeente Veere", sector: gemeente, locations: [{city: "Domburg", province: "Zeeland", country: NL, coordinates: {lat: 51.5622, lon: 3.4961}}]}
+  - {id: gem-vlissingen, name: "Gemeente Vlissingen", sector: gemeente, locations: [{city: "Vlissingen", province: "Zeeland", country: NL, coordinates: {lat: 51.4425, lon: 3.5736}}]}

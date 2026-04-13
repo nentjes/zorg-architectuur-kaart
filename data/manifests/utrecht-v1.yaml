@@ -1,0 +1,607 @@
+# Manifest: provincie Utrecht — Sprint 3 fine-grained ingest
+#
+# Doel: alle IZA-relevante zorg-organisaties in de provincie Utrecht
+# op de kaart krijgen, met systeem-/netwerk-info waar bekend.
+# Region: iza-midden-nederland (Trijn).
+#
+# Bron: claude-knowledge-2026-04 (LLM-seed).
+#   → confidence: low, needs_verification: true voor alles.
+# Waar Roel handmatige kennis heeft (HIS, ECD, EPD) komt dat in
+# data/overrides/utrecht.yaml en wint van dit manifest.
+#
+# Coordinaten: WGS84 (lat, lon). Centrum van de hoofdplaats.
+# IJzeren regel: alleen entities die ten minste 1 IZA-rol vervullen
+# (zorgaanbieder, gemeente als Wmo/jeugd-opdrachtgever, koepel).
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # -----------------------------------------------------------
+  # 26 gemeenten in provincie Utrecht (CBS-indeling 2024)
+  # Rol: Wmo + Jeugdwet opdrachtgever → relevant voor
+  # jeugdzorg- en VVT-connecties.
+  # -----------------------------------------------------------
+
+  - id: gem-amersfoort
+    name: "Gemeente Amersfoort"
+    sector: gemeente
+    locations:
+      - city: "Amersfoort"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1561, lon: 5.3878}
+    region_iza: iza-midden-nederland
+
+  - id: gem-baarn
+    name: "Gemeente Baarn"
+    sector: gemeente
+    locations:
+      - city: "Baarn"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.2119, lon: 5.2886}
+    region_iza: iza-midden-nederland
+
+  - id: gem-bunnik
+    name: "Gemeente Bunnik"
+    sector: gemeente
+    locations:
+      - city: "Bunnik"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0660, lon: 5.1997}
+    region_iza: iza-midden-nederland
+
+  - id: gem-bunschoten
+    name: "Gemeente Bunschoten"
+    sector: gemeente
+    locations:
+      - city: "Bunschoten-Spakenburg"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.2442, lon: 5.3795}
+    region_iza: iza-midden-nederland
+
+  - id: gem-de-bilt
+    name: "Gemeente De Bilt"
+    sector: gemeente
+    locations:
+      - city: "Bilthoven"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1333, lon: 5.2000}
+    region_iza: iza-midden-nederland
+
+  - id: gem-de-ronde-venen
+    name: "Gemeente De Ronde Venen"
+    sector: gemeente
+    locations:
+      - city: "Mijdrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.2139, lon: 4.8536}
+    region_iza: iza-midden-nederland
+
+  - id: gem-eemnes
+    name: "Gemeente Eemnes"
+    sector: gemeente
+    locations:
+      - city: "Eemnes"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.2575, lon: 5.2619}
+    region_iza: iza-midden-nederland
+
+  - id: gem-houten
+    name: "Gemeente Houten"
+    sector: gemeente
+    locations:
+      - city: "Houten"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0344, lon: 5.1681}
+    region_iza: iza-midden-nederland
+
+  - id: gem-ijsselstein
+    name: "Gemeente IJsselstein"
+    sector: gemeente
+    locations:
+      - city: "IJsselstein"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0206, lon: 5.0414}
+    region_iza: iza-midden-nederland
+
+  - id: gem-leusden
+    name: "Gemeente Leusden"
+    sector: gemeente
+    locations:
+      - city: "Leusden"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1317, lon: 5.4311}
+    region_iza: iza-midden-nederland
+
+  - id: gem-lopik
+    name: "Gemeente Lopik"
+    sector: gemeente
+    locations:
+      - city: "Lopik"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 51.9758, lon: 4.9514}
+    region_iza: iza-midden-nederland
+
+  - id: gem-montfoort
+    name: "Gemeente Montfoort"
+    sector: gemeente
+    locations:
+      - city: "Montfoort"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0450, lon: 4.9500}
+    region_iza: iza-midden-nederland
+
+  - id: gem-nieuwegein
+    name: "Gemeente Nieuwegein"
+    sector: gemeente
+    locations:
+      - city: "Nieuwegein"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0296, lon: 5.0806}
+    region_iza: iza-midden-nederland
+
+  - id: gem-oudewater
+    name: "Gemeente Oudewater"
+    sector: gemeente
+    locations:
+      - city: "Oudewater"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0264, lon: 4.8675}
+    region_iza: iza-midden-nederland
+
+  - id: gem-renswoude
+    name: "Gemeente Renswoude"
+    sector: gemeente
+    locations:
+      - city: "Renswoude"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0833, lon: 5.5417}
+    region_iza: iza-midden-nederland
+
+  - id: gem-rhenen
+    name: "Gemeente Rhenen"
+    sector: gemeente
+    locations:
+      - city: "Rhenen"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 51.9600, lon: 5.5672}
+    region_iza: iza-midden-nederland
+
+  - id: gem-soest
+    name: "Gemeente Soest"
+    sector: gemeente
+    locations:
+      - city: "Soest"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1736, lon: 5.2908}
+    region_iza: iza-midden-nederland
+
+  - id: gem-stichtse-vecht
+    name: "Gemeente Stichtse Vecht"
+    sector: gemeente
+    locations:
+      - city: "Maarssen"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1375, lon: 5.0375}
+    region_iza: iza-midden-nederland
+
+  - id: gem-utrecht
+    name: "Gemeente Utrecht"
+    sector: gemeente
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+    region_iza: iza-midden-nederland
+
+  - id: gem-utrechtse-heuvelrug
+    name: "Gemeente Utrechtse Heuvelrug"
+    sector: gemeente
+    locations:
+      - city: "Doorn"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0333, lon: 5.3500}
+    region_iza: iza-midden-nederland
+
+  - id: gem-veenendaal
+    name: "Gemeente Veenendaal"
+    sector: gemeente
+    locations:
+      - city: "Veenendaal"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0283, lon: 5.5558}
+    region_iza: iza-midden-nederland
+
+  - id: gem-vijfheerenlanden
+    name: "Gemeente Vijfheerenlanden"
+    sector: gemeente
+    locations:
+      - city: "Vianen"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 51.9872, lon: 5.0972}
+    region_iza: iza-midden-nederland
+
+  - id: gem-wijk-bij-duurstede
+    name: "Gemeente Wijk bij Duurstede"
+    sector: gemeente
+    locations:
+      - city: "Wijk bij Duurstede"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 51.9722, lon: 5.3414}
+    region_iza: iza-midden-nederland
+
+  - id: gem-woerden
+    name: "Gemeente Woerden"
+    sector: gemeente
+    locations:
+      - city: "Woerden"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0853, lon: 4.8836}
+    region_iza: iza-midden-nederland
+
+  - id: gem-woudenberg
+    name: "Gemeente Woudenberg"
+    sector: gemeente
+    locations:
+      - city: "Woudenberg"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0833, lon: 5.4167}
+    region_iza: iza-midden-nederland
+
+  - id: gem-zeist
+    name: "Gemeente Zeist"
+    sector: gemeente
+    locations:
+      - city: "Zeist"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0869, lon: 5.2339}
+    region_iza: iza-midden-nederland
+
+  # -----------------------------------------------------------
+  # Ziekenhuizen in provincie Utrecht (5)
+  # UMC Utrecht en St. Antonius bestaan al → importer SKIPt ze.
+  # -----------------------------------------------------------
+
+  - id: diakonessenhuis
+    name: "Diakonessenhuis"
+    aliases: ["Diak"]
+    sector: ziekenhuis
+    subtype: "algemeen"
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0731, lon: 5.1239}
+      - city: "Zeist"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0869, lon: 5.2339}
+    region_iza: iza-midden-nederland
+
+  - id: meander-mc
+    name: "Meander Medisch Centrum"
+    aliases: ["Meander"]
+    sector: ziekenhuis
+    subtype: "topklinisch"
+    locations:
+      - city: "Amersfoort"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1561, lon: 5.3878}
+    region_iza: iza-midden-nederland
+
+  - id: prinses-maxima-centrum
+    name: "Prinses Máxima Centrum voor kinderoncologie"
+    aliases: ["PMC", "Máxima"]
+    sector: ziekenhuis
+    subtype: "categoraal"
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0870, lon: 5.1745}
+    region_iza: iza-midden-nederland
+
+  - id: umc-utrecht
+    name: "Universitair Medisch Centrum Utrecht"
+    sector: ziekenhuis
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0870, lon: 5.1745}
+    region_iza: iza-midden-nederland
+    # bestaat al, zal geSKIPt worden
+
+  - id: st-antonius
+    name: "St. Antonius Ziekenhuis"
+    sector: ziekenhuis
+    locations:
+      - city: "Nieuwegein"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0296, lon: 5.0806}
+    region_iza: iza-midden-nederland
+    # bestaat al, zal geSKIPt worden
+
+  # -----------------------------------------------------------
+  # Revalidatiecentrum
+  # -----------------------------------------------------------
+
+  - id: de-hoogstraat
+    name: "De Hoogstraat Revalidatie"
+    aliases: ["De Hoogstraat"]
+    sector: revalidatie
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0840, lon: 5.1677}
+    region_iza: iza-midden-nederland
+
+  # -----------------------------------------------------------
+  # RAV (Regionale Ambulancevoorziening)
+  # -----------------------------------------------------------
+
+  - id: ravu
+    name: "RAV Utrecht (RAVU)"
+    aliases: ["RAVU"]
+    sector: ambulance
+    locations:
+      - city: "Bilthoven"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1333, lon: 5.2000}
+    region_iza: iza-midden-nederland
+
+  # -----------------------------------------------------------
+  # GGD
+  # -----------------------------------------------------------
+
+  - id: ggdru
+    name: "GGD regio Utrecht"
+    aliases: ["GGDrU"]
+    sector: ggd
+    locations:
+      - city: "Zeist"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0869, lon: 5.2339}
+    region_iza: iza-midden-nederland
+
+  # -----------------------------------------------------------
+  # Grote GGZ-instellingen (provincie Utrecht)
+  # -----------------------------------------------------------
+
+  - id: altrecht
+    name: "Altrecht"
+    sector: ggz
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+    region_iza: iza-midden-nederland
+
+  - id: ggz-centraal
+    name: "GGZ Centraal"
+    sector: ggz
+    locations:
+      - city: "Amersfoort"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1561, lon: 5.3878}
+    region_iza: iza-midden-nederland
+
+  - id: victas
+    name: "Victas (verslavingszorg)"
+    sector: ggz
+    subtype: "verslavingszorg"
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+    region_iza: iza-midden-nederland
+
+  # -----------------------------------------------------------
+  # VVT-koepels provincie Utrecht
+  # -----------------------------------------------------------
+
+  - id: careyn
+    name: "Careyn"
+    sector: vvt
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+    region_iza: iza-midden-nederland
+
+  - id: axioncontinu
+    name: "AxionContinu"
+    sector: vvt
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+    region_iza: iza-midden-nederland
+
+  - id: de-rijnhoven
+    name: "De Rijnhoven"
+    sector: vvt
+    locations:
+      - city: "Harmelen"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0900, lon: 4.9550}
+    region_iza: iza-midden-nederland
+
+  - id: warande
+    name: "Warande"
+    sector: vvt
+    locations:
+      - city: "Zeist"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0869, lon: 5.2339}
+    region_iza: iza-midden-nederland
+
+  - id: beweging-3
+    name: "Beweging 3.0"
+    aliases: ["Beweging 3"]
+    sector: vvt
+    locations:
+      - city: "Amersfoort"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1561, lon: 5.3878}
+    region_iza: iza-midden-nederland
+
+  - id: vecht-en-ijssel
+    name: "Vecht en IJssel"
+    sector: vvt
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+    region_iza: iza-midden-nederland
+
+  - id: zorgspectrum
+    name: "Zorgspectrum"
+    sector: vvt
+    locations:
+      - city: "Nieuwegein"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0296, lon: 5.0806}
+    region_iza: iza-midden-nederland
+
+  - id: quarijn
+    name: "QuaRijn"
+    sector: vvt
+    locations:
+      - city: "Driebergen-Rijsenburg"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0539, lon: 5.2836}
+    region_iza: iza-midden-nederland
+
+  - id: silverein
+    name: "Silverein"
+    sector: vvt
+    locations:
+      - city: "Maarssen"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1375, lon: 5.0375}
+    region_iza: iza-midden-nederland
+
+  # -----------------------------------------------------------
+  # Huisartsen-zorggroepen provincie Utrecht
+  # HUS bestaat al → importer SKIPt hem (maar hij staat hier voor
+  # volledigheid van de regio-ingest en als override-anker).
+  # -----------------------------------------------------------
+
+  - id: hus
+    name: "Huisartsen Utrecht Stad"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+    region_iza: iza-midden-nederland
+    # bestaat al, zal geSKIPt worden
+
+  - id: huisartsen-eemland
+    name: "Huisartsen Eemland"
+    aliases: ["HE"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Amersfoort"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1561, lon: 5.3878}
+    region_iza: iza-midden-nederland
+
+  - id: leidsche-rijn-julius-gc
+    name: "Leidsche Rijn Julius Gezondheidscentra"
+    aliases: ["LRJG"]
+    sector: huisarts
+    subtype: "gezondheidscentra"
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0970, lon: 5.0450}
+    region_iza: iza-midden-nederland
+
+  - id: unicum-huisartsenzorg
+    name: "Unicum Huisartsenzorg"
+    aliases: ["Unicum"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Maarssen"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1375, lon: 5.0375}
+    region_iza: iza-midden-nederland
+
+  - id: huw
+    name: "Huisartsen Utrecht West (HUW)"
+    aliases: ["HUW"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Woerden"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0853, lon: 4.8836}
+    region_iza: iza-midden-nederland
+
+  - id: zorggroep-regio-amersfoort
+    name: "Zorggroep Regio Amersfoort"
+    aliases: ["ZRA"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Amersfoort"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.1561, lon: 5.3878}
+    region_iza: iza-midden-nederland

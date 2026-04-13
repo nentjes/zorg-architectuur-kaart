@@ -1,0 +1,16 @@
+id: gem-hellendoorn
+type: organization
+name: Gemeente Hellendoorn
+sector: gemeente
+country: NL
+locations:
+- city: Nijverdal
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.3639
+    lon: 6.4639
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

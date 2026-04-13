@@ -1,0 +1,16 @@
+id: gem-oldebroek
+type: organization
+name: Gemeente Oldebroek
+sector: gemeente
+country: NL
+locations:
+- city: Oldebroek
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.4433
+    lon: 5.9008
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

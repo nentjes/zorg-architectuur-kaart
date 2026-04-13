@@ -1,0 +1,11 @@
+id: tenzinger-user
+type: system
+name: Tenzinger User
+aliases:
+- User
+category: epd_ggz
+vendor: tenzinger
+country_origin: NL
+sources:
+- gemini-ggz-research-2026-04
+confidence: medium

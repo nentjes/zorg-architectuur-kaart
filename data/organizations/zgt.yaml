@@ -1,0 +1,23 @@
+id: zgt
+type: organization
+name: "Ziekenhuisgroep Twente"
+aliases:
+  - "ZGT"
+sector: ziekenhuis
+subtype: "algemeen"
+country: NL
+locations:
+  - city: "Almelo"
+    province: "Overijssel"
+    country: NL
+  - city: "Hengelo"
+    province: "Overijssel"
+    country: NL
+region_iza: iza-twente
+systems:
+  - chipsoft-hix
+networks:
+  - rdh-twente
+sources:
+  - plan-rdh-twente-2025
+confidence: high

@@ -1,0 +1,14 @@
+id: lsp
+type: network
+name: "Landelijk Schakelpunt (LSP)"
+aliases:
+  - "LSP"
+  - "Landelijk Schakelpunt"
+network_type: landelijk_hub
+data_topology: hybrid
+operator: vzvz
+standards_used: []
+established: "2012-01-01"
+sources:
+  - vzvz-lsp-werking
+  - regioplan-iza-deel-3

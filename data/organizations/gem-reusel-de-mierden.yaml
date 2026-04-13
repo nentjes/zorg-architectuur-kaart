@@ -1,0 +1,16 @@
+id: gem-reusel-de-mierden
+type: organization
+name: Gemeente Reusel-De Mierden
+sector: gemeente
+country: NL
+locations:
+- city: Reusel
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.3606
+    lon: 5.1478
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,20 @@
+id: de-nederlandse-ggz
+type: organization
+name: de Nederlandse ggz
+aliases:
+- GGZ Nederland
+- dNggz
+sector: ggz
+subtype: koepel
+country: NL
+locations:
+- city: Amersfoort
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1561
+    lon: 5.3878
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

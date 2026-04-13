@@ -1,0 +1,16 @@
+id: gem-duiven
+type: organization
+name: Gemeente Duiven
+sector: gemeente
+country: NL
+locations:
+- city: Duiven
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.9486
+    lon: 6.0181
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

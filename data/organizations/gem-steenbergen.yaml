@@ -1,0 +1,16 @@
+id: gem-steenbergen
+type: organization
+name: Gemeente Steenbergen
+sector: gemeente
+country: NL
+locations:
+- city: Steenbergen
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5936
+    lon: 4.3178
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

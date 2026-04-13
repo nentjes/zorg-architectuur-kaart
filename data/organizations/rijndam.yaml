@@ -1,0 +1,19 @@
+id: rijndam
+type: organization
+name: Rijndam Revalidatie
+sector: revalidatie
+country: NL
+locations:
+- city: Rotterdam
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9106
+    lon: 4.4686
+sources:
+- claude-knowledge-2026-04
+- roel-private-excel-2026-04
+confidence: high
+needs_verification: false
+systems:
+- chipsoft-hix

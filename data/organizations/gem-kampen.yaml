@@ -1,0 +1,16 @@
+id: gem-kampen
+type: organization
+name: Gemeente Kampen
+sector: gemeente
+country: NL
+locations:
+- city: Kampen
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.5558
+    lon: 5.9113
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,625 @@
+# /sources/sources.yaml
+#
+# Het bronnenregister is de single source of truth voor elke bron die
+# via `sources: [<id>]` in /data/**/*.yaml wordt gerefereerd. Zonder
+# entry hier is een entity niet valide — dat is de kern van de
+# bronverplichting uit README.md en /schema/entities.md.
+#
+# Structuur per bron:
+#   id              kebab-case identifier, matcht /schema/schema.yaml::id
+#   title           volledige titel van het document / de pagina
+#   publisher       naam van de uitgevende partij
+#   publisher_type  overheid | samenwerkingsverband | leverancier
+#                   | onderzoek | media | standaardisatie-organisatie
+#                   | community
+#   date            publicatiedatum (YYYY-MM-DD); "YYYY" of "onbekend"
+#                   mag als exacte datum niet vast staat
+#   url             directe publieke URL (https). Als we de canonieke
+#                   URL nog niet hebben gevonden: laat leeg en zet
+#                   url_todo: true
+#   url_todo        true als de URL nog gevalideerd moet worden
+#   retrieved_at    YYYY-MM-DD waarop de huidige versie binnengehaald is
+#   source_type     wet | regeling | plan | rapport | website | artikel
+#                   | standaard | dataset | persbericht
+#   access          openbaar | openbaar_via_pdf | achter_login
+#                   | niet_openbaar
+#   file_in_repo    relatief pad naar een kopie in /referenties/ indien
+#                   we die hebben (optioneel)
+#   license         CC-BY-4.0 | publiek_domein | onbekend | overig
+#   notes           vrije tekst, bijv. versie-nummer, concept-status
+#
+# Regels (handmatig én via governance-bron-validator):
+# - `id` is uniek
+# - minstens één van {url, file_in_repo} moet gevuld zijn
+# - een bron waar `url_todo: true` EN geen file_in_repo staat is
+#   tijdelijk toegestaan in v0.2, maar blokkeert in v0.3
+# - leverancier-PR's mogen niet de enige bron zijn voor
+#   IMPLEMENTS_STANDARD-claims (zie relations.md)
+
+version: "0.2.0"
+
+sources:
+
+  # -------------------------------------------------------------
+  # IZA-transformatieplannen (regio-bronnen)
+  # -------------------------------------------------------------
+
+  - id: plan-rdh-twente-2025
+    title: "Transformatieplan RDH Twente"
+    publisher: "Stuurgroep Regionale Datahub Twente"
+    publisher_type: samenwerkingsverband
+    date: "2025"
+    url: ""
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: plan
+    access: openbaar_via_pdf
+    file_in_repo: "referenties/Transformatieplan RDH Twente.pdf"
+    license: onbekend
+    notes: >
+      Plan beschrijft een centralized datahub-architectuur op Microsoft
+      Fabric, met KPMG als implementatiepartner en Zorgnetoost als
+      operationeel beheerder. Stuurgroep bestaat uit MST, ZGT, Mediant,
+      CarintReggeland, Labmicta, Acute zorg Euregio, HZT, TAO-UA,
+      Zorgnetoost en Zorgschakel Enschede. Zie /overleg/gemini voor
+      eerdere Gemini-analyse.
+
+  - id: plan-trijn-midden-nederland-2025
+    title: "Transformatieplan IZA/RSO Trijn Midden-Nederland (concept v0.8)"
+    publisher: "Coalitie Trijn Midden-Nederland"
+    publisher_type: samenwerkingsverband
+    date: "2025"
+    url: ""
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: plan
+    access: openbaar_via_pdf
+    file_in_repo: "referenties/Transformatieplan IZA_RSO Trijn_Midden-Nederland_CONCEPT_v0.pdf"
+    license: onbekend
+    notes: >
+      Federatief paradigma (data blijft bij de bron). Document is nog
+      CONCEPT-versie 0.8 — claims uit deze bron krijgen standaard
+      `confidence: medium` tot de definitieve versie beschikbaar is.
+
+  - id: plan-gezond-gooi-2025
+    title: "Transformatieplan Coalitie Digitalisering 't Gezond Gooi (v1.0)"
+    publisher: "Coalitie Digitalisering 't Gezond Gooi"
+    publisher_type: samenwerkingsverband
+    date: "2025-09-15"
+    url: ""
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: plan
+    access: openbaar_via_pdf
+    file_in_repo: "referenties/20250915 Transformatieplan Coalitie Digitalisering v1.0.pdf"
+    license: onbekend
+    notes: >
+      Paradigma "LSP+ Verbeteraar": 't Gooi bouwt geen eigen RSO, maar
+      sluit aan op landelijke voorzieningen (Boozzt / Mitz / LSP).
+      9 klantreizen waaronder ACP-in-de-keten (gedeeld met Twente).
+      NIS = VIPLive (Topicus/Calculus). DSO in oprichting.
+      Auteurs: Melger, Vosmeijer, Borst, Jaring, Kivits, van Vliet.
+
+  - id: regioplan-iza-deel-3
+    title: "Regioplan deel 3 — fundament digitalisering en gegevensuitwisseling"
+    publisher: "Ministerie van VWS (namens IZA-partijen)"
+    publisher_type: overheid
+    date: "2024"
+    url: ""
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: plan
+    access: openbaar_via_pdf
+    file_in_repo: "referenties/Regioplan deel 3 - fundament digitalisering en gegevensuitwisseling .pdf"
+    license: onbekend
+    notes: >
+      Landelijke IZA-pijler 3; geeft kader voor regionale
+      transformatieplannen. Gebruikt door de validator als bron voor
+      `region`-entities van type `iza`.
+
+  # -------------------------------------------------------------
+  # Landelijke kaders (wetten, akkoorden, programma-regelingen)
+  # -------------------------------------------------------------
+
+  - id: integraal-zorgakkoord-2022
+    title: "Integraal Zorgakkoord — Samen werken aan gezonde zorg"
+    publisher: "Ministerie van VWS"
+    publisher_type: overheid
+    date: "2022-09-16"
+    url: "https://www.rijksoverheid.nl/onderwerpen/gezondheidszorg/documenten/rapporten/2022/09/16/integraal-zorgakkoord-samen-werken-aan-gezonde-zorg"
+    url_todo: false
+    retrieved_at: "2026-04-12"
+    source_type: rapport
+    access: openbaar
+    license: publiek_domein
+    notes: >
+      Hoofdakkoord 2022 dat IZA-regio's en bijbehorende regioplannen
+      instelt. Basis-bron voor alle `region`-entities met
+      `region_type: iza`.
+
+  - id: dusi-vipp5-regeling
+    title: "VIPP 5 — Versnellingsprogramma Informatie-uitwisseling Patiënt en Professional"
+    publisher: "Dienst Uitvoering Subsidies aan Instellingen (DUS-I) / VWS"
+    publisher_type: overheid
+    date: "2020-01-01"
+    url: ""
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: regeling
+    access: openbaar
+    license: publiek_domein
+    notes: >
+      Subsidieregeling voor ziekenhuizen, ZBC's en revalidatie om
+      BgZ + medicatieproces (MP9) uit te wisselen met PGO en andere
+      zorgaanbieders. URL via dus-i.nl nog invullen.
+
+  - id: dusi-inzicht-regeling
+    title: "InZicht — Subsidieregeling informatie-uitwisseling VVT"
+    publisher: "Dienst Uitvoering Subsidies aan Instellingen (DUS-I) / VWS"
+    publisher_type: overheid
+    date: "2020-01-01"
+    url: ""
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: regeling
+    access: openbaar
+    license: publiek_domein
+    notes: >
+      VIPP-programma voor VVT-sector, richt zich op ECD's en
+      eOverdracht. URL via dus-i.nl nog invullen.
+
+  - id: vzvz-boozzt-programma
+    title: "Boozzt — programma voor Mitz en Zorg-AB als landelijke basis"
+    publisher: "VZVZ"
+    publisher_type: samenwerkingsverband
+    date: "2024"
+    url: ""
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: plan
+    access: openbaar
+    license: onbekend
+    notes: >
+      Boozzt is een programma dat (o.a.) 't Gezond Gooi noemt als
+      landelijke voorziening voor toestemming (Mitz) en
+      adresseringsbasis (Zorg-AB). URL nog te verifiëren.
+
+  # -------------------------------------------------------------
+  # Standaardisatie-bronnen
+  # -------------------------------------------------------------
+
+  - id: nictiz-zibs-2020
+    title: "Zorginformatiebouwstenen (Zibs) — publicatie 2020"
+    publisher: "Nictiz"
+    publisher_type: standaardisatie-organisatie
+    date: "2020-12-01"
+    url: "https://informatiestandaarden.nictiz.nl/wiki/Zib-publicaties"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: standaard
+    access: openbaar
+    license: CC-BY-4.0
+    notes: >
+      Zibs-publicatie 2020. VIPP5 verwijst naar deze publicatie als
+      verplichte baseline. URL naar exacte publicatiepagina nog
+      bevestigen.
+
+  - id: nictiz-nl-core-fhir-r4
+    title: "nl-core FHIR R4 profielen (Nederlandse kernprofielen)"
+    publisher: "Nictiz / HL7 Nederland"
+    publisher_type: standaardisatie-organisatie
+    date: "2022"
+    url: "https://simplifier.net/nl-core"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: standaard
+    access: openbaar
+    license: CC-BY-4.0
+    notes: >
+      Nederlandse kernprofielen voor FHIR R4. Verwezen vanuit VIPP5,
+      BabyConnect en verschillende Twiin-uitwerkingen. URL naar exacte
+      versie-pagina nog bevestigen.
+
+  # -------------------------------------------------------------
+  # Landelijke netwerken (operator-bronnen)
+  # -------------------------------------------------------------
+
+  - id: vzvz-lsp-werking
+    title: "Landelijk Schakelpunt — werking en opt-in"
+    publisher: "VZVZ"
+    publisher_type: samenwerkingsverband
+    date: "2024"
+    url: "https://www.vzvz.nl/diensten/landelijk-schakelpunt"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      VZVZ-beschrijving van het LSP. URL nog bevestigen — check
+      vzvz.nl voor canonieke link.
+
+  - id: mitz-afsprakenstelsel
+    title: "Mitz Toestemmingsvoorziening — afsprakenstelsel"
+    publisher: "VZVZ / Mitz"
+    publisher_type: samenwerkingsverband
+    date: "2024"
+    url: "https://www.mitz.nl"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Mitz is de opvolger van het LSP-opt-in voor brede
+      toestemming. Basisregister voor alle `network`-entities van
+      `network_type: toestemming`.
+
+  # -------------------------------------------------------------
+  # Zorgstandaarden (richtlijnen)
+  # -------------------------------------------------------------
+
+  - id: pznl-richtlijn-proactieve-zorgplanning
+    title: "Richtlijn Proactieve Zorgplanning (Advance Care Planning)"
+    publisher: "Palliatieve Zorg Nederland (PZNL)"
+    publisher_type: standaardisatie-organisatie
+    date: "2022"
+    url: "https://palliaweb.nl"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: standaard
+    access: openbaar
+    license: onbekend
+    notes: >
+      Landelijke richtlijn voor Advance Care Planning. Past nog niet
+      in het v0.2-`standard.standard_family` enum — zie v0.3-issue 2
+      in /schema/entities.md. Voor nu als bron-entry gebruikt om de
+      `uc-acp-in-de-keten`-usecase te onderbouwen. URL naar de
+      canonieke richtlijn op palliaweb.nl nog te verifiëren.
+
+  - id: carecodex-pilot-twente
+    title: "Stichting CareCodex — pilot uniforme ACP-overdracht Twente"
+    publisher: "Stichting CareCodex"
+    publisher_type: samenwerkingsverband
+    date: "2024"
+    url: ""
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: plan
+    access: openbaar
+    license: onbekend
+    notes: >
+      Door Gemini genoemd (antwoord #3) als de eerste operationele
+      pilot in Nederland waarin ACP-gegevens uniform worden
+      gedigitaliseerd en overgedragen tussen ketenpartners in Twente.
+      Bevestigt dat `uc-acp-in-de-keten` op maturity_level 2
+      (Technisch mogelijk / PoC) staat. URL nog te verifiëren.
+
+  # -------------------------------------------------------------
+  # Leveranciers-websites (voor system-entries)
+  # -------------------------------------------------------------
+
+  - id: chipsoft-website
+    title: "ChipSoft — HiX EPD productinformatie"
+    publisher: "ChipSoft"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://www.chipsoft.com/nl/hix"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron. Mag niet de enige bron zijn voor claim
+      "organisatie X draait op HiX" — moet altijd gecombineerd met
+      een onafhankelijke bron (jaarverslag, aanbesteding, plan).
+
+  - id: nedap-website
+    title: "Nedap Healthcare — Ons productinformatie"
+    publisher: "Nedap"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://nedap.com/healthcare"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron. Dezelfde regel als hierboven: niet enige
+      bron voor klant-claims.
+
+  - id: pharmapartners-website
+    title: "PharmaPartners — Medicom en Pharmacom productinformatie"
+    publisher: "PharmaPartners"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://www.pharmapartners.nl"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron voor Medicom (HIS) en Pharmacom (AIS).
+
+  - id: topicus-viplive-website
+    title: "Topicus — VIPLive keten-informatiesysteem"
+    publisher: "Topicus Healthcare"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://www.topicus.nl/zorg/oplossingen/viplive"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron voor VIPLive, het ketensamenwerkings-platform
+      gebruikt door onder meer HZT (Huisartsenzorg Twente).
+
+  - id: citygis-website
+    title: "CityGIS — ritregistratie ambulance"
+    publisher: "CityGIS"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://www.citygis.nl"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron voor CityGIS — het ritregistratie-systeem
+      gebruikt door RAV's, waaronder via Acute Zorg Euregio.
+
+  - id: epic-website
+    title: "Epic Systems — EPD productinformatie"
+    publisher: "Epic Systems Corporation"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://www.epic.com"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron voor Epic, het Amerikaanse EPD dat in
+      Nederland onder meer bij UMC Utrecht (HiX is primair, Epic
+      koppelingen) en St. Antonius draait. Mag nooit enige bron
+      zijn voor klant-claim.
+
+  - id: mips-clinisys-website
+    title: "MIPS / CliniSys — GLIMS laboratorium-informatiesysteem"
+    publisher: "CliniSys (MIPS Diagnostic)"
+    publisher_type: leverancier
+    date: "2024"
+    url: "https://www.clinisys.com"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Leveranciers-bron voor GLIMS, gebruikt door Labmicta.
+      Voor v0.3 (wanneer system.category `lis_lab` beschikbaar is)
+      relevant als bron voor de system-entry.
+
+  # -----------------------------------------------------------
+  # Sprint 3 — manifest-bronnen voor landelijke ingest
+  # -----------------------------------------------------------
+
+  - id: claude-knowledge-2026-04
+    title: "Claude LLM kennis (pragmatische LLM-seed voor Sprint 3)"
+    publisher: "Anthropic Claude (LLM)"
+    publisher_type: community
+    date: "2026-04"
+    url: ""
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: dataset
+    access: openbaar
+    license: onbekend
+    notes: >
+      PRAGMATISCHE SEED-BRON. Gebruikt voor entities waarvoor Claude
+      (LLM) de basis-informatie (naam, stad, coordinaten, subtype)
+      direct uit zijn training-data heeft geleverd zonder autoritatieve
+      URL. Elke entity met deze source MOET `needs_verification: true`
+      en `confidence: low` hebben. Doel: snelheid boven exacte
+      juistheid voor eerste landelijke skelet. Gemini en Roel kunnen
+      later per entity verifiëren tegen authoritative ledenlijsten
+      (NFU/STZ/NVZ/Actiz/InEen/etc.) en bij verificatie de source
+      vervangen door een concrete branche-vereniging-bron.
+
+  - id: nfu-ledenlijst-2026
+    title: "NFU — Nederlandse Federatie van Universitair Medische Centra, ledenlijst"
+    publisher: "NFU"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.nfu.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de 8 Universitair Medische Centra
+      (UMC's). Bevat Amsterdam UMC, UMC Utrecht, Erasmus MC, LUMC,
+      Radboudumc, Maastricht UMC+, UMCG, UMC Amsterdam.
+
+  - id: stz-ledenlijst-2026
+    title: "STZ — Samenwerkende Topklinische opleidingsZiekenhuizen, ledenlijst"
+    publisher: "Stichting Samenwerkende Topklinische opleidingsZiekenhuizen"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.stz.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de ~26 topklinische ziekenhuizen
+      in Nederland.
+
+  - id: nvz-ledenlijst-2026
+    title: "NVZ — Nederlandse Vereniging van Ziekenhuizen, ledenlijst"
+    publisher: "NVZ"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://nvz-ziekenhuizen.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de NVZ-leden: ~65 algemene en
+      topklinische ziekenhuizen in Nederland. Overlap met STZ
+      voor topklinische instellingen.
+
+  - id: revalidatie-nederland-ledenlijst-2026
+    title: "Revalidatie Nederland — ledenlijst revalidatiecentra"
+    publisher: "Revalidatie Nederland"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://revalidatie.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de ~23 revalidatiecentra in Nederland.
+
+  - id: ggd-ghor-ledenlijst-2026
+    title: "GGD GHOR Nederland — lijst van regionale GGD'en"
+    publisher: "GGD GHOR Nederland"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://ggdghor.nl/ggden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de 25 regionale GGD'en.
+
+  - id: azn-rav-lijst-2026
+    title: "Ambulancezorg Nederland — lijst van Regionale Ambulancevoorzieningen"
+    publisher: "Ambulancezorg Nederland (AZN)"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.ambulancezorg.nl/rav"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de 25 RAV's in Nederland.
+
+  - id: denederlandse-ggz-ledenlijst-2026
+    title: "de Nederlandse ggz — ledenlijst GGZ-instellingen"
+    publisher: "de Nederlandse ggz"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.denederlandseggz.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor ~30 grote geintegreerde GGZ-instellingen.
+
+  - id: jeugdzorg-nederland-ledenlijst-2026
+    title: "Jeugdzorg Nederland — ledenlijst Gecertificeerde Instellingen"
+    publisher: "Jeugdzorg Nederland"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.jeugdzorgnederland.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de ~15 Gecertificeerde Instellingen
+      voor jeugdbescherming en jeugdreclassering.
+
+  - id: vng-jeugdhulpregios-2026
+    title: "VNG — jeugdhulp inkoopregio's (42 regio's)"
+    publisher: "Vereniging van Nederlandse Gemeenten"
+    publisher_type: overheid
+    date: "2026"
+    url: "https://vng.nl/jeugdhulpregios"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor de 42 jeugdhulp-inkoopregio's
+      (onderverdeling van Nederland volgens Jeugdwet 2015).
+
+  - id: actiz-ledenlijst-2026
+    title: "ActiZ — branchevereniging VVT, ledenlijst"
+    publisher: "ActiZ"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.actiz.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor ~250 VVT-koepels en -concerns.
+
+  - id: ineen-ledenlijst-2026
+    title: "InEen — koepel georganiseerde eerste lijn, ledenlijst"
+    publisher: "InEen"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://ineen.nl/leden"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor ~120 huisartsen-zorggroepen en ~115
+      HAP-regio's.
+
+  - id: perined-vsv-lijst-2026
+    title: "Perined — lijst Verloskundige Samenwerkingsverbanden (VSV's)"
+    publisher: "Perined"
+    publisher_type: samenwerkingsverband
+    date: "2026"
+    url: "https://www.perined.nl/vsv"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: website
+    access: openbaar
+    license: onbekend
+    notes: >
+      Authoritative bron voor ~70 Verloskundige Samenwerkingsverbanden.
+
+  - id: cbs-gemeentelijke-indeling-2024
+    title: "CBS — Gemeentelijke indeling 2024"
+    publisher: "Centraal Bureau voor de Statistiek"
+    publisher_type: overheid
+    date: "2024-01-01"
+    url: "https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2024"
+    url_todo: true
+    retrieved_at: "2026-04-12"
+    source_type: dataset
+    access: openbaar
+    license: CC-BY-4.0
+    notes: >
+      Authoritative bron voor de 342 Nederlandse gemeenten per 1-1-2024.
+      Omvat namen, gemeentecodes, provincie-indeling.

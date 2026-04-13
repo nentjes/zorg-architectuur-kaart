@@ -1,0 +1,16 @@
+id: gem-zuidplas
+type: organization
+name: Gemeente Zuidplas
+sector: gemeente
+country: NL
+locations:
+- city: Nieuwerkerk aan den IJssel
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9767
+    lon: 4.6083
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

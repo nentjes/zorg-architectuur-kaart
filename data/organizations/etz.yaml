@@ -1,0 +1,23 @@
+id: etz
+type: organization
+name: Elisabeth-TweeSteden Ziekenhuis
+aliases:
+- ETZ
+sector: ziekenhuis
+subtype: topklinisch
+country: NL
+locations:
+- city: Tilburg
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5606
+    lon: 5.0772
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- chipsoft-hix
+networks:
+- lsp

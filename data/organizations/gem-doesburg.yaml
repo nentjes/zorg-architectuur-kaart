@@ -1,0 +1,16 @@
+id: gem-doesburg
+type: organization
+name: Gemeente Doesburg
+sector: gemeente
+country: NL
+locations:
+- city: Doesburg
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.0114
+    lon: 6.1367
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-krimpenerwaard
+type: organization
+name: Gemeente Krimpenerwaard
+sector: gemeente
+country: NL
+locations:
+- city: Lekkerkerk
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9006
+    lon: 4.6917
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

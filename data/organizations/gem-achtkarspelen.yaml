@@ -1,0 +1,16 @@
+id: gem-achtkarspelen
+type: organization
+name: Gemeente Achtkarspelen
+sector: gemeente
+country: NL
+locations:
+- city: Buitenpost
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.2503
+    lon: 6.1406
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

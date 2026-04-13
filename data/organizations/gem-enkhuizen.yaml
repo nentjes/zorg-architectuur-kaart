@@ -1,0 +1,16 @@
+id: gem-enkhuizen
+type: organization
+name: Gemeente Enkhuizen
+sector: gemeente
+country: NL
+locations:
+- city: Enkhuizen
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.7053
+    lon: 5.2914
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

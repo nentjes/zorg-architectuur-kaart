@@ -1,0 +1,29 @@
+id: nwz
+type: organization
+name: Noordwest Ziekenhuisgroep
+aliases:
+- NWZ
+sector: ziekenhuis
+subtype: topklinisch
+country: NL
+locations:
+- city: Alkmaar
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.6336
+    lon: 4.7497
+- city: Den Helder
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.9544
+    lon: 4.7608
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- chipsoft-hix
+networks:
+- lsp

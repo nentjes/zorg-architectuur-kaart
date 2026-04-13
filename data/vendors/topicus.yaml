@@ -1,0 +1,11 @@
+id: topicus
+type: vendor
+name: "Topicus Healthcare / Calculus"
+aliases:
+  - "Topicus"
+  - "Calculus Software"
+country: NL
+vendor_role: product_vendor
+website: "https://www.topicus.nl"
+sources:
+  - plan-gezond-gooi-2025

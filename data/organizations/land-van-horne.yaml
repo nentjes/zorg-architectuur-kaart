@@ -1,0 +1,16 @@
+id: land-van-horne
+type: organization
+name: Land van Horne
+sector: vvt
+country: NL
+locations:
+- city: Weert
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.2511
+    lon: 5.7056
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

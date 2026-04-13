@@ -1,0 +1,16 @@
+id: gem-aalten
+type: organization
+name: Gemeente Aalten
+sector: gemeente
+country: NL
+locations:
+- city: Aalten
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.9242
+    lon: 6.5806
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

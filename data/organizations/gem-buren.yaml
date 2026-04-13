@@ -1,0 +1,16 @@
+id: gem-buren
+type: organization
+name: Gemeente Buren
+sector: gemeente
+country: NL
+locations:
+- city: Maurik
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.9783
+    lon: 5.4336
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

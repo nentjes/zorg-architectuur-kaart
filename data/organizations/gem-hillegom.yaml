@@ -1,0 +1,16 @@
+id: gem-hillegom
+type: organization
+name: Gemeente Hillegom
+sector: gemeente
+country: NL
+locations:
+- city: Hillegom
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.2967
+    lon: 4.5808
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

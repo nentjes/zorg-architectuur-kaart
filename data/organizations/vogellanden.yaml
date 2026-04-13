@@ -1,0 +1,21 @@
+id: vogellanden
+type: organization
+name: Vogellanden
+sector: revalidatie
+country: NL
+locations:
+- city: Zwolle
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.5167
+    lon: 6.0833
+sources:
+- claude-knowledge-2026-04
+- roel-private-excel-2026-04
+confidence: high
+needs_verification: false
+systems:
+- sdb-reflex
+notes:
+- implementatiedatum onbekend

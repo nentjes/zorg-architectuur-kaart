@@ -1,0 +1,16 @@
+id: gem-waddinxveen
+type: organization
+name: Gemeente Waddinxveen
+sector: gemeente
+country: NL
+locations:
+- city: Waddinxveen
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0453
+    lon: 4.6539
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

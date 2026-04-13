@@ -1,0 +1,16 @@
+id: gem-woensdrecht
+type: organization
+name: Gemeente Woensdrecht
+sector: gemeente
+country: NL
+locations:
+- city: Hoogerheide
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4356
+    lon: 4.3336
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

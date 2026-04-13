@@ -1,0 +1,16 @@
+id: gem-coevorden
+type: organization
+name: Gemeente Coevorden
+sector: gemeente
+country: NL
+locations:
+- city: Coevorden
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.6603
+    lon: 6.7408
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

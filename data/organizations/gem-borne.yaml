@@ -1,0 +1,16 @@
+id: gem-borne
+type: organization
+name: Gemeente Borne
+sector: gemeente
+country: NL
+locations:
+- city: Borne
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.3011
+    lon: 6.7456
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

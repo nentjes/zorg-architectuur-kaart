@@ -1,0 +1,17 @@
+id: gem-bunschoten
+type: organization
+name: Gemeente Bunschoten
+sector: gemeente
+country: NL
+locations:
+- city: Bunschoten-Spakenburg
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.2442
+    lon: 5.3795
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

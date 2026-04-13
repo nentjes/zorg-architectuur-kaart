@@ -1,0 +1,584 @@
+# Manifest: huisartsen-zorggroepen NL — Sprint 4 coarse ingest
+#
+# Doel: de grote regionale huisartsen-zorggroepen (InEen-leden) op de
+# kaart, één punt per hoofdkantoor. Utrecht provincie-zorggroepen zitten
+# al in utrecht-v1.yaml (HUS, HzT, RHGV, huisartsen-eemland, Unicum, HUW,
+# leidsche-rijn-julius-gc, zorggroep-regio-amersfoort).
+#
+# Individuele huisartspraktijken (~4.800) parkeren we — Roel voegt z'n
+# eigen praktijk-bestand later toe als aparte fijnmazige laag.
+#
+# Bron: claude-knowledge-2026-04. confidence: low, needs_verification: true.
+# HIS-info (Medicom/Promedico/TetraHIS/CGM) bewust niet geseed — komt in
+# Sprint 4b na validatie.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # -----------------------------------------------------------
+  # Noord: Groningen / Friesland / Drenthe
+  # -----------------------------------------------------------
+
+  - id: hzd-drenthe
+    name: "Huisartsenzorg Drenthe"
+    aliases: ["HZD"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Assen"
+        province: "Drenthe"
+        country: NL
+        coordinates: {lat: 52.9960, lon: 6.5626}
+
+  - id: dokter-drenthe
+    name: "Dokter Drenthe"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Emmen"
+        province: "Drenthe"
+        country: NL
+        coordinates: {lat: 52.7858, lon: 6.8973}
+
+  - id: hzog
+    name: "Huisartsenzorg Oost-Groningen"
+    aliases: ["HZOG"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Winschoten"
+        province: "Groningen"
+        country: NL
+        coordinates: {lat: 53.1447, lon: 7.0350}
+
+  - id: zorggroep-groningen
+    name: "Zorggroep Groningen"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Groningen"
+        province: "Groningen"
+        country: NL
+        coordinates: {lat: 53.2194, lon: 6.5665}
+
+  - id: elann
+    name: "ELANN"
+    aliases: ["Eerstelijns Laboratorium Noord Nederland"]
+    sector: huisarts
+    subtype: "ondersteuning"
+    locations:
+      - city: "Groningen"
+        province: "Groningen"
+        country: NL
+        coordinates: {lat: 53.2194, lon: 6.5665}
+
+  - id: hzn-fryslan
+    name: "Huisartsen Zorggroep Noord (Friesland)"
+    aliases: ["HZNF"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Leeuwarden"
+        province: "Friesland"
+        country: NL
+        coordinates: {lat: 53.2012, lon: 5.7999}
+
+  - id: friese-huisartsenvereniging
+    name: "Friese Huisartsen Vereniging"
+    aliases: ["FHV"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Drachten"
+        province: "Friesland"
+        country: NL
+        coordinates: {lat: 53.1128, lon: 6.0989}
+
+  # -----------------------------------------------------------
+  # Oost: Overijssel / Gelderland / Flevoland
+  # -----------------------------------------------------------
+
+  - id: medrie
+    name: "Medrie"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Zwolle"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.5168, lon: 6.0830}
+
+  - id: thoon
+    name: "THOON"
+    aliases: ["Twentse Huisartsen Onderneming Oost Nederland"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Hengelo"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.2661, lon: 6.7930}
+
+  - id: fea
+    name: "FEA (Federatie Eerstelijnszorg Almelo)"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Almelo"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.3508, lon: 6.6604}
+
+  - id: hzd-zwolle
+    name: "Huisartsen Zwolle en omstreken"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Zwolle"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.5168, lon: 6.0830}
+
+  - id: medicamus
+    name: "Medicamus"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Harderwijk"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 52.3410, lon: 5.6208}
+
+  - id: onze-huisartsen
+    name: "Onze Huisartsen"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Arnhem"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.9851, lon: 5.8987}
+
+  - id: cohaesie-apeldoorn
+    name: "Huisartsen Coöperatie Apeldoorn"
+    aliases: ["Cohaesie Apeldoorn"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Apeldoorn"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 52.2112, lon: 5.9699}
+
+  - id: oce-nijmegen
+    name: "OCE Nijmegen"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Nijmegen"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.8126, lon: 5.8372}
+
+  - id: syntein
+    name: "Syntein"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Boxmeer"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.6478, lon: 5.9478}
+
+  - id: huisartsen-rivierenland
+    name: "Huisartsen Rivierenland"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Tiel"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.8869, lon: 5.4286}
+
+  - id: zgwa-wageningen
+    name: "Zorggroep Gelderse Vallei (ZGV) / Wageningen e.o."
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Ede"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 52.0470, lon: 5.6661}
+
+  - id: huisartsen-al-flevoland
+    name: "Zorggroep Almere"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Almere"
+        province: "Flevoland"
+        country: NL
+        coordinates: {lat: 52.3508, lon: 5.2647}
+
+  - id: medicamus-lelystad
+    name: "MC Flevo (Lelystad)"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Lelystad"
+        province: "Flevoland"
+        country: NL
+        coordinates: {lat: 52.5185, lon: 5.4714}
+
+  # -----------------------------------------------------------
+  # West: Noord-Holland / Zuid-Holland
+  # -----------------------------------------------------------
+
+  - id: rohamsterdam
+    name: "ROHA (Regionale Organisatie Huisartsen Amsterdam)"
+    aliases: ["ROHA"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3676, lon: 4.9041}
+
+  - id: amstelland-zorg
+    name: "Amstelland Zorg"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Amstelveen"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3080, lon: 4.8600}
+
+  - id: huisartsenkring-zaanstreek-waterland
+    name: "Huisartsen Zaanstreek-Waterland (HZW)"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Zaandam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.4389, lon: 4.8289}
+
+  - id: hkn-noord-holland-noord
+    name: "Huisartsenorganisatie Noord-Kennemerland"
+    aliases: ["HONK"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Alkmaar"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.6324, lon: 4.7534}
+
+  - id: huisartsen-gooi-vechtstreek
+    name: "Huisartsen Gooi en Vechtstreek"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Hilversum"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.2292, lon: 5.1760}
+
+  - id: rijncoepel
+    name: "Rijncoepel"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Leiden"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.1601, lon: 4.4970}
+
+  - id: knooppunt-ketenzorg
+    name: "Knooppunt Ketenzorg"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Leiden"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.1601, lon: 4.4970}
+
+  - id: hadoks
+    name: "Hadoks"
+    aliases: ["Haagse Dokters"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Den Haag"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.0799, lon: 4.3113}
+
+  - id: stad-holland-zorggroep
+    name: "Stad Holland Zorgverzekeraar / HOZH"
+    aliases: ["HOZH"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Schiedam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9194, lon: 4.3989}
+
+  - id: zel
+    name: "ZEL (Zorggroep Eerste Lijn)"
+    aliases: ["ZEL"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Naaldwijk"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9939, lon: 4.2036}
+
+  - id: zorggroep-zoetermeer
+    name: "Zorggroep Zoetermeer"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Zoetermeer"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.0608, lon: 4.4937}
+
+  - id: drechtdokters
+    name: "DrechtDokters"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Dordrecht"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.8133, lon: 4.6901}
+
+  - id: rhz-rotterdam
+    name: "Ruysdael Zorggroep"
+    aliases: ["RHZ Rotterdam"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Rotterdam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9244, lon: 4.4777}
+
+  - id: izer
+    name: "IZER"
+    aliases: ["Innovatief Zorgnetwerk Eerste Lijn Rotterdam"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Rotterdam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9244, lon: 4.4777}
+
+  - id: huisartsen-coop-goeree-overflakkee
+    name: "Huisartsencoöperatie Goeree-Overflakkee"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Middelharnis"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.7575, lon: 4.1709}
+
+  # -----------------------------------------------------------
+  # Zuid: Zeeland / Noord-Brabant / Limburg
+  # -----------------------------------------------------------
+
+  - id: nucleus-zorg
+    name: "Nucleus Zorg"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Terneuzen"
+        province: "Zeeland"
+        country: NL
+        coordinates: {lat: 51.3349, lon: 3.8264}
+
+  - id: huisartsenkring-walcheren
+    name: "Huisartsen Coöperatie Walcheren"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Middelburg"
+        province: "Zeeland"
+        country: NL
+        coordinates: {lat: 51.4988, lon: 3.6109}
+
+  - id: pozob
+    name: "PoZoB"
+    aliases: ["Praktijkondersteuning Zuidoost-Brabant"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Veldhoven"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4193, lon: 5.4035}
+
+  - id: doh
+    name: "DOH (De Ondernemende Huisarts)"
+    aliases: ["DOH"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Eindhoven"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4416, lon: 5.4697}
+
+  - id: sge-eindhoven
+    name: "SGE (Stichting Gezondheidscentra Eindhoven)"
+    aliases: ["SGE"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Eindhoven"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4416, lon: 5.4697}
+
+  - id: quartz
+    name: "Quartz"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "'s-Hertogenbosch"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.6978, lon: 5.3037}
+
+  - id: zorggroep-oss
+    name: "Zorggroep Regio Oss"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Oss"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.7649, lon: 5.5236}
+
+  - id: chronic-care-west-brabant
+    name: "Chronic Care West-Brabant (CCWB)"
+    aliases: ["CCWB"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Roosendaal"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5309, lon: 4.4654}
+
+  - id: hartinge
+    name: "Zorggroep Tilburg"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Tilburg"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5555, lon: 5.0913}
+
+  - id: cohesie
+    name: "Cohesie Cure and Care"
+    aliases: ["Cohesie"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Venlo"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 51.3704, lon: 6.1724}
+
+  - id: meditta
+    name: "Meditta"
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Echt"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 51.1004, lon: 5.8758}
+
+  - id: zio
+    name: "ZIO (Zorg in Ontwikkeling)"
+    aliases: ["ZIO"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Maastricht"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 50.8514, lon: 5.6910}
+
+  - id: hozl
+    name: "Huisartsen Oostelijk Zuid-Limburg"
+    aliases: ["HOZL"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Heerlen"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 50.8882, lon: 5.9795}
+
+  - id: huisartsen-westelijke-mijnstreek
+    name: "Huisartsen Westelijke Mijnstreek"
+    aliases: ["HWM"]
+    sector: huisarts
+    subtype: "zorggroep"
+    locations:
+      - city: "Sittard"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 50.9983, lon: 5.8696}
+
+  # -----------------------------------------------------------
+  # Koepels / landelijk
+  # -----------------------------------------------------------
+
+  - id: ineen
+    name: "InEen"
+    sector: huisarts
+    subtype: "koepel"
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+
+  - id: lhv
+    name: "Landelijke Huisartsen Vereniging"
+    aliases: ["LHV"]
+    sector: huisarts
+    subtype: "koepel"
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+
+  - id: nhg
+    name: "Nederlands Huisartsen Genootschap"
+    aliases: ["NHG"]
+    sector: huisarts
+    subtype: "koepel"
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}

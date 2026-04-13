@@ -1,0 +1,16 @@
+id: gem-loon-op-zand
+type: organization
+name: Gemeente Loon op Zand
+sector: gemeente
+country: NL
+locations:
+- city: Kaatsheuvel
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.655
+    lon: 5.0419
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

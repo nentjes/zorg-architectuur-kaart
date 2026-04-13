@@ -1,0 +1,16 @@
+id: ggz-breburg
+type: organization
+name: GGz Breburg
+sector: ggz
+country: NL
+locations:
+- city: Tilburg
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5606
+    lon: 5.0772
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

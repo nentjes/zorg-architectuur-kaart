@@ -1,0 +1,16 @@
+id: proteion
+type: organization
+name: Proteion
+sector: vvt
+country: NL
+locations:
+- city: Horn
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.2092
+    lon: 5.9247
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

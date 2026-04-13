@@ -1,0 +1,26 @@
+id: umcg
+type: organization
+name: Universitair Medisch Centrum Groningen
+aliases:
+- UMCG
+sector: ziekenhuis
+subtype: academisch
+country: NL
+locations:
+- city: Groningen
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.2239
+    lon: 6.5614
+sources:
+- claude-knowledge-2026-04
+- roel-private-excel-2026-04
+confidence: medium
+needs_verification: true
+systems:
+- epic-epd
+networks:
+- lsp
+notes:
+- "UMCG-CvR (Centrum voor Revalidatie) per 1/1/2025 onder 1 EAB-code met UMCG; CvR migreert van Amriq naar Epic — implementatiedatum nog onbekend"

@@ -1,0 +1,16 @@
+id: gem-borsele
+type: organization
+name: Gemeente Borsele
+sector: gemeente
+country: NL
+locations:
+- city: Heinkenszand
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.4956
+    lon: 3.7758
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

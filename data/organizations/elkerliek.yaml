@@ -1,0 +1,21 @@
+id: elkerliek
+type: organization
+name: Elkerliek Ziekenhuis
+sector: ziekenhuis
+subtype: algemeen
+country: NL
+locations:
+- city: Helmond
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4833
+    lon: 5.65
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- chipsoft-hix
+networks:
+- lsp

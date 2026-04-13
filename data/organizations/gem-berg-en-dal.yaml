@@ -1,0 +1,16 @@
+id: gem-berg-en-dal
+type: organization
+name: Gemeente Berg en Dal
+sector: gemeente
+country: NL
+locations:
+- city: Groesbeek
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.7789
+    lon: 5.9392
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

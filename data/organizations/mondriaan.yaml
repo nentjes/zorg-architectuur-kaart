@@ -1,0 +1,27 @@
+id: mondriaan
+type: organization
+name: Mondriaan
+sector: ggz
+country: NL
+locations:
+- city: Heerlen
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.8881
+    lon: 5.9833
+- city: Maastricht
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.8514
+    lon: 5.691
+sources:
+- claude-knowledge-2026-04
+- gemini-ggz-research-2026-04
+confidence: medium
+needs_verification: true
+systems:
+- tenzinger-user
+notes:
+- Zuid-Limburg

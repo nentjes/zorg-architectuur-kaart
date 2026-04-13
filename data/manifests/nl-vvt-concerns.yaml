@@ -1,0 +1,796 @@
+# Manifest: VVT-concerns NL — Sprint 4 coarse ingest
+#
+# Doel: de grote VVT-concerns (ActiZ-leden) op de kaart. Utrecht
+# VVT-koepels zitten al in utrecht-v1.yaml (Careyn, AxionContinu, etc).
+# Eén punt per concern, niet per locatie (dat zijn er duizenden).
+#
+# Bron: claude-knowledge-2026-04. confidence: low.
+# ECD-info (Nedap Ons / PinkRoccade Mozaïk / Ecare) bewust niet geseed.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  - id: actiz
+    name: "ActiZ"
+    sector: vvt
+    subtype: "koepel"
+    locations:
+      - city: "Utrecht"
+        province: "Utrecht"
+        country: NL
+        coordinates: {lat: 52.0907, lon: 5.1214}
+
+  # Noord
+  - id: zinn
+    name: "ZINN"
+    sector: vvt
+    locations:
+      - city: "Groningen"
+        province: "Groningen"
+        country: NL
+        coordinates: {lat: 53.2194, lon: 6.5665}
+
+  - id: dignis
+    name: "Dignis"
+    sector: vvt
+    locations:
+      - city: "Groningen"
+        province: "Groningen"
+        country: NL
+        coordinates: {lat: 53.2194, lon: 6.5665}
+
+  - id: oosterlengte
+    name: "Oosterlengte"
+    sector: vvt
+    locations:
+      - city: "Winschoten"
+        province: "Groningen"
+        country: NL
+        coordinates: {lat: 53.1447, lon: 7.0350}
+
+  - id: noorderzorg
+    name: "Noorderzorg"
+    sector: vvt
+    locations:
+      - city: "Stadskanaal"
+        province: "Groningen"
+        country: NL
+        coordinates: {lat: 52.9925, lon: 6.9464}
+
+  - id: de-friese-wouden
+    name: "De Friese Wouden"
+    sector: vvt
+    locations:
+      - city: "Drachten"
+        province: "Friesland"
+        country: NL
+        coordinates: {lat: 53.1128, lon: 6.0989}
+
+  - id: kwadrantgroep
+    name: "KwadrantGroep"
+    sector: vvt
+    locations:
+      - city: "Drachten"
+        province: "Friesland"
+        country: NL
+        coordinates: {lat: 53.1128, lon: 6.0989}
+
+  - id: patyna
+    name: "Patyna"
+    sector: vvt
+    locations:
+      - city: "Bolsward"
+        province: "Friesland"
+        country: NL
+        coordinates: {lat: 53.0686, lon: 5.5272}
+
+  - id: noorderbreedte
+    name: "Noorderbreedte"
+    sector: vvt
+    locations:
+      - city: "Leeuwarden"
+        province: "Friesland"
+        country: NL
+        coordinates: {lat: 53.2012, lon: 5.7999}
+
+  - id: palet
+    name: "Palet Leeuwarden"
+    sector: vvt
+    locations:
+      - city: "Leeuwarden"
+        province: "Friesland"
+        country: NL
+        coordinates: {lat: 53.2012, lon: 5.7999}
+
+  - id: icare
+    name: "Icare (Espria)"
+    sector: vvt
+    locations:
+      - city: "Meppel"
+        province: "Drenthe"
+        country: NL
+        coordinates: {lat: 52.6954, lon: 6.1939}
+
+  - id: espria
+    name: "Espria"
+    sector: vvt
+    subtype: "holding"
+    locations:
+      - city: "Beilen"
+        province: "Drenthe"
+        country: NL
+        coordinates: {lat: 52.8612, lon: 6.5167}
+
+  - id: derdelijn-treant
+    name: "Zorggroep Leveste Middenveld"
+    sector: vvt
+    locations:
+      - city: "Emmen"
+        province: "Drenthe"
+        country: NL
+        coordinates: {lat: 52.7858, lon: 6.8973}
+
+  # Oost
+  - id: carintreggeland
+    name: "Carintreggeland"
+    sector: vvt
+    locations:
+      - city: "Hengelo"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.2661, lon: 6.7930}
+
+  - id: livio
+    name: "Livio"
+    sector: vvt
+    locations:
+      - city: "Enschede"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.2215, lon: 6.8937}
+
+  - id: zorggroep-sint-maarten
+    name: "Zorggroep Sint Maarten"
+    sector: vvt
+    locations:
+      - city: "Oldenzaal"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.3133, lon: 6.9294}
+
+  - id: zgr-twenterand
+    name: "ZorgAccent"
+    sector: vvt
+    locations:
+      - city: "Almelo"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.3508, lon: 6.6604}
+
+  - id: trivium-meulenbelt
+    name: "TriviumMeulenbeltZorg"
+    sector: vvt
+    locations:
+      - city: "Almelo"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.3508, lon: 6.6604}
+
+  - id: de-stouwe
+    name: "De Stouwe"
+    sector: vvt
+    locations:
+      - city: "Meppel"
+        province: "Drenthe"
+        country: NL
+        coordinates: {lat: 52.6954, lon: 6.1939}
+
+  - id: ijsselheem
+    name: "IJsselheem"
+    sector: vvt
+    locations:
+      - city: "Kampen"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.5558, lon: 5.9113}
+
+  - id: driezorg
+    name: "Driezorg"
+    sector: vvt
+    locations:
+      - city: "Zwolle"
+        province: "Overijssel"
+        country: NL
+        coordinates: {lat: 52.5168, lon: 6.0830}
+
+  - id: zgwa
+    name: "Zorggroep Oude en Nieuwe Land"
+    sector: vvt
+    locations:
+      - city: "Emmeloord"
+        province: "Flevoland"
+        country: NL
+        coordinates: {lat: 52.7108, lon: 5.7497}
+
+  - id: zorggroep-apeldoorn
+    name: "Atlant Zorggroep"
+    sector: vvt
+    locations:
+      - city: "Apeldoorn"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 52.2112, lon: 5.9699}
+
+  - id: marga-klompe
+    name: "Marga Klompé"
+    sector: vvt
+    locations:
+      - city: "Lichtenvoorde"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.9828, lon: 6.5656}
+
+  - id: sensire
+    name: "Sensire"
+    sector: vvt
+    locations:
+      - city: "Varsseveld"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.9434, lon: 6.4650}
+
+  - id: azora
+    name: "Azora"
+    sector: vvt
+    locations:
+      - city: "Terborg"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.9197, lon: 6.3739}
+
+  - id: attent-zorg
+    name: "Attent Zorg en Behandeling"
+    sector: vvt
+    locations:
+      - city: "Velp"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.9956, lon: 5.9775}
+
+  - id: innoforte
+    name: "Innoforte"
+    sector: vvt
+    locations:
+      - city: "Arnhem"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.9851, lon: 5.8987}
+
+  - id: siza
+    name: "Siza"
+    sector: vvt
+    locations:
+      - city: "Arnhem"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.9851, lon: 5.8987}
+
+  - id: kalorama
+    name: "Kalorama"
+    sector: vvt
+    locations:
+      - city: "Beek-Ubbergen"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.8319, lon: 5.9183}
+
+  - id: zzg-zorggroep
+    name: "ZZG Zorggroep"
+    sector: vvt
+    locations:
+      - city: "Nijmegen"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.8126, lon: 5.8372}
+
+  - id: waalboog
+    name: "De Waalboog"
+    sector: vvt
+    locations:
+      - city: "Nijmegen"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 51.8126, lon: 5.8372}
+
+  - id: zorggroep-apeldoorn-gv
+    name: "Zorggroep Apeldoorn"
+    sector: vvt
+    locations:
+      - city: "Apeldoorn"
+        province: "Gelderland"
+        country: NL
+        coordinates: {lat: 52.2112, lon: 5.9699}
+
+  # West
+  - id: cordaan
+    name: "Cordaan"
+    sector: vvt
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3676, lon: 4.9041}
+
+  - id: amstelring
+    name: "Amstelring"
+    sector: vvt
+    locations:
+      - city: "Amsterdam"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3676, lon: 4.9041}
+
+  - id: osira-amstelring
+    name: "Zonnehuisgroep Amstelland"
+    sector: vvt
+    locations:
+      - city: "Amstelveen"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3080, lon: 4.8600}
+
+  - id: evean
+    name: "Evean"
+    sector: vvt
+    locations:
+      - city: "Purmerend"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.5051, lon: 4.9596}
+
+  - id: omring
+    name: "Omring"
+    sector: vvt
+    locations:
+      - city: "Hoorn"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.6425, lon: 5.0597}
+
+  - id: zorgbalans
+    name: "Zorgbalans"
+    sector: vvt
+    locations:
+      - city: "Haarlem"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3874, lon: 4.6462}
+
+  - id: sint-jacob
+    name: "Sint Jacob"
+    sector: vvt
+    locations:
+      - city: "Haarlem"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.3874, lon: 4.6462}
+
+  - id: zorgring-nhn
+    name: "Magentazorg"
+    sector: vvt
+    locations:
+      - city: "Alkmaar"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.6324, lon: 4.7534}
+
+  - id: pieter-van-foreest
+    name: "Pieter van Foreest"
+    sector: vvt
+    locations:
+      - city: "Delft"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.0116, lon: 4.3571}
+
+  - id: florence
+    name: "Florence"
+    sector: vvt
+    locations:
+      - city: "Den Haag"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.0799, lon: 4.3113}
+
+  - id: woonzorgcentra-haaglanden
+    name: "Woonzorgcentra Haaglanden"
+    aliases: ["WZH"]
+    sector: vvt
+    locations:
+      - city: "Den Haag"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.0799, lon: 4.3113}
+
+  - id: saffier
+    name: "Saffier"
+    sector: vvt
+    locations:
+      - city: "Den Haag"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.0799, lon: 4.3113}
+
+  - id: respect-zorggroep
+    name: "Respect Zorggroep"
+    sector: vvt
+    locations:
+      - city: "Scheveningen"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.1073, lon: 4.2711}
+
+  - id: topaz
+    name: "Topaz"
+    sector: vvt
+    locations:
+      - city: "Leiden"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.1601, lon: 4.4970}
+
+  - id: marente
+    name: "Marente"
+    sector: vvt
+    locations:
+      - city: "Warmond"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.2000, lon: 4.5000}
+
+  - id: libertas-leiden
+    name: "Libertas Leiden"
+    sector: vvt
+    locations:
+      - city: "Leiden"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.1601, lon: 4.4970}
+
+  - id: alrijne-zorggroep
+    name: "Alrijne Zorggroep VVT"
+    sector: vvt
+    locations:
+      - city: "Leiderdorp"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 52.1625, lon: 4.5364}
+
+  - id: laurens
+    name: "Laurens"
+    sector: vvt
+    locations:
+      - city: "Rotterdam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9244, lon: 4.4777}
+
+  - id: humanitas-rotterdam
+    name: "Stichting Humanitas Rotterdam"
+    sector: vvt
+    locations:
+      - city: "Rotterdam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9244, lon: 4.4777}
+
+  - id: aafje
+    name: "Aafje"
+    sector: vvt
+    locations:
+      - city: "Rotterdam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9244, lon: 4.4777}
+
+  - id: lelie-zorggroep
+    name: "Lelie zorggroep"
+    sector: vvt
+    locations:
+      - city: "Capelle aan den IJssel"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9294, lon: 4.5775}
+
+  - id: argos-zorggroep
+    name: "Argos Zorggroep"
+    sector: vvt
+    locations:
+      - city: "Schiedam"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9194, lon: 4.3989}
+
+  - id: parnassia-vvt
+    name: "De Zellingen"
+    sector: vvt
+    locations:
+      - city: "Capelle aan den IJssel"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.9294, lon: 4.5775}
+
+  - id: swz-zorg
+    name: "SWZ Zorg"
+    sector: vvt
+    locations:
+      - city: "Son"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5139, lon: 5.4906}
+
+  - id: internos
+    name: "Internos"
+    sector: vvt
+    locations:
+      - city: "Dordrecht"
+        province: "Zuid-Holland"
+        country: NL
+        coordinates: {lat: 51.8133, lon: 4.6901}
+
+  # Zuid
+  - id: svrz
+    name: "SVRZ"
+    sector: vvt
+    locations:
+      - city: "Middelburg"
+        province: "Zeeland"
+        country: NL
+        coordinates: {lat: 51.4988, lon: 3.6109}
+
+  - id: woonzorg-zeeland
+    name: "WVO Zorg"
+    sector: vvt
+    locations:
+      - city: "Vlissingen"
+        province: "Zeeland"
+        country: NL
+        coordinates: {lat: 51.4426, lon: 3.5736}
+
+  - id: zorgsaam
+    name: "ZorgSaam Zeeuws-Vlaanderen"
+    sector: vvt
+    locations:
+      - city: "Terneuzen"
+        province: "Zeeland"
+        country: NL
+        coordinates: {lat: 51.3349, lon: 3.8264}
+
+  - id: allevo
+    name: "Allévo"
+    sector: vvt
+    locations:
+      - city: "Zierikzee"
+        province: "Zeeland"
+        country: NL
+        coordinates: {lat: 51.6506, lon: 3.9200}
+
+  - id: tante-louise
+    name: "tanteLouise"
+    sector: vvt
+    locations:
+      - city: "Bergen op Zoom"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4936, lon: 4.2871}
+
+  - id: thebe
+    name: "Thebe"
+    sector: vvt
+    locations:
+      - city: "Tilburg"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5555, lon: 5.0913}
+
+  - id: de-wever
+    name: "De Wever"
+    sector: vvt
+    locations:
+      - city: "Tilburg"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5555, lon: 5.0913}
+
+  - id: brabantzorg
+    name: "BrabantZorg"
+    sector: vvt
+    locations:
+      - city: "Oss"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.7649, lon: 5.5236}
+
+  - id: van-neynsel
+    name: "Van Neynsel"
+    sector: vvt
+    locations:
+      - city: "'s-Hertogenbosch"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.6978, lon: 5.3037}
+
+  - id: vughterstede
+    name: "Vughterstede"
+    sector: vvt
+    locations:
+      - city: "Vught"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.6542, lon: 5.2867}
+
+  - id: pantein
+    name: "Pantein"
+    sector: vvt
+    locations:
+      - city: "Boxmeer"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.6478, lon: 5.9478}
+
+  - id: savant
+    name: "Savant Zorg"
+    sector: vvt
+    locations:
+      - city: "Helmond"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4826, lon: 5.6614}
+
+  - id: de-zorgboog
+    name: "De Zorgboog"
+    sector: vvt
+    locations:
+      - city: "Bakel"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4708, lon: 5.7528}
+
+  - id: archipel
+    name: "Archipel"
+    sector: vvt
+    locations:
+      - city: "Eindhoven"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4416, lon: 5.4697}
+
+  - id: vitalis-wooncentra
+    name: "Vitalis WoonZorg Groep"
+    sector: vvt
+    locations:
+      - city: "Eindhoven"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.4416, lon: 5.4697}
+
+  - id: valkenhof
+    name: "Valkenhof"
+    sector: vvt
+    locations:
+      - city: "Valkenswaard"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.3528, lon: 5.4606}
+
+  - id: groenhuysen
+    name: "Groenhuysen"
+    sector: vvt
+    locations:
+      - city: "Roosendaal"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5309, lon: 4.4654}
+
+  - id: surplus
+    name: "Surplus"
+    sector: vvt
+    locations:
+      - city: "Breda"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5719, lon: 4.7683}
+
+  - id: avoord
+    name: "Avoord"
+    sector: vvt
+    locations:
+      - city: "Etten-Leur"
+        province: "Noord-Brabant"
+        country: NL
+        coordinates: {lat: 51.5703, lon: 4.6384}
+
+  - id: amaris
+    name: "Amaris Zorggroep"
+    sector: vvt
+    locations:
+      - city: "Laren"
+        province: "Noord-Holland"
+        country: NL
+        coordinates: {lat: 52.2556, lon: 5.2308}
+
+  - id: proteion
+    name: "Proteion"
+    sector: vvt
+    locations:
+      - city: "Horn"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 51.2092, lon: 5.9247}
+
+  - id: land-van-horne
+    name: "Land van Horne"
+    sector: vvt
+    locations:
+      - city: "Weert"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 51.2511, lon: 5.7056}
+
+  - id: de-zorggroep
+    name: "De Zorggroep"
+    sector: vvt
+    locations:
+      - city: "Venlo"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 51.3704, lon: 6.1724}
+
+  - id: sevagram
+    name: "Sevagram"
+    sector: vvt
+    locations:
+      - city: "Heerlen"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 50.8882, lon: 5.9795}
+
+  - id: meanderzorg-limburg
+    name: "Meandergroep Zuid-Limburg"
+    sector: vvt
+    locations:
+      - city: "Kerkrade"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 50.8658, lon: 6.0614}
+
+  - id: cicero-zorggroep
+    name: "Cicero Zorggroep"
+    sector: vvt
+    locations:
+      - city: "Brunssum"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 50.9467, lon: 5.9708}
+
+  - id: zuyderland-vvt
+    name: "Zuyderland Care"
+    sector: vvt
+    locations:
+      - city: "Sittard-Geleen"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 50.9983, lon: 5.8696}
+
+  - id: envida
+    name: "Envida"
+    sector: vvt
+    locations:
+      - city: "Maastricht"
+        province: "Limburg"
+        country: NL
+        coordinates: {lat: 50.8514, lon: 5.6910}

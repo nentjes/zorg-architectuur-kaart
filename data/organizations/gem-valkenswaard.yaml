@@ -1,0 +1,16 @@
+id: gem-valkenswaard
+type: organization
+name: Gemeente Valkenswaard
+sector: gemeente
+country: NL
+locations:
+- city: Valkenswaard
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.3508
+    lon: 5.4608
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

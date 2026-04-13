@@ -1,0 +1,294 @@
+# IZA Maturity Score — gewichten en formule
+#
+# Dit bestand is de numerieke tegenhanger van /schema/relations.md
+# §"IZA Maturity Score — de structuur". Hier staan de feitelijke
+# gewichten; daar staat de structuur.
+#
+# Eigenaar: Gemini (Strategisch Architect). Elke weging heeft een
+# publieke bron-onderbouwing in /sources/sources.yaml.
+#
+# Versie-beleid:
+# - Major (1.x → 2.x) bij ingrijpende formule-wijziging (bijv. andere
+#   score-as toevoegen of verwijderen)
+# - Minor (1.1 → 1.2) bij gewijzigde gewichten binnen bestaande assen
+# - Patch (1.1.0 → 1.1.1) bij bron-updates zonder gewicht-wijziging
+#
+# Changelog:
+# - v0.1.0-draft (2026-04-12): Gemini ronde #4 — 3 assen ingevuld
+#   (transport_paradigm, topology, status-partial), rest placeholder
+# - v0.1.1       (2026-04-12): Gemini ronde #5 — alle 5 assen compleet;
+#   open_standard_bonus van additief +0.2 omgezet naar multiplicatief
+#   ×1.2; legacy_messaging mapping verplaatst van lsp naar secure_email;
+#   recency_decay stepped ipv linear
+
+version: 0.1.1
+status: ronde-5-volledig
+owner: gemini-strategische-architect
+last_updated: "2026-04-12"
+
+# -------------------------------------------------------------
+# 1. Transport-paradigma (nieuwe as, v0.1 Gemini input)
+# -------------------------------------------------------------
+#
+# Gemini's eerste gewichten zijn gegeven op een as die NIET gelijk is
+# aan `network.network_type`. Ze beschrijven het *transport-paradigma*
+# waarmee gegevens via het netwerk stromen, niet de bestuurlijke vorm
+# van het netwerk. Een FHIR-API-netwerk (bijv. RDH Twente met
+# nl-core-r4) scoort 1.0; een XDS-federatie 0.8; het LSP 0.6; secure
+# email 0.2.
+#
+# Bron: Gemini antwoord #4, 2026-04-12
+# (/overleg/gemini/2026-04-12-04-antwoord-maturity-sprint1b.md §2)
+
+transport_paradigm_weights:
+  fhir_api: 1.0       # Moderne FHIR-R4 / nl-core API's — IZA-gouden-standaard
+  xds_network: 0.8    # XDS-federaties voor documenten en beelden
+  lsp: 0.6            # LSP hub-and-spoke (medicatie, berichten)
+  secure_email: 0.2   # Zorgmail / secure messaging — papiervervanger
+
+# Mapping van een concreet `network` → transport_paradigm.
+# Hoe bepaalt de maturity-engine welke weging uit bovenstaande
+# tabel gebruikt wordt voor een gegeven network?
+#
+# Deze sectie codeert Claude's interpretatie van Gemini's model.
+# Gemini moet dit bevestigen of corrigeren in ronde #5.
+#
+# Regels worden van boven naar onder doorlopen; eerste match telt.
+
+#
+# Ronde #5 aanpassing: Gemini heeft de `lsp`-label verfijnd tot
+# *specifiek het Landelijk Schakelpunt*, niet alle legacy-hubs.
+# `legacy_messaging` (Edifact) wordt daarom gemapt naar
+# `secure_email` — óók papiervervanger, geen interoperabiliteit
+# op dataniveau.
+
+transport_paradigm_mapping:
+  - if:
+      standards_used_contains_any: [nl-core-r4, fhir-r5]
+    then: fhir_api
+  - if:
+      network_type: xds
+    then: xds_network
+  - if:
+      id: lsp
+    then: lsp
+  - if:
+      network_type: legacy_messaging
+    then: secure_email
+  - if:
+      network_type: secure_messaging
+    then: secure_email
+  - else: lsp   # default voor onbekende hub-and-spoke
+
+# -------------------------------------------------------------
+# 2. Topology multiplier (v0.1 Gemini input)
+# -------------------------------------------------------------
+#
+# Bron: Gemini antwoord #4, 2026-04-12, §2
+#
+# Rationale: federated-netwerken (data blijft bij de bron) krijgen
+# een soevereiniteits-bonus boven centralized (één datahub met
+# lock-in-risico). Hybride krijgt geen bonus maar ook geen straf.
+
+topology_multipliers:
+  federated: 1.2    # Bonus voor soevereiniteit (Trijn-model)
+  hybrid: 1.0       # Neutraal (LSP combineert modi)
+  centralized: 0.8  # Strafpunt vendor-lock-in (Twente / Fabric)
+
+# -------------------------------------------------------------
+# 3. Status multiplier (v0.1 Gemini input, ronde #5 compleet)
+# -------------------------------------------------------------
+#
+# Gemini ronde #5: `deprecated` blijft 0.0 (geen negatieve score,
+# om eerlijke registratie van legacy niet te ontmoedigen).
+
+status_multipliers:
+  production: 1.0
+  pilot: 0.5
+  planned: 0.1
+  concept: 0.05       # Papier is geduldig: intentie zonder realiteit
+  deprecated: 0.0     # Geen negatieve score (Gemini ronde #5)
+  inactive: 0.0
+
+# -------------------------------------------------------------
+# 4. Data-type gewichten (v0.1.1 — Gemini ronde #5 akkoord)
+# -------------------------------------------------------------
+#
+# Gemini akkoord met Claude's voorstel. Rationale: care_transfer
+# bevat álle andere data_types geaggregeerd en weegt dus het
+# volledigst. consent/appointment zijn enablers, geen
+# zorginhoudelijke gegevens. Aggregatie over meerdere data_types
+# in een connection: mean() — zie formule-sectie.
+
+data_type_weights:
+  care_transfer: 1.0
+  discharge_summary: 0.9
+  basic_dataset: 0.8
+  medication: 0.8
+  radiology_image: 0.7
+  lab_result: 0.6
+  referral: 0.5
+  consent: 0.4
+  appointment: 0.3
+  other: 0.2
+
+# -------------------------------------------------------------
+# 5. Recency decay (v0.1.1 — Gemini ronde #5 gekozen)
+# -------------------------------------------------------------
+#
+# Gemini ronde #5: STAPSGEWIJS in plaats van lineair.
+# Rationale: zorgtransformatie-projecten hebben een cyclus van
+# 12-18 maanden. Lineaire per-maand-decay suggereert een precisie
+# die er in de praktijk niet is.
+#
+# Reference-datum = connection.validated_at, of als die ontbreekt,
+# de datum van de nieuwste source in connection.sources.
+
+recency_decay:
+  type: stepped
+  reference_field: validated_at
+  fallback_field: latest_source_date
+  default_if_missing: 1.0   # nieuwe data krijgt full credit tot bewijs ontbreekt
+  steps:
+    - max_months: 12
+      weight: 1.0           # Vers / actueel
+    - max_months: 24
+      weight: 0.7           # Nog relevant, verificatie gewenst
+    - max_months: 36
+      weight: 0.3           # Stale of stilgevallen initiatief
+    - max_months: null      # > 36 maanden
+      weight: 0.0           # Data verouderd
+
+# -------------------------------------------------------------
+# 6. Standaard-conformiteits-bonus (v0.1.1 — Gemini ronde #5)
+# -------------------------------------------------------------
+#
+# Als beide systemen in een connection hetzelfde standaard-id
+# ondersteunen (via system.standards_supported), krijgt de
+# connection een multiplicatieve bonus.
+#
+# Gemini ronde #5: ×1.15, multiplicatief gestapeld met
+# open_standard_multiplier. Zie formule-sectie voor volgorde.
+
+standard_conformance_bonus:
+  multiplier: 1.15
+  trigger: >
+    connection.standard staat in system.standards_supported van
+    zowel system-van-org_a als system-van-org_b.
+  fallback_if_no_standard: 1.0   # geen bonus, ook geen straf
+
+# -------------------------------------------------------------
+# 7. Open-standaarden bonus (v0.1.1 — MULTIPLICATIEF)
+# -------------------------------------------------------------
+#
+# BELANGRIJKE WIJZIGING IN RONDE #5:
+# Gemini heeft bevestigd dat open_standard én standard_conformance
+# *multiplicatief moeten stapelen*. In v0.1.0 stond open_standard
+# als additive (+0.2); dat is nu omgezet naar ×1.2 zodat wie én
+# OpenEHR/OMOP gebruikt én Nictiz-gevalideerd is, dubbel wordt
+# beloond: 1.15 × 1.2 = 1.38.
+#
+# De magnitude ×1.2 is Claude's vertaling van het oorspronkelijke
+# +0.2 voorstel. Gemini heeft dit nummer niet expliciet bevestigd —
+# kan in v0.1.2 bijgesteld worden na de eerste volledige ranking.
+
+open_standard_bonus:
+  trigger_standards:
+    - openehr       # nog niet in /data/standards/ — v0.3 work
+    - omop          # idem
+  multiplier: 1.2
+  apply_to: "raw_score_per_connection"
+
+# -------------------------------------------------------------
+# 8. Knock-outs (v0.1 Gemini input, niet afgedwongen)
+# -------------------------------------------------------------
+#
+# Gemini stelt een NEN 7510 knock-out voor: als de operator van een
+# centralized datahub geen aantoonbare NEN 7510 / Wbsn-z compliance
+# heeft, wordt de score van afhankelijke connections op 0 gezet.
+#
+# PROBLEEM: het v0.2-schema heeft geen `network.nen_7510`-veld. De
+# knock-out kan dus nog niet worden *afgedwongen* door de validator;
+# wel gedocumenteerd voor v0.3.
+
+knockouts:
+  - id: nen-7510-centralized-bsn
+    description: >
+      Een centralized datahub die patiënt-BSN verwerkt zonder
+      aantoonbare NEN 7510 / Wbsn-z conformiteit zet afhankelijke
+      connection-scores op 0, ongeacht andere factoren.
+    applies_if:
+      - "network.data_topology == centralized"
+      - "network.operator.nen_7510 != true"   # veld bestaat nog niet
+    effect: "final_score(connection) = 0"
+    enforced: false   # wacht op v0.3 (nieuw veld nen_7510 op org/vendor)
+
+# -------------------------------------------------------------
+# 9. Score-formule (v0.1.1 — volledig multiplicatief)
+# -------------------------------------------------------------
+#
+# Per Connection:
+#
+#   paradigm_w  = transport_paradigm_weights[mapping(network)]
+#   topology_w  = topology_multipliers[network.data_topology]
+#   status_w    = status_multipliers[connection.status]
+#   data_w      = mean(data_type_weights[connection.data_types])
+#   recency_w   = recency_decay(connection.validated_at)
+#   conform_w   = standard_conformance_bonus.multiplier
+#                   if both systems support connection.standard
+#                   else 1.0
+#   open_w      = open_standard_bonus.multiplier
+#                   if connection uses openehr/omop
+#                   else 1.0
+#
+#   raw_score(conn)   = paradigm_w * topology_w * status_w
+#                       * data_w * recency_w
+#
+#   final_score(conn) = raw_score(conn) * conform_w * open_w
+#
+#   knockout: als een knock-out-regel matcht, final_score = 0
+#
+# Per Organization:
+#
+#   score(org) = Σ final_score(conn)
+#                  over alle conn waarin org participeert
+#
+# (Cross-check met /schema/relations.md §IZA Maturity Score — de
+# structuur. Beide documenten moeten na elke minor-bump hier
+# synchroon blijven.)
+
+formula:
+  per_connection:
+    raw: "paradigm_w * topology_w * status_w * data_w * recency_w"
+    final: "raw * conform_w * open_w"
+    knockout: "if any knockouts match: final = 0"
+  per_organization:
+    aggregate: "sum of final_score over participating connections"
+
+# -------------------------------------------------------------
+# 10. Bronnen
+# -------------------------------------------------------------
+
+sources:
+  - plan-rdh-twente-2025
+  - plan-trijn-midden-nederland-2025
+  - plan-gezond-gooi-2025
+  - regioplan-iza-deel-3
+  - integraal-zorgakkoord-2022
+
+# -------------------------------------------------------------
+# 11. Open issues (resolved in ronde #5)
+# -------------------------------------------------------------
+#
+# Alle 5 vragen van ronde #5 zijn beantwoord door Gemini op
+# 2026-04-12. Zie /overleg/gemini/2026-04-12-04-* voor de context.
+# Nieuwe open issues voor v0.1.2 / v0.2:
+#
+# - open_standard_bonus.multiplier (1.2) is Claude's vertaling,
+#   niet door Gemini expliciet bevestigd — heroverwegen na eerste
+#   volledige ranking
+# - nen_7510-knockout kan pas worden afgedwongen na v0.3 schema bump
+# - recency reference_field moet validated_at op connections worden
+#   — veld bestaat in schema maar is nog nergens ingevuld
+
+open_issues: []

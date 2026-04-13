@@ -1,0 +1,16 @@
+id: gem-maassluis
+type: organization
+name: Gemeente Maassluis
+sector: gemeente
+country: NL
+locations:
+- city: Maassluis
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9214
+    lon: 4.2528
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

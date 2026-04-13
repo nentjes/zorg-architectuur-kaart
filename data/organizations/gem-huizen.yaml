@@ -1,0 +1,16 @@
+id: gem-huizen
+type: organization
+name: Gemeente Huizen
+sector: gemeente
+country: NL
+locations:
+- city: Huizen
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3003
+    lon: 5.2406
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

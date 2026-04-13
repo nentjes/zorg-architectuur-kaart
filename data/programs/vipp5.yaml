@@ -1,0 +1,17 @@
+id: vipp5
+type: program
+name: "VIPP 5 — Versnellingsprogramma Informatie-uitwisseling Patiënt en Professional"
+aliases:
+  - "VIPP5"
+  - "VIPP-5"
+scope: landelijk
+funder: "Ministerie van VWS (via DUS-I)"
+start_date: "2020-01-01"
+end_date: "2024-12-31"
+enforces_standards:
+  - zib-2020
+  - nl-core-r4
+target_sectors:
+  - ziekenhuis
+sources:
+  - dusi-vipp5-regeling

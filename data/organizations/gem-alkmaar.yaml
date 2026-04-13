@@ -1,0 +1,16 @@
+id: gem-alkmaar
+type: organization
+name: Gemeente Alkmaar
+sector: gemeente
+country: NL
+locations:
+- city: Alkmaar
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.6322
+    lon: 4.7533
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-tubbergen
+type: organization
+name: Gemeente Tubbergen
+sector: gemeente
+country: NL
+locations:
+- city: Tubbergen
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.4103
+    lon: 6.7831
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

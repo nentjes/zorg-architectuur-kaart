@@ -1,0 +1,23 @@
+id: ggz-nhn
+type: organization
+name: GGZ Noord-Holland-Noord
+aliases:
+- GGZ NHN
+sector: ggz
+country: NL
+locations:
+- city: Heiloo
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.6025
+    lon: 4.7044
+sources:
+- claude-knowledge-2026-04
+- gemini-ggz-research-2026-04
+confidence: medium
+needs_verification: true
+systems:
+- nedap-ons
+notes:
+- 'uitzondering: volledig op Nedap'

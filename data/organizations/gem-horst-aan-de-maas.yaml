@@ -1,0 +1,16 @@
+id: gem-horst-aan-de-maas
+type: organization
+name: Gemeente Horst aan de Maas
+sector: gemeente
+country: NL
+locations:
+- city: Horst
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.4547
+    lon: 6.0419
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

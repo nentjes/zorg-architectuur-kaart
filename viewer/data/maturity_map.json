@@ -1,0 +1,8417 @@
+{
+  "meta": {
+    "schema_version": "0.1.1",
+    "generated_at": "2026-04-12T21:14:13",
+    "n_connections": 4,
+    "n_organizations_scored": 690,
+    "formula": {
+      "per_connection": {
+        "raw": "paradigm_w * topology_w * status_w * data_w * recency_w",
+        "final": "raw * conform_w * open_w",
+        "knockout": "if any knockouts match: final = 0"
+      },
+      "per_organization": {
+        "aggregate": "sum of final_score over participating connections"
+      }
+    }
+  },
+  "connections": [
+    {
+      "id": "conn-lsp-hzt-tao-ua",
+      "organization_a": "hzt",
+      "organization_b": "tao-ua",
+      "network": "lsp",
+      "network_name": "Landelijk Schakelpunt (LSP)",
+      "data_topology": "hybrid",
+      "status": "production",
+      "data_types": [
+        "medication"
+      ],
+      "breakdown": {
+        "paradigm_label": "lsp",
+        "paradigm_w": 0.6,
+        "topology_w": 1.0,
+        "status_w": 1.0,
+        "data_w": 0.8,
+        "recency_w": 1.0,
+        "conform_w": 1.0,
+        "open_w": 1.0
+      },
+      "raw_score": 0.48,
+      "final_score": 0.48
+    },
+    {
+      "id": "conn-trijn-hus-umc-utrecht",
+      "organization_a": "hus",
+      "organization_b": "umc-utrecht",
+      "network": "trijn-platform",
+      "network_name": "Trijn federatief zorgdata-platform Midden-Nederland",
+      "data_topology": "federated",
+      "status": "pilot",
+      "data_types": [
+        "basic_dataset",
+        "lab_result",
+        "discharge_summary"
+      ],
+      "breakdown": {
+        "paradigm_label": "fhir_api",
+        "paradigm_w": 1.0,
+        "topology_w": 1.2,
+        "status_w": 0.5,
+        "data_w": 0.7667,
+        "recency_w": 1.0,
+        "conform_w": 1.0,
+        "open_w": 1.0
+      },
+      "raw_score": 0.46,
+      "final_score": 0.46
+    },
+    {
+      "id": "conn-rdh-twente-mst-carintreggeland",
+      "organization_a": "carintreggeland",
+      "organization_b": "mst",
+      "network": "rdh-twente",
+      "network_name": "Regionale Datahub Twente",
+      "data_topology": "centralized",
+      "status": "planned",
+      "data_types": [
+        "discharge_summary",
+        "care_transfer",
+        "basic_dataset"
+      ],
+      "breakdown": {
+        "paradigm_label": "fhir_api",
+        "paradigm_w": 1.0,
+        "topology_w": 0.8,
+        "status_w": 0.1,
+        "data_w": 0.9,
+        "recency_w": 1.0,
+        "conform_w": 1.0,
+        "open_w": 1.0
+      },
+      "raw_score": 0.072,
+      "final_score": 0.072
+    },
+    {
+      "id": "conn-altrecht-umcu-lsp",
+      "organization_a": "altrecht",
+      "organization_b": "umc-utrecht",
+      "network": "lsp",
+      "network_name": "Landelijk Schakelpunt (LSP)",
+      "data_topology": "hybrid",
+      "status": "planned",
+      "data_types": [
+        "medication"
+      ],
+      "breakdown": {
+        "paradigm_label": "lsp",
+        "paradigm_w": 0.6,
+        "topology_w": 1.0,
+        "status_w": 0.1,
+        "data_w": 0.8,
+        "recency_w": 1.0,
+        "conform_w": 1.0,
+        "open_w": 1.0
+      },
+      "raw_score": 0.048,
+      "final_score": 0.048
+    }
+  ],
+  "organizations": [
+    {
+      "id": "umc-utrecht",
+      "name": "Universitair Medisch Centrum Utrecht",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.508,
+      "participating_in": [
+        "conn-altrecht-umcu-lsp",
+        "conn-trijn-hus-umc-utrecht"
+      ]
+    },
+    {
+      "id": "hzt",
+      "name": "Huisartsenzorg Twente",
+      "sector": "huisarts",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.793,
+        52.2661
+      ],
+      "total_score": 0.48,
+      "participating_in": [
+        "conn-lsp-hzt-tao-ua"
+      ]
+    },
+    {
+      "id": "tao-ua",
+      "name": "Twentse Apothekers Organisatie / Unie der Apotheken",
+      "sector": "apotheek",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.48,
+      "participating_in": [
+        "conn-lsp-hzt-tao-ua"
+      ]
+    },
+    {
+      "id": "hus",
+      "name": "Huisartsen Utrecht Stad",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.46,
+      "participating_in": [
+        "conn-trijn-hus-umc-utrecht"
+      ]
+    },
+    {
+      "id": "carintreggeland",
+      "name": "Carintreggeland",
+      "sector": "vvt",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.793,
+        52.2661
+      ],
+      "total_score": 0.072,
+      "participating_in": [
+        "conn-rdh-twente-mst-carintreggeland"
+      ]
+    },
+    {
+      "id": "mst",
+      "name": "Medisch Spectrum Twente",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.072,
+      "participating_in": [
+        "conn-rdh-twente-mst-carintreggeland"
+      ]
+    },
+    {
+      "id": "altrecht",
+      "name": "Altrecht",
+      "sector": "ggz",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.048,
+      "participating_in": [
+        "conn-altrecht-umcu-lsp"
+      ]
+    },
+    {
+      "id": "aafje",
+      "name": "Aafje",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "accare",
+      "name": "Accare",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.5639,
+        52.9956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "actiz",
+      "name": "ActiZ",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "acute-zorg-euregio",
+      "name": "Acute Zorg Euregio",
+      "sector": "ambulance",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "adelante",
+      "name": "Adelante Zorggroep",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        5.9306,
+        50.9181
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "adrz",
+      "name": "Admiraal De Ruyter Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        3.8889,
+        51.5044
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "albert-schweitzer",
+      "name": "Albert Schweitzer Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.6908,
+        51.7972
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "allevo",
+      "name": "Allévo",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        3.92,
+        51.6506
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "alphega-apotheek",
+      "name": "Alphega Apotheek (Alliance Healthcare)",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.3037,
+        51.6978
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "alrijne-zorggroep",
+      "name": "Alrijne Zorggroep VVT",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.5364,
+        52.1625
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "amaris",
+      "name": "Amaris Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.2308,
+        52.2556
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "amphia",
+      "name": "Amphia Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.7683,
+        51.5719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "amstelland-zorg",
+      "name": "Amstelland Zorg",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.86,
+        52.308
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "amstelring",
+      "name": "Amstelring",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "amsterdam-umc",
+      "name": "Amsterdam UMC",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.9577,
+        52.2975
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "antes",
+      "name": "Antes",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.4792,
+        51.9225
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "antonius-zh-sneek",
+      "name": "Antonius Ziekenhuis Sneek",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.6581,
+        53.0325
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "archipel",
+      "name": "Archipel",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "argos-zorggroep",
+      "name": "Argos Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.3989,
+        51.9194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "arkin",
+      "name": "Arkin",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "attent-zorg",
+      "name": "Attent Zorg en Behandeling",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9775,
+        51.9956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "avl",
+      "name": "Antoni van Leeuwenhoek",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.85,
+        52.3331
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "avoord",
+      "name": "Avoord",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.6384,
+        51.5703
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "axioncontinu",
+      "name": "AxionContinu",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "azora",
+      "name": "Azora",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.3739,
+        51.9197
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "basalt",
+      "name": "Basalt Revalidatie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        4.4869,
+        52.1581
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "benu-apotheek",
+      "name": "BENU Apotheek (Brocacef)",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.0456,
+        52.1386
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "bernhoven",
+      "name": "Bernhoven",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.6167,
+        51.66
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "beweging-3",
+      "name": "Beweging 3.0",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "boots-apotheek-nl",
+      "name": "Boots Apotheek Nederland",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.8372,
+        51.8126
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "brabantzorg",
+      "name": "BrabantZorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.5236,
+        51.7649
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "bravis",
+      "name": "Bravis Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.4667,
+        51.5333
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "brijder",
+      "name": "Brijder Verslavingszorg",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.7534,
+        52.6324
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "brocacef-groep",
+      "name": "Brocacef Groep",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.0456,
+        52.1386
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "capri-hartrevalidatie",
+      "name": "Capri Hartrevalidatie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "careyn",
+      "name": "Careyn",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "catharina-ziekenhuis",
+      "name": "Catharina Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.465,
+        51.4333
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "chronic-care-west-brabant",
+      "name": "Chronic Care West-Brabant (CCWB)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.4654,
+        51.5309
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cicero-zorggroep",
+      "name": "Cicero Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9708,
+        50.9467
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ciran-intergrin",
+      "name": "InteGrin (v/h Ciran)",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cohaesie-apeldoorn",
+      "name": "Huisartsen Coöperatie Apeldoorn",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.9699,
+        52.2112
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cohesie",
+      "name": "Cohesie Cure and Care",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.1724,
+        51.3704
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cordaan",
+      "name": "Cordaan",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "cwz",
+      "name": "Canisius-Wilhelmina Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.8217,
+        51.8419
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-friese-wouden",
+      "name": "De Friese Wouden",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.0989,
+        53.1128
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-hoogstraat",
+      "name": "De Hoogstraat Revalidatie",
+      "sector": "revalidatie",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1571,
+        52.0839
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-nederlandse-ggz",
+      "name": "de Nederlandse ggz",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-rijnhoven",
+      "name": "De Rijnhoven",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.955,
+        52.09
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-stouwe",
+      "name": "De Stouwe",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.1939,
+        52.6954
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-viersprong",
+      "name": "De Viersprong",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.2897,
+        51.534
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-wever",
+      "name": "De Wever",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.0913,
+        51.5555
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-zorgboog",
+      "name": "De Zorgboog",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.7528,
+        51.4708
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "de-zorggroep",
+      "name": "De Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.1724,
+        51.3704
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "derdelijn-treant",
+      "name": "Zorggroep Leveste Middenveld",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.8973,
+        52.7858
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "deventer-ziekenhuis",
+      "name": "Deventer Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.1392,
+        52.2542
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "diakonessenhuis",
+      "name": "Diakonessenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1239,
+        52.0731
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "dienstapotheek-nl-koepel",
+      "name": "Dienstapotheken Nederland",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "dignis",
+      "name": "Dignis",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "dijklander",
+      "name": "Dijklander Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.0597,
+        52.6425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "dimence",
+      "name": "Dimence",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.1392,
+        52.2542
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "doh",
+      "name": "DOH (De Ondernemende Huisarts)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "dokter-drenthe",
+      "name": "Dokter Drenthe",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.8973,
+        52.7858
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "drechtdokters",
+      "name": "DrechtDokters",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.6901,
+        51.8133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "driezorg",
+      "name": "Driezorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.083,
+        52.5168
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "elann",
+      "name": "ELANN",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "eleos",
+      "name": "Eleos",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "elkerliek",
+      "name": "Elkerliek Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.65,
+        51.4833
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "emergis",
+      "name": "Emergis",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        3.8881,
+        51.5048
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "envida",
+      "name": "Envida",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.691,
+        50.8514
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "erasmus-mc",
+      "name": "Erasmus MC",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.4686,
+        51.9106
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "espria",
+      "name": "Espria",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.5167,
+        52.8612
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "etz",
+      "name": "Elisabeth-TweeSteden Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.0772,
+        51.5606
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "evean",
+      "name": "Evean",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.9596,
+        52.5051
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "fea",
+      "name": "FEA (Federatie Eerstelijnszorg Almelo)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.6604,
+        52.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "fivoor",
+      "name": "Fivoor",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "flevoziekenhuis",
+      "name": "Flevoziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.2153,
+        52.3808
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "florence",
+      "name": "Florence",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.3113,
+        52.0799
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "franciscus",
+      "name": "Franciscus Gasthuis & Vlietland",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.4697,
+        51.9306
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "friese-huisartsenvereniging",
+      "name": "Friese Huisartsen Vereniging",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.0989,
+        53.1128
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gelre-ziekenhuizen",
+      "name": "Gelre ziekenhuizen",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.9697,
+        52.2058
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-aa-en-hunze",
+      "name": "Gemeente Aa en Hunze",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.7589,
+        52.9947
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-aalsmeer",
+      "name": "Gemeente Aalsmeer",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7583,
+        52.2644
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-aalten",
+      "name": "Gemeente Aalten",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.5806,
+        51.9242
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-achtkarspelen",
+      "name": "Gemeente Achtkarspelen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.1406,
+        53.2503
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-alblasserdam",
+      "name": "Gemeente Alblasserdam",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6617,
+        51.8658
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-albrandswaard",
+      "name": "Gemeente Albrandswaard",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.4117,
+        51.8544
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-alkmaar",
+      "name": "Gemeente Alkmaar",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7533,
+        52.6322
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-almelo",
+      "name": "Gemeente Almelo",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.6604,
+        52.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-almere",
+      "name": "Gemeente Almere",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.2647,
+        52.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-alphen-aan-den-rijn",
+      "name": "Gemeente Alphen aan den Rijn",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6564,
+        52.1292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-altena",
+      "name": "Gemeente Altena",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.9453,
+        51.7561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-ameland",
+      "name": "Gemeente Ameland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.6706,
+        53.4497
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-amersfoort",
+      "name": "Gemeente Amersfoort",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-amstelveen",
+      "name": "Gemeente Amstelveen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.8597,
+        52.3081
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-amsterdam",
+      "name": "Gemeente Amsterdam",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.8952,
+        52.3702
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-apeldoorn",
+      "name": "Gemeente Apeldoorn",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9699,
+        52.2112
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-arnhem",
+      "name": "Gemeente Arnhem",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-assen",
+      "name": "Gemeente Assen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.5626,
+        52.996
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-asten",
+      "name": "Gemeente Asten",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.7517,
+        51.4042
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-baarle-nassau",
+      "name": "Gemeente Baarle-Nassau",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.9283,
+        51.4428
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-baarn",
+      "name": "Gemeente Baarn",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2886,
+        52.2119
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-barendrecht",
+      "name": "Gemeente Barendrecht",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.5389,
+        51.8519
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-barneveld",
+      "name": "Gemeente Barneveld",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.5847,
+        52.1403
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-beek",
+      "name": "Gemeente Beek",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8081,
+        50.9403
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-beekdaelen",
+      "name": "Gemeente Beekdaelen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8756,
+        50.9564
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-beesel",
+      "name": "Gemeente Beesel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0867,
+        51.2853
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-berg-en-dal",
+      "name": "Gemeente Berg en Dal",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9392,
+        51.7789
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-bergeijk",
+      "name": "Gemeente Bergeijk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.3519,
+        51.3189
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-bergen-l",
+      "name": "Gemeente Bergen (L)",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0458,
+        51.5956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-bergen-nh",
+      "name": "Gemeente Bergen (NH)",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7022,
+        52.6711
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-bergen-op-zoom",
+      "name": "Gemeente Bergen op Zoom",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.2928,
+        51.4953
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-berkelland",
+      "name": "Gemeente Berkelland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.5247,
+        52.12
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-bernheze",
+      "name": "Gemeente Bernheze",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.5297,
+        51.7361
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-best",
+      "name": "Gemeente Best",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.3917,
+        51.5094
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-beuningen",
+      "name": "Gemeente Beuningen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.7694,
+        51.8606
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-beverwijk",
+      "name": "Gemeente Beverwijk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6564,
+        52.4847
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-bladel",
+      "name": "Gemeente Bladel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.2189,
+        51.3683
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-blaricum",
+      "name": "Gemeente Blaricum",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.25,
+        52.2722
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-bloemendaal",
+      "name": "Gemeente Bloemendaal",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6006,
+        52.4028
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-bodegraven-reeuwijk",
+      "name": "Gemeente Bodegraven-Reeuwijk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7492,
+        52.0828
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-boekel",
+      "name": "Gemeente Boekel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.6761,
+        51.6003
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-borger-odoorn",
+      "name": "Gemeente Borger-Odoorn",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.8678,
+        52.8861
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-borne",
+      "name": "Gemeente Borne",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.7456,
+        52.3011
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-borsele",
+      "name": "Gemeente Borsele",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        3.7758,
+        51.4956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-boxtel",
+      "name": "Gemeente Boxtel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.3317,
+        51.5903
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-breda",
+      "name": "Gemeente Breda",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7683,
+        51.5719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-bronckhorst",
+      "name": "Gemeente Bronckhorst",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.2944,
+        52.0669
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-brummen",
+      "name": "Gemeente Brummen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.1558,
+        52.0867
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-brunssum",
+      "name": "Gemeente Brunssum",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9711,
+        50.9475
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-bunnik",
+      "name": "Gemeente Bunnik",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1997,
+        52.066
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-bunschoten",
+      "name": "Gemeente Bunschoten",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3795,
+        52.2442
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-buren",
+      "name": "Gemeente Buren",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.4336,
+        51.9783
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-capelle-aan-den-ijssel",
+      "name": "Gemeente Capelle aan den IJssel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.5764,
+        51.9303
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-castricum",
+      "name": "Gemeente Castricum",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6589,
+        52.5456
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-coevorden",
+      "name": "Gemeente Coevorden",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.7408,
+        52.6603
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-cranendonck",
+      "name": "Gemeente Cranendonck",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.5858,
+        51.2861
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-culemborg",
+      "name": "Gemeente Culemborg",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.2267,
+        51.955
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-dalfsen",
+      "name": "Gemeente Dalfsen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.255,
+        52.5081
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-dantumadiel",
+      "name": "Gemeente Dantumadiel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9983,
+        53.2911
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-de-bilt",
+      "name": "Gemeente De Bilt",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2,
+        52.1333
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-de-fryske-marren",
+      "name": "Gemeente De Fryske Marren",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.7997,
+        52.9606
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-de-ronde-venen",
+      "name": "Gemeente De Ronde Venen",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.8536,
+        52.2139
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-de-wolden",
+      "name": "Gemeente De Wolden",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.4172,
+        52.6547
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-delft",
+      "name": "Gemeente Delft",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.3571,
+        52.0116
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-den-haag",
+      "name": "Gemeente Den Haag",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.3007,
+        52.0705
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-den-helder",
+      "name": "Gemeente Den Helder",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7603,
+        52.9597
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-deurne",
+      "name": "Gemeente Deurne",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.7956,
+        51.4608
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-deventer",
+      "name": "Gemeente Deventer",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.1639,
+        52.2551
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-diemen",
+      "name": "Gemeente Diemen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.9625,
+        52.3397
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-dijk-en-waard",
+      "name": "Gemeente Dijk en Waard",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.8447,
+        52.6706
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-dinkelland",
+      "name": "Gemeente Dinkelland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.9506,
+        52.3731
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-doesburg",
+      "name": "Gemeente Doesburg",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.1367,
+        52.0114
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-doetinchem",
+      "name": "Gemeente Doetinchem",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.2889,
+        51.965
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-dongen",
+      "name": "Gemeente Dongen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.9392,
+        51.6267
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-dordrecht",
+      "name": "Gemeente Dordrecht",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6903,
+        51.8133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-drechterland",
+      "name": "Gemeente Drechterland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.1572,
+        52.6881
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-drimmelen",
+      "name": "Gemeente Drimmelen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7942,
+        51.6775
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-dronten",
+      "name": "Gemeente Dronten",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.7175,
+        52.525
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-druten",
+      "name": "Gemeente Druten",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.6011,
+        51.8878
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-duiven",
+      "name": "Gemeente Duiven",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0181,
+        51.9486
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-echt-susteren",
+      "name": "Gemeente Echt-Susteren",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8725,
+        51.1033
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-edam-volendam",
+      "name": "Gemeente Edam-Volendam",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.0706,
+        52.4958
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-ede",
+      "name": "Gemeente Ede",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.6642,
+        52.0336
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-eemnes",
+      "name": "Gemeente Eemnes",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2619,
+        52.2575
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-eemsdelta",
+      "name": "Gemeente Eemsdelta",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.8565,
+        53.3204
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-eersel",
+      "name": "Gemeente Eersel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.3172,
+        51.3575
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-eijsden-margraten",
+      "name": "Gemeente Eijsden-Margraten",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8167,
+        50.8347
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-eindhoven",
+      "name": "Gemeente Eindhoven",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-elburg",
+      "name": "Gemeente Elburg",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8372,
+        52.4447
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-emmen",
+      "name": "Gemeente Emmen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.8973,
+        52.7858
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-enkhuizen",
+      "name": "Gemeente Enkhuizen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.2914,
+        52.7053
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-enschede",
+      "name": "Gemeente Enschede",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-epe",
+      "name": "Gemeente Epe",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9886,
+        52.3475
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-ermelo",
+      "name": "Gemeente Ermelo",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.6211,
+        52.2983
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-etten-leur",
+      "name": "Gemeente Etten-Leur",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6356,
+        51.5711
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-geertruidenberg",
+      "name": "Gemeente Geertruidenberg",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.8817,
+        51.6775
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-geldrop-mierlo",
+      "name": "Gemeente Geldrop-Mierlo",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.5581,
+        51.42
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-gemert-bakel",
+      "name": "Gemeente Gemert-Bakel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.6908,
+        51.5547
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-gennep",
+      "name": "Gemeente Gennep",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9706,
+        51.6964
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-gilze-en-rijen",
+      "name": "Gemeente Gilze en Rijen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.9219,
+        51.5858
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-goeree-overflakkee",
+      "name": "Gemeente Goeree-Overflakkee",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.1708,
+        51.7575
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-goes",
+      "name": "Gemeente Goes",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        3.8881,
+        51.5047
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-goirle",
+      "name": "Gemeente Goirle",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.0631,
+        51.52
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-gooise-meren",
+      "name": "Gemeente Gooise Meren",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.1606,
+        52.2769
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-gorinchem",
+      "name": "Gemeente Gorinchem",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.975,
+        51.8308
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-gouda",
+      "name": "Gemeente Gouda",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7106,
+        52.0117
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-groningen",
+      "name": "Gemeente Groningen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-gulpen-wittem",
+      "name": "Gemeente Gulpen-Wittem",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8867,
+        50.8158
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-haaksbergen",
+      "name": "Gemeente Haaksbergen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.7383,
+        52.1575
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-haarlem",
+      "name": "Gemeente Haarlem",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6462,
+        52.3874
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-haarlemmermeer",
+      "name": "Gemeente Haarlemmermeer",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6892,
+        52.3028
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-halderberge",
+      "name": "Gemeente Halderberge",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.5261,
+        51.5858
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hardenberg",
+      "name": "Gemeente Hardenberg",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.6206,
+        52.5761
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-harderwijk",
+      "name": "Gemeente Harderwijk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.6208,
+        52.3411
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hardinxveld-giessendam",
+      "name": "Gemeente Hardinxveld-Giessendam",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.8467,
+        51.8267
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-harlingen",
+      "name": "Gemeente Harlingen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.4239,
+        53.1744
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hattem",
+      "name": "Gemeente Hattem",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0592,
+        52.4731
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-heemskerk",
+      "name": "Gemeente Heemskerk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.67,
+        52.5092
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-heemstede",
+      "name": "Gemeente Heemstede",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6222,
+        52.3533
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-heerde",
+      "name": "Gemeente Heerde",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0389,
+        52.3886
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-heerenveen",
+      "name": "Gemeente Heerenveen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9186,
+        52.9594
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-heerlen",
+      "name": "Gemeente Heerlen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9795,
+        50.8882
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-heeze-leende",
+      "name": "Gemeente Heeze-Leende",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.5714,
+        51.3864
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-heiloo",
+      "name": "Gemeente Heiloo",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7039,
+        52.6
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hellendoorn",
+      "name": "Gemeente Hellendoorn",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.4639,
+        52.3639
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-helmond",
+      "name": "Gemeente Helmond",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.6614,
+        51.4822
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hendrik-ido-ambacht",
+      "name": "Gemeente Hendrik-Ido-Ambacht",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6397,
+        51.8436
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hengelo-ov",
+      "name": "Gemeente Hengelo (Ov)",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.793,
+        52.2661
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-het-hogeland",
+      "name": "Gemeente Het Hogeland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.5187,
+        53.3306
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-heumen",
+      "name": "Gemeente Heumen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8358,
+        51.7808
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-heusden",
+      "name": "Gemeente Heusden",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.2253,
+        51.6839
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hillegom",
+      "name": "Gemeente Hillegom",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.5808,
+        52.2967
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hilvarenbeek",
+      "name": "Gemeente Hilvarenbeek",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.1336,
+        51.4867
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hilversum",
+      "name": "Gemeente Hilversum",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.1669,
+        52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hoeksche-waard",
+      "name": "Gemeente Hoeksche Waard",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.4119,
+        51.8225
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hof-van-twente",
+      "name": "Gemeente Hof van Twente",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.58,
+        52.23
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hollands-kroon",
+      "name": "Gemeente Hollands Kroon",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.8558,
+        52.8711
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hoogeveen",
+      "name": "Gemeente Hoogeveen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.4767,
+        52.7228
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hoorn",
+      "name": "Gemeente Hoorn",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.0597,
+        52.6425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-horst-aan-de-maas",
+      "name": "Gemeente Horst aan de Maas",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0419,
+        51.4547
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-houten",
+      "name": "Gemeente Houten",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1681,
+        52.0344
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-huizen",
+      "name": "Gemeente Huizen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.2406,
+        52.3003
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-hulst",
+      "name": "Gemeente Hulst",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.0506,
+        51.2806
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-ijsselstein",
+      "name": "Gemeente IJsselstein",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0414,
+        52.0206
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-kaag-en-braassem",
+      "name": "Gemeente Kaag en Braassem",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6339,
+        52.2028
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-kampen",
+      "name": "Gemeente Kampen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9113,
+        52.5558
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-kapelle",
+      "name": "Gemeente Kapelle",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        3.9625,
+        51.4819
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-katwijk",
+      "name": "Gemeente Katwijk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.3981,
+        52.2022
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-kerkrade",
+      "name": "Gemeente Kerkrade",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0619,
+        50.8656
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-koggenland",
+      "name": "Gemeente Koggenland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.9708,
+        52.6583
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-krimpen-aan-den-ijssel",
+      "name": "Gemeente Krimpen aan den IJssel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.5944,
+        51.9175
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-krimpenerwaard",
+      "name": "Gemeente Krimpenerwaard",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6917,
+        51.9006
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-laarbeek",
+      "name": "Gemeente Laarbeek",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.6319,
+        51.5336
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-land-van-cuijk",
+      "name": "Gemeente Land van Cuijk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8783,
+        51.7283
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-landgraaf",
+      "name": "Gemeente Landgraaf",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0269,
+        50.9092
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-landsmeer",
+      "name": "Gemeente Landsmeer",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.9106,
+        52.4306
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-lansingerland",
+      "name": "Gemeente Lansingerland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.4889,
+        51.9942
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-laren-nh",
+      "name": "Gemeente Laren (NH)",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.2306,
+        52.2567
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-leeuwarden",
+      "name": "Gemeente Leeuwarden",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.7999,
+        53.2012
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-leiden",
+      "name": "Gemeente Leiden",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-leiderdorp",
+      "name": "Gemeente Leiderdorp",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.5356,
+        52.1614
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-leidschendam-voorburg",
+      "name": "Gemeente Leidschendam-Voorburg",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.3928,
+        52.0875
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-lelystad",
+      "name": "Gemeente Lelystad",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.4714,
+        52.5185
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-leudal",
+      "name": "Gemeente Leudal",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9231,
+        51.2489
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-leusden",
+      "name": "Gemeente Leusden",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.4311,
+        52.1317
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-lingewaard",
+      "name": "Gemeente Lingewaard",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8925,
+        51.8908
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-lisse",
+      "name": "Gemeente Lisse",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.5583,
+        52.2606
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-lochem",
+      "name": "Gemeente Lochem",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.4122,
+        52.1606
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-loon-op-zand",
+      "name": "Gemeente Loon op Zand",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.0419,
+        51.655
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-lopik",
+      "name": "Gemeente Lopik",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.9514,
+        51.9758
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-losser",
+      "name": "Gemeente Losser",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        7.0064,
+        52.2608
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-maasdriel",
+      "name": "Gemeente Maasdriel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.3336,
+        51.7744
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-maasgouw",
+      "name": "Gemeente Maasgouw",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8881,
+        51.1497
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-maashorst",
+      "name": "Gemeente Maashorst",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.6183,
+        51.6622
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-maassluis",
+      "name": "Gemeente Maassluis",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.2528,
+        51.9214
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-maastricht",
+      "name": "Gemeente Maastricht",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.691,
+        50.8514
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-medemblik",
+      "name": "Gemeente Medemblik",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.0308,
+        52.6742
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-meerssen",
+      "name": "Gemeente Meerssen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.7517,
+        50.8833
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-meierijstad",
+      "name": "Gemeente Meierijstad",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.5408,
+        51.6139
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-meppel",
+      "name": "Gemeente Meppel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.1939,
+        52.6954
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-middelburg",
+      "name": "Gemeente Middelburg",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        3.6108,
+        51.4989
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-midden-delfland",
+      "name": "Gemeente Midden-Delfland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.3211,
+        51.9764
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-midden-drenthe",
+      "name": "Gemeente Midden-Drenthe",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.5167,
+        52.8612
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-midden-groningen",
+      "name": "Gemeente Midden-Groningen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.7569,
+        53.1631
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-moerdijk",
+      "name": "Gemeente Moerdijk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6058,
+        51.6447
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-molenlanden",
+      "name": "Gemeente Molenlanden",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7872,
+        51.8819
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-montferland",
+      "name": "Gemeente Montferland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.1397,
+        51.9381
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-montfoort",
+      "name": "Gemeente Montfoort",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.95,
+        52.045
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-mook-en-middelaar",
+      "name": "Gemeente Mook en Middelaar",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8844,
+        51.7664
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-neder-betuwe",
+      "name": "Gemeente Neder-Betuwe",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.5933,
+        51.9367
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-nederweert",
+      "name": "Gemeente Nederweert",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.7486,
+        51.2886
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-nieuwegein",
+      "name": "Gemeente Nieuwegein",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0806,
+        52.0296
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-nieuwkoop",
+      "name": "Gemeente Nieuwkoop",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7506,
+        52.1556
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-nijkerk",
+      "name": "Gemeente Nijkerk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.4819,
+        52.2217
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-nijmegen",
+      "name": "Gemeente Nijmegen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8528,
+        51.8426
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-nissewaard",
+      "name": "Gemeente Nissewaard",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.3306,
+        51.8456
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-noardeast-fryslan",
+      "name": "Gemeente Noardeast-Fryslân",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9981,
+        53.3289
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-noord-beveland",
+      "name": "Gemeente Noord-Beveland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        3.7497,
+        51.5736
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-noordenveld",
+      "name": "Gemeente Noordenveld",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.4269,
+        53.1311
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-noordoostpolder",
+      "name": "Gemeente Noordoostpolder",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.7497,
+        52.7108
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-noordwijk",
+      "name": "Gemeente Noordwijk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.4303,
+        52.2403
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-nuenen",
+      "name": "Gemeente Nuenen c.a.",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.555,
+        51.4714
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-nunspeet",
+      "name": "Gemeente Nunspeet",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.7833,
+        52.3814
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-oegstgeest",
+      "name": "Gemeente Oegstgeest",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.4747,
+        52.1814
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-oirschot",
+      "name": "Gemeente Oirschot",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.3047,
+        51.4997
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-oisterwijk",
+      "name": "Gemeente Oisterwijk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.1903,
+        51.5792
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-oldambt",
+      "name": "Gemeente Oldambt",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        7.035,
+        53.1447
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-oldebroek",
+      "name": "Gemeente Oldebroek",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9008,
+        52.4433
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-oldenzaal",
+      "name": "Gemeente Oldenzaal",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.9294,
+        52.3133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-olst-wijhe",
+      "name": "Gemeente Olst-Wijhe",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.1258,
+        52.3847
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-ommen",
+      "name": "Gemeente Ommen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.4197,
+        52.5217
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-oost-gelre",
+      "name": "Gemeente Oost Gelre",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.5681,
+        51.9828
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-oosterhout",
+      "name": "Gemeente Oosterhout",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.8589,
+        51.6461
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-ooststellingwerf",
+      "name": "Gemeente Ooststellingwerf",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.2975,
+        52.9957
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-oostzaan",
+      "name": "Gemeente Oostzaan",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.865,
+        52.4383
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-opmeer",
+      "name": "Gemeente Opmeer",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.9508,
+        52.7078
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-opsterland",
+      "name": "Gemeente Opsterland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0728,
+        53.0564
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-oss",
+      "name": "Gemeente Oss",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.5181,
+        51.765
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-oude-ijsselstreek",
+      "name": "Gemeente Oude IJsselstreek",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.3831,
+        51.8708
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-ouder-amstel",
+      "name": "Gemeente Ouder-Amstel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.9083,
+        52.2928
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-oudewater",
+      "name": "Gemeente Oudewater",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.8675,
+        52.0264
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-overbetuwe",
+      "name": "Gemeente Overbetuwe",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8417,
+        51.9189
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-papendrecht",
+      "name": "Gemeente Papendrecht",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6881,
+        51.8308
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-peel-en-maas",
+      "name": "Gemeente Peel en Maas",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9806,
+        51.3347
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-pekela",
+      "name": "Gemeente Pekela",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.9656,
+        53.0903
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-pijnacker-nootdorp",
+      "name": "Gemeente Pijnacker-Nootdorp",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.4306,
+        52.02
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-purmerend",
+      "name": "Gemeente Purmerend",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.9597,
+        52.505
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-putten",
+      "name": "Gemeente Putten",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.61,
+        52.2592
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-raalte",
+      "name": "Gemeente Raalte",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.2756,
+        52.3875
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-reimerswaal",
+      "name": "Gemeente Reimerswaal",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.0322,
+        51.4656
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-renkum",
+      "name": "Gemeente Renkum",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8433,
+        51.9886
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-renswoude",
+      "name": "Gemeente Renswoude",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.5417,
+        52.0833
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-reusel-de-mierden",
+      "name": "Gemeente Reusel-De Mierden",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.1478,
+        51.3606
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-rheden",
+      "name": "Gemeente Rheden",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0483,
+        52.0069
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-rhenen",
+      "name": "Gemeente Rhenen",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.5672,
+        51.96
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-ridderkerk",
+      "name": "Gemeente Ridderkerk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6022,
+        51.8725
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-rijssen-holten",
+      "name": "Gemeente Rijssen-Holten",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.5217,
+        52.3067
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-rijswijk",
+      "name": "Gemeente Rijswijk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.3244,
+        52.0361
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-roerdalen",
+      "name": "Gemeente Roerdalen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9942,
+        51.1508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-roermond",
+      "name": "Gemeente Roermond",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9878,
+        51.1942
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-roosendaal",
+      "name": "Gemeente Roosendaal",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.4653,
+        51.5308
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-rotterdam",
+      "name": "Gemeente Rotterdam",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.4792,
+        51.9225
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-rozendaal",
+      "name": "Gemeente Rozendaal",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9739,
+        52.0061
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-rucphen",
+      "name": "Gemeente Rucphen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.5475,
+        51.5344
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-schagen",
+      "name": "Gemeente Schagen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7981,
+        52.7878
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-scherpenzeel",
+      "name": "Gemeente Scherpenzeel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.4878,
+        52.0825
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-schiedam",
+      "name": "Gemeente Schiedam",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.3889,
+        51.9194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-schiermonnikoog",
+      "name": "Gemeente Schiermonnikoog",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.1567,
+        53.4689
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-schouwen-duiveland",
+      "name": "Gemeente Schouwen-Duiveland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        3.9192,
+        51.6508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-simpelveld",
+      "name": "Gemeente Simpelveld",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9833,
+        50.8289
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-sint-michielsgestel",
+      "name": "Gemeente Sint-Michielsgestel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.3486,
+        51.6472
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-sittard-geleen",
+      "name": "Gemeente Sittard-Geleen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8708,
+        50.9997
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-sliedrecht",
+      "name": "Gemeente Sliedrecht",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7764,
+        51.8217
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-sluis",
+      "name": "Gemeente Sluis",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        3.5028,
+        51.3306
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-smallingerland",
+      "name": "Gemeente Smallingerland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0989,
+        53.1128
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-soest",
+      "name": "Gemeente Soest",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2908,
+        52.1736
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-someren",
+      "name": "Gemeente Someren",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.7117,
+        51.3836
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-son-en-breugel",
+      "name": "Gemeente Son en Breugel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.4894,
+        51.5108
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-stadskanaal",
+      "name": "Gemeente Stadskanaal",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.9464,
+        52.9925
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-staphorst",
+      "name": "Gemeente Staphorst",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.2056,
+        52.6394
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-stede-broec",
+      "name": "Gemeente Stede Broec",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.2361,
+        52.6931
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-steenbergen",
+      "name": "Gemeente Steenbergen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.3178,
+        51.5936
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-steenwijkerland",
+      "name": "Gemeente Steenwijkerland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.12,
+        52.7842
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-stein",
+      "name": "Gemeente Stein",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.7656,
+        50.9708
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-stichtse-vecht",
+      "name": "Gemeente Stichtse Vecht",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0375,
+        52.1375
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-sudwest-fryslan",
+      "name": "Gemeente Súdwest-Fryslân",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.6575,
+        53.0322
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-terneuzen",
+      "name": "Gemeente Terneuzen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        3.8286,
+        51.335
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-terschelling",
+      "name": "Gemeente Terschelling",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.2175,
+        53.3603
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-texel",
+      "name": "Gemeente Texel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.795,
+        53.0517
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-teylingen",
+      "name": "Gemeente Teylingen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.4897,
+        52.2172
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-tholen",
+      "name": "Gemeente Tholen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.2217,
+        51.5339
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-tiel",
+      "name": "Gemeente Tiel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.4289,
+        51.8856
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-tilburg",
+      "name": "Gemeente Tilburg",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.0913,
+        51.5555
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-tubbergen",
+      "name": "Gemeente Tubbergen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.7831,
+        52.4103
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-twenterand",
+      "name": "Gemeente Twenterand",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.625,
+        52.4083
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-tynaarlo",
+      "name": "Gemeente Tynaarlo",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.5836,
+        53.0706
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-tytsjerksteradiel",
+      "name": "Gemeente Tytsjerksteradiel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9889,
+        53.1947
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-uitgeest",
+      "name": "Gemeente Uitgeest",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7086,
+        52.5292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-uithoorn",
+      "name": "Gemeente Uithoorn",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.825,
+        52.2364
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-urk",
+      "name": "Gemeente Urk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.6028,
+        52.6628
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-utrecht",
+      "name": "Gemeente Utrecht",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-utrechtse-heuvelrug",
+      "name": "Gemeente Utrechtse Heuvelrug",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.35,
+        52.0333
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-vaals",
+      "name": "Gemeente Vaals",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0156,
+        50.7714
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-valkenburg-aan-de-geul",
+      "name": "Gemeente Valkenburg aan de Geul",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.8303,
+        50.8658
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-valkenswaard",
+      "name": "Gemeente Valkenswaard",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.4608,
+        51.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-veendam",
+      "name": "Gemeente Veendam",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.8778,
+        53.1042
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-veenendaal",
+      "name": "Gemeente Veenendaal",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.5558,
+        52.0283
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-veere",
+      "name": "Gemeente Veere",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        3.4961,
+        51.5622
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-veldhoven",
+      "name": "Gemeente Veldhoven",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.4036,
+        51.4183
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-velsen",
+      "name": "Gemeente Velsen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6108,
+        52.4603
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-venlo",
+      "name": "Gemeente Venlo",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.1725,
+        51.3703
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-venray",
+      "name": "Gemeente Venray",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9747,
+        51.5258
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-vijfheerenlanden",
+      "name": "Gemeente Vijfheerenlanden",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0972,
+        51.9872
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-vlaardingen",
+      "name": "Gemeente Vlaardingen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.3417,
+        51.9125
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-vlieland",
+      "name": "Gemeente Vlieland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.0878,
+        53.2958
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-vlissingen",
+      "name": "Gemeente Vlissingen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        3.5736,
+        51.4425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-voerendaal",
+      "name": "Gemeente Voerendaal",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9303,
+        50.8836
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-voorne-aan-zee",
+      "name": "Gemeente Voorne aan Zee",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.1397,
+        51.8361
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-voorschoten",
+      "name": "Gemeente Voorschoten",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.4497,
+        52.1258
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-voorst",
+      "name": "Gemeente Voorst",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.1056,
+        52.2328
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-vught",
+      "name": "Gemeente Vught",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.2864,
+        51.6533
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-waadhoeke",
+      "name": "Gemeente Waadhoeke",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.5433,
+        53.1853
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-waalre",
+      "name": "Gemeente Waalre",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.4572,
+        51.3889
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-waalwijk",
+      "name": "Gemeente Waalwijk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.0694,
+        51.6839
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-waddinxveen",
+      "name": "Gemeente Waddinxveen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6539,
+        52.0453
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-wageningen",
+      "name": "Gemeente Wageningen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.6653,
+        51.9692
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-wassenaar",
+      "name": "Gemeente Wassenaar",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.4003,
+        52.145
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-waterland",
+      "name": "Gemeente Waterland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.0378,
+        52.4594
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-weert",
+      "name": "Gemeente Weert",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.7069,
+        51.2508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-west-betuwe",
+      "name": "Gemeente West Betuwe",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.2897,
+        51.8819
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-west-maas-en-waal",
+      "name": "Gemeente West Maas en Waal",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.5367,
+        51.8858
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-westerkwartier",
+      "name": "Gemeente Westerkwartier",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.3769,
+        53.1628
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-westerveld",
+      "name": "Gemeente Westerveld",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.3239,
+        52.8492
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-westervoort",
+      "name": "Gemeente Westervoort",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.9889,
+        51.96
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-westerwolde",
+      "name": "Gemeente Westerwolde",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        7.15,
+        52.9681
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-westland",
+      "name": "Gemeente Westland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.2058,
+        51.9953
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-weststellingwerf",
+      "name": "Gemeente Weststellingwerf",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0042,
+        52.8778
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-wierden",
+      "name": "Gemeente Wierden",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.5892,
+        52.3528
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-wijchen",
+      "name": "Gemeente Wijchen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.73,
+        51.8067
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-wijdemeren",
+      "name": "Gemeente Wijdemeren",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.0847,
+        52.2069
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-wijk-bij-duurstede",
+      "name": "Gemeente Wijk bij Duurstede",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3414,
+        51.9722
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-winterswijk",
+      "name": "Gemeente Winterswijk",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.7206,
+        51.9719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-woensdrecht",
+      "name": "Gemeente Woensdrecht",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.3336,
+        51.4356
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-woerden",
+      "name": "Gemeente Woerden",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.8836,
+        52.0853
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-wormerland",
+      "name": "Gemeente Wormerland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.7961,
+        52.4989
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-woudenberg",
+      "name": "Gemeente Woudenberg",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.4167,
+        52.0833
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zaanstad",
+      "name": "Gemeente Zaanstad",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.8289,
+        52.4389
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zaltbommel",
+      "name": "Gemeente Zaltbommel",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.2519,
+        51.8117
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zandvoort",
+      "name": "Gemeente Zandvoort",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.5328,
+        52.3719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zeewolde",
+      "name": "Gemeente Zeewolde",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        5.5417,
+        52.3306
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zeist",
+      "name": "Gemeente Zeist",
+      "sector": "gemeente",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2339,
+        52.0869
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zevenaar",
+      "name": "Gemeente Zevenaar",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0744,
+        51.9297
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zoetermeer",
+      "name": "Gemeente Zoetermeer",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.4933,
+        52.0575
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zoeterwoude",
+      "name": "Gemeente Zoeterwoude",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.5003,
+        52.1339
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zuidplas",
+      "name": "Gemeente Zuidplas",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6083,
+        51.9767
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zundert",
+      "name": "Gemeente Zundert",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6586,
+        51.4697
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zutphen",
+      "name": "Gemeente Zutphen",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.1944,
+        52.1408
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zwartewaterland",
+      "name": "Gemeente Zwartewaterland",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.0928,
+        52.5942
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zwijndrecht",
+      "name": "Gemeente Zwijndrecht",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        4.6403,
+        51.8131
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "gem-zwolle",
+      "name": "Gemeente Zwolle",
+      "sector": "gemeente",
+      "region_iza": null,
+      "coord": [
+        6.083,
+        52.5168
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-amsterdam",
+      "name": "GGD Amsterdam",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.9228,
+        52.3608
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-brabant-zuidoost",
+      "name": "GGD Brabant-Zuidoost",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-drenthe",
+      "name": "GGD Drenthe",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        6.5639,
+        52.9956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-flevoland",
+      "name": "GGD Flevoland",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.4711,
+        52.5183
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-fryslan",
+      "name": "GGD Fryslân",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.7717,
+        53.2042
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-gelderland-midden",
+      "name": "Veiligheids- en Gezondheidsregio Gelderland-Midden",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.8986,
+        51.985
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-gelderland-zuid",
+      "name": "GGD Gelderland-Zuid",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.8533,
+        51.8425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-gooi-en-vechtstreek",
+      "name": "GGD Gooi en Vechtstreek",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.1606,
+        52.2667
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-groningen",
+      "name": "GGD Groningen",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-haaglanden",
+      "name": "GGD Haaglanden",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.3097,
+        52.0786
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-hart-voor-brabant",
+      "name": "GGD Hart voor Brabant",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.2903,
+        51.6892
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-hollands-midden",
+      "name": "GGD Hollands Midden",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-hollands-noorden",
+      "name": "GGD Hollands Noorden",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.7497,
+        52.6336
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-ijsselland",
+      "name": "GGD IJsselland",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        6.0833,
+        52.5167
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-kennemerland",
+      "name": "GGD Kennemerland",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.6462,
+        52.3874
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-limburg-noord",
+      "name": "GGD Limburg-Noord",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        6.1583,
+        51.37
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-nog",
+      "name": "GGD Noord- en Oost-Gelderland",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        6.2128,
+        52.1403
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-rotterdam-rijnmond",
+      "name": "GGD Rotterdam-Rijnmond",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.4792,
+        51.9225
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-twente",
+      "name": "GGD Twente",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-west-brabant",
+      "name": "GGD West-Brabant",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.7683,
+        51.5719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-zaanstreek-waterland",
+      "name": "GGD Zaanstreek-Waterland",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.8233,
+        52.4383
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-zeeland",
+      "name": "GGD Zeeland",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        3.8889,
+        51.5044
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-zhz",
+      "name": "Dienst Gezondheid & Jeugd Zuid-Holland Zuid",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        4.69,
+        51.8133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggd-zuid-limburg",
+      "name": "GGD Zuid-Limburg",
+      "sector": "ggd",
+      "region_iza": null,
+      "coord": [
+        5.9833,
+        50.8881
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggdru",
+      "name": "GGD regio Utrecht",
+      "sector": "ggd",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2339,
+        52.0869
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggnet",
+      "name": "GGNet",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.2128,
+        52.1403
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-breburg",
+      "name": "GGz Breburg",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.0772,
+        51.5606
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-centraal",
+      "name": "GGZ Centraal",
+      "sector": "ggz",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-drenthe",
+      "name": "GGZ Drenthe",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.5639,
+        52.9956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-friesland",
+      "name": "GGZ Friesland",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.7717,
+        53.2042
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-ingeest",
+      "name": "GGZ inGeest",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.8661,
+        52.3344
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-nhn",
+      "name": "GGZ Noord-Holland-Noord",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.7044,
+        52.6025
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggz-oost-brabant",
+      "name": "GGZ Oost Brabant",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.6781,
+        51.6056
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ggze",
+      "name": "GGzE",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "groenhuysen",
+      "name": "Groenhuysen",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.4654,
+        51.5309
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hadoks",
+      "name": "Hadoks",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.3113,
+        52.0799
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "haga",
+      "name": "HagaZiekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.3192,
+        52.0506
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hartinge",
+      "name": "Zorggroep Tilburg",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.0913,
+        51.5555
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "heliomare",
+      "name": "Heliomare",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        4.5983,
+        52.4961
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hkn-noord-holland-noord",
+      "name": "Huisartsenorganisatie Noord-Kennemerland",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.7534,
+        52.6324
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hmc",
+      "name": "Haaglanden Medisch Centrum",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.3097,
+        52.0786
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hozl",
+      "name": "Huisartsen Oostelijk Zuid-Limburg",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.9795,
+        50.8882
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsen-al-flevoland",
+      "name": "Zorggroep Almere",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.2647,
+        52.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsen-coop-goeree-overflakkee",
+      "name": "Huisartsencoöperatie Goeree-Overflakkee",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.1709,
+        51.7575
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsen-eemland",
+      "name": "Huisartsen Eemland",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsen-gooi-vechtstreek",
+      "name": "Huisartsen Gooi en Vechtstreek",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.176,
+        52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsen-rivierenland",
+      "name": "Huisartsen Rivierenland",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.4286,
+        51.8869
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsen-westelijke-mijnstreek",
+      "name": "Huisartsen Westelijke Mijnstreek",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.8696,
+        50.9983
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsenkring-walcheren",
+      "name": "Huisartsen Coöperatie Walcheren",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        3.6109,
+        51.4988
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsenkring-zaanstreek-waterland",
+      "name": "Huisartsen Zaanstreek-Waterland (HZW)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.8289,
+        52.4389
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "humanitas-rotterdam",
+      "name": "Stichting Humanitas Rotterdam",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huw",
+      "name": "Huisartsen Utrecht West (HUW)",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.8836,
+        52.0853
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hvo-querido",
+      "name": "HVO-Querido",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hzd-drenthe",
+      "name": "Huisartsenzorg Drenthe",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.5626,
+        52.996
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hzd-zwolle",
+      "name": "Huisartsen Zwolle en omstreken",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.083,
+        52.5168
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hzn-fryslan",
+      "name": "Huisartsen Zorggroep Noord (Friesland)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.7999,
+        53.2012
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hzog",
+      "name": "Huisartsenzorg Oost-Groningen",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        7.035,
+        53.1447
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "icare",
+      "name": "Icare (Espria)",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.1939,
+        52.6954
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ijsselheem",
+      "name": "IJsselheem",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9113,
+        52.5558
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ijsselland",
+      "name": "IJsselland Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.5769,
+        51.9294
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ikazia",
+      "name": "Ikazia Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.5122,
+        51.8855
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ineen",
+      "name": "InEen",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "inforsa",
+      "name": "Inforsa",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "innoforte",
+      "name": "Innoforte",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "internos",
+      "name": "Internos",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.6901,
+        51.8133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "iriszorg",
+      "name": "IrisZorg",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "isala",
+      "name": "Isala",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.0833,
+        52.5167
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "izer",
+      "name": "IZER",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "jbz",
+      "name": "Jeroen Bosch Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.2903,
+        51.6892
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "jellinek",
+      "name": "Jellinek",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "kalorama",
+      "name": "Kalorama",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9183,
+        51.8319
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "karakter",
+      "name": "Karakter",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.6683,
+        52.0411
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "klimmendaal",
+      "name": "Klimmendaal",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        5.8744,
+        52.01
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "knmp",
+      "name": "KNMP (Koninklijke Nederlandse Maatschappij ter bevordering der Pharmacie)",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        4.3113,
+        52.0799
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "knooppunt-ketenzorg",
+      "name": "Knooppunt Ketenzorg",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "kring-apotheek",
+      "name": "Kring-apotheek",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "kwadrantgroep",
+      "name": "KwadrantGroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.0989,
+        53.1128
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "kwintes",
+      "name": "Kwintes",
+      "sector": "ggz",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2324,
+        52.0894
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "labmicta",
+      "name": "Labmicta",
+      "sector": "zbc",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.793,
+        52.2661
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "land-van-horne",
+      "name": "Land van Horne",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.7056,
+        51.2511
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "lange-land",
+      "name": "LangeLand Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.4931,
+        52.0636
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "laurens",
+      "name": "Laurens",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "laurentius",
+      "name": "Laurentius Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.9872,
+        51.1944
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "leidsche-rijn-julius-gc",
+      "name": "Leidsche Rijn Julius Gezondheidscentra",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.045,
+        52.097
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "lelie-zorggroep",
+      "name": "Lelie zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.5775,
+        51.9294
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "lentis",
+      "name": "Lentis",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "leviaan",
+      "name": "Leviaan",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.9596,
+        52.5051
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "levvel",
+      "name": "Levvel",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.9501,
+        52.3146
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "lhv",
+      "name": "Landelijke Huisartsen Vereniging",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "libertas-leiden",
+      "name": "Libertas Leiden",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "libra-revalidatie",
+      "name": "Libra Revalidatie & Audiologie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "lister",
+      "name": "Lister",
+      "sector": "ggz",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "livio",
+      "name": "Livio",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "lumc",
+      "name": "Leids Universitair Medisch Centrum",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.4771,
+        52.1668
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "maasstad",
+      "name": "Maasstad Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.5342,
+        51.8806
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "maasziekenhuis-pantein",
+      "name": "Maasziekenhuis Pantein",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.9483,
+        51.6467
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "marente",
+      "name": "Marente",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.5,
+        52.2
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "marga-klompe",
+      "name": "Marga Klompé",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.5656,
+        51.9828
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "martini-ziekenhuis",
+      "name": "Martini Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.5456,
+        53.2083
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mcl",
+      "name": "Medisch Centrum Leeuwarden",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.7717,
+        53.2042
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "meander-mc",
+      "name": "Meander Medisch Centrum",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "meanderzorg-limburg",
+      "name": "Meandergroep Zuid-Limburg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.0614,
+        50.8658
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mediant",
+      "name": "Mediant Geestelijke Gezondheidszorg",
+      "sector": "ggz",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "medicamus-lelystad",
+      "name": "MC Flevo (Lelystad)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.4714,
+        52.5185
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "medicamus",
+      "name": "Medicamus",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.6208,
+        52.341
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mediq-apotheken",
+      "name": "Mediq Apotheken",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "meditta",
+      "name": "Meditta",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.8758,
+        51.1004
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "medrie",
+      "name": "Medrie",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.083,
+        52.5168
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "merem",
+      "name": "Merem Medische Revalidatie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        5.176,
+        52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mmc",
+      "name": "Máxima MC",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.4044,
+        51.4183
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mondriaan",
+      "name": "Mondriaan",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.9833,
+        50.8881
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mrc-aardenburg",
+      "name": "MRC Aardenburg (Militair Revalidatie Centrum)",
+      "sector": "revalidatie",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.34,
+        52.04
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mumc",
+      "name": "Maastricht UMC+",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.7063,
+        50.8421
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "nhg",
+      "name": "Nederlands Huisartsen Genootschap",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "nij-smellinghe",
+      "name": "Nij Smellinghe",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.0981,
+        53.1072
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "noorderbreedte",
+      "name": "Noorderbreedte",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.7999,
+        53.2012
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "noorderzorg",
+      "name": "Noorderzorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.9464,
+        52.9925
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "novadic-kentron",
+      "name": "Novadic-Kentron",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.2889,
+        51.6533
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "npa-coop",
+      "name": "Napco / Napharm (zelfstandige apothekers)",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "nucleus-zorg",
+      "name": "Nucleus Zorg",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        3.8264,
+        51.3349
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "nwz",
+      "name": "Noordwest Ziekenhuisgroep",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.7497,
+        52.6336
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "oce-nijmegen",
+      "name": "OCE Nijmegen",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.8372,
+        51.8126
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "olvg",
+      "name": "OLVG",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.9228,
+        52.3608
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "omring",
+      "name": "Omring",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.0597,
+        52.6425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "onze-huisartsen",
+      "name": "Onze Huisartsen",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "oogziekenhuis-rotterdam",
+      "name": "Het Oogziekenhuis Rotterdam",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.47,
+        51.9194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "oosterlengte",
+      "name": "Oosterlengte",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        7.035,
+        53.1447
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "osira-amstelring",
+      "name": "Zonnehuisgroep Amstelland",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.86,
+        52.308
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ozg",
+      "name": "Ommelander Ziekenhuis Groningen",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.995,
+        53.1628
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "palet",
+      "name": "Palet Leeuwarden",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.7999,
+        53.2012
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "pantein",
+      "name": "Pantein",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9478,
+        51.6478
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "parnassia-groep",
+      "name": "Parnassia Groep",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.3097,
+        52.0786
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "parnassia-vvt",
+      "name": "De Zellingen",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.5775,
+        51.9294
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "patyna",
+      "name": "Patyna",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.5272,
+        53.0686
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "pieter-van-foreest",
+      "name": "Pieter van Foreest",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.3571,
+        52.0116
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "pozob",
+      "name": "PoZoB",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.4035,
+        51.4193
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "prinses-maxima-centrum",
+      "name": "Prinses Máxima Centrum voor kinderoncologie",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1745,
+        52.087
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "pro-persona",
+      "name": "Pro Persona",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.8533,
+        51.8425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "proteion",
+      "name": "Proteion",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9247,
+        51.2092
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "quarijn",
+      "name": "QuaRijn",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2836,
+        52.0539
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "quartz",
+      "name": "Quartz",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.3037,
+        51.6978
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "radboudumc",
+      "name": "Radboudumc",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.8644,
+        51.8244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-amsterdam",
+      "name": "Ambulance Amsterdam",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-brabant-mwn",
+      "name": "RAV Brabant MWN",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.2903,
+        51.6892
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-brabant-zuidoost",
+      "name": "RAV Brabant-Zuidoost",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-drenthe",
+      "name": "UMCG Ambulancezorg — Drenthe",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        6.5639,
+        52.9956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-flevoland",
+      "name": "GGD Flevoland — ambulancezorg",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.4711,
+        52.5183
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-fryslan",
+      "name": "Kijlstra Ambulancegroep Fryslân",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        6.0981,
+        53.1072
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-gelderland-midden",
+      "name": "VGGM — ambulancezorg Gelderland-Midden",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.8986,
+        51.985
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-gelderland-zuid",
+      "name": "RAV Gelderland-Zuid",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.8533,
+        51.8425
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-gooi-en-vechtstreek",
+      "name": "RAV Gooi en Vechtstreek",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.176,
+        52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-groningen",
+      "name": "UMCG Ambulancezorg — Groningen",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-haaglanden",
+      "name": "Ambulancezorg Haaglanden",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.3097,
+        52.0786
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-hollands-midden",
+      "name": "RAV Hollands Midden",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-ijsselland",
+      "name": "RAV IJsselland",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        6.0833,
+        52.5167
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-kennemerland",
+      "name": "RAV Kennemerland",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.6462,
+        52.3874
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-limburg-noord",
+      "name": "GGD Limburg-Noord — ambulancezorg",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        6.1583,
+        51.37
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-limburg-zuid",
+      "name": "Ambulancezorg Limburg Zuid",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.691,
+        50.8514
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-nog",
+      "name": "Witte Kruis (Noord- en Oost-Gelderland)",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        5.9697,
+        52.2058
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-noord-holland-noord",
+      "name": "Ambulancezorg Noord-Holland Noord",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.7497,
+        52.6336
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-rotterdam-rijnmond",
+      "name": "Ambulancezorg Rotterdam-Rijnmond",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.4792,
+        51.9225
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-twente",
+      "name": "Ambulance Oost (Twente)",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        6.793,
+        52.2661
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-west-brabant",
+      "name": "RAV West-Brabant",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.7683,
+        51.5719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-zeeland",
+      "name": "RAV Zeeland",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        3.6108,
+        51.4988
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rav-zhz",
+      "name": "Ambulancezorg Zuid-Holland Zuid",
+      "sector": "ambulance",
+      "region_iza": null,
+      "coord": [
+        4.69,
+        51.8133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ravu",
+      "name": "RAV Utrecht (RAVU)",
+      "sector": "ambulance",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2,
+        52.1333
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "reade",
+      "name": "Reade",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        4.8693,
+        52.3625
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "reinier-de-graaf",
+      "name": "Reinier de Graaf Gasthuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.3642,
+        52.0
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "reinier-van-arkel",
+      "name": "Reinier van Arkel",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.3037,
+        51.6978
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "respect-zorggroep",
+      "name": "Respect Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.2711,
+        52.1073
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "revalidatie-friesland",
+      "name": "Revalidatie Friesland",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        6.0703,
+        53.0664
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "revant",
+      "name": "Revant Revalidatiecentra",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        4.7683,
+        51.5719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rhgv",
+      "name": "Regio Huisartsen Gooi & Vechtstreek",
+      "sector": "huisarts",
+      "region_iza": "iza-gooi-en-vechtstreek",
+      "coord": [
+        5.176,
+        52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rhz-rotterdam",
+      "name": "Ruysdael Zorggroep",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ribw-brabant",
+      "name": "RIBW Brabant",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.0913,
+        51.5555
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rijncoepel",
+      "name": "Rijncoepel",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rijndam",
+      "name": "Rijndam Revalidatie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        4.4686,
+        51.9106
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rijnstate",
+      "name": "Rijnstate",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.8956,
+        51.9692
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rivas-beatrix",
+      "name": "Beatrixziekenhuis (Rivas)",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.9708,
+        51.8336
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rivierduinen",
+      "name": "GGZ Rivierduinen",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rkz",
+      "name": "Rode Kruis Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.6583,
+        52.4869
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "roessingh",
+      "name": "Roessingh, Centrum voor Revalidatie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        6.8533,
+        52.2394
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rohamsterdam",
+      "name": "ROHA (Regionale Organisatie Huisartsen Amsterdam)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.9041,
+        52.3676
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "saffier",
+      "name": "Saffier",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.3113,
+        52.0799
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "savant",
+      "name": "Savant Zorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.6614,
+        51.4826
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "saxenburgh",
+      "name": "Saxenburgh",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.6181,
+        52.5772
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "sensire",
+      "name": "Sensire",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.465,
+        51.9434
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "service-apotheek",
+      "name": "Service Apotheek (Mosadex)",
+      "sector": "apotheek",
+      "region_iza": null,
+      "coord": [
+        5.5236,
+        51.7649
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "sevagram",
+      "name": "Sevagram",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9795,
+        50.8882
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "sge-eindhoven",
+      "name": "SGE (Stichting Gezondheidscentra Eindhoven)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "silverein",
+      "name": "Silverein",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0375,
+        52.1375
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "sint-jacob",
+      "name": "Sint Jacob",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.6462,
+        52.3874
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "sint-maartenskliniek",
+      "name": "Sint Maartenskliniek",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.8775,
+        51.8094
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "siza",
+      "name": "Siza",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.8987,
+        51.9851
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "skb",
+      "name": "Streekziekenhuis Koningin Beatrix",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.7211,
+        51.9703
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "slingeland",
+      "name": "Slingeland Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.2875,
+        51.9656
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "spaarne-gasthuis",
+      "name": "Spaarne Gasthuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.6269,
+        52.3608
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "st-anna",
+      "name": "St. Anna Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.5558,
+        51.42
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "st-antonius",
+      "name": "St. Antonius Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0806,
+        52.0296
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "st-jansdal",
+      "name": "St Jansdal",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.6211,
+        52.3419
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "stad-holland-zorggroep",
+      "name": "Stad Holland Zorgverzekeraar / HOZH",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.3989,
+        51.9194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "surplus",
+      "name": "Surplus",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.7683,
+        51.5719
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "svrz",
+      "name": "SVRZ",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        3.6109,
+        51.4988
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "swz-zorg",
+      "name": "SWZ Zorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.4906,
+        51.5139
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "syntein",
+      "name": "Syntein",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.9478,
+        51.6478
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "tactus",
+      "name": "Tactus Verslavingszorg",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.1392,
+        52.2542
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "tante-louise",
+      "name": "tanteLouise",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.2871,
+        51.4936
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "tergooi-mc",
+      "name": "Tergooi MC",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-gooi-en-vechtstreek",
+      "coord": [
+        5.176,
+        52.2292
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "thebe",
+      "name": "Thebe",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.0913,
+        51.5555
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "thoon",
+      "name": "THOON",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.793,
+        52.2661
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "tjongerschans",
+      "name": "Tjongerschans",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.9194,
+        52.9592
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "tolbrug",
+      "name": "Tolbrug Specialistische Revalidatie",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        5.2903,
+        51.6892
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "topaz",
+      "name": "Topaz",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.497,
+        52.1601
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "trajectum",
+      "name": "Trajectum",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.083,
+        52.5168
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "transfore",
+      "name": "Transfore",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.1639,
+        52.2551
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "treant",
+      "name": "Treant Zorggroep",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.9047,
+        52.7792
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "trivium-meulenbelt",
+      "name": "TriviumMeulenbeltZorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.6604,
+        52.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "umcg",
+      "name": "Universitair Medisch Centrum Groningen",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.5614,
+        53.2239
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "unicum-huisartsenzorg",
+      "name": "Unicum Huisartsenzorg",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0375,
+        52.1375
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "valkenhof",
+      "name": "Valkenhof",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.4606,
+        51.3528
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "van-neynsel",
+      "name": "Van Neynsel",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.3037,
+        51.6978
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "van-weel-bethesda",
+      "name": "Van Weel-Bethesda Ziekenhuis",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.0856,
+        51.7514
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vecht-en-ijssel",
+      "name": "Vecht en IJssel",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "victas",
+      "name": "Victas (verslavingszorg)",
+      "sector": "ggz",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "viecuri",
+      "name": "VieCuri Medisch Centrum",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.1583,
+        51.37
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vincent-van-gogh",
+      "name": "Vincent van Gogh voor Geestelijke Gezondheidszorg",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        5.9744,
+        51.5256
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vitalis-wooncentra",
+      "name": "Vitalis WoonZorg Groep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.4697,
+        51.4416
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vivium-zorggroep",
+      "name": "Vivium Zorggroep",
+      "sector": "vvt",
+      "region_iza": "iza-gooi-en-vechtstreek",
+      "coord": [
+        5.1612,
+        52.2967
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vnn",
+      "name": "Verslavingszorg Noord Nederland",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vogellanden",
+      "name": "Vogellanden",
+      "sector": "revalidatie",
+      "region_iza": null,
+      "coord": [
+        6.0833,
+        52.5167
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "vughterstede",
+      "name": "Vughterstede",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.2867,
+        51.6542
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "waalboog",
+      "name": "De Waalboog",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.8372,
+        51.8126
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "warande",
+      "name": "Warande",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2339,
+        52.0869
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "woonzorg-zeeland",
+      "name": "WVO Zorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        3.5736,
+        51.4426
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "woonzorgcentra-haaglanden",
+      "name": "Woonzorgcentra Haaglanden",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.3113,
+        52.0799
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "wza",
+      "name": "Wilhelmina Ziekenhuis Assen",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        6.5639,
+        52.9956
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "youz",
+      "name": "Youz",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.4777,
+        51.9244
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "yulius",
+      "name": "Yulius",
+      "sector": "ggz",
+      "region_iza": null,
+      "coord": [
+        4.69,
+        51.8133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zaans-mc",
+      "name": "Zaans Medisch Centrum",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.8233,
+        52.4383
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zel",
+      "name": "ZEL (Zorggroep Eerste Lijn)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.2036,
+        51.9939
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zgr-twenterand",
+      "name": "ZorgAccent",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.6604,
+        52.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zgt",
+      "name": "Ziekenhuisgroep Twente",
+      "sector": "ziekenhuis",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.6604,
+        52.3508
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zgv",
+      "name": "Ziekenhuis Gelderse Vallei",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.6683,
+        52.0411
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zgwa-wageningen",
+      "name": "Zorggroep Gelderse Vallei (ZGV) / Wageningen e.o.",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.6661,
+        52.047
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zgwa",
+      "name": "Zorggroep Oude en Nieuwe Land",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.7497,
+        52.7108
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ziekenhuis-amstelland",
+      "name": "Ziekenhuis Amstelland",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        4.8675,
+        52.3019
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zinn",
+      "name": "ZINN",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zio",
+      "name": "ZIO (Zorg in Ontwikkeling)",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.691,
+        50.8514
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorgbalans",
+      "name": "Zorgbalans",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.6462,
+        52.3874
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-apeldoorn-gv",
+      "name": "Zorggroep Apeldoorn",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9699,
+        52.2112
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-apeldoorn",
+      "name": "Atlant Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.9699,
+        52.2112
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-groningen",
+      "name": "Zorggroep Groningen",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        6.5665,
+        53.2194
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-oss",
+      "name": "Zorggroep Regio Oss",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        5.5236,
+        51.7649
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-regio-amersfoort",
+      "name": "Zorggroep Regio Amersfoort",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3878,
+        52.1561
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-sint-maarten",
+      "name": "Zorggroep Sint Maarten",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        6.9294,
+        52.3133
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorggroep-zoetermeer",
+      "name": "Zorggroep Zoetermeer",
+      "sector": "huisarts",
+      "region_iza": null,
+      "coord": [
+        4.4937,
+        52.0608
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorgring-nhn",
+      "name": "Magentazorg",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        4.7534,
+        52.6324
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorgsaam",
+      "name": "ZorgSaam Zeeuws-Vlaanderen",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        3.8264,
+        51.3349
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorgschakel-enschede",
+      "name": "Zorgschakel Enschede",
+      "sector": "huisarts",
+      "region_iza": "iza-twente",
+      "coord": [
+        6.8937,
+        52.2215
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zorgspectrum",
+      "name": "Zorgspectrum",
+      "sector": "vvt",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0806,
+        52.0296
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zuyderland-mc",
+      "name": "Zuyderland Medisch Centrum",
+      "sector": "ziekenhuis",
+      "region_iza": null,
+      "coord": [
+        5.9833,
+        50.8881
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zuyderland-vvt",
+      "name": "Zuyderland Care",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.8696,
+        50.9983
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "zzg-zorggroep",
+      "name": "ZZG Zorggroep",
+      "sector": "vvt",
+      "region_iza": null,
+      "coord": [
+        5.8372,
+        51.8126
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    }
+  ]
+}

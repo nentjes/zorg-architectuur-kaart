@@ -1,0 +1,27 @@
+id: pro-persona
+type: organization
+name: Pro Persona
+sector: ggz
+country: NL
+locations:
+- city: Nijmegen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8425
+    lon: 5.8533
+- city: Arnhem
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.985
+    lon: 5.8986
+sources:
+- claude-knowledge-2026-04
+- gemini-ggz-research-2026-04
+confidence: medium
+needs_verification: true
+systems:
+- tenzinger-user
+notes:
+- Gelderse regio

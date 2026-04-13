@@ -1,0 +1,17 @@
+id: quartz
+type: organization
+name: Quartz
+sector: huisarts
+subtype: zorggroep
+country: NL
+locations:
+- city: '''s-Hertogenbosch'
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6978
+    lon: 5.3037
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

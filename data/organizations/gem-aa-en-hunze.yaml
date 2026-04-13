@@ -1,0 +1,16 @@
+id: gem-aa-en-hunze
+type: organization
+name: Gemeente Aa en Hunze
+sector: gemeente
+country: NL
+locations:
+- city: Gieten
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.9947
+    lon: 6.7589
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

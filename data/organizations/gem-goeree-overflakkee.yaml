@@ -1,0 +1,16 @@
+id: gem-goeree-overflakkee
+type: organization
+name: Gemeente Goeree-Overflakkee
+sector: gemeente
+country: NL
+locations:
+- city: Middelharnis
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.7575
+    lon: 4.1708
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

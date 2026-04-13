@@ -1,0 +1,17 @@
+id: gem-de-bilt
+type: organization
+name: Gemeente De Bilt
+sector: gemeente
+country: NL
+locations:
+- city: Bilthoven
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1333
+    lon: 5.2
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

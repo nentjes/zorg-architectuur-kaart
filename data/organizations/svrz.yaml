@@ -1,0 +1,16 @@
+id: svrz
+type: organization
+name: SVRZ
+sector: vvt
+country: NL
+locations:
+- city: Middelburg
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.4988
+    lon: 3.6109
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

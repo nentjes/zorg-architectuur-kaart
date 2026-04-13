@@ -1,0 +1,17 @@
+id: gem-soest
+type: organization
+name: Gemeente Soest
+sector: gemeente
+country: NL
+locations:
+- city: Soest
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1736
+    lon: 5.2908
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

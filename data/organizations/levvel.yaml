@@ -1,0 +1,20 @@
+id: levvel
+type: organization
+name: Levvel
+aliases:
+- De Bascule
+- Spirit
+sector: ggz
+subtype: kind-en-jeugd
+country: NL
+locations:
+- city: Amsterdam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3146
+    lon: 4.9501
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-rheden
+type: organization
+name: Gemeente Rheden
+sector: gemeente
+country: NL
+locations:
+- city: De Steeg
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.0069
+    lon: 6.0483
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

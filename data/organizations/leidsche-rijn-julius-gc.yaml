@@ -1,0 +1,24 @@
+id: leidsche-rijn-julius-gc
+type: organization
+name: Leidsche Rijn Julius Gezondheidscentra
+aliases:
+- LRJG
+sector: huisarts
+subtype: gezondheidscentra
+country: NL
+locations:
+- city: Utrecht
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.097
+    lon: 5.045
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- medicom
+networks:
+- lsp

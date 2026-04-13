@@ -1,0 +1,30 @@
+id: diakonessenhuis
+type: organization
+name: Diakonessenhuis
+aliases:
+- Diak
+sector: ziekenhuis
+subtype: algemeen
+country: NL
+locations:
+- city: Utrecht
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0731
+    lon: 5.1239
+- city: Zeist
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0869
+    lon: 5.2339
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- chipsoft-hix
+networks:
+- lsp

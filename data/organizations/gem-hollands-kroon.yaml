@@ -1,0 +1,16 @@
+id: gem-hollands-kroon
+type: organization
+name: Gemeente Hollands Kroon
+sector: gemeente
+country: NL
+locations:
+- city: Anna Paulowna
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.8711
+    lon: 4.8558
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

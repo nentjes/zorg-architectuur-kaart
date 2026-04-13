@@ -1,0 +1,16 @@
+id: gem-reimerswaal
+type: organization
+name: Gemeente Reimerswaal
+sector: gemeente
+country: NL
+locations:
+- city: Kruiningen
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.4656
+    lon: 4.0322
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: noorderzorg
+type: organization
+name: Noorderzorg
+sector: vvt
+country: NL
+locations:
+- city: Stadskanaal
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 52.9925
+    lon: 6.9464
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-heemstede
+type: organization
+name: Gemeente Heemstede
+sector: gemeente
+country: NL
+locations:
+- city: Heemstede
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3533
+    lon: 4.6222
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

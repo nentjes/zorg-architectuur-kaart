@@ -1,0 +1,23 @@
+id: de-hoogstraat
+type: organization
+name: De Hoogstraat Revalidatie
+aliases:
+- De Hoogstraat
+sector: revalidatie
+country: NL
+locations:
+- city: Utrecht
+  province: Utrecht
+  country: NL
+  address: "Rembrandtkade 10, 3583 TM Utrecht (Rijnsweerd, bij UMCU)"
+  coordinates:
+    lat: 52.0839
+    lon: 5.1571
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+- roel-private-excel-2026-04
+confidence: high
+needs_verification: false
+systems:
+- chipsoft-hix

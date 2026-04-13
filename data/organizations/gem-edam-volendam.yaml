@@ -1,0 +1,16 @@
+id: gem-edam-volendam
+type: organization
+name: Gemeente Edam-Volendam
+sector: gemeente
+country: NL
+locations:
+- city: Volendam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.4958
+    lon: 5.0706
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

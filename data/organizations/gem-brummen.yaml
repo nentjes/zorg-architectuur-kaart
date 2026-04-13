@@ -1,0 +1,16 @@
+id: gem-brummen
+type: organization
+name: Gemeente Brummen
+sector: gemeente
+country: NL
+locations:
+- city: Brummen
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.0867
+    lon: 6.1558
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

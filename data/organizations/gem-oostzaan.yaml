@@ -1,0 +1,16 @@
+id: gem-oostzaan
+type: organization
+name: Gemeente Oostzaan
+sector: gemeente
+country: NL
+locations:
+- city: Oostzaan
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.4383
+    lon: 4.865
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

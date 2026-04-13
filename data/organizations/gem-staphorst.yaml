@@ -1,0 +1,16 @@
+id: gem-staphorst
+type: organization
+name: Gemeente Staphorst
+sector: gemeente
+country: NL
+locations:
+- city: Staphorst
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.6394
+    lon: 6.2056
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

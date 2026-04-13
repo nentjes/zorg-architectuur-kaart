@@ -1,0 +1,16 @@
+id: gem-veere
+type: organization
+name: Gemeente Veere
+sector: gemeente
+country: NL
+locations:
+- city: Domburg
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.5622
+    lon: 3.4961
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

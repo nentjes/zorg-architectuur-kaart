@@ -1,0 +1,33 @@
+id: treant
+type: organization
+name: Treant Zorggroep
+sector: ziekenhuis
+subtype: algemeen
+country: NL
+locations:
+- city: Emmen
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.7792
+    lon: 6.9047
+- city: Hoogeveen
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.7225
+    lon: 6.4783
+- city: Stadskanaal
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 52.9894
+    lon: 6.9564
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- chipsoft-hix
+networks:
+- lsp

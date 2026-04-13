@@ -1,0 +1,16 @@
+id: gem-dongen
+type: organization
+name: Gemeente Dongen
+sector: gemeente
+country: NL
+locations:
+- city: Dongen
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6267
+    lon: 4.9392
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

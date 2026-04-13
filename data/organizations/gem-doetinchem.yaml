@@ -1,0 +1,16 @@
+id: gem-doetinchem
+type: organization
+name: Gemeente Doetinchem
+sector: gemeente
+country: NL
+locations:
+- city: Doetinchem
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.965
+    lon: 6.2889
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

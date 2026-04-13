@@ -1,0 +1,21 @@
+id: dimence
+type: organization
+name: Dimence
+sector: ggz
+country: NL
+locations:
+- city: Deventer
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.2542
+    lon: 6.1392
+sources:
+- claude-knowledge-2026-04
+- gemini-ggz-research-2026-04
+confidence: medium
+needs_verification: true
+systems:
+- tenzinger-user
+notes:
+- Overijssel/Deventer

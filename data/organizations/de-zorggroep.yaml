@@ -1,0 +1,16 @@
+id: de-zorggroep
+type: organization
+name: De Zorggroep
+sector: vvt
+country: NL
+locations:
+- city: Venlo
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.3704
+    lon: 6.1724
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

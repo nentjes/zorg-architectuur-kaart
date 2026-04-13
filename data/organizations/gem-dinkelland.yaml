@@ -1,0 +1,16 @@
+id: gem-dinkelland
+type: organization
+name: Gemeente Dinkelland
+sector: gemeente
+country: NL
+locations:
+- city: Denekamp
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.3731
+    lon: 6.9506
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

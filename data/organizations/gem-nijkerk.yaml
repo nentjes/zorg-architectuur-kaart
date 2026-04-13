@@ -1,0 +1,16 @@
+id: gem-nijkerk
+type: organization
+name: Gemeente Nijkerk
+sector: gemeente
+country: NL
+locations:
+- city: Nijkerk
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.2217
+    lon: 5.4819
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

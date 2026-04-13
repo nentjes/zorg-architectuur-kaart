@@ -1,0 +1,16 @@
+id: gem-wijdemeren
+type: organization
+name: Gemeente Wijdemeren
+sector: gemeente
+country: NL
+locations:
+- city: Loosdrecht
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2069
+    lon: 5.0847
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,17 @@
+id: gem-lopik
+type: organization
+name: Gemeente Lopik
+sector: gemeente
+country: NL
+locations:
+- city: Lopik
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 51.9758
+    lon: 4.9514
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

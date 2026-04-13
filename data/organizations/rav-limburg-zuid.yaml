@@ -1,0 +1,16 @@
+id: rav-limburg-zuid
+type: organization
+name: Ambulancezorg Limburg Zuid
+sector: ambulance
+country: NL
+locations:
+- city: Maastricht
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.8514
+    lon: 5.691
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

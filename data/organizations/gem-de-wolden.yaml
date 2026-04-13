@@ -1,0 +1,16 @@
+id: gem-de-wolden
+type: organization
+name: Gemeente De Wolden
+sector: gemeente
+country: NL
+locations:
+- city: Zuidwolde
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.6547
+    lon: 6.4172
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

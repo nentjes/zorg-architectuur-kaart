@@ -1,0 +1,19 @@
+id: izer
+type: organization
+name: IZER
+aliases:
+- Innovatief Zorgnetwerk Eerste Lijn Rotterdam
+sector: huisarts
+subtype: zorggroep
+country: NL
+locations:
+- city: Rotterdam
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9244
+    lon: 4.4777
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

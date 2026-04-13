@@ -1,0 +1,16 @@
+id: gem-brunssum
+type: organization
+name: Gemeente Brunssum
+sector: gemeente
+country: NL
+locations:
+- city: Brunssum
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.9475
+    lon: 5.9711
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

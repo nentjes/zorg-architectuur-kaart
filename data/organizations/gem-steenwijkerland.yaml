@@ -1,0 +1,16 @@
+id: gem-steenwijkerland
+type: organization
+name: Gemeente Steenwijkerland
+sector: gemeente
+country: NL
+locations:
+- city: Steenwijk
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.7842
+    lon: 6.12
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

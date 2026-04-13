@@ -1,0 +1,16 @@
+id: gem-boekel
+type: organization
+name: Gemeente Boekel
+sector: gemeente
+country: NL
+locations:
+- city: Boekel
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6003
+    lon: 5.6761
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

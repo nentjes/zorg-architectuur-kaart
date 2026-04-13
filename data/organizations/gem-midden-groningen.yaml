@@ -1,0 +1,16 @@
+id: gem-midden-groningen
+type: organization
+name: Gemeente Midden-Groningen
+sector: gemeente
+country: NL
+locations:
+- city: Hoogezand
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.1631
+    lon: 6.7569
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

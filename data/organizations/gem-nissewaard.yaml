@@ -1,0 +1,16 @@
+id: gem-nissewaard
+type: organization
+name: Gemeente Nissewaard
+sector: gemeente
+country: NL
+locations:
+- city: Spijkenisse
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.8456
+    lon: 4.3306
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-halderberge
+type: organization
+name: Gemeente Halderberge
+sector: gemeente
+country: NL
+locations:
+- city: Oudenbosch
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5858
+    lon: 4.5261
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,16 @@
+id: gem-son-en-breugel
+type: organization
+name: Gemeente Son en Breugel
+sector: gemeente
+country: NL
+locations:
+- city: Son
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5108
+    lon: 5.4894
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

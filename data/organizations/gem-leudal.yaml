@@ -1,0 +1,16 @@
+id: gem-leudal
+type: organization
+name: Gemeente Leudal
+sector: gemeente
+country: NL
+locations:
+- city: Heythuysen
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.2489
+    lon: 5.9231
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

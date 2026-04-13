@@ -1,0 +1,21 @@
+id: maasziekenhuis-pantein
+type: organization
+name: Maasziekenhuis Pantein
+sector: ziekenhuis
+subtype: algemeen
+country: NL
+locations:
+- city: Boxmeer
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6467
+    lon: 5.9483
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true
+systems:
+- chipsoft-hix
+networks:
+- lsp

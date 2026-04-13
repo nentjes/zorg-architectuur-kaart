@@ -1,0 +1,16 @@
+id: gem-schouwen-duiveland
+type: organization
+name: Gemeente Schouwen-Duiveland
+sector: gemeente
+country: NL
+locations:
+- city: Zierikzee
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.6508
+    lon: 3.9192
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

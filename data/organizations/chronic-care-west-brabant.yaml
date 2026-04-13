@@ -1,0 +1,19 @@
+id: chronic-care-west-brabant
+type: organization
+name: Chronic Care West-Brabant (CCWB)
+aliases:
+- CCWB
+sector: huisarts
+subtype: zorggroep
+country: NL
+locations:
+- city: Roosendaal
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5309
+    lon: 4.4654
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

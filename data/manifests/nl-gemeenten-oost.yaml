@@ -1,0 +1,64 @@
+# Manifest: gemeenten Oost-NL — Sprint 4b
+# Scope: Gelderland (51) = 51
+# Coords: hoofdplaats/gemeentehuis WGS84.
+# Rol in IZA: Wmo + Jeugdwet opdrachtgever.
+
+version: 1
+default_source: claude-knowledge-2026-04
+default_confidence: low
+default_needs_verification: true
+
+entities:
+
+  # Gelderland (51)
+  - {id: gem-aalten, name: "Gemeente Aalten", sector: gemeente, locations: [{city: "Aalten", province: "Gelderland", country: NL, coordinates: {lat: 51.9242, lon: 6.5806}}]}
+  - {id: gem-apeldoorn, name: "Gemeente Apeldoorn", sector: gemeente, locations: [{city: "Apeldoorn", province: "Gelderland", country: NL, coordinates: {lat: 52.2112, lon: 5.9699}}]}
+  - {id: gem-arnhem, name: "Gemeente Arnhem", sector: gemeente, locations: [{city: "Arnhem", province: "Gelderland", country: NL, coordinates: {lat: 51.9851, lon: 5.8987}}]}
+  - {id: gem-barneveld, name: "Gemeente Barneveld", sector: gemeente, locations: [{city: "Barneveld", province: "Gelderland", country: NL, coordinates: {lat: 52.1403, lon: 5.5847}}]}
+  - {id: gem-berg-en-dal, name: "Gemeente Berg en Dal", sector: gemeente, locations: [{city: "Groesbeek", province: "Gelderland", country: NL, coordinates: {lat: 51.7789, lon: 5.9392}}]}
+  - {id: gem-berkelland, name: "Gemeente Berkelland", sector: gemeente, locations: [{city: "Borculo", province: "Gelderland", country: NL, coordinates: {lat: 52.1200, lon: 6.5247}}]}
+  - {id: gem-beuningen, name: "Gemeente Beuningen", sector: gemeente, locations: [{city: "Beuningen", province: "Gelderland", country: NL, coordinates: {lat: 51.8606, lon: 5.7694}}]}
+  - {id: gem-bronckhorst, name: "Gemeente Bronckhorst", sector: gemeente, locations: [{city: "Hengelo (Gld)", province: "Gelderland", country: NL, coordinates: {lat: 52.0669, lon: 6.2944}}]}
+  - {id: gem-brummen, name: "Gemeente Brummen", sector: gemeente, locations: [{city: "Brummen", province: "Gelderland", country: NL, coordinates: {lat: 52.0867, lon: 6.1558}}]}
+  - {id: gem-buren, name: "Gemeente Buren", sector: gemeente, locations: [{city: "Maurik", province: "Gelderland", country: NL, coordinates: {lat: 51.9783, lon: 5.4336}}]}
+  - {id: gem-culemborg, name: "Gemeente Culemborg", sector: gemeente, locations: [{city: "Culemborg", province: "Gelderland", country: NL, coordinates: {lat: 51.9550, lon: 5.2267}}]}
+  - {id: gem-doesburg, name: "Gemeente Doesburg", sector: gemeente, locations: [{city: "Doesburg", province: "Gelderland", country: NL, coordinates: {lat: 52.0114, lon: 6.1367}}]}
+  - {id: gem-doetinchem, name: "Gemeente Doetinchem", sector: gemeente, locations: [{city: "Doetinchem", province: "Gelderland", country: NL, coordinates: {lat: 51.9650, lon: 6.2889}}]}
+  - {id: gem-druten, name: "Gemeente Druten", sector: gemeente, locations: [{city: "Druten", province: "Gelderland", country: NL, coordinates: {lat: 51.8878, lon: 5.6011}}]}
+  - {id: gem-duiven, name: "Gemeente Duiven", sector: gemeente, locations: [{city: "Duiven", province: "Gelderland", country: NL, coordinates: {lat: 51.9486, lon: 6.0181}}]}
+  - {id: gem-ede, name: "Gemeente Ede", sector: gemeente, locations: [{city: "Ede", province: "Gelderland", country: NL, coordinates: {lat: 52.0336, lon: 5.6642}}]}
+  - {id: gem-elburg, name: "Gemeente Elburg", sector: gemeente, locations: [{city: "Elburg", province: "Gelderland", country: NL, coordinates: {lat: 52.4447, lon: 5.8372}}]}
+  - {id: gem-epe, name: "Gemeente Epe", sector: gemeente, locations: [{city: "Epe", province: "Gelderland", country: NL, coordinates: {lat: 52.3475, lon: 5.9886}}]}
+  - {id: gem-ermelo, name: "Gemeente Ermelo", sector: gemeente, locations: [{city: "Ermelo", province: "Gelderland", country: NL, coordinates: {lat: 52.2983, lon: 5.6211}}]}
+  - {id: gem-harderwijk, name: "Gemeente Harderwijk", sector: gemeente, locations: [{city: "Harderwijk", province: "Gelderland", country: NL, coordinates: {lat: 52.3411, lon: 5.6208}}]}
+  - {id: gem-hattem, name: "Gemeente Hattem", sector: gemeente, locations: [{city: "Hattem", province: "Gelderland", country: NL, coordinates: {lat: 52.4731, lon: 6.0592}}]}
+  - {id: gem-heerde, name: "Gemeente Heerde", sector: gemeente, locations: [{city: "Heerde", province: "Gelderland", country: NL, coordinates: {lat: 52.3886, lon: 6.0389}}]}
+  - {id: gem-heumen, name: "Gemeente Heumen", sector: gemeente, locations: [{city: "Malden", province: "Gelderland", country: NL, coordinates: {lat: 51.7808, lon: 5.8358}}]}
+  - {id: gem-lingewaard, name: "Gemeente Lingewaard", sector: gemeente, locations: [{city: "Bemmel", province: "Gelderland", country: NL, coordinates: {lat: 51.8908, lon: 5.8925}}]}
+  - {id: gem-lochem, name: "Gemeente Lochem", sector: gemeente, locations: [{city: "Lochem", province: "Gelderland", country: NL, coordinates: {lat: 52.1606, lon: 6.4122}}]}
+  - {id: gem-maasdriel, name: "Gemeente Maasdriel", sector: gemeente, locations: [{city: "Kerkdriel", province: "Gelderland", country: NL, coordinates: {lat: 51.7744, lon: 5.3336}}]}
+  - {id: gem-montferland, name: "Gemeente Montferland", sector: gemeente, locations: [{city: "Didam", province: "Gelderland", country: NL, coordinates: {lat: 51.9381, lon: 6.1397}}]}
+  - {id: gem-neder-betuwe, name: "Gemeente Neder-Betuwe", sector: gemeente, locations: [{city: "Opheusden", province: "Gelderland", country: NL, coordinates: {lat: 51.9367, lon: 5.5933}}]}
+  - {id: gem-nijkerk, name: "Gemeente Nijkerk", sector: gemeente, locations: [{city: "Nijkerk", province: "Gelderland", country: NL, coordinates: {lat: 52.2217, lon: 5.4819}}]}
+  - {id: gem-nijmegen, name: "Gemeente Nijmegen", sector: gemeente, locations: [{city: "Nijmegen", province: "Gelderland", country: NL, coordinates: {lat: 51.8426, lon: 5.8528}}]}
+  - {id: gem-nunspeet, name: "Gemeente Nunspeet", sector: gemeente, locations: [{city: "Nunspeet", province: "Gelderland", country: NL, coordinates: {lat: 52.3814, lon: 5.7833}}]}
+  - {id: gem-oldebroek, name: "Gemeente Oldebroek", sector: gemeente, locations: [{city: "Oldebroek", province: "Gelderland", country: NL, coordinates: {lat: 52.4433, lon: 5.9008}}]}
+  - {id: gem-oost-gelre, name: "Gemeente Oost Gelre", sector: gemeente, locations: [{city: "Lichtenvoorde", province: "Gelderland", country: NL, coordinates: {lat: 51.9828, lon: 6.5681}}]}
+  - {id: gem-oude-ijsselstreek, name: "Gemeente Oude IJsselstreek", sector: gemeente, locations: [{city: "Gendringen", province: "Gelderland", country: NL, coordinates: {lat: 51.8708, lon: 6.3831}}]}
+  - {id: gem-overbetuwe, name: "Gemeente Overbetuwe", sector: gemeente, locations: [{city: "Elst", province: "Gelderland", country: NL, coordinates: {lat: 51.9189, lon: 5.8417}}]}
+  - {id: gem-putten, name: "Gemeente Putten", sector: gemeente, locations: [{city: "Putten", province: "Gelderland", country: NL, coordinates: {lat: 52.2592, lon: 5.6100}}]}
+  - {id: gem-renkum, name: "Gemeente Renkum", sector: gemeente, locations: [{city: "Oosterbeek", province: "Gelderland", country: NL, coordinates: {lat: 51.9886, lon: 5.8433}}]}
+  - {id: gem-rheden, name: "Gemeente Rheden", sector: gemeente, locations: [{city: "De Steeg", province: "Gelderland", country: NL, coordinates: {lat: 52.0069, lon: 6.0483}}]}
+  - {id: gem-rozendaal, name: "Gemeente Rozendaal", sector: gemeente, locations: [{city: "Rozendaal", province: "Gelderland", country: NL, coordinates: {lat: 52.0061, lon: 5.9739}}]}
+  - {id: gem-scherpenzeel, name: "Gemeente Scherpenzeel", sector: gemeente, locations: [{city: "Scherpenzeel", province: "Gelderland", country: NL, coordinates: {lat: 52.0825, lon: 5.4878}}]}
+  - {id: gem-tiel, name: "Gemeente Tiel", sector: gemeente, locations: [{city: "Tiel", province: "Gelderland", country: NL, coordinates: {lat: 51.8856, lon: 5.4289}}]}
+  - {id: gem-voorst, name: "Gemeente Voorst", sector: gemeente, locations: [{city: "Twello", province: "Gelderland", country: NL, coordinates: {lat: 52.2328, lon: 6.1056}}]}
+  - {id: gem-wageningen, name: "Gemeente Wageningen", sector: gemeente, locations: [{city: "Wageningen", province: "Gelderland", country: NL, coordinates: {lat: 51.9692, lon: 5.6653}}]}
+  - {id: gem-west-betuwe, name: "Gemeente West Betuwe", sector: gemeente, locations: [{city: "Geldermalsen", province: "Gelderland", country: NL, coordinates: {lat: 51.8819, lon: 5.2897}}]}
+  - {id: gem-west-maas-en-waal, name: "Gemeente West Maas en Waal", sector: gemeente, locations: [{city: "Beneden-Leeuwen", province: "Gelderland", country: NL, coordinates: {lat: 51.8858, lon: 5.5367}}]}
+  - {id: gem-westervoort, name: "Gemeente Westervoort", sector: gemeente, locations: [{city: "Westervoort", province: "Gelderland", country: NL, coordinates: {lat: 51.9600, lon: 5.9889}}]}
+  - {id: gem-wijchen, name: "Gemeente Wijchen", sector: gemeente, locations: [{city: "Wijchen", province: "Gelderland", country: NL, coordinates: {lat: 51.8067, lon: 5.7300}}]}
+  - {id: gem-winterswijk, name: "Gemeente Winterswijk", sector: gemeente, locations: [{city: "Winterswijk", province: "Gelderland", country: NL, coordinates: {lat: 51.9719, lon: 6.7206}}]}
+  - {id: gem-zaltbommel, name: "Gemeente Zaltbommel", sector: gemeente, locations: [{city: "Zaltbommel", province: "Gelderland", country: NL, coordinates: {lat: 51.8117, lon: 5.2519}}]}
+  - {id: gem-zevenaar, name: "Gemeente Zevenaar", sector: gemeente, locations: [{city: "Zevenaar", province: "Gelderland", country: NL, coordinates: {lat: 51.9297, lon: 6.0744}}]}
+  - {id: gem-zutphen, name: "Gemeente Zutphen", sector: gemeente, locations: [{city: "Zutphen", province: "Gelderland", country: NL, coordinates: {lat: 52.1408, lon: 6.1944}}]}

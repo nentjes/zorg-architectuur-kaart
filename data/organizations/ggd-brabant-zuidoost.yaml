@@ -1,0 +1,16 @@
+id: ggd-brabant-zuidoost
+type: organization
+name: GGD Brabant-Zuidoost
+sector: ggd
+country: NL
+locations:
+- city: Eindhoven
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4416
+    lon: 5.4697
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

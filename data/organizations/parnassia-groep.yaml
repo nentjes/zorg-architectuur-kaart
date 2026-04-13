@@ -1,0 +1,22 @@
+id: parnassia-groep
+type: organization
+name: Parnassia Groep
+sector: ggz
+country: NL
+locations:
+- city: Den Haag
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0786
+    lon: 4.3097
+sources:
+- claude-knowledge-2026-04
+- gemini-ggz-research-2026-04
+confidence: medium
+needs_verification: true
+systems:
+- tenzinger-user
+- tenzinger-fier
+notes:
+- grootste GGZ-speler NL

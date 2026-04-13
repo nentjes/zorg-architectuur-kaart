@@ -1,0 +1,21 @@
+id: mrc-aardenburg
+type: organization
+name: MRC Aardenburg (Militair Revalidatie Centrum)
+aliases:
+- MRC
+sector: revalidatie
+country: NL
+locations:
+- city: Doorn
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.04
+    lon: 5.34
+region_iza: iza-midden-nederland
+systems:
+- chipsoft-hix
+sources:
+- roel-private-excel-2026-04
+confidence: high
+needs_verification: false

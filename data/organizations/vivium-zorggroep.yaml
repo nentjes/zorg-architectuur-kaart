@@ -1,0 +1,20 @@
+id: vivium-zorggroep
+type: organization
+name: "Vivium Zorggroep"
+aliases:
+  - "Vivium"
+sector: vvt
+country: NL
+locations:
+  - city: "Naarden"
+    province: "Noord-Holland"
+    country: NL
+region_iza: iza-gooi-en-vechtstreek
+systems:
+  - nedap-ons
+networks:
+  - lsp
+sources:
+  - plan-gezond-gooi-2025
+confidence: medium
+needs_verification: true

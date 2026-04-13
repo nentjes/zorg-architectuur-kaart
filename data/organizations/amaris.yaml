@@ -1,0 +1,16 @@
+id: amaris
+type: organization
+name: Amaris Zorggroep
+sector: vvt
+country: NL
+locations:
+- city: Laren
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2556
+    lon: 5.2308
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

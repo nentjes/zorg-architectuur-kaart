@@ -1,0 +1,18 @@
+id: victas
+type: organization
+name: Victas (verslavingszorg)
+sector: ggz
+subtype: verslavingszorg
+country: NL
+locations:
+- city: Utrecht
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.0907
+    lon: 5.1214
+region_iza: iza-midden-nederland
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

@@ -1,0 +1,22 @@
+id: karakter
+type: organization
+name: Karakter
+sector: ggz
+subtype: kinder_en_jeugd
+country: NL
+locations:
+- city: Ede
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.0411
+    lon: 5.6683
+sources:
+- claude-knowledge-2026-04
+- gemini-ggz-research-2026-04
+confidence: medium
+needs_verification: true
+systems:
+- tenzinger-user
+notes:
+- kind-en-jeugd specialistisch

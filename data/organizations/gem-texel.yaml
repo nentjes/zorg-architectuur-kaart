@@ -1,0 +1,16 @@
+id: gem-texel
+type: organization
+name: Gemeente Texel
+sector: gemeente
+country: NL
+locations:
+- city: Den Burg
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 53.0517
+    lon: 4.795
+sources:
+- claude-knowledge-2026-04
+confidence: low
+needs_verification: true

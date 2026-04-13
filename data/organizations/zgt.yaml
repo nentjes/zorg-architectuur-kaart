@@ -21,9 +21,11 @@ locations:
     lon: 6.76083
 region_iza: iza-twente
 systems:
-- chipsoft-hix
+- chipsoft-hix-standaard-content
 networks:
 - rdh-twente
 sources:
+- mni-partners-epd-marktinventarisatie-zkh-2026
 - plan-rdh-twente-2025
 confidence: high
+needs_verification: false

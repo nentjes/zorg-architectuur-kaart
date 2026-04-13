@@ -16,10 +16,11 @@ locations:
     lon: 5.1745
 region_iza: iza-midden-nederland
 sources:
+- mni-partners-epd-marktinventarisatie-zkh-2026
 - claude-knowledge-2026-04
-confidence: low
-needs_verification: true
+confidence: high
+needs_verification: false
 systems:
-- chipsoft-hix
+- chipsoft-hix-standaard-content
 networks:
 - lsp

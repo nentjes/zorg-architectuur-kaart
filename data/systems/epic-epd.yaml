@@ -4,6 +4,7 @@ name: "Epic EPD"
 aliases:
   - "Epic"
   - "Epic Systems EPD"
+  - "Hyperspace"
 category: epd_ziekenhuis
 vendor: epic
 # country_origin weggelaten — US past niet in v0.2 enum [NL,DE,BE,LU]
@@ -11,6 +12,7 @@ vendor: epic
 standards_supported:
   - nl-core-r4
 sources:
+  - mni-partners-epd-marktinventarisatie-zkh-2026
   - epic-website
   - plan-trijn-midden-nederland-2025
-confidence: medium
+confidence: high

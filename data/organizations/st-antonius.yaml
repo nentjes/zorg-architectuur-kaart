@@ -27,6 +27,7 @@ networks:
 - lsp
 - trijn-platform
 sources:
+- mni-partners-epd-marktinventarisatie-zkh-2026
 - plan-trijn-midden-nederland-2025
-confidence: medium
-needs_verification: true
+confidence: high
+needs_verification: false

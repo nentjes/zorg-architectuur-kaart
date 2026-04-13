@@ -22,11 +22,12 @@ locations:
     lon: 5.24583
 region_iza: iza-gooi-en-vechtstreek
 systems:
-- chipsoft-hix
+- chipsoft-hix-standaard-content
 networks:
 - lsp
 - mitz
 sources:
+- mni-partners-epd-marktinventarisatie-zkh-2026
 - plan-gezond-gooi-2025
-confidence: medium
-needs_verification: true
+confidence: high
+needs_verification: false

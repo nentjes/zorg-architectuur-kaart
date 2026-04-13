@@ -609,6 +609,51 @@ sources:
     notes: >
       Authoritative bron voor ~70 Verloskundige Samenwerkingsverbanden.
 
+  # -----------------------------------------------------------
+  # Sprint 6 — M&I/Partners marktinventarisaties (EPD + ECD)
+  # -----------------------------------------------------------
+
+  - id: mni-partners-epd-marktinventarisatie-zkh-2026
+    title: "M&I/Partners — Jaarlijkse EPD-marktinventarisatie ziekenhuizen editie 2026"
+    publisher: "M&I/Partners"
+    publisher_type: onderzoek
+    date: "2026"
+    url: "https://mxi.nl/kennis/746/epd-landschap-2026-tussen-standaardisatie-en-innovatie"
+    url_todo: false
+    retrieved_at: "2026-04-13"
+    source_type: dataset
+    access: openbaar
+    license: onbekend
+    notes: >
+      Jaarlijkse autoritatieve inventarisatie door M&I/Partners van EPD +
+      PDMS per Nederlands ziekenhuis (75 orgs in editie 2026). Bron is
+      een Power BI dashboard op mxi.nl/kennis/746. De 2026-editie
+      onderscheidt expliciet "HiX 6.3 standaard content" (86% van
+      ChipSoft-klanten) versus "HiX 6.3" (eigen content, 14%).
+      Wordt door Sprint 6a behandeld als autoritatief voor de
+      `organization.systems[]`-veld van ziekenhuizen — M&I-data
+      overschrijft eerdere LLM/planbron-guesses.
+
+  - id: mni-partners-epd-marktinventarisatie-ggz-2025
+    title: "M&I/Partners — Jaarlijkse EPD-marktinventarisatie GGZ editie 2025"
+    publisher: "M&I/Partners"
+    publisher_type: onderzoek
+    date: "2025"
+    url: "https://mxi.nl/kennis"
+    url_todo: true
+    retrieved_at: "2026-04-13"
+    source_type: dataset
+    access: openbaar
+    license: onbekend
+    notes: >
+      Jaarlijkse inventarisatie door M&I/Partners van EPD's in de GGZ-
+      sector (50 orgs in editie 2025). Power BI dashboard onderscheidt
+      drie kolommen per organisatie: Administratie, Dossiervoering en
+      Cliëntportaal — dat kunnen drie verschillende leveranciers zijn.
+      Sprint 6b gebruikt de **Dossiervoering-kolom** als de primaire
+      EPD-toewijzing (`organization.systems[]`). Administratie en
+      Cliëntportaal worden in Fase 2b als sub-systemen gemodelleerd.
+
   - id: cbs-gemeentelijke-indeling-2024
     title: "CBS — Gemeentelijke indeling 2024"
     publisher: "Centraal Bureau voor de Statistiek"

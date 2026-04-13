@@ -16,10 +16,12 @@ locations:
     lon: 5.17657
 region_iza: iza-midden-nederland
 systems:
-- chipsoft-hix
+- chipsoft-hix-standaard-content
 networks:
 - lsp
 - trijn-platform
 sources:
+- mni-partners-epd-marktinventarisatie-zkh-2026
 - plan-trijn-midden-nederland-2025
 confidence: high
+needs_verification: false

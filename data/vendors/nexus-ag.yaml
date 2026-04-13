@@ -1,7 +1,12 @@
 id: nexus-ag
 type: vendor
-name: Nexus AG
-country_origin: DE
+name: "Nexus AG"
+aliases:
+  - "Nexus"
+  - "NEXUS / CHILI"
+country: DE
+vendor_role: product_vendor
+website: "https://www.nexus-ag.de"
 sources:
-- gemini-ggz-research-2026-04
-confidence: medium
+  - gemini-ggz-research-2026-04
+  - mni-partners-epd-marktinventarisatie-zkh-2026

@@ -1,22 +1,24 @@
-id: nij-smellinghe
+id: ghz
 type: organization
-name: Nij Smellinghe
+name: Groene Hart Ziekenhuis
+aliases:
+- GHZ
+- Groene Hart
 sector: ziekenhuis
 subtype: algemeen
 country: NL
 locations:
-- city: Drachten
-  province: Friesland
+- city: Gouda
+  province: Zuid-Holland
   country: NL
   coordinates:
-    lat: 53.09833
-    lon: 6.11028
-sources:
-- mni-partners-epd-marktinventarisatie-zkh-2026
-- claude-knowledge-2026-04
-confidence: high
-needs_verification: false
+    lat: 52.01611
+    lon: 4.69944
 systems:
-- chipsoft-hix
+- nexus-kis
 networks:
 - lsp
+sources:
+- mni-partners-epd-marktinventarisatie-zkh-2026
+confidence: high
+needs_verification: false

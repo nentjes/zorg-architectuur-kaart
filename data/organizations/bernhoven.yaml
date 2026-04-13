@@ -12,10 +12,11 @@ locations:
     lat: 51.66
     lon: 5.6167
 sources:
+- mni-partners-epd-marktinventarisatie-zkh-2026
 - claude-knowledge-2026-04
-confidence: low
-needs_verification: true
+confidence: high
+needs_verification: false
 systems:
-- epic-epd
+- nexus-kis
 networks:
 - lsp

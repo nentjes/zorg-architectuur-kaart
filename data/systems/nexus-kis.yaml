@@ -1,11 +1,13 @@
 id: nexus-kis
 type: system
-name: Nexus KIS
+name: "NEXUS KIS"
 aliases:
-- Nexus
-category: epd_msz
+  - "Nexus"
+  - "Nexus Klinisch Informatiesysteem"
+category: epd_ziekenhuis
 vendor: nexus-ag
 country_origin: DE
 sources:
-- gemini-ggz-research-2026-04
-confidence: medium
+  - mni-partners-epd-marktinventarisatie-zkh-2026
+  - gemini-ggz-research-2026-04
+confidence: high

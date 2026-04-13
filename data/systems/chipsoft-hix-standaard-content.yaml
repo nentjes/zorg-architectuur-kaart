@@ -1,10 +1,10 @@
-id: chipsoft-hix
+id: chipsoft-hix-standaard-content
 type: system
-name: "ChipSoft HiX 6.3 — eigen content"
+name: "ChipSoft HiX 6.3 — Standaard Content"
 aliases:
-  - "HiX"
-  - "HiX 6.3"
-  - "HiX zonder Standard Content"
+  - "HiX 6.3 standaard content"
+  - "HiX Standard Content"
+  - "HiX SC"
 category: epd_ziekenhuis
 vendor: chipsoft
 country_origin: NL
@@ -14,5 +14,4 @@ standards_supported:
 sources:
   - mni-partners-epd-marktinventarisatie-zkh-2026
   - chipsoft-website
-  - plan-rdh-twente-2025
 confidence: high

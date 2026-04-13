@@ -12,9 +12,10 @@ locations:
     lat: 51.6467
     lon: 5.9483
 sources:
+- mni-partners-epd-marktinventarisatie-zkh-2026
 - claude-knowledge-2026-04
-confidence: low
-needs_verification: true
+confidence: high
+needs_verification: false
 systems:
 - chipsoft-hix
 networks:

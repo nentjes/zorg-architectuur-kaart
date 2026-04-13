@@ -18,10 +18,11 @@ locations:
     lat: 52.3025
     lon: 4.6889
 sources:
+- mni-partners-epd-marktinventarisatie-zkh-2026
 - claude-knowledge-2026-04
-confidence: low
-needs_verification: true
+confidence: high
+needs_verification: false
 systems:
-- chipsoft-hix
+- epic-epd
 networks:
 - lsp

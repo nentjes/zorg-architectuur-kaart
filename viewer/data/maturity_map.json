@@ -1,12 +1,12 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-13T13:51:43",
-    "git_sha": "7267880",
+    "generated_at": "2026-04-13T16:00:21",
+    "git_sha": "a67002c",
     "git_branch": "claude/start-zorg-architectuur-kaart-PKwg0",
-    "git_dirty": true,
+    "git_dirty": false,
     "n_connections": 4,
-    "n_organizations_scored": 1025,
+    "n_organizations_scored": 1136,
     "formula": {
       "per_connection": {
         "raw": "paradigm_w * topology_w * status_w * data_w * recency_w",
@@ -263,6 +263,16 @@
       ]
     },
     {
+      "id": "aa-van-vollenvelde",
+      "name": "A.A. van Vollenvelde",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "aafje",
       "name": "Aafje",
       "sector": "vvt",
@@ -491,6 +501,24 @@
         [
           5.5833,
           52.1403
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ahem-van-kessel",
+      "name": "A.H.E.M. van Kessel",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
         ]
       ],
       "total_score": 0.0,
@@ -1331,6 +1359,24 @@
         [
           4.8952,
           52.3702
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "bonekamp-en-van-der-mispel-huisartsen",
+      "name": "Bonekamp en van der Mispel, huisartsen",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
         ]
       ],
       "total_score": 0.0,
@@ -2699,6 +2745,24 @@
       "participating_in": []
     },
     {
+      "id": "djh-van-steenis-huisarts",
+      "name": "D.J.H. van Steenis, huisarts",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.205,
+        52.0317
+      ],
+      "coords": [
+        [
+          5.205,
+          52.0317
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "doh",
       "name": "DOH (De Ondernemende Huisarts)",
       "sector": "huisarts",
@@ -3269,6 +3333,16 @@
       "participating_in": []
     },
     {
+      "id": "fje-hardam",
+      "name": "F.J.E. Hardam",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "flevoziekenhuis",
       "name": "Flevoziekenhuis",
       "sector": "ziekenhuis",
@@ -3555,6 +3629,24 @@
         [
           4.8952,
           52.3702
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "g-hemelaar",
+      "name": "G. Hemelaar",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0917,
+        51.9917
+      ],
+      "coords": [
+        [
+          5.0917,
+          51.9917
         ]
       ],
       "total_score": 0.0,
@@ -10423,6 +10515,16 @@
       "participating_in": []
     },
     {
+      "id": "grijzenhout-ballieux-ha-zorgplein-zuid",
+      "name": "Grijzenhout&Ballieux, huisartsen Zorgplein Zuid",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "groenhuysen",
       "name": "Groenhuysen",
       "sector": "vvt",
@@ -10455,6 +10557,72 @@
           52.2403
         ]
       ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ha-lekboulevard-praktijk-franke-werkhoven",
+      "name": "Huisartsen Lekboulevard, Praktijk Franke/Werkhoven",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ha-lydia-kramer",
+      "name": "Huisarts Lydia Kramer",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2833,
+        52.055
+      ],
+      "coords": [
+        [
+          5.2833,
+          52.055
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ha-praktijk-ebbing-peucker",
+      "name": "Huisartsen praktijk Ebbing & Peucker",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ha-praktijk-ew-van-de-beek",
+      "name": "Huisarts praktijk E.W. van de Beek",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ha-zorgplein-zuid-de-vos",
+      "name": "Huisarts Zorgplein Zuid, de Vos",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
       "total_score": 0.0,
       "participating_in": []
     },
@@ -10495,6 +10663,1138 @@
       "participating_in": []
     },
     {
+      "id": "hap-abarbanel-slok",
+      "name": "Huisartsenpraktijk Abarbanel/Slok",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-achterberg",
+      "name": "Huisartsenpraktijk Achterberg",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0869,
+        52.0269
+      ],
+      "coords": [
+        [
+          5.0869,
+          52.0269
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-amt-huybregts",
+      "name": "Huisartsenpraktijk A.M.T. Huybregts",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-baars-blonk-rutgers",
+      "name": "Huisartsenpraktijk Baars/blonk/rutgers",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1667,
+        52.025
+      ],
+      "coords": [
+        [
+          5.1667,
+          52.025
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-beatrixplantsoen",
+      "name": "Huisartsenpraktijk Beatrixplantsoen",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.95,
+        51.9733
+      ],
+      "coords": [
+        [
+          4.95,
+          51.9733
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-bilthoven-noord",
+      "name": "HAP Bilthoven Noord",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1967,
+        52.1283
+      ],
+      "coords": [
+        [
+          5.1967,
+          52.1283
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-bilthoven",
+      "name": "Huisartsenpraktijk Bilthoven",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1967,
+        52.1283
+      ],
+      "coords": [
+        [
+          5.1967,
+          52.1283
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-boas-valkenburg",
+      "name": "Huisartsenpraktijk Boas & Valkenburg",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0917,
+        51.9917
+      ],
+      "coords": [
+        [
+          5.0917,
+          51.9917
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-boerma",
+      "name": "Huisartsenpraktijk Boerma",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1667,
+        52.025
+      ],
+      "coords": [
+        [
+          5.1667,
+          52.025
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-brandt",
+      "name": "Huisartsenpraktijk Brandt",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-cothen",
+      "name": "Huisartsenpraktijk Cothen",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-de-back-de-jong",
+      "name": "Huisartsenpraktijk de Back & de Jong",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-de-horden",
+      "name": "Huisartsenpraktijk de Horden",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3339,
+        51.9714
+      ],
+      "coords": [
+        [
+          5.3339,
+          51.9714
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-de-jong",
+      "name": "Huisartsenpraktijk de Jong",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-de-leijen",
+      "name": "Huisartsenpraktijk de Leijen",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1967,
+        52.1283
+      ],
+      "coords": [
+        [
+          5.1967,
+          52.1283
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-de-paltz",
+      "name": "Huisartsenpraktijk De Paltz",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-de-potgieter",
+      "name": "Huisartsenpraktijk De Potgieter",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-deijns-de-goede",
+      "name": "Huisartsenpraktijk Deijns de Goede",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-dr-rwj-van-der-heijden",
+      "name": "Huisartspraktijk Dr. R.W.J. van der Heijden",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-dukatenburg",
+      "name": "Huisartspraktijk Dukatenburg",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0869,
+        52.0269
+      ],
+      "coords": [
+        [
+          5.0869,
+          52.0269
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-en-apotheek-benschop",
+      "name": "Huisartsenpraktijk en Apotheek Benschop",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-ewoud-en-elisabeth",
+      "name": "Huisartsenpraktijk Ewoud en Elisabeth",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3339,
+        51.9714
+      ],
+      "coords": [
+        [
+          5.3339,
+          51.9714
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-franssens-hassink-franke",
+      "name": "Huisartsenpraktijk Franssens & Hassink-Franke",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-galecop",
+      "name": "Huisartsenpraktijk Galecop",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0869,
+        52.0269
+      ],
+      "coords": [
+        [
+          5.0869,
+          52.0269
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-groot",
+      "name": "Huisartspraktijk Groot",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-h-van-den-assem",
+      "name": "Huisartspraktijk H. van den Assem",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1667,
+        52.025
+      ],
+      "coords": [
+        [
+          5.1667,
+          52.025
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-habraken-provily",
+      "name": "Huisartsenpraktijk Habraken / Provily",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1667,
+        52.025
+      ],
+      "coords": [
+        [
+          5.1667,
+          52.025
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-harkink-en-van-der-veen",
+      "name": "Huisartsenpraktijk Harkink en Van der Veen",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-hoed-vianen-hjc-raven",
+      "name": "Huisartsenpraktijk Hoed Vianen - H.J.C. Raven",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0917,
+        51.9917
+      ],
+      "coords": [
+        [
+          5.0917,
+          51.9917
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-hoed-vianen-jh-bouman",
+      "name": "Huisartsenpraktijk Hoed Vianen - J.H. Bouman",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0917,
+        51.9917
+      ],
+      "coords": [
+        [
+          5.0917,
+          51.9917
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-hoed-vianen-praktijk-mulder",
+      "name": "Huisartsenpraktijk Hoed Vianen - praktijk Mulder",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-hoef-en-haag",
+      "name": "Huisartsenpraktijk Hoef en Haag",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-hoog-kanje",
+      "name": "Huisartspraktijk Hoog Kanje",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-jnj-sleijffers",
+      "name": "Huisartspraktijk J.N.J. Sleijffers",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1667,
+        52.025
+      ],
+      "coords": [
+        [
+          5.1667,
+          52.025
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-jutphaas",
+      "name": "Huisartsenpraktijk Jutphaas",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-krabbe",
+      "name": "Huisartsenpraktijk Krabbe",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2833,
+        52.1333
+      ],
+      "coords": [
+        [
+          5.2833,
+          52.1333
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-krijgh",
+      "name": "Huisartspraktijk Krijgh",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.37,
+        52.0417
+      ],
+      "coords": [
+        [
+          5.37,
+          52.0417
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-krikke-dekkers",
+      "name": "Huisartsenpraktijk Krikke-Dekkers",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1214,
+        52.0907
+      ],
+      "coords": [
+        [
+          5.1214,
+          52.0907
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-l-van-eijk",
+      "name": "Huisartsenpraktijk L. van Eijk",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-lamers-ruitenbeek",
+      "name": "Huisartsenpraktijk Lamers/Ruitenbeek",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1667,
+        52.025
+      ],
+      "coords": [
+        [
+          5.1667,
+          52.025
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-langbroek",
+      "name": "Huisartspraktijk Langbroek",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3367,
+        52.0267
+      ],
+      "coords": [
+        [
+          5.3367,
+          52.0267
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-lexmond-bv",
+      "name": "Huisartsenpraktijk Lexmond B.V.",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0267,
+        51.96
+      ],
+      "coords": [
+        [
+          5.0267,
+          51.96
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-lopik",
+      "name": "Huisartsenpraktijk Lopik",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        4.95,
+        51.9733
+      ],
+      "coords": [
+        [
+          4.95,
+          51.9733
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-m-nasseri",
+      "name": "Huisartsenpraktijk M. Nasseri",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-maarn-maarsbergen",
+      "name": "Huisartsenpraktijk Maarn-Maarsbergen",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.335,
+        51.98
+      ],
+      "coords": [
+        [
+          5.335,
+          51.98
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-mondriaanlaan",
+      "name": "Huisartsenpraktijk Mondriaanlaan",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-odijk",
+      "name": "Huisartsenpraktijk Odijk",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2333,
+        52.0417
+      ],
+      "coords": [
+        [
+          5.2333,
+          52.0417
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-orionlaan",
+      "name": "Huisartsenpraktijk Orionlaan",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1967,
+        52.1283
+      ],
+      "coords": [
+        [
+          5.1967,
+          52.1283
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-oteman",
+      "name": "Huisartsenpraktijk Oteman",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-ott-en-bedaux",
+      "name": "Huisartsenpraktijk Ott en Bedaux",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-pp-groen",
+      "name": "Huisartspraktijk P.P. Groen",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.37,
+        52.0417
+      ],
+      "coords": [
+        [
+          5.37,
+          52.0417
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-reedijk",
+      "name": "Huisartsenpraktijk Reedijk",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.195,
+        52.065
+      ],
+      "coords": [
+        [
+          5.195,
+          52.065
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-rutgers-en-de-joode",
+      "name": "Huisartsenpraktijk Rutgers en de Joode",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-schalkwijk",
+      "name": "Huisartsenpraktijk Schalkwijk",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-sj-van-beukering",
+      "name": "Huisartsenpraktijk S.J. van Beukering",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2833,
+        52.1333
+      ],
+      "coords": [
+        [
+          5.2833,
+          52.1333
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-suijker",
+      "name": "Huisartspraktijk Suijker",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2833,
+        52.055
+      ],
+      "coords": [
+        [
+          5.2833,
+          52.055
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-tilstra",
+      "name": "Huisartsenpraktijk Tilstra",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-tuna-t-z-n",
+      "name": "Huisartspraktijk Tuna-Tüzün",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-tychon",
+      "name": "Huisartsenpraktijk Tychon",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1667,
+        52.025
+      ],
+      "coords": [
+        [
+          5.1667,
+          52.025
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-van-den-berg-koelma",
+      "name": "Huisartsenpraktijk van den Berg & Koelma",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-van-der-gaag",
+      "name": "Huisartsenpraktijk van der Gaag",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-van-kuppevelt",
+      "name": "Huisartspraktijk van Kuppevelt",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-van-nieuwstadt",
+      "name": "Huisartsenpraktijk van Nieuwstadt",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3339,
+        51.9714
+      ],
+      "coords": [
+        [
+          5.3339,
+          51.9714
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-voermans",
+      "name": "Huisartsenpraktijk Voermans",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1667,
+        52.025
+      ],
+      "coords": [
+        [
+          5.1667,
+          52.025
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-voorwijk",
+      "name": "Huisartsenpraktijk Voorwijk",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3339,
+        51.9714
+      ],
+      "coords": [
+        [
+          5.3339,
+          51.9714
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-vromen",
+      "name": "Huisartsenpraktijk Vromen",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1783,
+        52.11
+      ],
+      "coords": [
+        [
+          5.1783,
+          52.11
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-widar-laan-van-beek-en-royen",
+      "name": "Huisartsenpraktijk Widar Laan van Beek en Royen",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-wildemansteeg",
+      "name": "Huisartsenpraktijk Wildemansteeg",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3339,
+        51.9714
+      ],
+      "coords": [
+        [
+          5.3339,
+          51.9714
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-witvoet",
+      "name": "Huisartsenpraktijk Witvoet",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "hap-zeist-west",
+      "name": "Huisartspraktijk Zeist West",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "hartekamp",
       "name": "Hartekamp Groep",
       "sector": "vvt",
@@ -10525,6 +11825,88 @@
         [
           5.0913,
           51.5555
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "haz-ijsselstein-locatie-de-poort",
+      "name": "Huisartsenzorg IJsselstein,  Locatie De Poort",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0425,
+        52.0219
+      ],
+      "coords": [
+        [
+          5.0425,
+          52.0219
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "haz-ijsselstein-locatie-de-weegbree",
+      "name": "Huisartsenzorg Ijsselstein, Locatie De Weegbree",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0425,
+        52.0219
+      ],
+      "coords": [
+        [
+          5.0425,
+          52.0219
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "haz-ijsselstein-locatie-t-steyn",
+      "name": "Huisartsenzorg Ijsselstein, locatie ´t Steyn",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "haz-ijsselstein-praktijk-de-ametisthof",
+      "name": "Huisartsenzorg IJsselstein, praktijk de Ametisthof",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0425,
+        52.0219
+      ],
+      "coords": [
+        [
+          5.0425,
+          52.0219
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "haz-ijsselstein-praktijk-glennhof",
+      "name": "Huisartsenzorg IJsselstein, praktijk Glennhof",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0425,
+        52.0219
+      ],
+      "coords": [
+        [
+          5.0425,
+          52.0219
         ]
       ],
       "total_score": 0.0,
@@ -10781,6 +12163,24 @@
         [
           5.8696,
           50.9983
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "huisartsenij-lege-artis-bv-praktijk-gotz",
+      "name": "Huisartsenij Lege Artis B.V. - praktijk Gotz",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0917,
+        51.9917
+      ],
+      "coords": [
+        [
+          5.0917,
+          51.9917
         ]
       ],
       "total_score": 0.0,
@@ -11541,6 +12941,24 @@
         [
           5.1214,
           52.0907
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "jkh-nievaart-gc-batau",
+      "name": "J.K.H. Nievaart / GC Batau",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0806,
+        52.0296
+      ],
+      "coords": [
+        [
+          5.0806,
+          52.0296
         ]
       ],
       "total_score": 0.0,
@@ -12577,6 +13995,26 @@
       "participating_in": []
     },
     {
+      "id": "mc-soesterberg",
+      "name": "Medisch Centrum Soesterberg",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mc-westbroek",
+      "name": "Medisch Centrum Westbroek",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "mc-zuiderzee",
       "name": "MC Zuiderzee",
       "sector": "zbc",
@@ -12793,6 +14231,16 @@
       "participating_in": []
     },
     {
+      "id": "meijer-l",
+      "name": "Meijer L.",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "mentaal-beter",
       "name": "Mentaal Beter",
       "sector": "ggz",
@@ -12863,6 +14311,42 @@
         [
           5.9744,
           51.5264
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mevr-drs-aa-aukema-huisarts",
+      "name": "Mevr. Drs. A.A. Aukema, huisarts",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2833,
+        52.055
+      ],
+      "coords": [
+        [
+          5.2833,
+          52.055
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "mh-grol-hap-vreeswijk",
+      "name": "M.H. Grol Huisartsenpraktijk Vreeswijk",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0869,
+        52.0269
+      ],
+      "coords": [
+        [
+          5.0869,
+          52.0269
         ]
       ],
       "total_score": 0.0,
@@ -13053,6 +14537,118 @@
           52.04
         ]
       ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ms-cozijnsen-bouman",
+      "name": "Maatschap Cozijnsen/Bouman",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0917,
+        51.9917
+      ],
+      "coords": [
+        [
+          5.0917,
+          51.9917
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ms-de-vuurtoren",
+      "name": "Maatschap de Vuurtoren",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ms-djajadiningrat-de-graaf",
+      "name": "Maatschap Djajadiningrat & De Graaf",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.37,
+        52.0417
+      ],
+      "coords": [
+        [
+          5.37,
+          52.0417
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ms-ha-de-schans",
+      "name": "Maatschap Huisartsen de Schans",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.0869,
+        52.0269
+      ],
+      "coords": [
+        [
+          5.0869,
+          52.0269
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ms-ha-gezondheidscentrum-de-bilt",
+      "name": "Maatschap Huisartsen Gezondheidscentrum de Bilt",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ms-hap-stroes-lems",
+      "name": "Maatschap Huisartsenpraktijk Stroes-Lems",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ms-hap-van-haren-kienhuis-zonneveld",
+      "name": "Maatschap Huisartsenpraktijk van Haren, Kienhuis, Zonneveld",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1667,
+        52.025
+      ],
+      "coords": [
+        [
+          5.1667,
+          52.025
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "ms-van-grondelle-littooij",
+      "name": "Maatschap van Grondelle/Littooij",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
       "total_score": 0.0,
       "participating_in": []
     },
@@ -14109,6 +15705,34 @@
       "participating_in": []
     },
     {
+      "id": "pj-streefkerk-huisarts",
+      "name": "P.J. Streefkerk, huisarts",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.1667,
+        52.025
+      ],
+      "coords": [
+        [
+          5.1667,
+          52.025
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "pja-bruens-van-ballegooijen",
+      "name": "P.J.A. Bruens van Ballegooijen",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "pleyade",
       "name": "Pleyade",
       "sector": "vvt",
@@ -14319,6 +15943,24 @@
         [
           5.4035,
           51.4193
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "praktijk-de-voogd",
+      "name": "Praktijk de Voogd",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2293,
+        52.0882
+      ],
+      "coords": [
+        [
+          5.2293,
+          52.0882
         ]
       ],
       "total_score": 0.0,
@@ -15175,6 +16817,26 @@
           51.5719
         ]
       ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rg-mulder-roelof-huisarts",
+      "name": "R.G. Mulder, Roelof Huisarts",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "rgn-praktijk",
+      "name": "RGN Praktijk",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
       "total_score": 0.0,
       "participating_in": []
     },
@@ -16229,6 +17891,16 @@
       "participating_in": []
     },
     {
+      "id": "st-wijkgezondheidszorg-doorslag-stadscentrum-de-roerdomp",
+      "name": "Stichting Wijkgezondheidszorg Doorslag Stadscentrum - De Roerdomp",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "stad-holland-zorggroep",
       "name": "Stad Holland Zorgverzekeraar / HOZH",
       "sector": "huisarts",
@@ -16319,6 +17991,16 @@
       "participating_in": []
     },
     {
+      "id": "stigter-huisarts",
+      "name": "Stigter, huisarts",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": null,
+      "coords": [],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
       "id": "surplus",
       "name": "Surplus",
       "sector": "vvt",
@@ -16349,6 +18031,24 @@
         [
           3.6109,
           51.4988
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "sw-eijsbouts-huisarts",
+      "name": "S.W. Eijsbouts, huisarts",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.3339,
+        51.9714
+      ],
+      "coords": [
+        [
+          5.3339,
+          51.9714
         ]
       ],
       "total_score": 0.0,
@@ -16750,13 +18450,13 @@
       "sector": "huisarts",
       "region_iza": "iza-midden-nederland",
       "coord": [
-        5.0375,
-        52.1375
+        5.2293,
+        52.0882
       ],
       "coords": [
         [
-          5.0375,
-          52.1375
+          5.2293,
+          52.0882
         ]
       ],
       "total_score": 0.0,
@@ -16793,6 +18493,24 @@
         [
           5.1214,
           52.0907
+        ]
+      ],
+      "total_score": 0.0,
+      "participating_in": []
+    },
+    {
+      "id": "van-lennep-huisartsenpraktijk",
+      "name": "Van Lennep Huisartsenpraktijk",
+      "sector": "huisarts",
+      "region_iza": "iza-midden-nederland",
+      "coord": [
+        5.2833,
+        52.055
+      ],
+      "coords": [
+        [
+          5.2833,
+          52.055
         ]
       ],
       "total_score": 0.0,

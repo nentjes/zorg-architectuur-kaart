@@ -8,13 +8,15 @@ sector: ziekenhuis
 subtype: algemeen
 country: NL
 locations:
-- city: Hilversum
+- address: "Van Riebeeckweg 212, 1213 XZ Hilversum"
+  city: Hilversum
   province: Noord-Holland
   country: NL
   coordinates:
-    lat: 52.23722
-    lon: 5.16222
-- city: Blaricum
+    lat: 52.2267
+    lon: 5.1972
+- address: "Rijksstraatweg 1, 1261 AN Blaricum"
+  city: Blaricum
   province: Noord-Holland
   country: NL
   coordinates:

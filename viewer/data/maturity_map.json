@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-13T10:25:10",
+    "generated_at": "2026-04-13T11:29:32",
     "n_connections": 4,
     "n_organizations_scored": 1025,
     "formula": {
@@ -12831,21 +12831,17 @@
       "sector": "revalidatie",
       "region_iza": null,
       "coord": [
-        5.2289,
-        52.2863
+        5.2336,
+        52.2797
       ],
       "coords": [
         [
-          5.2289,
-          52.2863
+          5.2336,
+          52.2797
         ],
         [
-          5.2211,
-          52.3697
-        ],
-        [
-          5.195,
-          52.235
+          5.2005,
+          52.228
         ]
       ],
       "total_score": 0.0,
@@ -16451,13 +16447,13 @@
       "sector": "ziekenhuis",
       "region_iza": "iza-gooi-en-vechtstreek",
       "coord": [
-        5.16222,
-        52.23722
+        5.1972,
+        52.2267
       ],
       "coords": [
         [
-          5.16222,
-          52.23722
+          5.1972,
+          52.2267
         ],
         [
           5.24583,

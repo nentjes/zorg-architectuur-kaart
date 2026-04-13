@@ -53,6 +53,48 @@
       font-size: 11px;
       margin-bottom: 10px;
     }
+    #sidebar .build-info {
+      font-size: 10px;
+      color: #999;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      background: #f0f0f0;
+      border: 1px solid #e0e0e0;
+      border-radius: 3px;
+      padding: 5px 7px;
+      margin: 6px 0 10px 0;
+      line-height: 1.5;
+    }
+    #sidebar .build-info .label {
+      color: #666;
+      display: inline-block;
+      width: 58px;
+    }
+    #sidebar .build-info .sha {
+      color: #0066aa;
+      font-weight: 600;
+    }
+    #sidebar .build-info .dirty {
+      color: #b36700;
+    }
+    #sidebar .filter-actions {
+      display: flex;
+      gap: 6px;
+      margin: 4px 0 8px 0;
+    }
+    #sidebar .filter-actions button {
+      flex: 1;
+      font-size: 11px;
+      padding: 4px 6px;
+      border: 1px solid #ccc;
+      background: #fff;
+      border-radius: 3px;
+      cursor: pointer;
+      color: #333;
+    }
+    #sidebar .filter-actions button:hover {
+      background: #eef;
+      border-color: #99b;
+    }
     #sidebar .legend-item,
     #sidebar .filter-item {
       display: flex;
@@ -152,12 +194,22 @@
     <div class="meta">
       Maturity Score v0.1.1 · YAML-bronnen in Git
     </div>
+    <div class="build-info" id="build-info">
+      <div><span class="label">build:</span> <span id="bi-sha">—</span></div>
+      <div><span class="label">branch:</span> <span id="bi-branch">—</span></div>
+      <div><span class="label">gegenereerd:</span> <span id="bi-gen">—</span></div>
+      <div><span class="label">orgs:</span> <span id="bi-orgs">—</span></div>
+    </div>
     <div class="verify-warn">
       <b>LLM-seed:</b> organizations uit <code>claude-knowledge-2026-04</code>
       zijn <i>needs_verification: true</i>. Door Roel's netwerk te valideren.
     </div>
 
     <h2>Sectoren</h2>
+    <div class="filter-actions">
+      <button id="filter-all-on" type="button">Alles aan</button>
+      <button id="filter-all-off" type="button">Alles uit</button>
+    </div>
     <div id="filters"></div>
 
     <h2>Connections — topologie</h2>
@@ -319,6 +371,23 @@
         return;
       }
 
+      // ----- Build-info paneel (laat zien welke versie je bekijkt) -----
+      const meta = data.meta || {};
+      const shaEl = document.getElementById("bi-sha");
+      if (meta.git_sha) {
+        shaEl.innerHTML = `<span class="sha">${meta.git_sha}</span>` +
+          (meta.git_dirty ? ` <span class="dirty">(dirty)</span>` : "");
+      } else {
+        shaEl.textContent = "unknown";
+      }
+      document.getElementById("bi-branch").textContent = meta.git_branch || "unknown";
+      document.getElementById("bi-gen").textContent = meta.generated_at
+        ? meta.generated_at.replace("T", " ")
+        : "unknown";
+      document.getElementById("bi-orgs").textContent =
+        (meta.n_organizations_scored != null ? meta.n_organizations_scored : data.organizations.length)
+        + " · " + (meta.n_connections != null ? meta.n_connections : (data.connections || []).length) + " conns";
+
       // ----- Build orgs lookup -----
       const orgIndex = {};
       for (const o of data.organizations) orgIndex[o.id] = o;
@@ -400,6 +469,21 @@
         else activeSectors.delete(sec);
         applySectorFilter();
       });
+
+      // ----- Alles aan / alles uit -----
+      function setAllSectors(on) {
+        const boxes = filtersDiv.querySelectorAll("input[type=checkbox]");
+        activeSectors = new Set();
+        for (const cb of boxes) {
+          cb.checked = on;
+          if (on) activeSectors.add(cb.dataset.sector);
+        }
+        applySectorFilter();
+      }
+      document.getElementById("filter-all-on")
+        .addEventListener("click", () => setAllSectors(true));
+      document.getElementById("filter-all-off")
+        .addEventListener("click", () => setAllSectors(false));
 
       // ----- Sources -----
       map.addSource("connections", {

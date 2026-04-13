@@ -1,7 +1,10 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-13T11:29:32",
+    "generated_at": "2026-04-13T13:51:43",
+    "git_sha": "7267880",
+    "git_branch": "claude/start-zorg-architectuur-kaart-PKwg0",
+    "git_dirty": true,
     "n_connections": 4,
     "n_organizations_scored": 1025,
     "formula": {

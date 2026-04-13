@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import sys
 from datetime import date, datetime
 from pathlib import Path
@@ -394,16 +395,40 @@ def aggregate_per_organization(
 # Main
 # ---------------------------------------------------------------
 
+def _git(*args: str) -> str | None:
+    """Run a git command and return stripped stdout, or None on failure."""
+    try:
+        out = subprocess.run(
+            ["git", *args],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=5,
+        )
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        return None
+    if out.returncode != 0:
+        return None
+    return out.stdout.strip() or None
+
+
 def build_output(entities: dict, weights: dict) -> dict:
     connections = list(entities.get("connection", {}).values())
     scored = [score_connection(c, entities, weights) for c in connections]
     scored_sorted = sorted(scored, key=lambda c: c["final_score"], reverse=True)
     orgs = aggregate_per_organization(scored, entities)
 
+    git_sha = _git("rev-parse", "--short", "HEAD")
+    git_branch = _git("rev-parse", "--abbrev-ref", "HEAD")
+    git_dirty = bool(_git("status", "--porcelain"))
+
     return {
         "meta": {
             "schema_version": weights.get("version"),
             "generated_at": datetime.now().isoformat(timespec="seconds"),
+            "git_sha": git_sha,
+            "git_branch": git_branch,
+            "git_dirty": git_dirty,
             "n_connections": len(scored),
             "n_organizations_scored": len(orgs),
             "formula": weights.get("formula"),

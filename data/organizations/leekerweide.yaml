@@ -1,0 +1,18 @@
+id: leekerweide
+type: organization
+name: LeekerweideGroep
+sector: vvt
+country: NL
+locations:
+- city: Wognum
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.6667
+    lon: 5.0
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

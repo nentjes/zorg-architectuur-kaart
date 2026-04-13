@@ -12,9 +12,10 @@ locations:
     lat: 52.5168
     lon: 6.083
 sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
 - mni-partners-epd-marktinventarisatie-ggz-2025
 - claude-knowledge-2026-04
 confidence: high
 needs_verification: false
 systems:
-- nedap-ons-ggz
+- nedap-ons

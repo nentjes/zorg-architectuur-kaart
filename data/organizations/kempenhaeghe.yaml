@@ -1,0 +1,18 @@
+id: kempenhaeghe
+type: organization
+name: Kempenhaeghe
+sector: vvt
+country: NL
+locations:
+- city: Heeze
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.3833
+    lon: 5.5833
+systems:
+- chipsoft-hix
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

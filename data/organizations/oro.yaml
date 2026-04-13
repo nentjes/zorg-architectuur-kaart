@@ -1,0 +1,18 @@
+id: oro
+type: organization
+name: ORO
+sector: vvt
+country: NL
+locations:
+- city: Helmond
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4819
+    lon: 5.6611
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

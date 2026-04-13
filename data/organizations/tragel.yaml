@@ -1,0 +1,18 @@
+id: tragel
+type: organization
+name: Tragel
+sector: vvt
+country: NL
+locations:
+- city: Clinge
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.2644
+    lon: 4.1569
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

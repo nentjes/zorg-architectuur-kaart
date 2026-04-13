@@ -1,0 +1,18 @@
+id: sius
+type: organization
+name: Sius
+sector: vvt
+country: NL
+locations:
+- city: Hilversum
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2232
+    lon: 5.1719
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

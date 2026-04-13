@@ -1,0 +1,18 @@
+id: de-zorgcirkel
+type: organization
+name: De Zorgcirkel
+sector: vvt
+country: NL
+locations:
+- city: Purmerend
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.5053
+    lon: 4.9597
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

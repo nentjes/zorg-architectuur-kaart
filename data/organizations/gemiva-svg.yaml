@@ -1,0 +1,18 @@
+id: gemiva-svg
+type: organization
+name: Gemiva-SVG Groep
+sector: vvt
+country: NL
+locations:
+- city: Gouda
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0115
+    lon: 4.7105
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

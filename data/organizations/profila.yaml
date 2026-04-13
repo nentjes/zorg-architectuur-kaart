@@ -1,0 +1,18 @@
+id: profila
+type: organization
+name: Profila Zorggroep
+sector: vvt
+country: NL
+locations:
+- city: Nunspeet
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.3794
+    lon: 5.7858
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

@@ -1,0 +1,18 @@
+id: olmenes
+type: organization
+name: OlmenEs
+sector: vvt
+country: NL
+locations:
+- city: Appelscha
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 52.9453
+    lon: 6.3567
+systems:
+- sdb-vvt
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

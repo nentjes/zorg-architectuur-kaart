@@ -1,0 +1,18 @@
+id: humanitas-dmh
+type: organization
+name: Humanitas DMH
+sector: vvt
+country: NL
+locations:
+- city: Nieuwegein
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.03
+    lon: 5.0917
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

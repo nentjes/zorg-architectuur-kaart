@@ -1,0 +1,18 @@
+id: amsta
+type: organization
+name: Amsta
+sector: vvt
+country: NL
+locations:
+- city: Amsterdam
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3676
+    lon: 4.9041
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

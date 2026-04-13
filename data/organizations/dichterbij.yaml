@@ -1,0 +1,19 @@
+id: dichterbij
+type: organization
+name: Dichterbij
+sector: vvt
+country: NL
+locations:
+- city: Gennep
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.6972
+    lon: 5.9719
+systems:
+- nedap-ons
+- symax-dossier
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

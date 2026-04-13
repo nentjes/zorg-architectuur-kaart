@@ -1,0 +1,18 @@
+id: het-raamwerk
+type: organization
+name: Het Raamwerk
+sector: vvt
+country: NL
+locations:
+- city: Noordwijkerhout
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.2667
+    lon: 4.5
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

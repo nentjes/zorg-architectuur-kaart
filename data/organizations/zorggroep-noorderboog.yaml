@@ -1,0 +1,18 @@
+id: zorggroep-noorderboog
+type: organization
+name: Zorggroep Noorderboog
+sector: vvt
+country: NL
+locations:
+- city: Meppel
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.6958
+    lon: 6.1925
+systems:
+- tenzinger-caress
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

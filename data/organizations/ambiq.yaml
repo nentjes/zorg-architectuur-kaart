@@ -1,0 +1,18 @@
+id: ambiq
+type: organization
+name: Ambiq
+sector: vvt
+country: NL
+locations:
+- city: Deventer
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.255
+    lon: 6.1639
+systems:
+- sdb-vvt
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

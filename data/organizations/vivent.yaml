@@ -1,0 +1,18 @@
+id: vivent
+type: organization
+name: Vivent
+sector: vvt
+country: NL
+locations:
+- city: '''s-Hertogenbosch'
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6978
+    lon: 5.3037
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

@@ -1,0 +1,18 @@
+id: pergamijn
+type: organization
+name: Pergamijn
+sector: vvt
+country: NL
+locations:
+- city: Echt
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.1017
+    lon: 5.8728
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

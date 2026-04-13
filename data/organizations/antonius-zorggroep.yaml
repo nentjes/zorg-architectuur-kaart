@@ -1,0 +1,18 @@
+id: antonius-zorggroep
+type: organization
+name: Antonius Zorggroep
+sector: vvt
+country: NL
+locations:
+- city: Sneek
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.0333
+    lon: 5.6583
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

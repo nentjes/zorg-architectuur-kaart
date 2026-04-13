@@ -1,0 +1,18 @@
+id: wzc-de-zeeg
+type: organization
+name: Woonzorgcentrum De Zeeg
+sector: vvt
+country: NL
+locations:
+- city: Apeldoorn
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.2112
+    lon: 5.9699
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

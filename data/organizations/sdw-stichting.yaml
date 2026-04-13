@@ -1,0 +1,18 @@
+id: sdw-stichting
+type: organization
+name: SDW
+sector: vvt
+country: NL
+locations:
+- city: Bergen op Zoom
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4952
+    lon: 4.2869
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

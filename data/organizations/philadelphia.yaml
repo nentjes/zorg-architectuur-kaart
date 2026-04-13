@@ -1,0 +1,18 @@
+id: philadelphia
+type: organization
+name: Philadelphia Zorg
+sector: vvt
+country: NL
+locations:
+- city: Amersfoort
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.156
+    lon: 5.389
+systems:
+- tenzinger-caress
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

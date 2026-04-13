@@ -1,0 +1,18 @@
+id: sjaloom-zorg
+type: organization
+name: Sjaloom Zorg
+sector: vvt
+country: NL
+locations:
+- city: Kapelle
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.4808
+    lon: 3.9478
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

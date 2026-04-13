@@ -1,0 +1,18 @@
+id: boogh
+type: organization
+name: Boogh
+sector: vvt
+country: NL
+locations:
+- city: Amersfoort
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.156
+    lon: 5.389
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

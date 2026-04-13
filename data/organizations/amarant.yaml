@@ -1,0 +1,18 @@
+id: amarant
+type: organization
+name: Amarant Groep
+sector: vvt
+country: NL
+locations:
+- city: Tilburg
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5555
+    lon: 5.0913
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

@@ -1,0 +1,18 @@
+id: visio
+type: organization
+name: Koninklijke Visio
+sector: vvt
+country: NL
+locations:
+- city: Huizen
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2981
+    lon: 5.2417
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

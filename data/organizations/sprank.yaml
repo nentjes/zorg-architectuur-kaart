@@ -1,0 +1,18 @@
+id: sprank
+type: organization
+name: Sprank
+sector: vvt
+country: NL
+locations:
+- city: Ommen
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.5194
+    lon: 6.4208
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

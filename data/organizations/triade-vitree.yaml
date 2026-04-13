@@ -1,0 +1,18 @@
+id: triade-vitree
+type: organization
+name: Triade Vitree
+sector: vvt
+country: NL
+locations:
+- city: Lelystad
+  province: Flevoland
+  country: NL
+  coordinates:
+    lat: 52.5185
+    lon: 5.4714
+systems:
+- sdb-vvt
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

@@ -1,0 +1,18 @@
+id: pameijer
+type: organization
+name: Pameijer
+sector: vvt
+country: NL
+locations:
+- city: Rotterdam
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.9244
+    lon: 4.4777
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

@@ -1,0 +1,18 @@
+id: cura-xl
+type: organization
+name: Cura XL
+sector: vvt
+country: NL
+locations:
+- city: Deventer
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.255
+    lon: 6.1639
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

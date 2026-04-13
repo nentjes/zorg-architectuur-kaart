@@ -1,0 +1,18 @@
+id: adullam
+type: organization
+name: Adullam voor gehandicaptenzorg
+sector: vvt
+country: NL
+locations:
+- city: Barneveld
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.1403
+    lon: 5.5833
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

@@ -1,0 +1,18 @@
+id: estinea
+type: organization
+name: Estinea
+sector: vvt
+country: NL
+locations:
+- city: Aalten
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.9244
+    lon: 6.5797
+systems:
+- ecare-ecd
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

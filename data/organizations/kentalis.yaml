@@ -1,0 +1,18 @@
+id: kentalis
+type: organization
+name: Koninklijke Kentalis
+sector: vvt
+country: NL
+locations:
+- city: Sint-Michielsgestel
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6392
+    lon: 5.3528
+systems:
+- sdb-vvt
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

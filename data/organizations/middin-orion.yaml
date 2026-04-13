@@ -1,0 +1,18 @@
+id: middin-orion
+type: organization
+name: Middin - Orion
+sector: vvt
+country: NL
+locations:
+- city: Rijswijk
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0361
+    lon: 4.3225
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

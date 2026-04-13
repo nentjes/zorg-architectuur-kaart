@@ -1,0 +1,18 @@
+id: zorggroep-nwv
+type: organization
+name: Zorggroep Noordwest-Veluwe
+sector: vvt
+country: NL
+locations:
+- city: Harderwijk
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.3403
+    lon: 5.6208
+systems:
+- sdb-vvt
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

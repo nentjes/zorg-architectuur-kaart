@@ -1,0 +1,18 @@
+id: espria-meander
+type: organization
+name: Espria - Zorggroep Meander
+sector: vvt
+country: NL
+locations:
+- city: Veendam
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.1039
+    lon: 6.8781
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

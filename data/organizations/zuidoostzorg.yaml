@@ -1,0 +1,18 @@
+id: zuidoostzorg
+type: organization
+name: ZuidOostZorg
+sector: vvt
+country: NL
+locations:
+- city: Drachten
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.1053
+    lon: 6.0953
+systems:
+- sdb-vvt
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

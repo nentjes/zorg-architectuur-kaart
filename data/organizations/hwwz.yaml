@@ -1,0 +1,18 @@
+id: hwwz
+type: organization
+name: Haagse Wijk- en WoonZorg
+sector: vvt
+country: NL
+locations:
+- city: Den Haag
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 52.0705
+    lon: 4.3007
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

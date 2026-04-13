@@ -1,0 +1,18 @@
+id: zorgpartners-friesland
+type: organization
+name: Zorgpartners Friesland
+sector: vvt
+country: NL
+locations:
+- city: Leeuwarden
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 53.2019
+    lon: 5.7999
+systems:
+- lable-care
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

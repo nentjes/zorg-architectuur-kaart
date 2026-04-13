@@ -1,0 +1,18 @@
+id: curamare
+type: organization
+name: CuraMare
+sector: vvt
+country: NL
+locations:
+- city: Middelharnis
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.7556
+    lon: 4.1708
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

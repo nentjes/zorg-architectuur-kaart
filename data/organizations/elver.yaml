@@ -1,0 +1,18 @@
+id: elver
+type: organization
+name: Elver
+sector: vvt
+country: NL
+locations:
+- city: Nieuw-Wehl
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.925
+    lon: 6.2194
+systems:
+- ecare-ecd
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

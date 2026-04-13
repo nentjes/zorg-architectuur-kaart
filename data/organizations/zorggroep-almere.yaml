@@ -1,0 +1,18 @@
+id: zorggroep-almere
+type: organization
+name: Zorggroep Almere
+sector: vvt
+country: NL
+locations:
+- city: Almere
+  province: Flevoland
+  country: NL
+  coordinates:
+    lat: 52.375
+    lon: 5.2147
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

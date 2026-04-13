@@ -1,0 +1,18 @@
+id: lievegoed
+type: organization
+name: Lievegoed
+sector: vvt
+country: NL
+locations:
+- city: Bilthoven
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.1333
+    lon: 5.2
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

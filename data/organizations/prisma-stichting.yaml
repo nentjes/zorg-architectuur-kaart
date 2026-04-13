@@ -1,0 +1,18 @@
+id: prisma-stichting
+type: organization
+name: Prisma
+sector: vvt
+country: NL
+locations:
+- city: Biezenmortel
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6125
+    lon: 5.1736
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

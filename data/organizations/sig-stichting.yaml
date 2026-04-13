@@ -1,0 +1,18 @@
+id: sig-stichting
+type: organization
+name: SIG
+sector: vvt
+country: NL
+locations:
+- city: Alkmaar
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.6326
+    lon: 4.7484
+systems:
+- tenzinger-caress
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

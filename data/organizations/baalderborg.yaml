@@ -1,0 +1,18 @@
+id: baalderborg
+type: organization
+name: Baalderborg Groep
+sector: vvt
+country: NL
+locations:
+- city: Hardenberg
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.5747
+    lon: 6.6189
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

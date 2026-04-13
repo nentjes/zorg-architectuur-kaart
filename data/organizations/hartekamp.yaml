@@ -1,0 +1,18 @@
+id: hartekamp
+type: organization
+name: Hartekamp Groep
+sector: vvt
+country: NL
+locations:
+- city: Heemstede
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3544
+    lon: 4.6183
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

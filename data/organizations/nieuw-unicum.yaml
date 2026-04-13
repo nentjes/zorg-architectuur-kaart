@@ -1,0 +1,18 @@
+id: nieuw-unicum
+type: organization
+name: Nieuw Unicum
+sector: vvt
+country: NL
+locations:
+- city: Zandvoort
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.3719
+    lon: 4.5322
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

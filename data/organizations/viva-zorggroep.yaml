@@ -1,0 +1,18 @@
+id: viva-zorggroep
+type: organization
+name: ViVa! Zorggroep
+sector: vvt
+country: NL
+locations:
+- city: Velsen-Noord
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.4592
+    lon: 4.6583
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

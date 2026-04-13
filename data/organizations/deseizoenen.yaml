@@ -1,0 +1,18 @@
+id: deseizoenen
+type: organization
+name: DeSeizoenen
+sector: vvt
+country: NL
+locations:
+- city: Boxtel
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.5908
+    lon: 5.325
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

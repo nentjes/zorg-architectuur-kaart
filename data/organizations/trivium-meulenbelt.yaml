@@ -11,6 +11,9 @@ locations:
     lat: 52.3508
     lon: 6.6604
 sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
 - claude-knowledge-2026-04
-confidence: low
-needs_verification: true
+confidence: high
+needs_verification: false
+systems:
+- nedap-ons

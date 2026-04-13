@@ -1,0 +1,18 @@
+id: sgl-stichting
+type: organization
+name: SGL
+sector: vvt
+country: NL
+locations:
+- city: Sittard-Geleen
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.9911
+    lon: 5.8814
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

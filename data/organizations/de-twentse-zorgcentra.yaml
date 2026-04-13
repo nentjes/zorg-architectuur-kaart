@@ -1,0 +1,18 @@
+id: de-twentse-zorgcentra
+type: organization
+name: De Twentse Zorgcentra
+sector: vvt
+country: NL
+locations:
+- city: Enschede
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.2215
+    lon: 6.8937
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

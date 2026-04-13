@@ -1,17 +1,19 @@
 id: carintreggeland
 type: organization
-name: "Carintreggeland"
+name: Carintreggeland
 sector: vvt
 country: NL
 locations:
-  - city: "Hengelo"
-    province: "Overijssel"
-    country: NL
+- city: Hengelo
+  province: Overijssel
+  country: NL
 region_iza: iza-twente
 systems:
-  - nedap-ons
+- nedap-ons
 networks:
-  - rdh-twente
+- rdh-twente
 sources:
-  - plan-rdh-twente-2025
+- mni-partners-epd-marktinventarisatie-vvt-2025
+- plan-rdh-twente-2025
 confidence: high
+needs_verification: false

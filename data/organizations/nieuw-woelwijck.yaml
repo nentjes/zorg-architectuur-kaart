@@ -1,0 +1,18 @@
+id: nieuw-woelwijck
+type: organization
+name: Nieuw Woelwijck
+sector: vvt
+country: NL
+locations:
+- city: Sappemeer
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.1683
+    lon: 6.7733
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

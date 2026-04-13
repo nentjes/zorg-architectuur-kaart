@@ -1,0 +1,18 @@
+id: ons-tweede-thuis
+type: organization
+name: Stichting Ons Tweede Thuis
+sector: vvt
+country: NL
+locations:
+- city: Aalsmeer
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.2628
+    lon: 4.7528
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

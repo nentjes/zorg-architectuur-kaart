@@ -1,0 +1,18 @@
+id: asvz
+type: organization
+name: ASVZ
+sector: vvt
+country: NL
+locations:
+- city: Sliedrecht
+  province: Zuid-Holland
+  country: NL
+  coordinates:
+    lat: 51.8214
+    lon: 4.7631
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

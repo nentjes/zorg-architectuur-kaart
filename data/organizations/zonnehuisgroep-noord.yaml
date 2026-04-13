@@ -1,0 +1,18 @@
+id: zonnehuisgroep-noord
+type: organization
+name: Zonnehuisgroep Noord
+sector: vvt
+country: NL
+locations:
+- city: Zuidhorn
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.25
+    lon: 6.4
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

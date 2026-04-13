@@ -1,0 +1,18 @@
+id: fokus-wonen
+type: organization
+name: Fokus Wonen
+sector: vvt
+country: NL
+locations:
+- city: Groningen
+  province: Groningen
+  country: NL
+  coordinates:
+    lat: 53.2194
+    lon: 6.5665
+systems:
+- qurius-dossier
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

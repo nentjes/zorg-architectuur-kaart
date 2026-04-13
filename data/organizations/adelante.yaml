@@ -11,9 +11,11 @@ locations:
     lat: 50.9181
     lon: 5.9306
 sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
 - claude-knowledge-2026-04
 - roel-private-excel-2026-04
 confidence: high
 needs_verification: false
 systems:
-- chipsoft-hix
+- nedap-ons
+- sdb-vvt

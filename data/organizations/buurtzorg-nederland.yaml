@@ -1,0 +1,18 @@
+id: buurtzorg-nederland
+type: organization
+name: Buurtzorg Nederland
+sector: vvt
+country: NL
+locations:
+- city: Almelo
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.3569
+    lon: 6.6622
+systems:
+- ecare-ecd
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

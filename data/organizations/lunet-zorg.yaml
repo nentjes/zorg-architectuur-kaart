@@ -1,0 +1,18 @@
+id: lunet-zorg
+type: organization
+name: Lunet Zorg
+sector: vvt
+country: NL
+locations:
+- city: Eindhoven
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.4416
+    lon: 5.4697
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

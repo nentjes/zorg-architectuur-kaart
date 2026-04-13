@@ -1,0 +1,18 @@
+id: de-opbouw-zideris
+type: organization
+name: Zideris
+sector: vvt
+country: NL
+locations:
+- city: Rhenen
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 51.9581
+    lon: 5.5675
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

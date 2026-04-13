@@ -1,0 +1,18 @@
+id: driestroom
+type: organization
+name: Driestroom
+sector: vvt
+country: NL
+locations:
+- city: Elst
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.9214
+    lon: 5.8417
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

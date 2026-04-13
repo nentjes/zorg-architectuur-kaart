@@ -1,0 +1,18 @@
+id: esdege-reigersdaal
+type: organization
+name: Esdégé-Reigersdaal
+sector: vvt
+country: NL
+locations:
+- city: Broek op Langedijk
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.6833
+    lon: 4.8
+systems:
+- ecare-ecd
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

@@ -13,6 +13,9 @@ locations:
     lat: 52.0799
     lon: 4.3113
 sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
 - claude-knowledge-2026-04
-confidence: low
-needs_verification: true
+confidence: high
+needs_verification: false
+systems:
+- ecare-ecd

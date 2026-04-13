@@ -1,0 +1,18 @@
+id: alliade
+type: organization
+name: Alliade
+sector: vvt
+country: NL
+locations:
+- city: Heerenveen
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 52.9617
+    lon: 5.9194
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

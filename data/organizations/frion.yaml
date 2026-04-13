@@ -1,0 +1,18 @@
+id: frion
+type: organization
+name: Frion
+sector: vvt
+country: NL
+locations:
+- city: Zwolle
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.5168
+    lon: 6.083
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

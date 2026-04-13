@@ -1,0 +1,18 @@
+id: atlant
+type: organization
+name: Atlant Zorggroep
+sector: vvt
+country: NL
+locations:
+- city: Apeldoorn
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.2112
+    lon: 5.9699
+systems:
+- pinkroccade-mozaik
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

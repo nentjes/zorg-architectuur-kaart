@@ -1,0 +1,18 @@
+id: sovak
+type: organization
+name: SOVAK
+sector: vvt
+country: NL
+locations:
+- city: Terheijden
+  province: Noord-Brabant
+  country: NL
+  coordinates:
+    lat: 51.6583
+    lon: 4.7481
+systems:
+- tenzinger-caress
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

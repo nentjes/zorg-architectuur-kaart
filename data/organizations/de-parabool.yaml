@@ -1,0 +1,18 @@
+id: de-parabool
+type: organization
+name: De Parabool
+sector: vvt
+country: NL
+locations:
+- city: Schalkhaar
+  province: Overijssel
+  country: NL
+  coordinates:
+    lat: 52.2639
+    lon: 6.1833
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

@@ -1,0 +1,18 @@
+id: radar-vvt
+type: organization
+name: Radar
+sector: vvt
+country: NL
+locations:
+- city: Maastricht
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 50.8514
+    lon: 5.691
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

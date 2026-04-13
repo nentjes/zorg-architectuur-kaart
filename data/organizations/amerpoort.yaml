@@ -1,0 +1,18 @@
+id: amerpoort
+type: organization
+name: Amerpoort
+sector: vvt
+country: NL
+locations:
+- city: Baarn
+  province: Utrecht
+  country: NL
+  coordinates:
+    lat: 52.212
+    lon: 5.2881
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

@@ -1,0 +1,18 @@
+id: siloah
+type: organization
+name: Siloah
+sector: vvt
+country: NL
+locations:
+- city: Ermelo
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 52.3028
+    lon: 5.6125
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

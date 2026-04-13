@@ -1,0 +1,18 @@
+id: interzorg-nn
+type: organization
+name: Interzorg Noord-Nederland
+sector: vvt
+country: NL
+locations:
+- city: Assen
+  province: Drenthe
+  country: NL
+  coordinates:
+    lat: 52.9983
+    lon: 6.5625
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

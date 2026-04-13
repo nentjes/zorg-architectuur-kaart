@@ -1,0 +1,18 @@
+id: gors
+type: organization
+name: Gors
+sector: vvt
+country: NL
+locations:
+- city: Goes
+  province: Zeeland
+  country: NL
+  coordinates:
+    lat: 51.5044
+    lon: 3.8878
+systems:
+- adapcare-plancare
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

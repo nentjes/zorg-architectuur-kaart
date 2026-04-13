@@ -1,0 +1,18 @@
+id: sante-partners
+type: organization
+name: Santé Partners
+sector: vvt
+country: NL
+locations:
+- city: Tiel
+  province: Gelderland
+  country: NL
+  coordinates:
+    lat: 51.8886
+    lon: 5.43
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

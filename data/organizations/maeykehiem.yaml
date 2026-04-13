@@ -1,0 +1,18 @@
+id: maeykehiem
+type: organization
+name: Maeykehiem
+sector: vvt
+country: NL
+locations:
+- city: Sint-Nicolaasga
+  province: Friesland
+  country: NL
+  coordinates:
+    lat: 52.9083
+    lon: 5.6833
+systems:
+- nedap-ons
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

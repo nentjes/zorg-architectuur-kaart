@@ -1,0 +1,18 @@
+id: de-waerden
+type: organization
+name: De Waerden
+sector: vvt
+country: NL
+locations:
+- city: Heerhugowaard
+  province: Noord-Holland
+  country: NL
+  coordinates:
+    lat: 52.67
+    lon: 4.8336
+systems:
+- tenzinger-caress
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

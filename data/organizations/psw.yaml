@@ -1,0 +1,18 @@
+id: psw
+type: organization
+name: PSW
+sector: vvt
+country: NL
+locations:
+- city: Roermond
+  province: Limburg
+  country: NL
+  coordinates:
+    lat: 51.1942
+    lon: 5.9872
+systems:
+- sdb-vvt
+sources:
+- mni-partners-epd-marktinventarisatie-vvt-2025
+confidence: high
+needs_verification: false

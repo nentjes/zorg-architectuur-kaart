@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema_version": "0.1.1",
-    "generated_at": "2026-04-13T14:54:35",
-    "git_sha": "7d608f9",
+    "generated_at": "2026-04-19T07:05:39",
+    "git_sha": "abe21a8",
     "git_branch": "claude/start-zorg-architectuur-kaart-PKwg0",
     "git_dirty": true,
     "n_connections": 4,
@@ -19515,17 +19515,13 @@
       "subtype": "zorggroep",
       "region_iza": "iza-midden-nederland",
       "coord": [
-        5.2388,
-        52.0832
+        5.202,
+        52.1306
       ],
       "coords": [
         [
-          5.2388,
-          52.0832
-        ],
-        [
-          5.1689,
-          52.0317
+          5.202,
+          52.1306
         ]
       ],
       "total_score": 0.0,

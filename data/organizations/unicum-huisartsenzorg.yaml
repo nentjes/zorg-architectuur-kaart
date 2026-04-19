@@ -9,22 +9,14 @@ sector: huisarts
 subtype: zorggroep
 country: NL
 locations:
-- address: "Hoog Kanje 186-c2, 3708 DL Zeist (kantoor)"
-  city: Zeist
-  postcode: "3708 DL"
+- address: "Rembrandtlaan 1A, 3723 BG Bilthoven (kantoor)"
+  city: Bilthoven
+  postcode: "3723 BG"
   province: Utrecht
   country: NL
   coordinates:
-    lat: 52.0832
-    lon: 5.2388
-- address: "Prins Bernhardweg 69, 3991 DE Houten (kantoor)"
-  city: Houten
-  postcode: "3991 DE"
-  province: Utrecht
-  country: NL
-  coordinates:
-    lat: 52.0317
-    lon: 5.1689
+    lat: 52.1306
+    lon: 5.2020
 region_iza: iza-midden-nederland
 sources:
 - unicum-website-contact-2026
